@@ -1,0 +1,69 @@
+﻿@model NetNews.Models.AccountsDataModel.AccountsModel
+
+@{
+    ViewData["Title"] = "Sign Up";
+}
+
+
+<!-- sign up form section -->
+<section class="mb-lg-5">
+    <div class="container">
+        <form class="form-signin" asp-controller="SignUp" asp-action="Index" method="post" id="CreateAccountForm">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-8 col-lg-8 col-xl-6">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <h1>Create an account</h1>
+                            <p class="text-h3">Fill in the registration form below to sig-up. Your account would need to be approved before you can access it</p>
+                        </div>
+                        <div class="col-12">
+                            <!-- Action messages partial -->
+                            <partial name="~/Views/Shared/_ProcessMessage.cshtml">
+                        </div>
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="col mt-4">
+                            <input type="text" class="form-control" asp-for="FirstName" placeholder="First Name" required>
+                            <span asp-validation-for="FirstName" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="col mt-4">
+                            <input type="text" class="form-control" asp-for="LastName" placeholder="Last Name" required>
+                            <span asp-validation-for="LastName" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="row align-items-center mt-4">
+                        <div class="col">
+                            <input type="email" class="form-control" asp-for="Email" placeholder="Email" required>
+                            <span asp-validation-for="Email" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="row align-items-center mt-4">
+                        <div class="col">
+                            <input type="password" class="form-control" asp-for="Password" placeholder="Password" required>
+                            <span asp-validation-for="Password" class="text-danger"></span>
+                        </div>
+                        <div class="col">
+                            <input type="password" class="form-control" name="ConfirmPassword" id="ConfirmPassword" placeholder="Confirm Password" required>
+                        </div>
+                    </div>
+                    <div class="row justify-content-start mt-4">
+                        <div class="col">
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input">
+                                    I Read and Accept <a href="#">Terms and Conditions</a>
+                                </label>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary mt-4">Create Account</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+<!-- section end -->

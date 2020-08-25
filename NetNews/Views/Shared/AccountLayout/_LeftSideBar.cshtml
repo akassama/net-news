@@ -1,0 +1,67 @@
+﻿<div class="col-lg-3 stretch-card grid-margin">
+    <div class="card">
+        <div class="card-body">
+            <ul class="vertical-menu">
+                <li>
+                    <a asp-controller="Admin" asp-action="Index">
+                        <i class="fas fa-tachometer-alt"></i> Dashboard
+                    </a>
+                </li>
+                <li>
+                    <a asp-controller="Admin" asp-action="CreatePost">
+                        <i class="fas fa-plus"></i> New Post
+                    </a>
+                </li>
+                <li>
+                    <a asp-controller="Admin" asp-action="ManagePosts">
+                        <i class="fas fa-list"></i>
+                        Manage Posts
+                    </a>
+                </li>
+                <li>
+                    <a asp-controller="Admin" asp-action="ManagePosts">
+                        <i class="fas fa-comments-alt"></i>
+                        Post Reviews <span class="badge badge-pill badge-danger">1</span>
+                    </a>
+                </li>
+            </ul>
+            <hr />
+            <ul class="vertical-menu">
+                <li>
+                    <a asp-controller="Admin" asp-action="PendingReviews">
+                        <i class="fas fa-search"></i>
+                        Pending Reviews <span class="badge badge-pill badge-danger">3</span>
+                    </a>
+                </li>
+                <li>
+                    <a asp-controller="Admin" asp-action="ReviewHistory">
+                        <i class="fas fa-history"></i> Review History
+                    </a>
+                </li>
+            </ul>
+            <hr />
+            <ul class="vertical-menu">
+                <li>
+                    <a asp-controller="Admin" asp-action="AccountRegistrations">
+                        <i class="far fa-file-user"></i> Account Registrations
+                    </a>
+                </li>
+                <li>
+                    <a asp-controller="Admin" asp-action="ManageAccounts">
+                        <i class="fas fa-users-cog"></i> Manage Accounts
+                    </a>
+                </li>
+                <li>
+                    <a asp-controller="Admin" asp-action="Profile">
+                        <i class="fas fa-id-card"></i> Profile
+                    </a>
+                </li>
+                <li>
+                    <a asp-controller="Admin" asp-action="Settings">
+                        <i class="fas fa-cogs"></i> Settings
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

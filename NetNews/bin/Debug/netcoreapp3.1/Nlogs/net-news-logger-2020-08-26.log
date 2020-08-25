@@ -1,0 +1,442 @@
+2020-08-26 00:23:48.0419||DEBUG|NetNews.Program|init main function 
+2020-08-26 00:23:48.4563||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-08-26 00:46:50.7371||DEBUG|NetNews.Program|init main function 
+2020-08-26 00:46:51.1372||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-08-26 00:46:51.3607|7|WARN|Microsoft.AspNetCore.Session.SessionMiddleware|Error unprotecting the session cookie. System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2020-08-26 00:46:51.4388|7|WARN|Microsoft.AspNetCore.Session.SessionMiddleware|Error unprotecting the session cookie. System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2020-08-26 00:46:51.6237|7|WARN|Microsoft.AspNetCore.Session.SessionMiddleware|Error unprotecting the session cookie. System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2020-08-26 00:46:51.6281|7|WARN|Microsoft.AspNetCore.Session.SessionMiddleware|Error unprotecting the session cookie. System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2020-08-26 00:46:57.6482|7|WARN|Microsoft.AspNetCore.Session.SessionMiddleware|Error unprotecting the session cookie. System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2020-08-26 00:46:57.6482|7|WARN|Microsoft.AspNetCore.Session.SessionMiddleware|Error unprotecting the session cookie. System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2020-08-26 00:47:03.9393|7|WARN|Microsoft.AspNetCore.Session.SessionMiddleware|Error unprotecting the session cookie. System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2020-08-26 00:47:03.9393|7|WARN|Microsoft.AspNetCore.Session.SessionMiddleware|Error unprotecting the session cookie. System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2020-08-26 00:47:03.9706|7|WARN|Microsoft.AspNetCore.Session.SessionMiddleware|Error unprotecting the session cookie. System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2020-08-26 00:47:03.9706|7|WARN|Microsoft.AspNetCore.Session.SessionMiddleware|Error unprotecting the session cookie. System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2020-08-26 00:47:06.5245|7|WARN|Microsoft.AspNetCore.Session.SessionMiddleware|Error unprotecting the session cookie. System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2020-08-26 00:47:06.5313|7|WARN|Microsoft.AspNetCore.Session.SessionMiddleware|Error unprotecting the session cookie. System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2020-08-26 00:48:32.5841||DEBUG|NetNews.Program|init main function 
+2020-08-26 00:48:32.9388||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-08-26 00:54:36.5696||DEBUG|NetNews.Program|init main function 
+2020-08-26 00:54:37.0014||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-08-26 00:55:44.4428||DEBUG|NetNews.Program|init main function 
+2020-08-26 00:55:44.8901||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-08-26 00:59:16.5941||DEBUG|NetNews.Program|init main function 
+2020-08-26 00:59:17.0226||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-08-26 01:03:15.8972||DEBUG|NetNews.Program|init main function 
+2020-08-26 01:03:16.3118||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-08-26 01:07:10.3687||DEBUG|NetNews.Program|init main function 
+2020-08-26 01:07:10.7908||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-08-26 01:07:11.2930|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.InvalidOperationException: The partial view '~/Views/Shared/AccountLayout/__DashboardSummary.cshtml' was not found. The following locations were searched:
+~/Views/Shared/AccountLayout/__DashboardSummary.cshtml
+   at Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper.ProcessAsync(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner.<RunAsync>g__Awaited|0_0(Task task, TagHelperExecutionContext executionContext, Int32 i, Int32 count)
+   at AspNetCore.Views_Admin_Index.ExecuteAsync() in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNews\NetNews\Views\Admin\Index.cshtml:line 21
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Wangkanai.Detection.Hosting.ResponsiveMiddleware.InvokeAsync(HttpContext context, IResponsiveService responsive)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-08-26 01:07:43.8930||DEBUG|NetNews.Program|init main function 
+2020-08-26 01:07:44.3144||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-08-26 01:39:16.7127||DEBUG|NetNews.Program|init main function 
+2020-08-26 01:39:17.1440||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-08-26 01:39:17.3399|7|WARN|Microsoft.AspNetCore.Session.SessionMiddleware|Error unprotecting the session cookie. System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2020-08-26 01:39:17.3976|7|WARN|Microsoft.AspNetCore.Session.SessionMiddleware|Error unprotecting the session cookie. System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2020-08-26 01:39:42.8029||DEBUG|NetNews.Program|init main function 
+2020-08-26 01:39:43.2030||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-08-26 01:39:43.4392|7|WARN|Microsoft.AspNetCore.Session.SessionMiddleware|Error unprotecting the session cookie. System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2020-08-26 01:39:43.5082|7|WARN|Microsoft.AspNetCore.Session.SessionMiddleware|Error unprotecting the session cookie. System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2020-08-26 02:02:51.1108||DEBUG|NetNews.Program|init main function 
+2020-08-26 02:02:51.5773||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-08-26 02:02:51.9044|7|WARN|Microsoft.AspNetCore.Session.SessionMiddleware|Error unprotecting the session cookie. System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2020-08-26 02:02:51.9679|7|WARN|Microsoft.AspNetCore.Session.SessionMiddleware|Error unprotecting the session cookie. System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2020-08-26 02:03:09.9044|7|WARN|Microsoft.AspNetCore.Session.SessionMiddleware|Error unprotecting the session cookie. System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2020-08-26 02:03:09.9193|7|WARN|Microsoft.AspNetCore.Session.SessionMiddleware|Error unprotecting the session cookie. System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2020-08-26 02:03:47.2027|7|WARN|Microsoft.AspNetCore.Session.SessionMiddleware|Error unprotecting the session cookie. System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2020-08-26 02:03:47.2236|7|WARN|Microsoft.AspNetCore.Session.SessionMiddleware|Error unprotecting the session cookie. System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2020-08-26 02:05:04.1284||DEBUG|NetNews.Program|init main function 
+2020-08-26 02:05:04.5085||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-08-26 02:05:04.7555|7|WARN|Microsoft.AspNetCore.Session.SessionMiddleware|Error unprotecting the session cookie. System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2020-08-26 02:05:04.8814|7|WARN|Microsoft.AspNetCore.Session.SessionMiddleware|Error unprotecting the session cookie. System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2020-08-26 02:05:09.1438|7|WARN|Microsoft.AspNetCore.Session.SessionMiddleware|Error unprotecting the session cookie. System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2020-08-26 02:05:09.1438|7|WARN|Microsoft.AspNetCore.Session.SessionMiddleware|Error unprotecting the session cookie. System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2020-08-26 02:07:14.5617||DEBUG|NetNews.Program|init main function 
+2020-08-26 02:07:15.0018||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-08-26 02:07:15.2376|7|WARN|Microsoft.AspNetCore.Session.SessionMiddleware|Error unprotecting the session cookie. System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2020-08-26 02:07:15.2376|7|WARN|Microsoft.AspNetCore.Session.SessionMiddleware|Error unprotecting the session cookie. System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2020-08-26 02:07:15.3244|7|WARN|Microsoft.AspNetCore.Session.SessionMiddleware|Error unprotecting the session cookie. System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2020-08-26 02:07:15.3244|7|WARN|Microsoft.AspNetCore.Session.SessionMiddleware|Error unprotecting the session cookie. System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2020-08-26 02:08:42.6204||DEBUG|NetNews.Program|init main function 
+2020-08-26 02:08:43.1288||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-08-26 02:08:43.3860|7|WARN|Microsoft.AspNetCore.Session.SessionMiddleware|Error unprotecting the session cookie. System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2020-08-26 02:08:43.4613|7|WARN|Microsoft.AspNetCore.Session.SessionMiddleware|Error unprotecting the session cookie. System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2020-08-26 02:09:04.2957||DEBUG|NetNews.Program|init main function 
+2020-08-26 02:09:04.7133||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-08-26 02:09:04.9595|7|WARN|Microsoft.AspNetCore.Session.SessionMiddleware|Error unprotecting the session cookie. System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2020-08-26 02:09:05.0197|7|WARN|Microsoft.AspNetCore.Session.SessionMiddleware|Error unprotecting the session cookie. System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2020-08-26 02:09:27.7133||DEBUG|NetNews.Program|init main function 
+2020-08-26 02:09:28.0864||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-08-26 02:09:28.2937|7|WARN|Microsoft.AspNetCore.Session.SessionMiddleware|Error unprotecting the session cookie. System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2020-08-26 02:09:28.3563|7|WARN|Microsoft.AspNetCore.Session.SessionMiddleware|Error unprotecting the session cookie. System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2020-08-26 02:09:52.9612||DEBUG|NetNews.Program|init main function 
+2020-08-26 02:09:53.3827||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-08-26 02:09:53.6153|7|WARN|Microsoft.AspNetCore.Session.SessionMiddleware|Error unprotecting the session cookie. System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2020-08-26 02:09:53.7058|7|WARN|Microsoft.AspNetCore.Session.SessionMiddleware|Error unprotecting the session cookie. System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2020-08-26 02:10:20.6409||DEBUG|NetNews.Program|init main function 
+2020-08-26 02:10:21.1410||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-08-26 02:10:21.3425|7|WARN|Microsoft.AspNetCore.Session.SessionMiddleware|Error unprotecting the session cookie. System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2020-08-26 02:10:21.4010|7|WARN|Microsoft.AspNetCore.Session.SessionMiddleware|Error unprotecting the session cookie. System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2020-08-26 02:12:17.7614||DEBUG|NetNews.Program|init main function 
+2020-08-26 02:12:18.3638||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-08-26 02:12:18.5793|7|WARN|Microsoft.AspNetCore.Session.SessionMiddleware|Error unprotecting the session cookie. System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2020-08-26 02:12:18.6380|7|WARN|Microsoft.AspNetCore.Session.SessionMiddleware|Error unprotecting the session cookie. System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2020-08-26 02:15:23.2450||DEBUG|NetNews.Program|init main function 
+2020-08-26 02:15:23.7932||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-08-26 02:15:24.0485|7|WARN|Microsoft.AspNetCore.Session.SessionMiddleware|Error unprotecting the session cookie. System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2020-08-26 02:15:24.1179|7|WARN|Microsoft.AspNetCore.Session.SessionMiddleware|Error unprotecting the session cookie. System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2020-08-26 02:15:29.0306|7|WARN|Microsoft.AspNetCore.Session.SessionMiddleware|Error unprotecting the session cookie. System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2020-08-26 02:15:29.0409|7|WARN|Microsoft.AspNetCore.Session.SessionMiddleware|Error unprotecting the session cookie. System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2020-08-26 02:15:31.7108|7|WARN|Microsoft.AspNetCore.Session.SessionMiddleware|Error unprotecting the session cookie. System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2020-08-26 02:15:31.7248|7|WARN|Microsoft.AspNetCore.Session.SessionMiddleware|Error unprotecting the session cookie. System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2020-08-26 02:18:48.8160||DEBUG|NetNews.Program|init main function 
+2020-08-26 02:18:49.3242||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-08-26 02:18:49.6548|7|WARN|Microsoft.AspNetCore.Session.SessionMiddleware|Error unprotecting the session cookie. System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2020-08-26 02:18:49.7167|7|WARN|Microsoft.AspNetCore.Session.SessionMiddleware|Error unprotecting the session cookie. System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2020-08-26 02:20:26.0897||DEBUG|NetNews.Program|init main function 
+2020-08-26 02:20:26.5855||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-08-26 02:20:26.8086|7|WARN|Microsoft.AspNetCore.Session.SessionMiddleware|Error unprotecting the session cookie. System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2020-08-26 02:20:26.8784|7|WARN|Microsoft.AspNetCore.Session.SessionMiddleware|Error unprotecting the session cookie. System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)

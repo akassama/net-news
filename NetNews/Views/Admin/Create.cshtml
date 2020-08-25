@@ -1,0 +1,95 @@
+﻿@model NetNews.Models.AccountsDataModel.AccountsModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>AccountsModel</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="All" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="AccountID" class="control-label"></label>
+                <input asp-for="AccountID" class="form-control" />
+                <span asp-validation-for="AccountID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FirstName" class="control-label"></label>
+                <input asp-for="FirstName" class="form-control" />
+                <span asp-validation-for="FirstName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LastName" class="control-label"></label>
+                <input asp-for="LastName" class="form-control" />
+                <span asp-validation-for="LastName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Email" class="control-label"></label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Password" class="control-label"></label>
+                <input asp-for="Password" class="form-control" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ProfilePicture" class="control-label"></label>
+                <input asp-for="ProfilePicture" class="form-control" />
+                <span asp-validation-for="ProfilePicture" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Active" class="control-label"></label>
+                <input asp-for="Active" class="form-control" />
+                <span asp-validation-for="Active" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Oauth" class="control-label"></label>
+                <input asp-for="Oauth" class="form-control" />
+                <span asp-validation-for="Oauth" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EmailVerification" class="control-label"></label>
+                <input asp-for="EmailVerification" class="form-control" />
+                <span asp-validation-for="EmailVerification" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DirectoryName" class="control-label"></label>
+                <input asp-for="DirectoryName" class="form-control" />
+                <span asp-validation-for="DirectoryName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="RememberToken" class="control-label"></label>
+                <input asp-for="RememberToken" class="form-control" />
+                <span asp-validation-for="RememberToken" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="UpdatedBy" class="control-label"></label>
+                <input asp-for="UpdatedBy" class="form-control" />
+                <span asp-validation-for="UpdatedBy" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="UpdateDate" class="control-label"></label>
+                <input asp-for="UpdateDate" class="form-control" />
+                <span asp-validation-for="UpdateDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DateAdded" class="control-label"></label>
+                <input asp-for="DateAdded" class="form-control" />
+                <span asp-validation-for="DateAdded" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

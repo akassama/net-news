@@ -1,0 +1,35 @@
+﻿@using AppHelpers.App_Code
+
+<ol class="breadcrumb bg-light">
+    @{
+        if (!string.IsNullOrEmpty(ViewData["Parent-0"].ToString()) && !string.IsNullOrEmpty(ViewData["Parent-1"].ToString()))
+        {
+            <li class="breadcrumb-item">
+                <a href="~/">Home</a>
+            </li>
+            <li class="breadcrumb-item">
+                <a href="~/@ViewData["Parent-0"]">@TextHelper.ConvertCase(ViewData["Parent-0"].ToString(), "SplitUpper")</a>
+                <a href="~/@ViewData["Parent-0"]/@ViewData["Parent-1"]">@TextHelper.ConvertCase(ViewData["Parent-1"].ToString(), "SplitUpper") </a>
+            </li>
+            <li class="breadcrumb-item active">@ViewData["Title"]</li>
+        }
+        else if (!string.IsNullOrEmpty(ViewData["Parent-0"].ToString()))
+        {
+
+            <li class="breadcrumb-item">
+                <a href="~/">Home</a>
+            </li>
+            <li class="breadcrumb-item">
+                <a href="~/@ViewData["Parent-0"]">@TextHelper.ConvertCase(ViewData["Parent-0"].ToString(), "SplitUpper")</a>
+            </li>
+            <li class="breadcrumb-item active">@ViewData["Title"]</li>
+        }
+        else
+        {
+            <li class="breadcrumb-item">
+                <a href="~/">Home</a>
+            </li>
+            <li class="breadcrumb-item active">@ViewData["Title"]</li>
+        }
+    }
+</ol>

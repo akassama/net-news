@@ -1,0 +1,72 @@
+﻿
+@{
+    ViewData["Title"] = "Home";
+}
+
+<!-- Breaking news partial -->
+<partial name="~/Views/Shared/HomeLayout/_BreakingNews.cshtml">
+
+<div class="content-wrapper">
+    <div class="container">
+        <!-- upper section -->
+        <div class="row" data-aos="fade-up">
+            <!-- Featured home news partial -->
+            <partial name="~/Views/Shared/HomeLayout/_FeaturedHomeNews.cshtml">
+
+            <!--  Home latest news partial -->
+            <partial name="~/Views/Shared/HomeLayout/_LatestNewsHome.cshtml">
+        </div>
+
+        <!-- middle section -->
+        <div class="row" data-aos="fade-up">
+            <!-- Left categories partial -->
+            <partial name="~/Views/Shared/SiteLayout/_CategoriesLeft.cshtml">
+
+            <!-- Home top stories partial -->
+            <partial name="~/Views/Shared/HomeLayout/_TopStoriesHome.cshtml">
+        </div>
+
+        <!-- popular news section -->
+        <div class="row" data-aos="fade-up">
+            <div class="col-sm-12">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <!-- popular this week partial -->
+                            <partial name="~/Views/Shared/HomeLayout/_PopularThisWeekHome.cshtml">
+
+                                <div class="col-xl-6">
+                                    <div class="row">
+                                        <!-- Featured body news partial -->
+                                        <partial name="~/Views/Shared/HomeLayout/_FeaturedBodyNewsHome.cshtml">
+
+                                        <!-- International news home partial -->
+                                        <partial name="~/Views/Shared/HomeLayout/_InternationalNewsHome.cshtml">
+                                    </div>
+                                </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Video section-->
+        <div class="row" data-aos="fade-up">
+            <div class="col-sm-12 grid-margin">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <!-- Popular videos partial -->
+                            <partial name="~/Views/Shared/HomeLayout/_PopularVideosHome.cshtml">
+
+                            <!-- Latest videos partial -->
+                            <partial name="~/Views/Shared/HomeLayout/_LatestVideosHome.cshtml">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

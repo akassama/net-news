@@ -1,0 +1,117 @@
+2020-08-25 00:44:22.0066||DEBUG|NetNews.Program|init main function 
+2020-08-25 00:44:23.6632||INFO|NetNews.Controllers.HomeController|Hello, this is the index! 
+2020-08-25 01:02:21.2547||DEBUG|NetNews.Program|init main function 
+2020-08-25 01:03:00.1546||DEBUG|NetNews.Program|init main function 
+2020-08-25 01:03:18.7432||DEBUG|NetNews.Program|init main function 
+2020-08-25 01:03:37.6070||DEBUG|NetNews.Program|init main function 
+2020-08-25 01:04:09.0577||DEBUG|NetNews.Program|init main function 
+2020-08-25 01:06:10.8705||DEBUG|NetNews.Program|init main function 
+2020-08-25 01:34:48.0821||DEBUG|NetNews.Program|init main function 
+2020-08-25 19:57:09.6476||DEBUG|NetNews.Program|init main function 
+2020-08-25 19:57:11.8745||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-08-25 19:58:31.9448||DEBUG|NetNews.Program|init main function 
+2020-08-25 19:58:33.1173||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-08-25 20:03:19.5699|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. Microsoft.AspNetCore.Routing.Matching.AmbiguousMatchException: The request matched multiple endpoints. Matches: 
+
+NetNews.Controllers.LoginController.Index (NetNews)
+NetNews.Controllers.LoginController.Index (NetNews)
+NetNews.Controllers.LoginController.Index (NetNews)
+NetNews.Controllers.LoginController.Index (NetNews)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ReportAmbiguity(CandidateState[] candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ProcessFinalCandidates(HttpContext httpContext, CandidateState[] candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.Select(HttpContext httpContext, CandidateState[] candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcher.MatchAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.Matching.DataSourceDependentMatcher.MatchAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Wangkanai.Detection.Hosting.ResponsiveMiddleware.InvokeAsync(HttpContext context, IResponsiveService responsive)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-08-25 20:09:55.7280||DEBUG|NetNews.Program|init main function 
+2020-08-25 20:09:56.9902||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-08-25 20:35:29.0111||DEBUG|NetNews.Program|init main function 
+2020-08-25 20:35:30.8218||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-08-25 20:47:12.5390||DEBUG|NetNews.Program|init main function 
+2020-08-25 20:47:13.6668||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-08-25 20:50:49.5057||DEBUG|NetNews.Program|init main function 
+2020-08-25 20:50:50.6306||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-08-25 21:38:58.9555||DEBUG|NetNews.Program|init main function 
+2020-08-25 21:38:59.3188||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-08-25 21:39:40.8403||DEBUG|NetNews.Program|init main function 
+2020-08-25 21:39:41.3074||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-08-25 22:29:03.2628||DEBUG|NetNews.Program|init main function 
+2020-08-25 22:29:03.6602||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-08-25 22:31:42.1191||DEBUG|NetNews.Program|init main function 
+2020-08-25 22:31:42.5088||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-08-25 22:33:38.1271||DEBUG|NetNews.Program|init main function 
+2020-08-25 22:33:38.5262||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-08-25 22:34:10.1875||DEBUG|NetNews.Program|init main function 
+2020-08-25 22:34:10.5559||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-08-25 22:37:05.8511||DEBUG|NetNews.Program|init main function 
+2020-08-25 22:37:06.1942||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-08-25 23:16:44.4414||DEBUG|NetNews.Program|init main function 
+2020-08-25 23:16:44.8854||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-08-25 23:19:25.0102||DEBUG|NetNews.Program|init main function 
+2020-08-25 23:19:25.4697||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-08-25 23:36:13.3740||DEBUG|NetNews.Program|init main function 
+2020-08-25 23:36:13.8201||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-08-25 23:39:40.7985||DEBUG|NetNews.Program|init main function 
+2020-08-25 23:39:41.2097||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-08-25 23:39:49.0309|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.InvalidOperationException: The partial view '~/Views/Shared/_SubNavigation.cshtml' was not found. The following locations were searched:
+~/Views/Shared/_SubNavigation.cshtml
+   at Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper.ProcessAsync(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner.<RunAsync>g__Awaited|0_0(Task task, TagHelperExecutionContext executionContext, Int32 i, Int32 count)
+   at AspNetCore.Views_Admin_Index.ExecuteAsync() in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNews\NetNews\Views\Admin\Index.cshtml:line 2
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Wangkanai.Detection.Hosting.ResponsiveMiddleware.InvokeAsync(HttpContext context, IResponsiveService responsive)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-08-25 23:40:29.7106||DEBUG|NetNews.Program|init main function 
+2020-08-25 23:40:30.1838||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-08-25 23:46:20.1375||DEBUG|NetNews.Program|init main function 
+2020-08-25 23:46:20.5924||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-08-25 23:49:35.1314||DEBUG|NetNews.Program|init main function 
+2020-08-25 23:49:35.5632||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-08-25 23:51:44.7437||DEBUG|NetNews.Program|init main function 
+2020-08-25 23:51:45.1215||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-08-25 23:52:32.7392||DEBUG|NetNews.Program|init main function 
+2020-08-25 23:52:33.1651||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-08-25 23:53:29.6208||DEBUG|NetNews.Program|init main function 
+2020-08-25 23:53:29.9450||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-08-25 23:53:59.2047||DEBUG|NetNews.Program|init main function 
+2020-08-25 23:53:59.4653||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-08-25 23:54:30.8456||DEBUG|NetNews.Program|init main function 
+2020-08-25 23:54:31.1618||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-08-25 23:55:24.7787||DEBUG|NetNews.Program|init main function 
+2020-08-25 23:55:25.0519||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-08-25 23:56:00.1359||DEBUG|NetNews.Program|init main function 
+2020-08-25 23:56:00.6797||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-08-25 23:56:43.8747||DEBUG|NetNews.Program|init main function 
+2020-08-25 23:56:44.3916||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-08-25 23:57:07.9204||DEBUG|NetNews.Program|init main function 
+2020-08-25 23:57:08.3570||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-08-25 23:57:21.4595||DEBUG|NetNews.Program|init main function 
+2020-08-25 23:57:21.8512||INFO|Detection.Startup|Starting Detection version 3.0.0.0 

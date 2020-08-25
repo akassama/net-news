@@ -1,0 +1,121 @@
+﻿@model NetNews.Models.PostsDataModel.PostsModel
+<div class="col-lg-9 stretch-card grid-margin">
+    <div class="card">
+        <div class="card-body">
+            <div class="row">
+                <div class="col main pt-0 mt-3">
+                    <p class="lead d-sm-block">New Post</p>
+
+                    <div class="row mb-3">
+                        <form id="NewPostForm" asp-controller="Account" asp-action="Register" method="post">
+                            <div asp-validation-summary="All" class="text-danger"></div>
+                            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 mb-3">
+                                <label for="Category" data-toggle="tooltip" title="Select the category for the post.">
+                                    Category:
+                                </label>
+                                <select class="form-control" id="Category" name="Category" required="">
+                                    <option value="" class="text-muted">Select post category</option>
+                                    <option value="1">Politics</option>
+                                    <option value="2">Economy</option>
+                                    <option value="3">Health</option>
+                                    <option value="4">Sports</option>
+                                </select>
+                            </div>
+
+                            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 mb-3">
+                                <label for="PostTitle">Post Title:</label>
+                                <input type="text" class="form-control" id="PostTitle" name="PostTitle" placeholder="Title of the post" required="">
+                            </div>
+
+                            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 mb-3">
+                                <label for="PostTitle">Post Image:</label>
+                                <input type="file" name="PostImage" id="PostImage" class="file image-preview-file" accept="image/*">
+                                <div class="input-group my-3">
+                                    <input type="text" class="form-control image-preview" disabled placeholder="Upload File" name="PostImage" required="">
+                                    <div class="input-group-append">
+                                        <button type="button" class="browse btn btn-primary">Browse...</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 mb-3">
+                                <img src="https://placehold.it/750x120?text=Image+Placeholder" id="PreviewImage" class="img-thumbnail">
+                            </div>
+
+                            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 mb-3">
+                                <label for="ImageDescription">Image Description:</label>
+                                <input type="text" class="form-control" id="ImageDescription" name="ImageDescription" placeholder="Short description/caption about the image" required="">
+                            </div>
+
+                            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 mb-4">
+                                <label for="PostText">Post Text:</label>
+                                <textarea class="form-control" id="PostText" name="PostText" required=""></textarea>
+                            </div>
+
+                            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 mb-3">
+                                <label for="PostText">
+                                    <a href="#MediaUpload" class="no-decoration" data-toggle="collapse">
+                                        <i class="fas fa-plus"></i> Add Media File
+                                    </a>
+                                </label>
+                            </div>
+
+                            <div class="collapse mb-3" id="MediaUpload">
+                                <div class="form-group">
+                                    <label class="control-label col-md-12" for="ArticleMedia">
+                                        Media File <small>Select Video .mp4, Max size 10mb</small>
+                                    </label>
+                                    <div class="col-md-12 mb-2">
+                                        <div class="custom-file">
+                                            <input type="file" class="custom-file-input media-file" id="ArticleMedia" name="ArticleMedia" accept=".mp4" aria-describedby="HeadlineImage">
+                                            <label class="custom-file-label" for="inputGroupFile02">Choose file</label>
+                                        </div>
+                                        <strong id="SelectedMediaFile" class="text-danger"></strong>
+                                        <span id="SelectedMediaFileError" class="text-danger"></span>
+                                    </div>
+                                    <div class="col-md-12 video-container">
+                                        <video id="VideoSource" style="width: 100%; display:none" controls>
+                                            <source src="" type="video/mp4">
+                                            Your browser does not support the video tag.
+                                        </video>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 mb-3">
+                                <label for="ImageDescription">Tags:</label>
+                                <div class="row ml-1">
+                                    <div class="form-check-inline">
+                                        <label class="form-check-label">
+                                            <input type="checkbox" class="form-check-input cb-md" value="">Breaking
+                                        </label>
+                                    </div>
+                                    <div class="form-check-inline">
+                                        <label class="form-check-label">
+                                            <input type="checkbox" class="form-check-input cb-md" value="">Ploitics
+                                        </label>
+                                    </div>
+                                    <div class="form-check-inline">
+                                        <label class="form-check-label">
+                                            <input type="checkbox" class="form-check-input cb-md" value="">Covid
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 offset-lg-8 col-xl-4 offset-xl-8 mb-3">
+                                <a class="btn btn-danger mr-2" href="#" data-toggle="modal" data-target="#confirmModal" role="button">
+                                    <i class="fas fa-times mr-1"></i> Cancel
+                                </a>
+                                <button class="btn btn-success" type="submit">
+                                    <i class="fas fa-paper-plane mr-1"></i> Post
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    <!--/row-->
+                </div>
+                <!--/main col-->
+            </div>
+        </div>
+    </div>
+</div>

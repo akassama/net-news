@@ -1,0 +1,46 @@
+﻿@model NetNews.Models.AppDataModels.LoginViewModel
+
+@{
+    ViewData["Title"] = "Sign In";
+}
+
+
+<!-- sign up form section -->
+<section class="mb-lg-5">
+    <div class="container">
+        <form class="form-signin" asp-controller="SignIn" asp-action="Index" method="post" id="SignInForm">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-8 col-lg-8 col-xl-6">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <h1>Sign-in to your account</h1>
+                        </div>
+                        <div class="col-12">
+                            <!-- Action messages partial -->
+                            <partial name="~/Views/Shared/_ProcessMessage.cshtml">
+                        </div>
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="col mt-4">
+                            <input type="email" class="form-control" asp-for="Email" placeholder="Email" required>
+                            <span asp-validation-for="Email" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="col mt-4">
+                            <input type="password" class="form-control" asp-for="Password" placeholder="Password" required>
+                            <span asp-validation-for="Password" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="row justify-content-start mt-4">
+                        <div class="col">
+                            <button type="submit" class="btn btn-primary mt-4">Login</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+<!-- section end -->
