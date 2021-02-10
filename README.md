@@ -21,7 +21,7 @@ Set dataase connection in:
 ```sh
 create a database and import the "database.sql" file
 update db connection info in "/appsettings.json" and "/Models/DBConnection.cs"
-default login:-> Email:"admin@netnews.com" & Password:"admin123"
+default login:-> Email:"admin@netnews.com" & Password:"Admin123"
 ```
 
 ## Release History
