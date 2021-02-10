@@ -1,0 +1,51 @@
+2020-11-26 19:37:29.8030||DEBUG|NetNews.Program|init main function 
+2020-11-26 19:37:31.1502||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-26 19:41:08.1031||DEBUG|NetNews.Program|init main function 
+2020-11-26 19:41:08.4839||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-26 19:45:41.8824||DEBUG|NetNews.Program|init main function 
+2020-11-26 19:45:42.3539||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-26 19:56:27.3237||INFO|NetNews.Controllers.CategoryController|Get Category Error: System.Net.WebException: The remote server returned an error: (500) Internal Server Error.
+   at System.Net.HttpWebRequest.GetResponse()
+   at NetNews.Models.AppModels.AppFunctions.GetIpInfo(String ip_address, String return_data) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Models\AppModels\AppFunctions.cs:line 290
+   at NetNews.Models.AppModels.AppFunctions.LogSiteStat(String stat_type, String action_value, String visitor_ip, String visitor_browser, String visitor_device, String other) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Models\AppModels\AppFunctions.cs:line 2322
+   at NetNews.Controllers.CategoryController.Index(String id, String p, String s) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Controllers\CategoryController.cs:line 94 
+2020-11-26 19:56:42.9340||INFO|NetNews.Controllers.CategoryController|Get Category Error: System.Net.WebException: The remote server returned an error: (500) Internal Server Error.
+   at System.Net.HttpWebRequest.GetResponse()
+   at NetNews.Models.AppModels.AppFunctions.GetIpInfo(String ip_address, String return_data) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Models\AppModels\AppFunctions.cs:line 290
+   at NetNews.Models.AppModels.AppFunctions.LogSiteStat(String stat_type, String action_value, String visitor_ip, String visitor_browser, String visitor_device, String other) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Models\AppModels\AppFunctions.cs:line 2322
+   at NetNews.Controllers.CategoryController.Index(String id, String p, String s) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Controllers\CategoryController.cs:line 94 
+2020-11-26 19:56:49.3910||INFO|NetNews.Controllers.CategoryController|Get Category Error: System.Net.WebException: The remote server returned an error: (500) Internal Server Error.
+   at System.Net.HttpWebRequest.GetResponse()
+   at NetNews.Models.AppModels.AppFunctions.GetIpInfo(String ip_address, String return_data) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Models\AppModels\AppFunctions.cs:line 290
+   at NetNews.Models.AppModels.AppFunctions.LogSiteStat(String stat_type, String action_value, String visitor_ip, String visitor_browser, String visitor_device, String other) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Models\AppModels\AppFunctions.cs:line 2322
+   at NetNews.Controllers.CategoryController.Index(String id, String p, String s) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Controllers\CategoryController.cs:line 94 
+2020-11-26 20:04:51.2914||DEBUG|NetNews.Program|init main function 
+2020-11-26 20:04:51.6786||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-26 20:07:36.2311||DEBUG|NetNews.Program|init main function 
+2020-11-26 20:07:36.7116||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-26 20:08:56.4410||DEBUG|NetNews.Program|init main function 
+2020-11-26 20:08:56.8722||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-26 20:09:49.0018||DEBUG|NetNews.Program|init main function 
+2020-11-26 20:09:49.8550||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-26 20:09:52.9891||INFO|NetNews.Controllers.PostsController|Get Post Details Error: System.Net.WebException: The remote server returned an error: (500) Internal Server Error.
+   at System.Net.HttpWebRequest.GetResponse()
+   at NetNews.Models.AppModels.AppFunctions.GetIpInfo(String ip_address, String return_data) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Models\AppModels\AppFunctions.cs:line 290
+   at NetNews.Models.AppModels.AppFunctions.LogPostView(String post_id, String post_author, String post_type, String visitor_ip, String visitor_browser, String visitor_device, String other) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Models\AppModels\AppFunctions.cs:line 212
+   at NetNews.Controllers.PostsController.Index(String id) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Controllers\PostsController.cs:line 85 
+2020-11-26 20:12:48.8592||DEBUG|NetNews.Program|init main function 
+2020-11-26 20:12:49.3439||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-26 20:17:02.0377||DEBUG|NetNews.Program|init main function 
+2020-11-26 20:17:02.5603||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-26 20:18:25.2199||INFO|NetNews.Controllers.CategoryController|Get Category Error: System.Net.WebException: The remote server returned an error: (500) Internal Server Error.
+   at System.Net.HttpWebRequest.GetResponse()
+   at NetNews.Models.AppModels.AppFunctions.GetIpInfo(String ip_address, String return_data) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Models\AppModels\AppFunctions.cs:line 290
+   at NetNews.Models.AppModels.AppFunctions.LogSiteStat(String stat_type, String action_value, String visitor_ip, String visitor_browser, String visitor_device, String other) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Models\AppModels\AppFunctions.cs:line 2322
+   at NetNews.Controllers.CategoryController.Index(String id, String p, String s) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Controllers\CategoryController.cs:line 94 
+2020-11-26 20:28:40.5011||DEBUG|NetNews.Program|init main function 
+2020-11-26 20:28:44.0408||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-26 20:56:40.1936||DEBUG|NetNews.Program|init main function 
+2020-11-26 20:56:41.9320||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-26 20:58:37.9121||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-11-26 20:58:37.9121||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 2, TotalPages: 1, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-11-26 20:59:58.3791||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-11-26 20:59:58.3791||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 5, TotalPages: 1, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  

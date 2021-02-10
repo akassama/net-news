@@ -1,0 +1,162 @@
+﻿@model NetNews.Models.PostsDataModel.NewsApiModel
+
+@using Microsoft.AspNetCore.Http
+@using AppHelpers.App_Code
+@inject IHttpContextAccessor HttpContextAccessor
+@{
+    var Url = "https://" + Context.Request.Host + Context.Request.Path; //get current url path
+
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <!-- ADMIN Head -->
+    <partial name="~/Views/Shared/AccountLayout/_Head.cshtml" />
+</head>
+
+<body class="sb-nav-fixed">
+    <!-- ADMIN Navigation -->
+    <partial name="~/Views/Shared/AccountLayout/_Navigation.cshtml" />
+    <div id="layoutSidenav">
+        <!-- ADMIN Sidebar -->
+        <partial name="~/Views/Shared/AccountLayout/_LeftSideBar.cshtml" />
+        <div id="layoutSidenav_content">
+            <main>
+                <div class="container-fluid">
+                    <h1 class="mt-4">Edit News Api</h1>
+                    <ol class="breadcrumb mb-4">
+                        <li class="breadcrumb-item"><a asp-controller="Admin" asp-action="Index">Dashboard</a></li>
+                        <li class="breadcrumb-item"><a asp-controller="Admin" asp-action="ManageNewsApi">Manage News Api</a></li>
+                        <li class="breadcrumb-item active">Edit News Api</li>
+                    </ol>
+
+                    <!-- Content -->
+                    <!-- Action messages partial -->
+                    <partial name="~/Views/Shared/_ProcessMessage.cshtml" />
+
+                    <div class="row">
+                        <div class="col-lg-12 stretch-card grid-margin">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-12 main pt-0 mt-3">
+                                            <p class="lead d-sm-block">Edit Tag</p>
+
+                                            <div class="row mb-3">
+                                                <form id="NewPostForm" asp-controller="Admin" asp-action="EditNewsApi" method="post" enctype="multipart/form-data">
+                                                    <div asp-validation-summary="All" class="text-danger"></div>
+                                                    <div class="row">
+                                                        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 mb-3">
+                                                            <label asp-for="Source"></label>
+                                                            <input type="text" class="form-control count-chars" data-chars-max="100" data-msg-color="danger" maxlength="100" asp-for="Source" spellcheck="true" placeholder="Name of the Source" required="">
+                                                            <span asp-validation-for="Source" class="text-danger"></span>
+                                                        </div>
+
+                                                        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 mb-3">
+                                                            <label asp-for="Category"></label>
+                                                            <div class="form-group">
+                                                                <label for="Category">Select Category:</label>
+                                                                <select class="form-control" name="Category" id="Category" required>
+                                                                    <option value="@Model.Category" selected>@Model.Category</option>
+                                                                    <option value="News">News</option>
+                                                                    <option value="Politics">Politics</option>
+                                                                    <option value="Health">Health</option>
+                                                                    <option value="Business">Business</option>
+                                                                    <option value="Sports">Sports</option>
+                                                                    <option value="Entertainment">Entertainment</option>
+                                                                    <option value="Tech">Tech</option>
+                                                                </select>
+                                                            </div>
+                                                            <span asp-validation-for="Category" class="text-danger"></span>
+                                                        </div>
+                                                        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 mb-3">
+                                                            <label asp-for="Author"></label>
+                                                            <input type="text" class="form-control count-chars" data-chars-max="100" data-msg-color="danger" maxlength="100" asp-for="Author" spellcheck="true" placeholder="Name of the Author" required="">
+                                                            <span asp-validation-for="Author" class="text-danger"></span>
+                                                        </div>
+                                                        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 mb-3">
+                                                            <label asp-for="Title"></label>
+                                                            <input type="text" class="form-control count-chars" data-chars-max="250" data-msg-color="danger" maxlength="250" asp-for="Title" spellcheck="true" placeholder="Title" required="">
+                                                            <span asp-validation-for="Title" class="text-danger"></span>
+                                                        </div>
+                                                        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 mb-3">
+                                                            <label asp-for="Description"></label>
+                                                            <textarea type="text" class="form-control count-chars" data-chars-max="250" data-msg-color="danger" maxlength="250" asp-for="Description" spellcheck="true" required=""></textarea>
+                                                            <span asp-validation-for="Description" class="text-danger"></span>
+                                                        </div>
+                                                        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 mb-3">
+                                                            <label asp-for="Url"></label>
+                                                            <input type="text" class="form-control count-chars" data-chars-max="250" data-msg-color="danger" maxlength="250" asp-for="Url" spellcheck="true" placeholder="Url" required="">
+                                                            <span asp-validation-for="Url" class="text-danger"></span>
+                                                        </div>
+                                                        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 mb-3">
+                                                            <label asp-for="UrlToImage"></label>
+                                                            <input type="text" class="form-control count-chars" data-chars-max="250" data-msg-color="danger" maxlength="250" asp-for="UrlToImage" spellcheck="true" placeholder="Url Image Link" required="">
+                                                            <span asp-validation-for="UrlToImage" class="text-danger"></span>
+                                                        </div>
+                                                        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 mb-3">
+                                                            <label asp-for="PublishedAt"></label>
+                                                            @{ 
+                                                                var date_value = DateTime.Now.ToString("yyyy-mm-dd");
+                                                                if (!string.IsNullOrEmpty(Model.PublishedAt))
+                                                                {
+                                                                    date_value = Convert.ToDateTime(Model.PublishedAt).ToString("yyyy-mm-dd");
+                                                                }
+                                                            }
+                                                            <input type="date" class="form-control"  name="PublishedAt" id="PublishedAt" spellcheck="true" value="@date_value" required="">
+                                                            <span asp-validation-for="PublishedAt" class="text-danger"></span>
+                                                        </div>
+                                                        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 mb-3">
+                                                            <label asp-for="Content"></label>
+                                                            <textarea type="text" class="form-control" asp-for="Content" spellcheck="true"></textarea>
+                                                            <span asp-validation-for="Content" class="text-danger"></span>
+                                                        </div>
+
+
+                                                        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 mb-3 d-none">
+                                                            <input type="hidden" class="form-control" asp-for="ID" value="@Model.ID">
+                                                        </div>
+
+                                                        <div class="col-12">
+                                                            <div class="row">
+                                                                <div class="col-md-5 offset-md-7">
+                                                                    <a class="btn btn-danger mr-2" href="#" data-toggle="modal" data-target="#confirmCancelCreateCategoryModal" role="button">
+                                                                        <i class="fas fa-times mr-1"></i> Cancel
+                                                                    </a>
+                                                                    <button id="EditTagForm" class="btn btn-success disable-on-click" type="submit">
+                                                                        <i class="fas fa-pencil-alt mr-1"></i> Update
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <!--/row-->
+                                        </div>
+
+                                        <!--/main col-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </main>
+            <!-- ADMIN Footer -->
+            <partial name="~/Views/Shared/AccountLayout/_AdminFooter.cshtml" />
+        </div>
+    </div>
+
+    <!-- Modals data -->
+    <partial name="~/Views/Shared/Modals/_ActionModals.cshtml" view-data="ViewData" />
+
+    <!-- ADMIN RESOURCES -->
+    <partial name="~/Views/Shared/AccountLayout/_AdminFooterScripts.cshtml" />
+</body>
+</html>

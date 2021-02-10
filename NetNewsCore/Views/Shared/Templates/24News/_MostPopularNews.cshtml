@@ -1,0 +1,19 @@
+﻿@using AppHelpers.App_Code
+
+@if (LayoutHelper24News.HasAnyTrendingNews())
+{
+    <div>
+        <div class="fh5co_heading fh5co_heading_border_bottom pt-3 py-2 mb-4">Most Popular</div>
+    </div>
+    <span>
+        @LayoutHelper24News.GetPopularNews(4)
+    </span>
+}
+
+
+<!-- Adverts Section -->
+<div class="row">
+    <div class="col-md-12">
+
+    </div>
+</div>

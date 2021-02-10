@@ -1,0 +1,73 @@
+﻿
+@using Microsoft.AspNetCore.Http
+@using AppHelpers.App_Code
+@inject IHttpContextAccessor HttpContextAccessor
+@{
+    var Url = "https://" + Context.Request.Host + Context.Request.Path; //get current url path
+
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <!-- ADMIN Head -->
+    <partial name="~/Views/Shared/AccountLayout/_Head.cshtml" />
+</head>
+
+<body class="sb-nav-fixed">
+    <!-- ADMIN Navigation -->
+    <partial name="~/Views/Shared/AccountLayout/_Navigation.cshtml" />
+    <div id="layoutSidenav">
+        <!-- ADMIN Sidebar -->
+        <partial name="~/Views/Shared/AccountLayout/_LeftSideBar.cshtml" />
+        <div id="layoutSidenav_content">
+            <main>
+                <div class="container-fluid">
+                    <h1 class="mt-4">Send Email</h1>
+                    <ol class="breadcrumb mb-4">
+                        <li class="breadcrumb-item"><a asp-controller="Admin" asp-action="Index">Dashboard</a></li>
+                        <li class="breadcrumb-item"><a asp-controller="Admin" asp-action="ManageSubscribers">Manage Subscribers</a></li>
+                        <li class="breadcrumb-item active">Send Email</li>
+                    </ol>
+
+                    <!-- Content -->
+                    <!-- Action messages partial -->
+                    <partial name="~/Views/Shared/_ProcessMessage.cshtml" />
+
+                    <form asp-controller="Admin" asp-action="SendEmail" method="post" class="RequiredForm">
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" class="form-control" id="SubscriberEmail" name="SubscriberEmail" value="@ViewBag.Email" required readonly>
+                        </div>
+                        <div class="form-group">
+                            <label for="Subject">Subject:</label>
+                            <input type="text" class="form-control" id="Subject" name="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="comment">Message:</label>
+                            <textarea class="form-control TextEditor" rows="5" name="EmailMessage" id="EmailMessage"></textarea>
+                        </div>
+                        <a class="btn btn-danger mr-2" asp-action="ManageSubscribers" asp-controller="Admin" role="button">
+                            <i class="fas fa-times mr-1"></i> Cancel
+                        </a>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i> Send Email
+                        </button>
+                    </form>
+
+                </div>
+            </main>
+            <!-- ADMIN Footer -->
+            <partial name="~/Views/Shared/AccountLayout/_AdminFooter.cshtml" />
+        </div>
+    </div>
+
+    <!-- Modals data -->
+    <partial name="~/Views/Shared/Modals/_ActionModals.cshtml" view-data="ViewData" />
+
+    <!-- ADMIN RESOURCES -->
+    <partial name="~/Views/Shared/AccountLayout/_AdminFooterScripts.cshtml" />
+</body>
+</html>

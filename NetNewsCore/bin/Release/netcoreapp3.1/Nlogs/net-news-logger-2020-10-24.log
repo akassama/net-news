@@ -1,0 +1,4 @@
+2020-10-24 21:52:15.6457||DEBUG|NetNews.Program|init main function 
+2020-10-24 21:52:18.9979||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-24 22:28:14.9698||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-10-24 22:28:14.9856||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 5, TotalPages: 1, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  

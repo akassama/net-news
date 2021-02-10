@@ -1,0 +1,232 @@
+2020-10-17 01:47:35.1993||DEBUG|NetNews.Program|init main function 
+2020-10-17 01:47:42.3116||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-17 02:22:59.2936||DEBUG|NetNews.Program|init main function 
+2020-10-17 02:23:01.4629||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-17 02:24:39.8704||DEBUG|NetNews.Program|init main function 
+2020-10-17 02:24:41.3203||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-17 02:57:48.8802||DEBUG|NetNews.Program|init main function 
+2020-10-17 02:57:59.1780||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-17 03:11:01.3672||DEBUG|NetNews.Program|init main function 
+2020-10-17 03:11:02.8210||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-17 03:25:50.4025||DEBUG|NetNews.Program|init main function 
+2020-10-17 03:25:52.2307||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-17 05:13:16.5069||DEBUG|NetNews.Program|init main function 
+2020-10-17 05:13:18.3618||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-17 05:24:29.8844||DEBUG|NetNews.Program|init main function 
+2020-10-17 05:24:32.0392||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-17 05:27:09.1059||DEBUG|NetNews.Program|init main function 
+2020-10-17 05:27:10.3714||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-17 05:30:09.3331||DEBUG|NetNews.Program|init main function 
+2020-10-17 05:30:10.6329||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-17 05:35:55.4911||DEBUG|NetNews.Program|init main function 
+2020-10-17 05:35:56.9685||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-17 05:41:46.4625||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-10-17 05:41:46.4625||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 0, TotalPages: 0, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-10-17 05:43:07.8557||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-10-17 05:43:07.8557||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 3, TotalPages: 1, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-10-17 05:43:23.9295||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-10-17 05:43:23.9295||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 3, TotalPages: 1, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-10-17 05:43:26.9010||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-10-17 05:43:26.9010||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 0, TotalPages: 0, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-10-17 07:16:37.2728||DEBUG|NetNews.Program|init main function 
+2020-10-17 07:16:38.8245||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-17 07:17:47.3963|3|ERROR|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|The view 'Latest' was not found. Searched locations: /Views/Home/Latest.desktop.cshtml, /Views/Home/Latest.cshtml, /Views/Shared/Latest.desktop.cshtml, /Views/Shared/Latest.cshtml, /Pages/Shared/Latest.desktop.cshtml, /Pages/Shared/Latest.cshtml 
+2020-10-17 07:17:47.7780|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.InvalidOperationException: The view 'Latest' was not found. The following locations were searched:
+/Views/Home/Latest.desktop.cshtml
+/Views/Home/Latest.cshtml
+/Views/Shared/Latest.desktop.cshtml
+/Views/Shared/Latest.cshtml
+/Pages/Shared/Latest.desktop.cshtml
+/Pages/Shared/Latest.cshtml
+   at Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult.EnsureSuccessful(IEnumerable`1 originalLocations)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Wangkanai.Detection.Hosting.ResponsiveMiddleware.InvokeAsync(HttpContext context, IResponsiveService responsive)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at NetNews.Startup.<>c.<<Configure>b__5_0>d.MoveNext() in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNews\NetNews\Startup.cs:line 76
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-10-17 07:22:48.8545||DEBUG|NetNews.Program|init main function 
+2020-10-17 07:22:49.9936||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-17 07:39:13.2957||DEBUG|NetNews.Program|init main function 
+2020-10-17 07:39:14.6971||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-17 07:43:44.8526||DEBUG|NetNews.Program|init main function 
+2020-10-17 07:43:46.0795||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-17 07:44:24.9465||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-10-17 07:44:24.9465||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-10-17 07:44:24.9465||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 16, TotalPages: 2, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-10-17 07:44:24.9465||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 16, TotalPages: 2, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-10-17 07:45:02.8911||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-10-17 07:45:02.8911||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 2, PageSize: 10, TotalRecords: 16, TotalPages: 2, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-10-17 07:45:12.1507||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-10-17 07:45:12.1507||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 16, TotalPages: 2, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-10-17 07:45:12.2088||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-10-17 07:45:12.2106||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 16, TotalPages: 2, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-10-17 07:45:12.6336||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-10-17 07:45:12.6336||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 16, TotalPages: 2, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-10-17 07:45:22.9865||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-10-17 07:45:22.9865||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 25, TotalRecords: 16, TotalPages: 1, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-10-17 07:45:32.4980||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-10-17 07:45:32.4980||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 50, TotalRecords: 16, TotalPages: 1, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-10-17 07:49:54.7545||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-10-17 07:49:54.7545||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 50, TotalRecords: 16, TotalPages: 1, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-10-17 07:50:19.1525||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-10-17 07:50:19.1525||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 1, TotalPages: 1, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-10-17 08:15:01.4525||DEBUG|NetNews.Program|init main function 
+2020-10-17 08:15:02.3659||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-17 08:17:52.1748||DEBUG|NetNews.Program|init main function 
+2020-10-17 08:17:52.6746||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-17 08:22:10.8495||DEBUG|NetNews.Program|init main function 
+2020-10-17 08:22:11.2608||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-17 08:25:15.3709||DEBUG|NetNews.Program|init main function 
+2020-10-17 08:25:16.1828||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-17 08:26:37.9665||DEBUG|NetNews.Program|init main function 
+2020-10-17 08:26:38.6112||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-17 08:28:35.6673||DEBUG|NetNews.Program|init main function 
+2020-10-17 08:28:36.3369||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-17 08:30:36.9397||DEBUG|NetNews.Program|init main function 
+2020-10-17 08:30:37.7216||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-17 08:31:39.3006||DEBUG|NetNews.Program|init main function 
+2020-10-17 08:31:39.8883||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-17 08:33:23.3928||DEBUG|NetNews.Program|init main function 
+2020-10-17 08:33:24.3516||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-17 08:33:47.2709||DEBUG|NetNews.Program|init main function 
+2020-10-17 08:33:47.6534||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-17 08:34:37.1289||DEBUG|NetNews.Program|init main function 
+2020-10-17 08:34:38.1025||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-17 08:35:28.4475||DEBUG|NetNews.Program|init main function 
+2020-10-17 08:35:29.5959||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-17 08:36:24.3466||DEBUG|NetNews.Program|init main function 
+2020-10-17 08:36:24.8559||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-17 08:37:12.5051||DEBUG|NetNews.Program|init main function 
+2020-10-17 08:37:13.1055||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-17 08:38:16.7541||DEBUG|NetNews.Program|init main function 
+2020-10-17 08:38:17.8337||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-17 08:40:49.1890||DEBUG|NetNews.Program|init main function 
+2020-10-17 08:40:49.8324||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-17 08:41:23.2194||DEBUG|NetNews.Program|init main function 
+2020-10-17 08:41:23.8199||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-17 08:42:23.4254||DEBUG|NetNews.Program|init main function 
+2020-10-17 08:42:24.0436||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-17 08:43:10.9840||DEBUG|NetNews.Program|init main function 
+2020-10-17 08:43:11.5434||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-17 08:45:27.9712||DEBUG|NetNews.Program|init main function 
+2020-10-17 08:45:28.5914||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-17 08:49:11.4081||DEBUG|NetNews.Program|init main function 
+2020-10-17 08:49:12.1155||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-17 08:52:14.4806||DEBUG|NetNews.Program|init main function 
+2020-10-17 08:52:15.0602||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-17 08:52:59.3210||DEBUG|NetNews.Program|init main function 
+2020-10-17 08:52:59.8332||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-17 08:53:49.1644||DEBUG|NetNews.Program|init main function 
+2020-10-17 08:53:49.8923||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-17 08:54:23.3604||DEBUG|NetNews.Program|init main function 
+2020-10-17 08:54:24.4596||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-17 08:55:54.3220||DEBUG|NetNews.Program|init main function 
+2020-10-17 08:55:54.8110||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-17 08:57:23.1032||DEBUG|NetNews.Program|init main function 
+2020-10-17 08:57:23.6061||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-17 08:58:15.0495||DEBUG|NetNews.Program|init main function 
+2020-10-17 08:58:16.0080||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-17 08:59:01.8289||DEBUG|NetNews.Program|init main function 
+2020-10-17 08:59:02.7802||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-17 09:01:43.9121||DEBUG|NetNews.Program|init main function 
+2020-10-17 09:01:44.7231||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-17 10:28:42.1971||DEBUG|NetNews.Program|init main function 
+2020-10-17 10:28:46.0344||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-17 10:38:05.6760|20102|ERROR|Microsoft.EntityFrameworkCore.Database.Command|Failed executing DbCommand (2ms) [Parameters=[@__SubscriberEmail_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [s].[ID], [s].[CategoryID], [s].[DateSubscribed], [s].[FullName], [s].[SubscriberEmail], [s].[SubscriberID]
+FROM [Subscribers] AS [s]
+WHERE [s].[SubscriberEmail] = @__SubscriberEmail_0 
+2020-10-17 10:38:05.6924|10100|ERROR|Microsoft.EntityFrameworkCore.Query|An exception occurred while iterating over the results of a query for context type 'NetNews.Models.DBConnection'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'CategoryID'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.InitializeReader(DbContext _, Boolean result)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+ClientConnectionId:6f981047-912a-4116-b32a-5bd2d935cc69
+Error Number:207,State:1,Class:16 Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'CategoryID'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.InitializeReader(DbContext _, Boolean result)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+ClientConnectionId:6f981047-912a-4116-b32a-5bd2d935cc69
+Error Number:207,State:1,Class:16
+2020-10-17 10:38:36.7621||INFO|NetNews.Controllers.HomeController|Subscription Error: Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'CategoryID'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.InitializeReader(DbContext _, Boolean result)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.SingleOrDefault[TSource](IEnumerable`1 source)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source)
+   at NetNews.Controllers.HomeController.SubscribeUser() in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNews\NetNews\Controllers\HomeController.cs:line 74
+ClientConnectionId:6f981047-912a-4116-b32a-5bd2d935cc69
+Error Number:207,State:1,Class:16 
+2020-10-17 10:41:03.4373||DEBUG|NetNews.Program|init main function 
+2020-10-17 10:48:24.7790||DEBUG|NetNews.Program|init main function 
+2020-10-17 10:48:26.7268||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-17 11:06:38.2579||DEBUG|NetNews.Program|init main function 
+2020-10-17 11:06:39.4072||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-17 11:27:01.0821||DEBUG|NetNews.Program|init main function 
+2020-10-17 11:27:02.3840||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-17 11:30:39.0985||DEBUG|NetNews.Program|init main function 
+2020-10-17 11:30:40.2036||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-17 11:42:30.7179||DEBUG|NetNews.Program|init main function 
+2020-10-17 11:42:31.8116||INFO|Detection.Startup|Starting Detection version 3.0.0.0 

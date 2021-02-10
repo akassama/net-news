@@ -1,0 +1,56 @@
+﻿@using AppHelpers.App_Code
+@using Microsoft.AspNetCore.Http
+@inject IHttpContextAccessor HttpContextAccessor
+
+@{
+    var sLogoPath = ModelHelper.GetSiteLookupData("SiteLogoPath");
+    string LogoPath = (!string.IsNullOrEmpty(sLogoPath)) ? sLogoPath : "https://placehold.it/240x120?text=Net-News";
+
+    var sHeight = ModelHelper.GetSiteLookupData("SiteLogoHeight");
+    string LogoHeight = (!string.IsNullOrEmpty(sHeight)) ? sHeight + "px" : "75px";
+
+    var sWidth = ModelHelper.GetSiteLookupData("SiteLogoWidth");
+    string LogoWidth = (!string.IsNullOrEmpty(sHeight)) ? sWidth + "px" : "125px";
+
+    string Dimension = $@"width='{LogoWidth}' height='{LogoHeight}'";
+    string AccountID = HttpContextAccessor.HttpContext.Session.GetString("_AccountId");
+}
+
+<nav class="navbar navbar-toggleable-md navbar-light ">
+    <button class="navbar-toggler navbar-toggler-right mt-3" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+        <span class="fa fa-bars"></span>
+    </button>
+    <a class="navbar-brand" asp-action="Index" asp-controller="Home">
+        <img src="@LogoPath" style="height:@LogoHeight; width:@LogoWidth" alt="img" class="mobile_logo_width" />
+    </a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item @ViewBag.ActiveHome">
+                <a class="nav-link" asp-action="Index" asp-controller="Home">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown @ViewBag.ActiveAllNews">
+                <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuButton2" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">All News <span class="sr-only">(current)</span></a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink_1">
+                    @LayoutHelper24News.GetNavCategoryDropdown(6)
+                    <a class="dropdown-item" asp-action="Index" asp-controller="AllCategories">More <i class="fas fa-angle-double-right"></i></a>
+                </div>
+            </li>
+            @LayoutHelper24News.GetNavCategoryList(3)
+            <li class="nav-item dropdown @ViewBag.ActiveEntertainment">
+                <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuButton3" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">Entertainment<span class="sr-only">(current)</span></a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink_1">
+                    <a class="dropdown-item" asp-action="Index" asp-controller="Celebrities">Celebrities</a>
+                    <a class="dropdown-item" asp-action="Index" asp-controller="Music">Music</a>
+                    <a class="dropdown-item" asp-action="Index" asp-controller="Videos">Videos</a>
+                </div>
+            </li>
+            <li class="nav-item @ViewBag.ActiveContact">
+                <a class="nav-link" asp-action="Index" asp-controller="Contact">Contact <span class="sr-only">(current)</span></a>
+            </li>
+        </ul>
+    </div>
+</nav>

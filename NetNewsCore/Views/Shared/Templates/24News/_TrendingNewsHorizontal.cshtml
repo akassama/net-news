@@ -1,0 +1,13 @@
+﻿@using AppHelpers.App_Code
+
+@if (LayoutHelper24News.HasAnyTrendingNews())
+{
+    <div class="container animate-box">
+        <div>
+            <div class="fh5co_heading fh5co_heading_border_bottom py-2 mb-4">Trending</div>
+        </div>
+        <div class="owl-carousel owl-theme" id="slider2">
+            @LayoutHelper24News.GetTrendingNews(8)
+        </div>
+    </div>
+}

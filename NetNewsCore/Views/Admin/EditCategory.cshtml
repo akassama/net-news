@@ -1,0 +1,197 @@
+﻿@model NetNews.Models.PostsDataModel.CategoriesModel
+
+@using Microsoft.AspNetCore.Http
+@using AppHelpers.App_Code
+@inject IHttpContextAccessor HttpContextAccessor
+@{
+    var Url = "https://" + Context.Request.Host + Context.Request.Path; //get current url path
+
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <!-- ADMIN Head -->
+    <partial name="~/Views/Shared/AccountLayout/_Head.cshtml" />
+</head>
+
+<body class="sb-nav-fixed">
+    <!-- ADMIN Navigation -->
+    <partial name="~/Views/Shared/AccountLayout/_Navigation.cshtml" />
+    <div id="layoutSidenav">
+        <!-- ADMIN Sidebar -->
+        <partial name="~/Views/Shared/AccountLayout/_LeftSideBar.cshtml" />
+        <div id="layoutSidenav_content">
+            <main>
+                <div class="container-fluid">
+                    <h1 class="mt-4">Edit Category</h1>
+                    <ol class="breadcrumb mb-4">
+                        <li class="breadcrumb-item"><a asp-controller="Admin" asp-action="Index">Dashboard</a></li>
+                        <li class="breadcrumb-item"><a asp-controller="Admin" asp-action="ManageCategories">Manage Categories</a></li>
+                        <li class="breadcrumb-item active">Edit Category</li>
+                    </ol>
+                    <!-- Content -->
+                    <!-- Action messages partial -->
+                    <partial name="~/Views/Shared/_ProcessMessage.cshtml" />
+
+                    <div class="row">
+                        <div class="col-lg-12 stretch-card grid-margin">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-12 main pt-0 mt-3">
+                                            <p class="lead d-sm-block">Edit Category</p>
+
+                                            <div class="row mb-3">
+                                                <form id="NewPostForm" asp-controller="Admin" asp-action="EditCategory" method="post" enctype="multipart/form-data">
+                                                    <div asp-validation-summary="All" class="text-danger"></div>
+                                                    <div class="row">
+                                                        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 mb-3">
+                                                            <label asp-for="CategoryName"></label>
+                                                            <input type="text" class="form-control count-chars" data-chars-max="100" data-msg-color="danger" maxlength="100" asp-for="CategoryName" spellcheck="true" placeholder="Name of the category" required="">
+                                                            <span asp-validation-for="CategoryName" class="text-danger"></span>
+                                                        </div>
+
+                                                        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 mb-3">
+                                                            <label asp-for="CategoryDescription"></label> <small>(Optional)</small>
+                                                            <input type="text" class="form-control count-chars" data-chars-max="250" data-msg-color="danger" maxlength="250" asp-for="CategoryDescription" spellcheck="true" placeholder="Describe the category">
+                                                            <span asp-validation-for="CategoryDescription" class="text-danger"></span>
+                                                        </div>
+
+                                                        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 mb-3">
+                                                            <label asp-for="CategoryParent" data-toggle="tooltip" title="Select the category for the post.">
+                                                            </label>
+                                                            <select asp-for="CategoryParent" class="form-control" asp-items="@( new SelectList(@ViewBag.CategoryList,"CategoryID","CategoryName"))">
+                                                                <option value="" class="text-white bg-dark">
+                                                                    Select category parent (if any)
+                                                                </option>
+                                                            </select>
+                                                            <span asp-validation-for="CategoryParent" class="text-danger"></span>
+                                                        </div>
+
+                                                        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 mb-3">
+                                                            <label asp-for="CategoryOrder" data-toggle="tooltip" title="Select the category for the post.">
+                                                            </label>
+                                                            <select asp-for="CategoryOrder" class="form-control" required>
+                                                                <option value="" class="text-white bg-dark">
+                                                                    Select order
+                                                                </option>
+                                                                @for (int i = 1; i <= 25; i++)
+                                                                {
+                                                                    if (Model.CategoryOrder == i)
+                                                                    {
+                                                                        <option value="@i" selected>
+                                                                            @i
+                                                                        </option>
+                                                                    }
+                                                                    else
+                                                                    {
+                                                                        <option value="@i">
+                                                                            @i
+                                                                        </option>
+                                                                    }
+                                                                }
+                                                            </select>
+                                                            <span asp-validation-for="CategoryOrder" class="text-danger"></span>
+                                                        </div>
+
+                                                        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 mb-3">
+                                                            <label asp-for="CategoryIcon"></label>
+                                                            <input type="text" class="form-control count-chars" data-chars-max="50" data-msg-color="danger" maxlength="50" asp-for="CategoryIcon" spellcheck="true" placeholder="fas fa-icon">
+                                                            <span asp-validation-for="CategoryIcon" class="text-danger"></span>
+                                                        </div>
+
+                                                        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 mb-3">
+                                                            <label asp-for="IsPublished"></label>
+                                                            @{
+                                                                var published_yes = "";
+                                                                var published_no = "checked";
+                                                                if (Model.IsPublished == 1)
+                                                                {
+                                                                    published_yes = "checked";
+                                                                    published_no = "";
+
+                                                                }
+                                                            }
+                                                            <div class="form-check">
+                                                                <label class="form-check-label" for="radio1">
+                                                                    <input type="radio" class="form-check-input" id="IsPublished" name="IsPublished" value="1" @published_yes>Yes
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check">
+                                                                <label class="form-check-label" for="radio2">
+                                                                    <input type="radio" class="form-check-input" id="IsPublished" name="IsPublished" value="0" @published_no>No
+                                                                </label>
+                                                            </div>
+                                                            <span asp-validation-for="IsPublished" class="text-danger"></span>
+                                                        </div>
+
+                                                        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 mb-3">
+                                                            <label asp-for="IsHeader"></label>
+                                                            @{
+                                                                var header_yes = "";
+                                                                var header_no = "checked";
+                                                                if (Model.IsHeader == 1)
+                                                                {
+                                                                    header_yes = "checked";
+                                                                    header_no = "";
+
+                                                                }
+                                                            }
+                                                            <div class="form-check">
+                                                                <label class="form-check-label" for="radio1">
+                                                                    <input type="radio" class="form-check-input" id="IsHeader" name="IsHeader" value="1" @header_yes>Yes
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check">
+                                                                <label class="form-check-label" for="radio2">
+                                                                    <input type="radio" class="form-check-input" id="IsHeader" name="IsHeader" value="0" @header_no>No
+                                                                </label>
+                                                            </div>
+                                                            <span asp-validation-for="IsHeader" class="text-danger"></span>
+                                                        </div>
+
+
+                                                        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 mb-3 d-none">
+                                                            <input type="hidden" class="form-control" asp-for="ID" value="0">
+                                                            <input type="hidden" class="form-control" asp-for="CategoryID">
+                                                        </div>
+
+                                                        <div class="col-lg-4 offset-lg-8 col-xl-4 offset-xl-8 mb-3">
+                                                            <a class="btn btn-danger mr-2" href="#" data-toggle="modal" data-target="#confirmCancelCreateCategoryModal" role="button">
+                                                                <i class="fas fa-times mr-1"></i> Cancel
+                                                            </a>
+                                                            <button id="EditCategoryButton" class="btn btn-success disable-on-click" type="submit">
+                                                                <i class="fas fa-pencil-alt mr-1"></i> Update
+                                                            </button>
+                                                        </div>
+
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <!--/row-->
+                                        </div>
+
+                                        <!--/main col-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </main>
+            <!-- ADMIN Footer -->
+            <partial name="~/Views/Shared/AccountLayout/_AdminFooter.cshtml" />
+        </div>
+    </div>
+
+    <!-- Modals data -->
+    <partial name="~/Views/Shared/Modals/_ActionModals.cshtml" view-data="ViewData" />
+
+    <!-- ADMIN RESOURCES -->
+    <partial name="~/Views/Shared/AccountLayout/_AdminFooterScripts.cshtml" />
+</body>
+</html>

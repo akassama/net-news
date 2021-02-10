@@ -1,0 +1,9 @@
+﻿@using AppHelpers.App_Code
+
+<div>
+    <div class="fh5co_heading fh5co_heading_border_bottom py-2 mb-4">Popular Tags</div>
+</div>
+<div class="clearfix"></div>
+<div class="fh5co_tags_all">
+    @LayoutHelper24News.FormatPostTags(LayoutHelper24News.GetPopularTags(), 10)
+</div>

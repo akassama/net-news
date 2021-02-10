@@ -1,0 +1,436 @@
+2020-09-16 00:28:41.6788||DEBUG|NetNews.Program|init main function 
+2020-09-16 00:28:45.9076||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-16 00:35:27.2521||DEBUG|NetNews.Program|init main function 
+2020-09-16 00:35:29.1216||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-16 00:51:03.5501||DEBUG|NetNews.Program|init main function 
+2020-09-16 00:51:04.0667||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-16 00:56:19.0071||DEBUG|NetNews.Program|init main function 
+2020-09-16 00:56:20.3193||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-16 00:59:16.9499||DEBUG|NetNews.Program|init main function 
+2020-09-16 00:59:18.2806||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-16 01:03:02.6506||DEBUG|NetNews.Program|init main function 
+2020-09-16 01:03:03.1583||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-16 01:09:04.7360||DEBUG|NetNews.Program|init main function 
+2020-09-16 01:09:05.3566||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-16 01:09:44.4614||DEBUG|NetNews.Program|init main function 
+2020-09-16 01:09:45.2442||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-16 01:10:25.4693||DEBUG|NetNews.Program|init main function 
+2020-09-16 01:10:25.8491||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-16 01:12:15.3161||DEBUG|NetNews.Program|init main function 
+2020-09-16 01:12:16.3279||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-16 01:12:53.2377||DEBUG|NetNews.Program|init main function 
+2020-09-16 01:12:54.1774||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-16 01:26:49.7634||DEBUG|NetNews.Program|init main function 
+2020-09-16 01:26:50.2518||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-16 01:27:01.6112||DEBUG|NetNews.Program|init main function 
+2020-09-16 01:27:01.9388||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-16 01:27:39.2124||DEBUG|NetNews.Program|init main function 
+2020-09-16 01:27:39.5816||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-16 01:42:40.7577||DEBUG|NetNews.Program|init main function 
+2020-09-16 01:42:41.2420||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-16 01:44:02.6828||DEBUG|NetNews.Program|init main function 
+2020-09-16 01:44:03.1411||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-16 01:44:30.4006||DEBUG|NetNews.Program|init main function 
+2020-09-16 01:44:30.8436||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-16 01:44:54.7760||DEBUG|NetNews.Program|init main function 
+2020-09-16 01:44:55.1794||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-16 02:13:34.2842||DEBUG|NetNews.Program|init main function 
+2020-09-16 02:13:34.9764||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-16 02:15:02.1058||DEBUG|NetNews.Program|init main function 
+2020-09-16 02:15:02.4984||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-16 02:15:58.9148||DEBUG|NetNews.Program|init main function 
+2020-09-16 02:15:59.2684||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-16 02:16:35.7447||DEBUG|NetNews.Program|init main function 
+2020-09-16 02:16:36.1570||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-16 02:17:20.1480||DEBUG|NetNews.Program|init main function 
+2020-09-16 02:17:20.5752||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-16 02:29:48.9785||DEBUG|NetNews.Program|init main function 
+2020-09-16 02:29:49.4592||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-16 02:31:48.3184||DEBUG|NetNews.Program|init main function 
+2020-09-16 02:31:48.6613||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-16 02:32:10.1245||DEBUG|NetNews.Program|init main function 
+2020-09-16 02:32:10.7226||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-16 02:32:21.2638||DEBUG|NetNews.Program|init main function 
+2020-09-16 02:32:21.7580||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-16 02:32:52.4224||DEBUG|NetNews.Program|init main function 
+2020-09-16 02:32:52.7936||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-16 03:22:59.9702||DEBUG|NetNews.Program|init main function 
+2020-09-16 03:23:00.5249||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-16 03:25:50.6813||DEBUG|NetNews.Program|init main function 
+2020-09-16 03:25:51.1181||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-16 03:32:24.1439||DEBUG|NetNews.Program|init main function 
+2020-09-16 03:32:24.6018||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-16 03:37:07.9882||DEBUG|NetNews.Program|init main function 
+2020-09-16 03:37:08.8093||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-16 03:43:33.8506||DEBUG|NetNews.Program|init main function 
+2020-09-16 03:43:34.7875||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-16 04:03:55.7009||DEBUG|NetNews.Program|init main function 
+2020-09-16 04:03:56.4245||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-16 04:11:52.1474||DEBUG|NetNews.Program|init main function 
+2020-09-16 04:11:52.5752||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-16 04:13:21.7666||DEBUG|NetNews.Program|init main function 
+2020-09-16 04:13:22.4179||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-16 04:36:01.2247||DEBUG|NetNews.Program|init main function 
+2020-09-16 04:36:02.0618||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-16 04:38:12.8986||DEBUG|NetNews.Program|init main function 
+2020-09-16 04:38:13.3643||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-16 04:42:36.0902||DEBUG|NetNews.Program|init main function 
+2020-09-16 04:42:36.5330||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-16 04:44:01.0466||DEBUG|NetNews.Program|init main function 
+2020-09-16 04:44:01.5900||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-16 04:44:28.8209||DEBUG|NetNews.Program|init main function 
+2020-09-16 04:44:29.1793||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-16 04:45:16.7572||DEBUG|NetNews.Program|init main function 
+2020-09-16 04:45:17.2424||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-16 04:56:14.9531||DEBUG|NetNews.Program|init main function 
+2020-09-16 04:56:15.7646||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-16 04:57:02.4688||DEBUG|NetNews.Program|init main function 
+2020-09-16 04:57:03.0157||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-16 05:14:41.5659||DEBUG|NetNews.Program|init main function 
+2020-09-16 05:14:42.0865||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-16 05:41:54.7963||DEBUG|NetNews.Program|init main function 
+2020-09-16 05:41:55.4207||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-16 05:53:18.6520||DEBUG|NetNews.Program|init main function 
+2020-09-16 05:53:19.1594||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-16 06:00:24.3856||DEBUG|NetNews.Program|init main function 
+2020-09-16 06:00:25.0430||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-16 06:01:23.2963||DEBUG|NetNews.Program|init main function 
+2020-09-16 06:01:24.2684||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-16 06:02:06.7379||DEBUG|NetNews.Program|init main function 
+2020-09-16 06:02:07.5308||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-16 06:45:16.3223||DEBUG|NetNews.Program|init main function 
+2020-09-16 06:45:19.9234||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-16 06:48:12.5008||DEBUG|NetNews.Program|init main function 
+2020-09-16 06:48:13.7435||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-16 06:50:43.0129||DEBUG|NetNews.Program|init main function 
+2020-09-16 06:50:44.4882||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-16 07:04:17.2934||DEBUG|NetNews.Program|init main function 
+2020-09-16 07:04:18.0934||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-16 07:04:19.8935|10100|ERROR|Microsoft.EntityFrameworkCore.Query|An exception occurred while iterating over the results of a query for context type 'NetNews.Models.DBConnection'.
+System.InvalidOperationException: A second operation started on this context before a previous operation completed. This is usually caused by different threads using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync() System.InvalidOperationException: A second operation started on this context before a previous operation completed. This is usually caused by different threads using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2020-09-16 07:04:20.0030|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.InvalidOperationException: A second operation started on this context before a previous operation completed. This is usually caused by different threads using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at NetNews.Controllers.CategoryController.Index(String id) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNews\NetNews\Controllers\CategoryController.cs:line 42
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Wangkanai.Detection.Hosting.ResponsiveMiddleware.InvokeAsync(HttpContext context, IResponsiveService responsive)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-09-16 07:07:26.7371||DEBUG|NetNews.Program|init main function 
+2020-09-16 07:07:27.8713||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-16 07:09:50.3050||DEBUG|NetNews.Program|init main function 
+2020-09-16 07:09:51.4462||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-16 07:11:25.9161||DEBUG|NetNews.Program|init main function 
+2020-09-16 07:11:26.4963||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-16 07:14:13.3502||DEBUG|NetNews.Program|init main function 
+2020-09-16 07:14:13.8169||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-16 07:15:12.4820||DEBUG|NetNews.Program|init main function 
+2020-09-16 07:15:13.0248||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-16 07:15:37.3557||DEBUG|NetNews.Program|init main function 
+2020-09-16 07:15:38.0496||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-16 07:19:01.0758||DEBUG|NetNews.Program|init main function 
+2020-09-16 07:19:01.5798||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-16 07:24:32.4813||DEBUG|NetNews.Program|init main function 
+2020-09-16 07:24:32.8572||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-16 07:25:50.7251||DEBUG|NetNews.Program|init main function 
+2020-09-16 07:25:51.4811||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-16 19:06:21.4718||DEBUG|NetNews.Program|init main function 
+2020-09-16 19:06:22.4937||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-16 19:11:49.9223||DEBUG|NetNews.Program|init main function 
+2020-09-16 19:11:50.5977||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-16 19:15:27.6916||DEBUG|NetNews.Program|init main function 
+2020-09-16 19:15:28.5591||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-16 19:16:31.6279||DEBUG|NetNews.Program|init main function 
+2020-09-16 19:16:32.1999||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-16 19:17:07.9169||DEBUG|NetNews.Program|init main function 
+2020-09-16 19:17:08.3929||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-16 19:18:08.8063||DEBUG|NetNews.Program|init main function 
+2020-09-16 19:18:09.7707||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-16 19:19:19.9319||DEBUG|NetNews.Program|init main function 
+2020-09-16 19:19:20.4608||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-16 19:19:50.6560||DEBUG|NetNews.Program|init main function 
+2020-09-16 19:19:51.3736||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-16 19:20:35.7995||DEBUG|NetNews.Program|init main function 
+2020-09-16 19:20:36.4433||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-16 19:21:04.5368||DEBUG|NetNews.Program|init main function 
+2020-09-16 19:21:04.9973||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-16 19:23:08.8007||DEBUG|NetNews.Program|init main function 
+2020-09-16 19:23:09.2459||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-16 19:27:20.8179||DEBUG|NetNews.Program|init main function 
+2020-09-16 19:27:21.6631||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-16 19:28:39.2057||DEBUG|NetNews.Program|init main function 
+2020-09-16 19:28:39.9287||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-16 21:55:15.8648||DEBUG|NetNews.Program|init main function 
+2020-09-16 21:55:16.5813||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-16 22:32:47.8257||DEBUG|NetNews.Program|init main function 
+2020-09-16 22:32:48.9711||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-16 22:34:15.4778||DEBUG|NetNews.Program|init main function 
+2020-09-16 22:34:16.3259||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-16 22:34:18.5778||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-09-16 22:34:18.5831||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 253, TotalPages: 26, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-09-16 22:35:10.4654||DEBUG|NetNews.Program|init main function 
+2020-09-16 22:35:10.9245||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-16 22:35:13.1131||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-09-16 22:35:13.1183||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 2, TotalPages: 1, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-09-16 22:36:00.9407||DEBUG|NetNews.Program|init main function 
+2020-09-16 22:36:01.3628||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-16 22:36:03.9233||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-09-16 22:36:03.9287||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 2, TotalPages: 1, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-09-16 22:36:55.9404||DEBUG|NetNews.Program|init main function 
+2020-09-16 22:36:56.3885||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-16 22:36:59.2540||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-09-16 22:36:59.2748||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 2, TotalPages: 1, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-09-16 22:37:13.2989||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-09-16 22:37:13.2989||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 25, TotalRecords: 2, TotalPages: 1, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-09-16 22:37:21.4296||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-09-16 22:37:21.4296||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 50, TotalRecords: 2, TotalPages: 1, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-09-16 22:37:27.0793||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-09-16 22:37:27.0793||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 2, TotalPages: 1, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-09-16 22:40:30.0754||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-09-16 22:40:30.0754||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 2, TotalPages: 1, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-09-16 22:40:35.8874||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-09-16 22:40:35.8874||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 1, TotalPages: 1, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-09-16 22:41:19.1789||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-09-16 22:41:19.1789||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 2, TotalPages: 1, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-09-16 22:45:38.2431||DEBUG|NetNews.Program|init main function 
+2020-09-16 22:45:38.7904||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-16 22:45:41.4817||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-09-16 22:45:41.4817||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 2, TotalPages: 1, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-09-16 22:46:41.9032||DEBUG|NetNews.Program|init main function 
+2020-09-16 22:46:42.4649||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-16 22:46:45.0300||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-09-16 22:46:45.0300||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 2, TotalPages: 1, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-09-16 23:00:29.5890||DEBUG|NetNews.Program|init main function 
+2020-09-16 23:00:30.1968||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-16 23:01:14.3078|3|ERROR|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|The view 'Index' was not found. Searched locations: /Views/Search/Index.desktop.cshtml, /Views/Search/Index.cshtml, /Views/Shared/Index.desktop.cshtml, /Views/Shared/Index.cshtml, /Pages/Shared/Index.desktop.cshtml, /Pages/Shared/Index.cshtml 
+2020-09-16 23:01:14.3526|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.InvalidOperationException: The view 'Index' was not found. The following locations were searched:
+/Views/Search/Index.desktop.cshtml
+/Views/Search/Index.cshtml
+/Views/Shared/Index.desktop.cshtml
+/Views/Shared/Index.cshtml
+/Pages/Shared/Index.desktop.cshtml
+/Pages/Shared/Index.cshtml
+   at Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult.EnsureSuccessful(IEnumerable`1 originalLocations)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Wangkanai.Detection.Hosting.ResponsiveMiddleware.InvokeAsync(HttpContext context, IResponsiveService responsive)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-09-16 23:04:31.1501||DEBUG|NetNews.Program|init main function 
+2020-09-16 23:04:31.5999||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-16 23:04:37.8785||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-09-16 23:04:37.8842||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 1, TotalPages: 1, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-09-16 23:04:56.2082||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-09-16 23:04:56.2082||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 13, TotalPages: 2, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-09-16 23:05:39.6169||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-09-16 23:05:39.6169||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 2, PageSize: 10, TotalRecords: 13, TotalPages: 2, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-09-16 23:05:57.5228||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-09-16 23:05:57.5228||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 13, TotalPages: 2, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-09-16 23:06:09.9940||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-09-16 23:06:09.9940||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 1, TotalPages: 1, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-09-16 23:06:25.9687|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.ArgumentNullException: Value cannot be null. (Parameter 'input')
+   at System.Text.RegularExpressions.Regex.Replace(String input, String replacement)
+   at System.Text.RegularExpressions.Regex.Replace(String input, String pattern, String replacement)
+   at AppHelpers.App_Code.TextHelper.ConvertCase(String text, String convert_to) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNews\NetNews\App_Code\AppHelpers.cs:line 79
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute3[T0,T1,T2,TRet](CallSite site, T0 arg0, T1 arg1, T2 arg2)
+   at AspNetCore.Views_Search_Index.ExecuteAsync() in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNews\NetNews\Views\Search\Index.cshtml:line 56
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Wangkanai.Detection.Hosting.ResponsiveMiddleware.InvokeAsync(HttpContext context, IResponsiveService responsive)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-09-16 23:08:40.0317||DEBUG|NetNews.Program|init main function 
+2020-09-16 23:08:41.0799||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-16 23:10:28.0252||DEBUG|NetNews.Program|init main function 
+2020-09-16 23:10:28.4675||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-16 23:10:39.7031||DEBUG|NetNews.Program|init main function 
+2020-09-16 23:10:40.1600||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-16 23:12:22.0856||DEBUG|NetNews.Program|init main function 
+2020-09-16 23:12:22.5816||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-16 23:13:27.2421||DEBUG|NetNews.Program|init main function 
+2020-09-16 23:13:27.7326||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-16 23:13:52.4976||DEBUG|NetNews.Program|init main function 
+2020-09-16 23:13:52.9660||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-16 23:14:32.5286||DEBUG|NetNews.Program|init main function 
+2020-09-16 23:14:33.1476||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-16 23:15:04.4186||DEBUG|NetNews.Program|init main function 
+2020-09-16 23:15:04.8800||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-16 23:16:45.6634||DEBUG|NetNews.Program|init main function 
+2020-09-16 23:16:46.2294||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-16 23:16:48.9819||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-09-16 23:16:48.9819||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 2, TotalPages: 1, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-09-16 23:17:06.9095||DEBUG|NetNews.Program|init main function 
+2020-09-16 23:17:07.4959||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-16 23:18:20.1938||DEBUG|NetNews.Program|init main function 
+2020-09-16 23:18:20.7036||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-16 23:18:32.4647||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-09-16 23:18:32.4647||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 2, TotalPages: 1, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-09-16 23:19:11.3763||DEBUG|NetNews.Program|init main function 
+2020-09-16 23:19:11.7710||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-16 23:19:55.9574||DEBUG|NetNews.Program|init main function 
+2020-09-16 23:19:56.6782||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-16 23:20:40.1606||DEBUG|NetNews.Program|init main function 
+2020-09-16 23:20:40.5698||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-16 23:21:36.3845||DEBUG|NetNews.Program|init main function 
+2020-09-16 23:21:37.1967||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-16 23:21:44.1088||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-09-16 23:21:44.1088||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 2, TotalPages: 1, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-09-16 23:22:15.4654||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-09-16 23:22:15.4654||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 2, TotalPages: 1, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-09-16 23:22:18.7924||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-09-16 23:22:18.7924||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 1, TotalPages: 1, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-09-16 23:22:23.6146||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-09-16 23:22:23.6146||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 2, TotalPages: 1, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-09-16 23:28:53.8369||DEBUG|NetNews.Program|init main function 
+2020-09-16 23:28:54.3457||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-16 23:39:01.8840||DEBUG|NetNews.Program|init main function 
+2020-09-16 23:39:02.4934||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-16 23:40:32.1833||DEBUG|NetNews.Program|init main function 
+2020-09-16 23:40:32.5866||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-16 23:40:34.8869||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-09-16 23:40:34.8869||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 11, TotalPages: 2, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-09-16 23:41:12.8074||DEBUG|NetNews.Program|init main function 
+2020-09-16 23:41:13.5461||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-16 23:41:19.2383||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-09-16 23:41:19.2463||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 11, TotalPages: 2, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-09-16 23:41:40.7846||DEBUG|NetNews.Program|init main function 
+2020-09-16 23:41:41.3812||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-16 23:41:43.7400||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-09-16 23:41:43.7400||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 11, TotalPages: 2, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-09-16 23:41:59.9697|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.InvalidOperationException: The model item passed into the ViewDataDictionary is of type 'System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[NetNews.Models.PostsDataModel.vwPostsApprovedModel],Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions+<ToListAsync>d__64`1[NetNews.Models.PostsDataModel.vwPostsApprovedModel]]', but this ViewDataDictionary instance requires a model item of type 'System.Collections.Generic.IEnumerable`1[NetNews.Models.PostsDataModel.vwPostsApprovedModel]'.
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary.EnsureCompatible(Object value)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary..ctor(ViewDataDictionary source, Object model, Type declaredModelType)
+   at lambda_method(Closure , ViewDataDictionary )
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPagePropertyActivator.CreateViewDataDictionary(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPagePropertyActivator.Activate(Object page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPageActivator.Activate(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Wangkanai.Detection.Hosting.ResponsiveMiddleware.InvokeAsync(HttpContext context, IResponsiveService responsive)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-09-16 23:42:51.2056||DEBUG|NetNews.Program|init main function 
+2020-09-16 23:42:51.8992||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-16 23:42:54.2378||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-09-16 23:42:54.2426||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 3, TotalPages: 1, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-09-16 23:46:45.5777||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-09-16 23:46:45.5777||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 3, TotalPages: 1, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-09-16 23:50:00.6494||DEBUG|NetNews.Program|init main function 
+2020-09-16 23:50:01.0754||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-16 23:50:24.0938||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-09-16 23:50:24.0990||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 1, TotalPages: 1, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-09-16 23:51:26.4867||DEBUG|NetNews.Program|init main function 
+2020-09-16 23:51:26.9643||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-16 23:51:39.6324||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-09-16 23:51:39.6324||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 1, TotalPages: 1, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-09-16 23:51:59.2499||DEBUG|NetNews.Program|init main function 
+2020-09-16 23:51:59.9516||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-16 23:52:03.1903||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-09-16 23:52:03.1972||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 1, TotalPages: 1, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-09-16 23:52:19.1785||DEBUG|NetNews.Program|init main function 
+2020-09-16 23:52:19.7277||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-16 23:52:22.6116||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-09-16 23:52:22.6165||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 1, TotalPages: 1, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-09-16 23:52:28.9361||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-09-16 23:52:28.9361||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 1, TotalPages: 1, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-09-16 23:52:52.6848||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-09-16 23:52:52.6848||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 1, TotalPages: 1, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-09-16 23:52:57.2573||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-09-16 23:52:57.2573||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 1, TotalPages: 1, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-09-16 23:53:30.7605||DEBUG|NetNews.Program|init main function 
+2020-09-16 23:53:31.3701||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-16 23:53:34.1423||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-09-16 23:53:34.1423||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-09-16 23:53:34.1478||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 1, TotalPages: 1, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-09-16 23:53:34.1478||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 1, TotalPages: 1, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-09-16 23:54:20.9172||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-09-16 23:54:20.9172||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 2, TotalPages: 1, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-09-16 23:54:36.8067||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-09-16 23:54:36.8067||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 2, TotalPages: 1, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-09-16 23:54:45.5304||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-09-16 23:54:45.5304||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 2, TotalPages: 1, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-09-16 23:54:53.4636||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-09-16 23:54:53.4636||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 12, TotalPages: 2, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  

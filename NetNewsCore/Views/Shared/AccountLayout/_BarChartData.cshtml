@@ -1,0 +1,94 @@
+﻿@model IEnumerable<NetNews.Models.PostsDataModel.vwPostsApprovedModel>
+@using AppHelpers.App_Code
+@using Microsoft.AspNetCore.Http
+@inject IHttpContextAccessor HttpContextAccessor
+
+@{
+    string AccountID = HttpContextAccessor.HttpContext.Session.GetString("_AccountId");
+    string ConnectionString = ViewBag.ConnectionString;
+    int Year = DateTime.Now.Year;
+    if (!string.IsNullOrEmpty(ViewBag.Year))
+    {
+        Year = DataHelper.Int32Parse(ViewBag.Year, DateTime.Now.Year);
+    }
+
+    //get max value
+    int[] viewsArray = {    DataHelper.GetTotalViewsPerMonth(AccountID, 01, Year, ConnectionString),
+                            DataHelper.GetTotalViewsPerMonth(AccountID, 02, Year, ConnectionString),
+                            DataHelper.GetTotalViewsPerMonth(AccountID, 03, Year, ConnectionString),
+                            DataHelper.GetTotalViewsPerMonth(AccountID, 04, Year, ConnectionString),
+                            DataHelper.GetTotalViewsPerMonth(AccountID, 05, Year, ConnectionString),
+                            DataHelper.GetTotalViewsPerMonth(AccountID, 06, Year, ConnectionString),
+                            DataHelper.GetTotalViewsPerMonth(AccountID, 07, Year, ConnectionString),
+                            DataHelper.GetTotalViewsPerMonth(AccountID, 08, Year, ConnectionString),
+                            DataHelper.GetTotalViewsPerMonth(AccountID, 09, Year, ConnectionString),
+                            DataHelper.GetTotalViewsPerMonth(AccountID, 10, Year, ConnectionString),
+                            DataHelper.GetTotalViewsPerMonth(AccountID, 11, Year, ConnectionString),
+                            DataHelper.GetTotalViewsPerMonth(AccountID, 12, Year, ConnectionString),
+        };
+    int maxValue = viewsArray.Max();
+    int maxIndex = viewsArray.ToList().IndexOf(maxValue);
+}
+
+<script>
+    // Set new default font family and font color to mimic Bootstrap's default styling
+    Chart.defaults.global.defaultFontFamily = '-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif';
+    Chart.defaults.global.defaultFontColor = '#292b2c';
+
+    // Bar Chart Example
+    var ctx = document.getElementById("myBarChart");
+    var myLineChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
+            datasets: [{
+                label: "Total Views",
+                backgroundColor: "rgba(2,117,216,1)",
+                borderColor: "rgba(2,117,216,1)",
+                data: [
+						@DataHelper.GetTotalViewsPerMonth(AccountID, 01, Year, ConnectionString),
+						@DataHelper.GetTotalViewsPerMonth(AccountID, 02, Year, ConnectionString),
+						@DataHelper.GetTotalViewsPerMonth(AccountID, 03, Year, ConnectionString),
+						@DataHelper.GetTotalViewsPerMonth(AccountID, 04, Year, ConnectionString),
+						@DataHelper.GetTotalViewsPerMonth(AccountID, 05, Year, ConnectionString),
+						@DataHelper.GetTotalViewsPerMonth(AccountID, 06, Year, ConnectionString),
+						@DataHelper.GetTotalViewsPerMonth(AccountID, 07, Year, ConnectionString),
+						@DataHelper.GetTotalViewsPerMonth(AccountID, 08, Year, ConnectionString),
+						@DataHelper.GetTotalViewsPerMonth(AccountID, 09, Year, ConnectionString),
+						@DataHelper.GetTotalViewsPerMonth(AccountID, 10, Year, ConnectionString),
+						@DataHelper.GetTotalViewsPerMonth(AccountID, 11, Year, ConnectionString),
+						@DataHelper.GetTotalViewsPerMonth(AccountID, 12, Year, ConnectionString),
+                    ],
+            }],
+        },
+        options: {
+            scales: {
+                xAxes: [{
+                    time: {
+                        unit: 'month'
+                    },
+                    gridLines: {
+                        display: false
+                    },
+                    ticks: {
+                        maxTicksLimit: 12
+                    }
+                }],
+                yAxes: [{
+                    ticks: {
+                        min: 0,
+                        max: @maxValue,
+                        maxTicksLimit: 6
+                    },
+                    gridLines: {
+                        display: true
+                    }
+                }],
+            },
+            legend: {
+                display: false
+            }
+        }
+    });
+
+</script>

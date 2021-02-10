@@ -1,0 +1,178 @@
+﻿@model NetNews.Models.AppDataModels.LoginViewModel
+
+@using Microsoft.AspNetCore.Http
+@using AppHelpers.App_Code
+@inject IHttpContextAccessor HttpContextAccessor
+@{
+    var Url = "https://" + Context.Request.Host + Context.Request.Path; //get current url path
+
+    Layout = null;
+
+    ViewBag.ActiveSitemap = "active"; //set active nav
+
+    ViewData["Title"] = "Sitemap";
+}
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <!-- 24 NEWS Head -->
+    <partial name="~/Views/Shared/Templates/24News/_Head.cshtml" />
+</head>
+<body>
+    <div class="container-fluid fh5co_header_bg">
+        <!-- Breaking News-->
+        <partial name="~/Views/Shared/Templates/24News/_BreakingNewsTop.cshtml" />
+    </div>
+    <div class="container-fluid">
+        <div class="container">
+            <!-- Logo Navigation -->
+            <partial name="~/Views/Shared/Templates/24News/_LogoNav.cshtml" />
+        </div>
+    </div>
+    <div class="container-fluid bg-faded fh5co_padd_mediya padding_786">
+        <div class="container padding_786">
+            <!-- Navigation -->
+            <partial name="~/Views/Shared/Templates/24News/_Navigation.cshtml" />
+        </div>
+        <!-- Action messages partial -->
+        <partial name="~/Views/Shared/_ProcessMessage.cshtml" />
+    </div>
+
+    <div class="content-wrapper">
+        <!-- Action messages partial -->
+        <partial name="~/Views/Shared/_ProcessMessage.cshtml" />
+        <div class="container">
+            <div class="row mt-2">
+                <div class="col-sm-12 col-md-12">
+                    <h2 class="text-left">ImpactGambia Site Map</h2>
+                    <hr />
+                    <div class="row mt-4 text-left">
+
+                        <div class="col-sm-12 col-md-4 mb-4">
+                            <h3 class="font-weight-bold">About ImpactGambia</h3>
+                            @if (ModelHelper.GetSiteLookupData("ShowAbout") == "true")
+                            {
+                                <h3 class="text-info">
+                                    <a asp-action="Index" asp-controller="About">
+                                        About Us
+                                    </a>
+                                </h3>
+                            }
+                            <h3 class="text-info">
+                                <a asp-action="Index" asp-controller="Contact">
+                                    Contact Us
+                                </a>
+                            </h3>
+                        </div>
+
+                        <div class="col-sm-12 col-md-4 mb-4">
+                            <h3 class="font-weight-bold">ImpactGambia Social Media</h3>
+                            @if (!string.IsNullOrEmpty(ModelHelper.GetSiteLookupData("FacebookLink")))
+                            {
+                                <h3 class="text-info">
+                                    <a href="@ModelHelper.GetSiteLookupData("FacebookLink")" target="_blank">
+                                        Facebook
+                                    </a>
+                                </h3>
+                            }
+                            @if (!string.IsNullOrEmpty(ModelHelper.GetSiteLookupData("TwitterLink")))
+                            {
+                                <h3 class="text-info">
+                                    <a href="@ModelHelper.GetSiteLookupData("TwitterLink")" target="_blank">
+                                        Twitter
+                                    </a>
+                                </h3>
+                            }
+                            @if (!string.IsNullOrEmpty(ModelHelper.GetSiteLookupData("YoutubeLink")))
+                            {
+                                <h3 class="text-info">
+                                    <a href="@ModelHelper.GetSiteLookupData("YoutubeLink")" target="_blank">
+                                        YouTube
+                                    </a>
+                                </h3>
+                            }
+                            @if (!string.IsNullOrEmpty(ModelHelper.GetSiteLookupData("InstagramLink")))
+                            {
+                                <h3 class="text-info">
+                                    <a href="@ModelHelper.GetSiteLookupData("InstagramLink")" target="_blank">
+                                        Instagram
+                                    </a>
+                                </h3>
+                            }
+
+                        </div>
+
+                        <div class="col-sm-12 col-md-4 mb-4">
+                            <h3 class="font-weight-bold">Account</h3>
+                            <h3 class="text-info">
+                                <a asp-action="Index" asp-controller="SignUp">
+                                    Sign Up
+                                </a>
+                            </h3>
+                            <h3 class="text-info">
+                                <a asp-action="Index" asp-controller="SignIn">
+                                    Login
+                                </a>
+                            </h3>
+                        </div>
+
+
+                        <div class="col-sm-12 col-md-4 mb-4">
+                            <h3 class="font-weight-bold">Articles by Category</h3>
+                            @foreach (var category in ViewBag.CategoriesData)
+                            {
+                                <h3 class="text-info">
+                                    <a asp-action="@category.ShortCategoryName" asp-controller="Category">
+                                        @category.CategoryName
+                                    </a>
+                                </h3>
+                            }
+                        </div>
+
+
+                        <div class="col-sm-12 col-md-4 mb-4">
+                            <h3 class="font-weight-bold">Entertainment</h3>
+                            <h3 class="text-info">
+                                <a asp-action="Index" asp-controller="Celebrities">
+                                    Celebrities
+                                </a>
+                            </h3>
+                            <h3 class="text-info">
+                                <a asp-action="Index" asp-controller="Music">
+                                    Music
+                                </a>
+                            </h3>
+                            <h3 class="text-info">
+                                <a asp-action="Index" asp-controller="Videos">
+                                    Videos
+                                </a>
+                            </h3>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid fh5co_footer_bg pb-3">
+        <div class="container animate-box">
+            <!-- Footer Top -->
+            <partial name="~/Views/Shared/Templates/24News/_FooterTop.cshtml" />
+        </div>
+    </div>
+    <div class="container-fluid fh5co_footer_right_reserved">
+        <!-- Footer Bottom -->
+        <partial name="~/Views/Shared/Templates/24News/_FooterBottom.cshtml" />
+    </div>
+
+    <div class="gototop js-top">
+        <a href="#" class="js-gotop"><i class="fa fa-arrow-up"></i></a>
+    </div>
+
+    <!-- 24 NEWS Footer Scripts -->
+    <partial name="~/Views/Shared/Templates/24News/_FooterScripts.cshtml" />
+
+</body>
+</html>

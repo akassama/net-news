@@ -1,0 +1,72 @@
+﻿@using AppHelpers.App_Code
+@using Microsoft.AspNetCore.Http
+@inject IHttpContextAccessor HttpContextAccessor
+
+@{
+    var sLogoPath = ModelHelper.GetSiteLookupData("SiteLogoPath");
+    string LogoPath = (!string.IsNullOrEmpty(sLogoPath)) ? sLogoPath : "https://placehold.it/240x120?text=Net-News";
+
+    var sHeight = ModelHelper.GetSiteLookupData("SiteLogoHeightSmall");
+    string LogoHeight = (!string.IsNullOrEmpty(sHeight)) ? sHeight + "px" : "50px";
+
+    var sWidth = ModelHelper.GetSiteLookupData("SiteLogoWidthSmall");
+    string LogoWidth = (!string.IsNullOrEmpty(sHeight)) ? sWidth + "px" : "100px";
+
+    string Dimension = $@"width='{LogoWidth}' height='{LogoHeight}'";
+    string AccountID = HttpContextAccessor.HttpContext.Session.GetString("_AccountId");
+
+}
+
+    <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+        <a class="navbar-brand" asp-controller="Admin" asp-action="Index">
+            <img src="@LogoPath" style="height:@LogoHeight; width:@LogoWidth" class="footer-logo rounded" alt="site logo" />
+        </a>
+        <button class="btn btn-link btn-sm order-1 order-lg-0" id="sidebarToggle" href="#"><i class="fas fa-bars"></i></button>
+        <!-- Navbar Search-->
+        <form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
+            <div class="input-group">
+                <input class="form-control" type="text" placeholder="Search for..." aria-label="Search" id="auto-input" aria-describedby="basic-addon2" />
+                <div class="input-group-append">
+                    <button class="btn btn-primary" type="button"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+        </form>
+        <ul class="navbar-nav ml-auto ml-md-0 mt-5">
+            <li>
+                <div class="card auto-complete mt-3" id="auto-list">
+
+                </div>
+            </li>
+        </ul>
+
+        <!-- Navbar-->
+        <ul class="navbar-nav ml-auto ml-md-0">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="userDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img src="@AccountHelper.GetAccountProfilePicture(AccountID)" class="rounded-circle mr-1" alt="Profile Picture" width="25" height="25">
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
+                    <a class="dropdown-item" asp-controller="Admin" asp-action="Settings">Settings</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" asp-controller="Home" asp-action="Index" target="_blank">Visit Site</a>
+                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#confirmLogoutModal">Logout</a>
+                </div>
+            </li>
+            @if (AccountHelper.GetAccountTotalNotifications(AccountID) > 0)
+            {
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="userDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="fa-stack fa-1x">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-bell fa-stack-1x text-warning fa-inverse"></i>
+                            <span class="badge badge-pill badge-danger badge-notification">@AccountHelper.GetAccountTotalNotifications(AccountID)</span>
+                        </span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
+                        @AccountHelper.GetNotificationLinks(AccountID)
+                    </div>
+                </li>
+            }
+        </ul>
+    </nav>
+

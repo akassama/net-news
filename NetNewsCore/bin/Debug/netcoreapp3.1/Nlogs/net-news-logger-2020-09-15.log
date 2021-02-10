@@ -1,0 +1,140 @@
+2020-09-15 00:32:41.2133||DEBUG|NetNews.Program|init main function 
+2020-09-15 00:32:42.3695||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-15 00:45:27.3679||DEBUG|NetNews.Program|init main function 
+2020-09-15 00:45:28.8973||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-15 01:28:32.1727||DEBUG|NetNews.Program|init main function 
+2020-09-15 01:28:32.9995||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-15 01:31:00.9073||DEBUG|NetNews.Program|init main function 
+2020-09-15 01:31:01.2971||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-15 02:07:05.7869||DEBUG|NetNews.Program|init main function 
+2020-09-15 02:07:06.5425||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-15 02:11:15.3543||DEBUG|NetNews.Program|init main function 
+2020-09-15 02:11:15.7843||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-15 02:12:46.7111||DEBUG|NetNews.Program|init main function 
+2020-09-15 02:12:47.7117||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-15 02:16:10.5637||DEBUG|NetNews.Program|init main function 
+2020-09-15 02:16:11.0671||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-15 02:17:32.4900||DEBUG|NetNews.Program|init main function 
+2020-09-15 02:17:33.2136||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-15 02:19:35.1246||DEBUG|NetNews.Program|init main function 
+2020-09-15 02:19:35.7036||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-15 02:21:58.4365||DEBUG|NetNews.Program|init main function 
+2020-09-15 02:21:59.0891||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-15 02:22:55.0260||DEBUG|NetNews.Program|init main function 
+2020-09-15 02:22:55.6905||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-15 02:23:49.1138||DEBUG|NetNews.Program|init main function 
+2020-09-15 02:23:49.6376||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-15 02:24:29.5561||DEBUG|NetNews.Program|init main function 
+2020-09-15 02:24:30.2169||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-15 02:24:50.6205||DEBUG|NetNews.Program|init main function 
+2020-09-15 02:24:51.3051||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-15 02:25:29.4645||DEBUG|NetNews.Program|init main function 
+2020-09-15 02:25:30.2138||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-15 02:28:55.9573||DEBUG|NetNews.Program|init main function 
+2020-09-15 02:28:56.4910||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-15 02:43:12.2412||DEBUG|NetNews.Program|init main function 
+2020-09-15 02:43:12.7536||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-15 02:44:13.4070||DEBUG|NetNews.Program|init main function 
+2020-09-15 02:44:13.8235||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-15 02:51:14.5053||DEBUG|NetNews.Program|init main function 
+2020-09-15 02:51:15.3368||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-15 03:13:19.2438||DEBUG|NetNews.Program|init main function 
+2020-09-15 03:13:19.9645||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-15 03:15:12.8692||DEBUG|NetNews.Program|init main function 
+2020-09-15 03:15:13.2511||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-15 03:16:20.1718||DEBUG|NetNews.Program|init main function 
+2020-09-15 03:16:21.7296||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-15 03:18:07.9078||DEBUG|NetNews.Program|init main function 
+2020-09-15 03:18:08.4101||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-15 03:18:39.0430||DEBUG|NetNews.Program|init main function 
+2020-09-15 03:18:40.2278||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-15 03:21:24.8340||DEBUG|NetNews.Program|init main function 
+2020-09-15 03:21:26.1562||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-15 03:23:55.8957||DEBUG|NetNews.Program|init main function 
+2020-09-15 03:23:57.6811||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-15 03:25:01.7048|3|ERROR|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|The view 'Details' was not found. Searched locations: /Views/Posts/Details.desktop.cshtml, /Views/Posts/Details.cshtml, /Views/Shared/Details.desktop.cshtml, /Views/Shared/Details.cshtml, /Pages/Shared/Details.desktop.cshtml, /Pages/Shared/Details.cshtml 
+2020-09-15 03:25:01.9211|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.InvalidOperationException: The view 'Details' was not found. The following locations were searched:
+/Views/Posts/Details.desktop.cshtml
+/Views/Posts/Details.cshtml
+/Views/Shared/Details.desktop.cshtml
+/Views/Shared/Details.cshtml
+/Pages/Shared/Details.desktop.cshtml
+/Pages/Shared/Details.cshtml
+   at Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult.EnsureSuccessful(IEnumerable`1 originalLocations)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Wangkanai.Detection.Hosting.ResponsiveMiddleware.InvokeAsync(HttpContext context, IResponsiveService responsive)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-09-15 03:26:11.0091||DEBUG|NetNews.Program|init main function 
+2020-09-15 03:26:11.5423||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-15 03:26:36.2642|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.InvalidOperationException: The model item passed into the ViewDataDictionary is of type 'System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[NetNews.Models.PostsDataModel.vwPostsApprovedModel,Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor+<SingleOrDefaultAsync>d__22`1[NetNews.Models.PostsDataModel.vwPostsApprovedModel]]', but this ViewDataDictionary instance requires a model item of type 'NetNews.Models.PostsDataModel.vwPostsApprovedModel'.
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary.EnsureCompatible(Object value)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary..ctor(ViewDataDictionary source, Object model, Type declaredModelType)
+   at lambda_method(Closure , ViewDataDictionary )
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPagePropertyActivator.CreateViewDataDictionary(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPagePropertyActivator.Activate(Object page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPageActivator.Activate(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Wangkanai.Detection.Hosting.ResponsiveMiddleware.InvokeAsync(HttpContext context, IResponsiveService responsive)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-09-15 03:30:07.1279||DEBUG|NetNews.Program|init main function 
+2020-09-15 03:30:07.8398||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-15 03:31:27.7743||DEBUG|NetNews.Program|init main function 
+2020-09-15 03:31:28.6740||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-15 03:35:06.7431||DEBUG|NetNews.Program|init main function 
+2020-09-15 03:35:08.5844||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-15 20:04:30.1185||DEBUG|NetNews.Program|init main function 
+2020-09-15 20:04:37.6750||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-15 20:35:23.6847||DEBUG|NetNews.Program|init main function 
+2020-09-15 20:35:24.1964||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-15 20:49:24.3092||DEBUG|NetNews.Program|init main function 
+2020-09-15 20:49:24.7258||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-15 21:12:45.7811||DEBUG|NetNews.Program|init main function 
+2020-09-15 21:12:46.4781||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-15 21:23:38.4925||DEBUG|NetNews.Program|init main function 
+2020-09-15 21:23:38.9928||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-15 21:26:24.0533||DEBUG|NetNews.Program|init main function 
+2020-09-15 21:26:24.6684||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-15 23:15:18.6144||DEBUG|NetNews.Program|init main function 
+2020-09-15 23:15:19.3374||INFO|Detection.Startup|Starting Detection version 3.0.0.0 

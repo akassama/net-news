@@ -1,0 +1,117 @@
+﻿@using AppHelpers.App_Code
+@{
+    var Url = "https://" + Context.Request.Host + Context.Request.Path; //get current url path
+}
+
+<!-- advert script -->
+<script type="text/javascript">
+</script>
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=@ModelHelper.GetSiteLookupData("GoogleAnalyticsID")"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', '@ModelHelper.GetSiteLookupData("GoogleAnalyticsID")');
+</script>
+
+<!-- Google adsense -->
+<script data-ad-client="ca-pub-7959518454033786" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<!-- Required meta tags -->
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+<title>@ViewData["Title"] - Impact Gambia</title>
+<meta name="keywords" content="@ViewData["ContentKeywords"]" />
+<meta name="description" content="@ViewData["ContentDescription"]" />
+<meta name="author" content="@ViewData["PostAuthor"]">
+
+
+<!--properties-->
+<!--Set properties-->
+@{
+    //TODO dynamic logo
+    //var PropertyImage = ModelHelper.GetSiteLookupData("AppDomain") + "/assets/favicons/favicon-96x96.png";
+    var PropertyImage = "";
+    if (!string.IsNullOrEmpty(ViewBag.PostID))
+    {
+        PropertyImage = ModelHelper.GetSiteLookupData("AppDomain") + "/files/" + PostHelper.GetPostImageLink(ViewBag.PostID);
+    }
+    var PropertySiteName = ModelHelper.GetSiteLookupData("SiteName");
+    var PropertyPublisher = ModelHelper.GetSiteLookupData("FacebookLink");
+}
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="@ViewData["Title"]; @PropertySiteName">
+<meta property="og:description" content="@ViewData["PropertyDescription"]">
+<meta property="og:url" content="@Url">
+<meta property="og:site_name" content="@PropertySiteName">
+<meta property="article:publisher" content="@PropertyPublisher">
+<meta property="article:section" content="@ViewData["PropertySection"]">
+<meta property="og:updated_time" content="@ViewData["PropertyUpdatedTime"]">
+
+@if (ViewBag.IsHome != null && ViewBag.IsHome != "True")
+{
+    <!-- og image -->
+    <meta property="og:image" content="@PropertyImage">
+    <meta property="og:image:secure_url" content="@PropertyImage">
+    <meta property="og:image:width" content="900">
+    <meta property="og:image:height" content="640">
+    <meta property="og:image:alt" content="@ViewData["Title"]">
+    <meta property="og:image:type" content="image/jpeg">
+}
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="@ViewData["Title"]; @PropertySiteName">
+<meta name="twitter:description" content="@ViewData["PropertyDescription"]">
+<meta name="twitter:image" content="@PropertyImage">
+
+
+<meta name="url" content="@Url">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- 24 NEWS RESOURCES -->
+<link href="~/assets/24News/css/media_query.css" rel="stylesheet" type="text/css" />
+<link href="~/assets/24News/css/bootstrap.css" rel="stylesheet" type="text/css" />
+
+<!-- font awesome css -->
+<link rel="stylesheet" href="~/assets/admin/fontawesome/css/all.css">
+
+<link href="~/assets/24News/css/animate.css" rel="stylesheet" type="text/css" />
+<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+<link href="~/assets/24News/css/owl.carousel.css" rel="stylesheet" type="text/css" />
+<link href="~/assets/24News/css/owl.theme.default.css" rel="stylesheet" type="text/css" />
+<!-- Bootstrap CSS -->
+<link href="~/assets/24News/css/style_1.css" rel="stylesheet" type="text/css" />
+<link href="~/assets/24News/css/custom.css" rel="stylesheet" type="text/css" />
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Modernizr JS -->
+<script src="~/assets/24News/js/modernizr-3.5.0.min.js"></script>
+
+<!-- share this src -->
+<script type='text/javascript' src='@ViewBag.ShareThisUrl' async='async'></script>
+
+
+<!-- Favicon links -->
+<partial name="~/Views/Shared/SiteLayout/_Favicons.cshtml" />
+
+
+<script>
+    $.getJSON("https://api.ipify.org?format=json", function (data) {
+        //send visit log request
+        var ip_address = data.ip;
+        $.getJSON('/Home/SetSessionIP', { key: ip_address }, function (res) {
+
+        });
+    });
+</script>
+
+<!-- endinject -->

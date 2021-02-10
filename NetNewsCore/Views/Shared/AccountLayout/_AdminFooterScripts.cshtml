@@ -1,0 +1,46 @@
+﻿    <!-- JS Summernote & Validate Settings -->
+<script>
+        //Summernote
+        $('#PostContent, #Biography, .TextEditor').summernote({
+            placeholder: 'Type post content here',
+            tabsize: 2,
+            height: 300,          // set editor height
+            width: "100%",        // set editor height
+            minHeight: null,      // set minimum height of editor
+            maxHeight: null,      // set maximum height of editor
+            dialogsInBody: true
+        });
+
+        //Jquery Validate. Add all form id requiring validation
+        $("#CreateAccountForm, #SignInForm, #NewPostForm, #ApprovePostForm, #CommentPostForm, #EditProfileForm, #UpdatePasswordForm, .RequiredForm").validate({
+            errorClass: 'is-invalid text-danger',
+            successClass: 'is-valid',
+            errorsWrapper: '<span class="form-text text-danger"></span>',
+            errorTemplate: '<span></span>',
+            trigger: 'change'
+        });
+
+        //removing novalidate issue
+        //$("#UpdatePasswordForm, #PasswordResetForm").removeAttr("novalidate");
+
+
+        $(document).ready(function () {
+            //code to enable all tooltips in the document
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+</script>
+
+<!-- Site js -->
+<script src="~/assets/admin/js/site.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+<script src="~/assets/admin/js/scripts.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+<!-- Image Preview -->
+<script src="~/assets/admin/image-preview/script.js"></script>
+<script src="~/assets/admin/gallery-upload-preview/script.js"></script>
+<!-- datatables js -->
+<script src="~/assets/admin/data-tables/jquery.dataTables.min.js"></script>
+<script src="~/assets/admin/data-tables/dataTables.bootstrap4.min.js"></script>
+<script src="~/assets/admin/data-tables/datatables.js"></script>

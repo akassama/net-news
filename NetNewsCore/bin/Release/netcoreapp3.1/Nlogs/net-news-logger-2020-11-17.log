@@ -1,0 +1,133 @@
+2020-11-17 00:02:48.3904||DEBUG|NetNews.Program|init main function 
+2020-11-17 00:02:49.1539||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-17 00:05:57.9452||DEBUG|NetNews.Program|init main function 
+2020-11-17 00:05:58.5471||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-17 00:15:08.1701||DEBUG|NetNews.Program|init main function 
+2020-11-17 00:15:08.5179||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-17 00:20:04.3119||DEBUG|NetNews.Program|init main function 
+2020-11-17 00:20:04.7236||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-17 00:24:42.5094||DEBUG|NetNews.Program|init main function 
+2020-11-17 00:24:42.9753||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-17 02:07:44.8947||DEBUG|NetNews.Program|init main function 
+2020-11-17 02:07:51.4929||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-17 02:16:46.0002||DEBUG|NetNews.Program|init main function 
+2020-11-17 02:16:48.4353||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-17 02:20:56.9442||DEBUG|NetNews.Program|init main function 
+2020-11-17 02:20:57.9029||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-17 02:24:34.6802||DEBUG|NetNews.Program|init main function 
+2020-11-17 02:24:35.3021||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-17 02:26:36.1616||DEBUG|NetNews.Program|init main function 
+2020-11-17 02:26:36.9469||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-17 02:26:54.6019||DEBUG|NetNews.Program|init main function 
+2020-11-17 02:26:55.4071||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-17 02:28:49.5743||DEBUG|NetNews.Program|init main function 
+2020-11-17 02:28:50.2945||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-17 02:31:23.1317||DEBUG|NetNews.Program|init main function 
+2020-11-17 02:31:23.6623||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-17 02:33:41.5270||DEBUG|NetNews.Program|init main function 
+2020-11-17 02:33:43.2973||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-17 02:41:51.5508||DEBUG|NetNews.Program|init main function 
+2020-11-17 02:42:21.2315||DEBUG|NetNews.Program|init main function 
+2020-11-17 02:42:22.6170||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-17 02:47:44.1884||DEBUG|NetNews.Program|init main function 
+2020-11-17 02:47:46.2034||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-17 03:21:34.9322||DEBUG|NetNews.Program|init main function 
+2020-11-17 03:21:35.7622||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-17 03:26:00.5952||DEBUG|NetNews.Program|init main function 
+2020-11-17 03:26:01.3058||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-17 03:48:06.8958||DEBUG|NetNews.Program|init main function 
+2020-11-17 03:48:07.8767||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-17 03:51:44.7163||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-11-17 03:51:44.7341||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 4, TotalPages: 1, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-11-17 03:52:07.5361||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-11-17 03:52:07.5361||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 9, TotalPages: 1, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-11-17 03:54:55.1576||DEBUG|NetNews.Program|init main function 
+2020-11-17 03:54:56.9767||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-17 04:06:42.1986||DEBUG|NetNews.Program|init main function 
+2020-11-17 04:06:42.8656||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-17 07:32:28.3264||DEBUG|NetNews.Program|init main function 
+2020-11-17 07:32:33.9205||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-17 07:45:30.2832||DEBUG|NetNews.Program|init main function 
+2020-11-17 07:45:33.2840||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-17 07:47:06.8617||DEBUG|NetNews.Program|init main function 
+2020-11-17 07:47:08.2165||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-17 08:15:08.3995||DEBUG|NetNews.Program|init main function 
+2020-11-17 08:15:08.9509||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-17 09:49:33.6182||DEBUG|NetNews.Program|init main function 
+2020-11-17 09:49:34.2755||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-17 10:00:55.9539||DEBUG|NetNews.Program|init main function 
+2020-11-17 10:00:56.5854||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-17 10:11:34.0241||DEBUG|NetNews.Program|init main function 
+2020-11-17 10:11:35.6554||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-17 10:36:02.7076||DEBUG|NetNews.Program|init main function 
+2020-11-17 10:36:04.6188||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-17 10:38:24.7489||DEBUG|NetNews.Program|init main function 
+2020-11-17 10:38:26.2093||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-17 10:46:38.6993||DEBUG|NetNews.Program|init main function 
+2020-11-17 10:46:40.4971||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-17 10:50:28.3833||DEBUG|NetNews.Program|init main function 
+2020-11-17 10:50:30.0570||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-17 10:57:42.5313||DEBUG|NetNews.Program|init main function 
+2020-11-17 10:57:44.0112||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-17 11:01:32.6608||DEBUG|NetNews.Program|init main function 
+2020-11-17 11:01:33.8850||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-17 11:05:12.8770|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.InvalidOperationException: The partial view '~/Views/Shared/Templates/24News/PostDetails/AudioPostView.cshtml' was not found. The following locations were searched:
+~/Views/Shared/Templates/24News/PostDetails/AudioPostView.cshtml
+   at Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper.ProcessAsync(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner.<RunAsync>g__Awaited|0_0(Task task, TagHelperExecutionContext executionContext, Int32 i, Int32 count)
+   at AspNetCore.Views_Posts_Index.<ExecuteAsync>b__22_1() in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Views\Posts\Index.cshtml:line 66
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.SetOutputContentAsync()
+   at AspNetCore.Views_Posts_Index.ExecuteAsync() in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Views\Posts\Index.cshtml:line 11
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Wangkanai.Detection.Hosting.ResponsiveMiddleware.InvokeAsync(HttpContext context, IResponsiveService responsive)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at NetNews.Startup.<>c.<<Configure>b__5_0>d.MoveNext() in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Startup.cs:line 92
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-11-17 11:09:34.4027||DEBUG|NetNews.Program|init main function 
+2020-11-17 11:09:34.8833||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-17 11:11:14.2267||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-11-17 11:11:14.2525||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 2, TotalPages: 1, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-11-17 11:11:18.9917||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-11-17 11:11:18.9917||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 3, TotalPages: 1, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-11-17 11:16:16.2011||DEBUG|NetNews.Program|init main function 
+2020-11-17 11:16:17.1371||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-17 11:16:36.3726||DEBUG|NetNews.Program|init main function 
+2020-11-17 11:16:37.1472||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-17 11:25:01.7528||DEBUG|NetNews.Program|init main function 
+2020-11-17 11:25:02.6173||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-17 11:26:13.5162||DEBUG|NetNews.Program|init main function 
+2020-11-17 11:26:14.1723||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-17 12:04:34.9813||DEBUG|NetNews.Program|init main function 
+2020-11-17 12:04:35.5971||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-17 12:04:41.9122||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-11-17 12:04:41.9122||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 3, TotalPages: 1, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-11-17 14:14:58.7047||DEBUG|NetNews.Program|init main function 
+2020-11-17 14:15:00.7982||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-17 14:17:11.9134||DEBUG|NetNews.Program|init main function 
+2020-11-17 14:17:12.7426||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-17 14:19:00.2175||DEBUG|NetNews.Program|init main function 
+2020-11-17 14:19:00.8658||INFO|Detection.Startup|Starting Detection version 3.0.0.0 

@@ -1,0 +1,28 @@
+﻿@using AppHelpers.App_Code
+
+<script>
+    $(document).ready(function(){
+        //set main video on click
+        $(".featured-vid").on("click", function(){
+            //get clicked element id
+            var inputId = this.getAttribute('id');
+            var url = "https://www.youtube.com/embed/"+inputId;
+            $('#main-featured-vid').attr('src', url)
+            //alert("The video id clicked is "+inputId);
+        });
+    });
+</script>
+
+<div class="row mx-0">
+    <div class="col-md-8 offset-md-2 col-12 paddding animate-box" data-animate-effect="fadeIn">
+        @LayoutHelper24News.GetFeaturedVideoNews()
+    </div>
+</div>
+
+<div class="row mt-2">
+    <div class="col-md-8 offset-md-2 col-12">
+        <div class="row">
+            @LayoutHelper24News.GetOtherFeaturedVideoNews(0, 3)
+        </div>
+    </div>
+</div>

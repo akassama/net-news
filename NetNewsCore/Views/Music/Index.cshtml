@@ -1,0 +1,191 @@
+﻿@model NetNews.Models.AppDataModels.LoginViewModel
+
+@using Microsoft.AspNetCore.Http
+@using AppHelpers.App_Code
+@inject IHttpContextAccessor HttpContextAccessor
+@{
+    var Url = "https://" + Context.Request.Host + Context.Request.Path; //get current url path
+
+    Layout = null;
+
+    ViewBag.ActiveEntertainment = "active"; //set active nav
+}
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <!-- 24 NEWS Head -->
+    <partial name="~/Views/Shared/Templates/24News/_Head.cshtml" />
+</head>
+<body>
+    <div class="container-fluid fh5co_header_bg">
+        <!-- Breaking News-->
+        <partial name="~/Views/Shared/Templates/24News/_BreakingNewsTop.cshtml" />
+    </div>
+    <div class="container-fluid">
+        <div class="container">
+            <!-- Logo Navigation -->
+            <partial name="~/Views/Shared/Templates/24News/_LogoNav.cshtml" />
+        </div>
+    </div>
+    <div class="container-fluid bg-faded fh5co_padd_mediya padding_786">
+        <div class="container padding_786">
+            <!-- Navigation -->
+            <partial name="~/Views/Shared/Templates/24News/_Navigation.cshtml" />
+        </div>
+        <!-- Action messages partial -->
+        <partial name="~/Views/Shared/_ProcessMessage.cshtml" />
+    </div>
+
+    <div class="container-fluid paddding mb-5">
+        <!-- Top Music Posts -->
+        <partial name="~/Views/Shared/Templates/24News/_MusicTopNews.cshtml" />
+    </div>
+
+
+    <div class="container-fluid fh5co_video_news_bg pb-4">
+        <!-- Featured Music -->
+        <partial name="~/Views/Shared/Templates/24News/_TrendingMusic.cshtml" />
+    </div>
+
+
+    @if (LayoutHelper24News.HasAnyEmbedPost("AppleMusicSingle"))
+    {
+        <div class="container-fluid fh5co_video_news_bg pb-4">
+            <!-- Trending Apple Albums -->
+            <div class="container animate-box" data-animate-effect="fadeIn">
+                <div>
+                    <div class="fh5co_heading fh5co_heading_border_bottom pt-5 pb-2 mb-4  text-dark">Trending Albums</div>
+                </div>
+                <div>
+                    <div class="row">
+                        @LayoutHelper24News.GetEmbeddedMusic("AppleMusicAlbum", "col-sm-12 col-md-6", 2)
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+
+
+
+    @if (LayoutHelper24News.HasAnyEmbedPost("AppleMusicSingle"))
+    {
+        <div class="container-fluid fh5co_video_news_bg pb-4">
+            <!-- Trending Apple Single Music -->
+            <div class="container animate-box" data-animate-effect="fadeIn">
+                <div>
+                    <div class="fh5co_heading fh5co_heading_border_bottom pt-5 pb-2 mb-4  text-dark">Trending Music</div>
+                </div>
+                <div>
+                    <div class="row">
+                        @LayoutHelper24News.GetEmbeddedMusic("AppleMusicSingle", "col-sm-12 col-md-6", 4)
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+
+
+
+    @if (LayoutHelper24News.HasAnyEmbedPost("Soundcloud"))
+    {
+        <div class="container-fluid fh5co_video_news_bg pb-4">
+            <!-- Soundcloud Music -->
+            <div class="container animate-box" data-animate-effect="fadeIn">
+                <div>
+                    <div class="fh5co_heading fh5co_heading_border_bottom pt-5 pb-2 mb-4  text-dark">Soundcloud Music</div>
+                </div>
+                <div>
+                    <div class="row">
+                        @LayoutHelper24News.GetEmbeddedMusic("Soundcloud", "col-sm-12 col-md-6", 2)
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+
+
+
+    @if (LayoutHelper24News.HasAnyEmbedPost("MixCloud"))
+    {
+        <div class="container-fluid fh5co_video_news_bg pb-4">
+            <!-- MixCloud Music-->
+            <div class="container animate-box" data-animate-effect="fadeIn">
+                <div>
+                    <div class="fh5co_heading fh5co_heading_border_bottom pt-5 pb-2 mb-4  text-dark">MixCloud Music</div>
+                </div>
+                <div>
+                    <div class="row">
+                        @LayoutHelper24News.GetEmbeddedMusic("MixCloud", "col-sm-12 col-md-6", 2)
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+
+
+
+    @if (LayoutHelper24News.HasAnyEmbedPost("Audiomack"))
+    {
+        <div class="container-fluid fh5co_video_news_bg pb-4">
+            <!-- Audiomack Music-->
+            <div class="container animate-box" data-animate-effect="fadeIn">
+                <div>
+                    <div class="fh5co_heading fh5co_heading_border_bottom pt-5 pb-2 mb-4  text-dark">Audiomack Music</div>
+                </div>
+                <div>
+                    <div class="row">
+                        @LayoutHelper24News.GetEmbeddedMusic("Audiomack", "col-sm-12 col-md-6", 2)
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+
+
+
+    @if (LayoutHelper24News.HasAnyNews("EntertainmentNewsPost") || LayoutHelper24News.HasAnyNews("EntertainmentVideoPost") || LayoutHelper24News.HasAnyNews("EntertainmentAudioPost"))
+    {
+        <div class="container-fluid pt-3">
+            <!-- Trending News -->
+            <partial name="~/Views/Shared/Templates/24News/_TrendingCelebrityNews.cshtml" />
+        </div>
+    }
+
+
+    <div class="container-fluid pb-4 pt-4 paddding">
+        <div class="container paddding">
+            <div class="row mx-0">
+                <!-- Celebrity Body News -->
+                <partial name="~/Views/Shared/Templates/24News/_CelebrityBodyNews.cshtml" />
+
+                <div class="col-md-3 animate-box" data-animate-effect="fadeInRight">
+                    <!-- Tags Div -->
+                    <partial name="~/Views/Shared/Templates/24News/_TagsDiv.cshtml" />
+
+                    <!-- Most Popular News -->
+                    <partial name="~/Views/Shared/Templates/24News/_MostPopularNews.cshtml" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid fh5co_footer_bg pb-3">
+        <div class="container animate-box">
+            <!-- Footer Top -->
+            <partial name="~/Views/Shared/Templates/24News/_FooterTop.cshtml" />
+        </div>
+    </div>
+    <div class="container-fluid fh5co_footer_right_reserved">
+        <!-- Footer Bottom -->
+        <partial name="~/Views/Shared/Templates/24News/_FooterBottom.cshtml" />
+    </div>
+
+    <div class="gototop js-top">
+        <a href="#" class="js-gotop"><i class="fa fa-arrow-up"></i></a>
+    </div>
+
+    <!-- 24 NEWS Footer Scripts -->
+    <partial name="~/Views/Shared/Templates/24News/_FooterScripts.cshtml" />
+
+</body>
+</html>

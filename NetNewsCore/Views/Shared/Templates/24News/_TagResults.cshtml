@@ -1,0 +1,69 @@
+﻿@model IEnumerable<NetNews.Models.PostsDataModel.vwPostsApprovedModel>
+@using AppHelpers.App_Code
+
+    <div class="col-md-8 animate-box" data-animate-effect="fadeInLeft">
+        <div>
+            <div class="fh5co_heading fh5co_heading_border_bottom py-2 mb-4">
+                Tag - @TextHelper.ConvertCase(ViewBag.Tag, "SplitUpper")
+            </div>
+        </div>
+        @foreach (var item in Model)
+        {
+            <div class="row pb-4">
+                <div class="col-md-5">
+                    <div class="fh5co_hover_news_img">
+                        <div class="fh5co_news_img">
+                            @PostHelper.GetPostImagePreview(item.PostID)
+                        </div>
+                        <div></div>
+                    </div>
+                </div>
+                <div class="col-md-7 animate-box">
+                    <a href="~/Posts/@item.PostPermalink" class="fh5co_magna py-2">
+                        @TextHelper.FormatLongText(item.PostTitle, 75)
+                    </a> <a target="_blank" asp-action="RedirectAuthor" asp-controller="Authors" asp-route-id="@item.PostAuthor" class="fh5co_mini_time py-3">
+                        @AccountHelper.GetAccountData(item.PostAuthor, "FullName") -
+                        @PostHelper.FormatPostDate(item.ApprovalsDateAdded.ToString())
+                    </a>
+                    <div class="fh5co_consectetur">
+                        @TextHelper.FormatLongText(TextHelper.StripHTML(item.PostContent), 200)
+                    </div>
+                </div>
+            </div>
+        }
+
+        @if (!Model.Any())
+        {
+            <div class="alert alert-danger row">
+                <div class="col-sm-12 col-md-8">
+                    No results available for "@ViewBag.Category"
+                </div>
+                <div class="col-sm-12 col-md-2">
+                    <a class="font-weight-bold text-decoration-none" asp-action="Index" asp-controller="Home">Home</a>
+                </div>
+            </div>
+        }
+        else
+        {
+            <!--//BEGIN PAGINATION-->
+            <div class="row">
+                <div class="col-8 offset-2">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <paging total-records="ViewBag.TotalRecords"
+                                    page-no="ViewBag.PageNo"
+                                    page-size="ViewBag.PageSize"
+                                    show-prev-next="true"
+                                    show-first-last="true"
+                                    show-total-pages="false"
+                                    show-total-records="false"
+                                    show-page-size-nav="true"
+                                    show-gap="true">
+                            </paging>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--//END PAGINATION-->
+        }
+    </div>

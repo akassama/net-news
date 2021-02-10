@@ -1,0 +1,19 @@
+﻿@using AppHelpers.App_Code
+
+<div class="row mx-0">
+    <div class="col-md-3">
+        <div class="row">
+            @LayoutHelper24News.GetOtherFeaturedCelebrityNews(1, 2)
+        </div>
+    </div>
+
+    <div class="col-md-6 col-12 paddding animate-box" data-animate-effect="fadeIn">
+        @LayoutHelper24News.GetFeaturedCelebrityNews()
+    </div>
+
+    <div class="col-md-3">
+        <div class="row">
+            @LayoutHelper24News.GetOtherFeaturedCelebrityNews(3, 2)
+        </div>
+    </div>
+</div>

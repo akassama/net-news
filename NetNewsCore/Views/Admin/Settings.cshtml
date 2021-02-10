@@ -1,0 +1,374 @@
+﻿@model NetNews.Models.AppDataModels.ChangePasswordModel
+@using AppHelpers.App_Code
+@using Microsoft.AspNetCore.Http
+@inject IHttpContextAccessor HttpContextAccessor
+
+@{
+    string AccountID = HttpContextAccessor.HttpContext.Session.GetString("_AccountId");
+    string ConnectionString = ViewBag.ConnectionString;
+
+    var Url = "https://" + Context.Request.Host + Context.Request.Path; //get current url path
+
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <!-- ADMIN Head -->
+    <partial name="~/Views/Shared/AccountLayout/_Head.cshtml" />
+</head>
+
+<body class="sb-nav-fixed">
+    <!-- ADMIN Navigation -->
+    <partial name="~/Views/Shared/AccountLayout/_Navigation.cshtml" />
+    <div id="layoutSidenav">
+        <!-- ADMIN Sidebar -->
+        <partial name="~/Views/Shared/AccountLayout/_LeftSideBar.cshtml" />
+        <div id="layoutSidenav_content">
+            <main>
+                <div class="container-fluid">
+                    <h1 class="mt-4">Settings</h1>
+                    <ol class="breadcrumb mb-4">
+                        <li class="breadcrumb-item"><a asp-controller="Admin" asp-action="Index">Dashboard</a></li>
+                        <li class="breadcrumb-item active">Settings</li>
+                    </ol>
+
+                    <!-- Action messages partial -->
+                    <partial name="~/Views/Shared/_ProcessMessage.cshtml" />
+                    
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="container mt-3">
+                                <!-- Nav tabs -->
+                                <ul class="nav nav-tabs">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" id="HTab" data-toggle="tab" href="#Profile">Profile</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="RTab" data-toggle="tab" href="#Roles">Roles</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="PTab" data-toggle="tab" href="#Passwords">Change Password</a>
+                                    </li>
+                                </ul>
+
+                                <!-- Tab panes -->
+                                <div class="tab-content">
+                                    <div id="Profile" class="container tab-pane active">
+                                        <br />
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-12 main pt-0 mt-3">
+                                                        <p class="lead">Profile Details</p>
+                                                        @{
+                                                            if (ViewBag.EditProfile == "true")
+                                                            {
+                                                                <a asp-controller="Admin" asp-action="Settings" class="btn btn-outline-danger float-right" role="button">
+                                                                    <i class="fas fa-times"></i> Cancel
+                                                                </a>
+                                                            }
+                                                            else
+                                                            {
+                                                                <a asp-controller="Admin" asp-action="Settings" asp-route-edit="true" class="btn btn-outline-secondary float-right" role="button">
+                                                                    <i class="fas fa-user-edit"></i> Edit
+                                                                </a>
+                                                            }
+                                                        }
+                                                        <!--/// Account profile ///-->
+                                                        <div class="row mb-3">
+                                                            <p>
+                                                                @{
+                                                                    if (ViewBag.ProfileInputs == "")
+                                                                    {
+                                                                        <div class="co-12 mb-1">
+                                                                            <div class="image-wrapper mt-2" id="ProfilePicDiv">
+                                                                                <img class="primary-pfofile-image rounded" src="@AccountHelper.GetAccountProfilePicture(AccountID)" />
+                                                                                <img class="secondary-pfofile-image" src="~/files/images/defaults/camera-icon.png" />
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-12 mb-3">
+                                                                            <span class="text-danger text-left" id="ImageFileName"></span>
+                                                                        </div>
+                                                                    }
+                                                                    else
+                                                                    {
+                                                                        <img src="@AccountHelper.GetAccountProfilePicture(AccountID)" class="rounded" alt="Cinque Terre" width="120" height="120">
+                                                                    }
+
+                                                                }
+
+                                                            </p>
+                                                            <form id="EditProfileForm" asp-controller="Admin" asp-action="UpdateProfile" method="post" enctype="multipart/form-data">
+                                                                <div class="row">
+                                                                    <div class="col-sm-12 col-md-6 col-lg-3 col-xl-6 mb-2">
+                                                                        <label for="FirstName">First Name:</label>
+                                                                        @{ var FirstName = ModelHelper.SetEditInput(TempData["FirstName"], AccountHelper.GetAccountData(AccountID, "FirstName")); }
+                                                                        <input type="text" class="form-control" maxlength="100" id="FirstName" name="FirstName" value="@FirstName" @ViewBag.ProfileInputs required="">
+                                                                    </div>
+                                                                    <div class="col-sm-12 col-md-6 col-lg-3 col-xl-6 mb-2">
+                                                                        <label for="LastName">Last Name:</label>
+                                                                        @{ var LastName = ModelHelper.SetEditInput(TempData["LastName"], AccountHelper.GetAccountData(AccountID, "LastName")); }
+                                                                        <input type="text" class="form-control" maxlength="100" id="LastName" name="LastName" value="@LastName" @ViewBag.ProfileInputs required="">
+                                                                    </div>
+                                                                    <div class="col-sm-12 col-md-6 col-lg-3 col-xl-6 mb-2">
+                                                                        <label for="Email">Email:</label>
+                                                                        @{ var Email = ModelHelper.SetEditInput(TempData["Email"], AccountHelper.GetAccountData(AccountID, "Email")); }
+                                                                        <input type="email" class="form-control" maxlength="100" placeholder="@Email" readonly="" @ViewBag.ProfileInputs>
+                                                                    </div>
+                                                                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-6 mb-2">
+                                                                        <label for="Num">Mobile Number:</label>
+                                                                        <div class="row">
+                                                                            <div class="col-4">
+                                                                                @{ var CountryCode = ModelHelper.SetEditInput(TempData["CountryCode"], AccountHelper.GetAccountData(AccountID, "CountryCode")); }
+                                                                                <input type="text" class="form-control integer-only" maxlength="5" id="CountryCode" name="CountryCode" value="@CountryCode" @ViewBag.ProfileInputs>
+                                                                            </div>
+                                                                            <div class="col-8">
+                                                                                @{ var PhoneNumber = ModelHelper.SetEditInput(TempData["PhoneNumber"], AccountHelper.GetAccountData(AccountID, "PhoneNumber")); }
+                                                                                <input type="text" class="form-control integer-only" maxlength="20" id="PhoneNumber" name="PhoneNumber" value="@PhoneNumber" @ViewBag.ProfileInputs required="">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-sm-12 col-md-6 col-lg-3 col-xl-6 mb-2">
+                                                                        <label for="DateOfBirth">Date of Birth:</label>
+                                                                        @{
+                                                                            var DateOfBirth = ModelHelper.SetEditInput(TempData["DateOfBirth"], AccountHelper.GetAccountData(AccountID, "DateOfBirth"));
+                                                                            var DateOfBirthTwo = ModelHelper.SetEditInput(TempData["DateOfBirth"], AccountHelper.GetAccountData(AccountID, "DateOfBirth"));
+                                                                            if (DateOfBirth != "")
+                                                                            {
+                                                                                DateOfBirth = Convert.ToDateTime(DateOfBirth).ToString("dd/MM/yyyy");
+
+                                                                                //date format for input date
+                                                                                DateOfBirthTwo = Convert.ToDateTime(DateOfBirthTwo).ToString("yyyy-MM-dd");
+                                                                            }
+
+                                                                            if (ViewBag.EditProfile == "true")
+                                                                            {
+
+                                                                                <input type="date" class="form-control" name="DateOfBirth" id="DateOfBirth" value="@DateOfBirthTwo" @ViewBag.ProfileInputs required="">
+                                                                            }
+                                                                            else
+                                                                            {
+                                                                                <input type="text" class="form-control" value="@DateOfBirth" @ViewBag.ProfileInputs readonly>
+                                                                            }
+                                                                        }
+                                                                    </div>
+                                                                    <div class="col-sm-12 col-md-6 col-lg-3 col-xl-6 mb-2">
+                                                                        <label for="Gender">Gender:</label>
+                                                                        @{
+                                                                            var Gender = ModelHelper.GetTableData("AccountDetails", "AccountID", AccountID, "Gender", ConnectionString);
+                                                                            string male_selected = "<option value='Male'>Male</option>";
+                                                                            string female_selected = "<option value='Female'>Female</option>";
+                                                                            string selected_value = "";
+                                                                            if (Gender == "Male")
+                                                                            {
+                                                                                male_selected = "<option value='Male' selected>Male</option>";
+                                                                                selected_value = "Male";
+                                                                            }
+                                                                            else if (Gender == "Female")
+                                                                            {
+                                                                                female_selected = "<option value='Female' selected>Female</option>";
+                                                                                selected_value = "Female";
+                                                                            }
+
+                                                                            //set input type based on view
+                                                                            if (ViewBag.EditProfile == "true")
+                                                                            {
+                                                                                <select class="form-control" id="Gender" name="Gender" @ViewBag.ProfileInputs required="">
+                                                                                    <option value="" disabled>Select gender</option>
+                                                                                    @Html.Raw(male_selected)
+                                                                                    @Html.Raw(female_selected)
+                                                                                </select>
+                                                                            }
+                                                                            else
+                                                                            {
+                                                                                <input type="text" class="form-control" value="@selected_value" readonly>
+                                                                            }
+                                                                        }
+                                                                    </div>
+                                                                    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 mb-2">
+                                                                        <label for="Country">
+                                                                            Nationality:
+                                                                        </label>
+                                                                        @{
+                                                                            var Country = ModelHelper.SetEditInput(TempData["Country"], AccountHelper.GetAccountData(AccountID, "Country"));
+                                                                            var CountryName = ModelHelper.GetTableData("Country", "ID", Country, "Name", ViewBag.ConnectionString);
+                                                                            var CountryNameOption = (!string.IsNullOrEmpty(CountryName)) ? "<option value='" + Country + "' class='text-white bg-dark' selected>" + CountryName + "</option>" : "<option value='' class='text-white bg-dark'>Select country</option>";
+                                                                            //set input type based on view
+                                                                            if (ViewBag.EditProfile == "true")
+                                                                            {
+                                                                                <select name="Country" id="Country" class="form-control" asp-items="@( new SelectList(@ViewBag.CountriesList,"ID","Name"))" required>
+                                                                                    @Html.Raw(CountryNameOption)
+                                                                                </select>
+                                                                            }
+                                                                            else
+                                                                            {
+                                                                                <input type="text" class="form-control" value="@CountryName" readonly>
+                                                                            }
+                                                                        }
+                                                                    </div>
+                                                                    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 mb-2">
+                                                                        <label for="DateOfBirth">Biography:</label>
+                                                                        @{
+                                                                            var Biography = ModelHelper.SetEditInput(TempData["Biography"], AccountHelper.GetAccountData(AccountID, "Biography"));
+                                                                            if (ViewBag.ProfileInputs == "")
+                                                                            {
+                                                                                <!-- Set id for text editor version -->
+                                                                                <textarea class="form-control count-chars" data-chars-max="1000" data-msg-color="danger" maxlength="1000" name="Biography" id="Biography" @ViewBag.ProfileInputs required="">@Biography</textarea>
+                                                                            }
+                                                                            else
+                                                                            {
+                                                                                <div class="bg-light text-dark rounded p-3">@Html.Raw(Biography)</div>
+                                                                            }
+                                                                        }
+                                                                    </div>
+
+                                                                    <!-- hidden selected profile picture -->
+                                                                    <div class="form-group d-none">
+                                                                        <input type="file" class="form-control-file border" id="ProfileSelect" name="file" accept="image/jpg,image/jpeg" >
+                                                                    </div>
+
+                                                                </div>
+                                                                @{
+                                                                    if (ViewBag.ProfileInputs == "")
+                                                                    {
+                                                                        <button type="submit" id="UpdateSettingProfile" class="btn btn-primary mt-3 disable-on-click">Update</button>
+                                                                    }
+                                                                }
+                                                            </form>
+                                                        </div>
+                                                        <!--///row profile -->
+
+                                                    </div>
+                                                    <!--/main col-->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="Roles" class="container tab-pane fade">
+                                        <br />
+                                        <!--/// Account roles ///-->
+                                        <div class="container">
+                                            <h3>Admin Roles</h3>
+                                            <div class="row">
+                                                <div class="col-sm-12">
+                                                    <a href="#AdminRoles" data-toggle="collapse">
+                                                        <i class="fas fa-chevron-circle-down">
+                                                            <span class="text-danger">Show</span>
+                                                        </i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div id="AdminRoles" class="collapse  mb-3">
+                                                <div class="form-check m-2">
+                                                    <label class="form-check-label">
+                                                        <input type="checkbox" class="form-check-input" value="" @AccountHelper.CheckUserAccess(AccountID, "Admin Permissions", ViewBag.ConnectionString) disabled> Accept Registrations
+                                                    </label>
+                                                </div>
+                                            </div>
+
+                                            <hr />
+
+                                            <h3>Editor Roles</h3>
+                                            <div class="row">
+                                                <div class="col-sm-12">
+                                                    <a href="#EditorRoles" data-toggle="collapse">
+                                                        <i class="fas fa-chevron-circle-down">
+                                                            <span class="text-danger">Show</span>
+                                                        </i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div id="EditorRoles" class="collapse  mb-3">
+                                                <div class="form-check m-2">
+                                                    <label class="form-check-label">
+                                                        <input type="checkbox" class="form-check-input" value="" @AccountHelper.CheckUserAccess(AccountID, "Editor Permissions", ViewBag.ConnectionString) disabled> Accept Posts
+                                                    </label>
+                                                </div>
+                                            </div>
+
+                                            <hr />
+
+                                            <h3>Author Roles</h3>
+                                            <div class="row">
+                                                <div class="col-sm-1">
+                                                    <a href="#AuthorRoles" data-toggle="collapse">
+                                                        <i class="fas fa-chevron-circle-down">
+                                                            <span class="text-danger">Show</span>
+                                                        </i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div id="AuthorRoles" class="collapse  mb-3">
+                                                <div class="form-check m-2">
+                                                    <label class="form-check-label">
+                                                        <input type="checkbox" class="form-check-input" value="" @AccountHelper.CheckUserAccess(AccountID, "Admin Permissions", ViewBag.ConnectionString) disabled> Create Posts
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div id="Passwords" class="container tab-pane fade">
+                                        <br />
+                                        <!--/// Account change password ///-->
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col main pt-0 mt-3">
+                                                        <div class="row mb-3">
+                                                            <form id="UpdatePasswordForm" asp-controller="Admin" asp-action="UpdatePassword" method="post" onsubmit="return validatePasswordChangeForm()">
+                                                                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                                                                <div class="row">
+                                                                    <div class="col-8 offset-2 mb-3">
+                                                                        <label asp-for="CurrentPassword"></label>
+                                                                        <input class="form-control" asp-for="CurrentPassword" maxlength="60" required>
+                                                                        <span asp-validation-for="CurrentPassword" id="CurrentPasswordError" class="text-danger"></span>
+                                                                        <div id="CheckCurrentPassword"></div>
+                                                                    </div>
+                                                                    <div class="col-8 offset-2 mb-3">
+                                                                        <label asp-for="Password"></label>
+                                                                        <input class="form-control" asp-for="Password" maxlength="60" required="">
+                                                                        <span asp-validation-for="Password" id="PasswordError" class="text-danger"></span>
+                                                                        <div id="CheckPasswordExists"></div>
+                                                                    </div>
+                                                                    <div class="col-8 offset-2 mb-3">
+                                                                        <label asp-for="ConfirmPassword"></label>
+                                                                        <input class="form-control" asp-for="ConfirmPassword" maxlength="60" required>
+                                                                        <span asp-validation-for="ConfirmPassword" id="ConfirmPasswordError" class="text-danger"></span>
+                                                                        <div id="PasswordInfo"></div>
+                                                                    </div>
+                                                                    <div class="col-8 offset-2 mb-1">
+                                                                        <button type="submit" id="UpdatePasswordButton" class="btn btn-primary mt-3 disable-on-click">Update</button>
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                        <!--/row-->
+                                                    </div>
+                                                    <!--/main col-->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </main>
+            <!-- ADMIN Footer -->
+            <partial name="~/Views/Shared/AccountLayout/_AdminFooter.cshtml" />
+        </div>
+    </div>
+
+    <!-- Modals data -->
+    <partial name="~/Views/Shared/Modals/_ActionModals.cshtml" view-data="ViewData" />
+
+    <!-- ADMIN RESOURCES -->
+    <partial name="~/Views/Shared/AccountLayout/_AdminFooterScripts.cshtml" />
+</body>
+</html>

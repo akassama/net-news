@@ -1,0 +1,63 @@
+2020-11-19 00:31:21.6385||DEBUG|NetNews.Program|init main function 
+2020-11-19 00:31:24.6492||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-19 00:34:43.5334||DEBUG|NetNews.Program|init main function 
+2020-11-19 00:34:44.0689||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-19 00:40:10.2226||DEBUG|NetNews.Program|init main function 
+2020-11-19 00:40:11.2916||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-19 00:41:39.1598||DEBUG|NetNews.Program|init main function 
+2020-11-19 00:41:40.1274||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-19 01:09:58.5603|3|ERROR|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|The view 'Index' was not found. Searched locations: /Views/About/Index.desktop.cshtml, /Views/About/Index.cshtml, /Views/Shared/Index.desktop.cshtml, /Views/Shared/Index.cshtml, /Pages/Shared/Index.desktop.cshtml, /Pages/Shared/Index.cshtml 
+2020-11-19 01:09:58.6356|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.InvalidOperationException: The view 'Index' was not found. The following locations were searched:
+/Views/About/Index.desktop.cshtml
+/Views/About/Index.cshtml
+/Views/Shared/Index.desktop.cshtml
+/Views/Shared/Index.cshtml
+/Pages/Shared/Index.desktop.cshtml
+/Pages/Shared/Index.cshtml
+   at Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult.EnsureSuccessful(IEnumerable`1 originalLocations)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Wangkanai.Detection.Hosting.ResponsiveMiddleware.InvokeAsync(HttpContext context, IResponsiveService responsive)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at NetNews.Startup.<>c.<<Configure>b__5_0>d.MoveNext() in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Startup.cs:line 92
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-11-19 01:11:49.2629||DEBUG|NetNews.Program|init main function 
+2020-11-19 01:11:50.3484||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-19 01:19:53.9545||DEBUG|NetNews.Program|init main function 
+2020-11-19 01:19:54.5920||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-19 01:21:02.8756||DEBUG|NetNews.Program|init main function 
+2020-11-19 01:21:03.4696||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-19 01:21:49.2684||DEBUG|NetNews.Program|init main function 
+2020-11-19 01:21:49.7738||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-19 01:23:11.4949||DEBUG|NetNews.Program|init main function 
+2020-11-19 01:23:12.2304||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-19 01:24:27.6381||DEBUG|NetNews.Program|init main function 
+2020-11-19 01:24:28.2629||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-19 01:26:42.1970||DEBUG|NetNews.Program|init main function 
+2020-11-19 01:26:42.7900||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-19 01:28:03.2836||DEBUG|NetNews.Program|init main function 
+2020-11-19 01:28:04.2765||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-19 01:30:08.7982||DEBUG|NetNews.Program|init main function 
+2020-11-19 01:30:09.6948||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-19 02:32:11.4449||DEBUG|NetNews.Program|init main function 
+2020-11-19 02:32:18.8367||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-19 16:19:29.8701||DEBUG|NetNews.Program|init main function 
+2020-11-19 16:20:20.5752||DEBUG|NetNews.Program|init main function 
+2020-11-19 16:20:21.8146||INFO|Detection.Startup|Starting Detection version 3.0.0.0 

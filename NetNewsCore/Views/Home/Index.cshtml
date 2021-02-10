@@ -1,0 +1,183 @@
+﻿@model NetNews.Models.AppDataModels.LoginViewModel
+
+@using Microsoft.AspNetCore.Http
+@using AppHelpers.App_Code
+@inject IHttpContextAccessor HttpContextAccessor
+@{
+    var Url = "https://" + Context.Request.Host + Context.Request.Path; //get current url path
+
+    Layout = null;
+
+    ViewBag.ActiveHome = "active"; //set active nav
+}
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <!-- 24 NEWS Head -->
+    <partial name="~/Views/Shared/Templates/24News/_Head.cshtml" />
+</head>
+<body>
+    <div class="container-fluid fh5co_header_bg">
+        <!-- Breaking News-->
+        <partial name="~/Views/Shared/Templates/24News/_BreakingNewsTop.cshtml" />
+    </div>
+    <div class="container-fluid">
+        <div class="container">
+            <!-- Logo Navigation -->
+            <partial name="~/Views/Shared/Templates/24News/_LogoNav.cshtml" />
+        </div>
+    </div>
+    <div class="container-fluid bg-faded fh5co_padd_mediya padding_786">
+        <div class="container padding_786">
+            <!-- Navigation -->
+            <partial name="~/Views/Shared/Templates/24News/_Navigation.cshtml" />
+        </div>
+        <!-- Action messages partial -->
+        <partial name="~/Views/Shared/_ProcessMessage.cshtml" />
+    </div>
+
+    <div class="container-fluid paddding mb-5">
+        <!-- Home Top News -->
+        <partial name="~/Views/Shared/Templates/24News/_HomeTopNews.cshtml" />
+    </div>
+
+    <div class="container-fluid">
+        @if (!string.IsNullOrEmpty(ModelHelper.GetSiteLookupData("LiveNewsID")))
+        {
+            <!-- Trending News -->
+            <partial name="~/Views/Shared/Templates/24News/_LiveNewsModal.cshtml" />
+        }
+    </div>
+
+
+    @if (LayoutHelper24News.HasAnyTrendingNews())
+    {
+        <div class="container-fluid pt-3">
+            <!-- Trending News -->
+            <partial name="~/Views/Shared/Templates/24News/_TrendingNews.cshtml" />
+        </div>
+    }
+
+    @if (LayoutHelper24News.HasFeaturedNews())
+    {
+        <div class="container-fluid pb-4 pt-5">
+            <!-- Featured News -->
+            <partial name="~/Views/Shared/Templates/24News/_FeaturedNews.cshtml" />
+        </div>
+    }
+
+
+    @if (LayoutHelper24News.HasAnyVideoNews())
+    {
+        <div class="container-fluid fh5co_video_news_bg pb-4">
+            <!-- Video News -->
+            <partial name="~/Views/Shared/Templates/24News/_VideoNews.cshtml" />
+        </div>
+    }
+
+
+    <div class="container-fluid pb-4 pt-4 paddding">
+        <div class="container paddding">
+            <div class="row mx-0">
+                @if (LayoutHelper24News.HasAnyHomeBodyNews(5, 8))
+                {
+                    <!-- Home Body News -->
+                    <partial name="~/Views/Shared/Templates/24News/_HomeBodyNews.cshtml" />
+                }
+
+                <div class="col-md-3 animate-box" data-animate-effect="fadeInRight">
+                    <!-- Tags Div -->
+                    <partial name="~/Views/Shared/Templates/24News/_TagsDiv.cshtml" />
+
+                    <!-- Most Popular News -->
+                    <partial name="~/Views/Shared/Templates/24News/_MostPopularNews.cshtml" />
+
+                    <!-- Twitter Feed -->
+                    @if (ModelHelper.GetSiteLookupData("ShowTwitterFeed") == "true")
+                    {
+                        <div class="row">
+                            <div class="col-12" style="height: 20em; overflow-y: scroll;">
+                                @Html.Raw(ModelHelper.GetSiteLookupData("TwitterFeed"))
+                            </div>
+                        </div>
+                    }
+
+                    @if (ModelHelper.GetSiteLookupData("ShowWeatherWidget") == "true")
+                    {
+                        <div class="row">
+                            <!-- Weather -->
+                            <div class="col-12 mt-3 text-center">
+                                @Html.Raw(ModelHelper.GetSiteLookupData("WeatherWidget"))
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+
+
+            @if (LayoutHelper24News.HasMoreBodyNews(12, 12))
+            {
+                <div class="row mx-0 animate-box" data-animate-effect="fadeInUp">
+                    <!-- More News -->
+                    <partial name="~/Views/Shared/Templates/24News/_MoreNews.cshtml" />
+                </div>
+            }
+
+
+            <!-- Get Covid Widget -->
+            @if (ModelHelper.GetSiteLookupData("ShowCovidWidget") == "true")
+            {
+                <div class="row mx-0 animate-box" data-animate-effect="fadeInUp">
+                    <!-- Covid data -->
+                    <partial name="~/Views/Shared/Templates/24News/_CovidData.cshtml" />
+                </div>
+            }
+
+            <!-- TODO NewsApi Feed -->
+            @if (ModelHelper.GetSiteLookupData("ShowNewsApi") == "true")
+            {
+                
+                <div class="row mx-0 animate-box" data-animate-effect="fadeInUp">
+                    <!-- More News from API -->
+                    <partial name="~/Views/Shared/Templates/24News/_NewsApi.cshtml" />
+                </div>
+                
+            }
+
+
+
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-12 col-md-2 offset-md-10">
+                <span class="float-right">
+                    <a role="button" class="btn btn-success" asp-action="Index" asp-controller="Radio" target="_blank">
+                        <i class="fas fa-broadcast-tower text-white"></i> <span class="text-white">Live Radio</span>
+                    </a>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid fh5co_footer_bg pb-3">
+        <div class="container animate-box">
+            <!-- Footer Top -->
+            <partial name="~/Views/Shared/Templates/24News/_FooterTop.cshtml" />
+        </div>
+    </div>
+    <div class="container-fluid fh5co_footer_right_reserved">
+        <!-- Footer Bottom -->
+        <partial name="~/Views/Shared/Templates/24News/_FooterBottom.cshtml" />
+    </div>
+
+    <div class="gototop js-top">
+        <a href="#" class="js-gotop"><i class="fa fa-arrow-up"></i></a>
+    </div>
+
+    <!-- 24 NEWS Footer Scripts -->
+    <partial name="~/Views/Shared/Templates/24News/_FooterScripts.cshtml" />
+
+</body>
+</html>

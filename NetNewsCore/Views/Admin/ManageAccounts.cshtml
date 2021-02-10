@@ -1,0 +1,153 @@
+﻿@model IEnumerable<NetNews.Models.AccountsDataModel.AccountsModel>
+
+@using Microsoft.AspNetCore.Http
+@using AppHelpers.App_Code
+@inject IHttpContextAccessor HttpContextAccessor
+@{
+    var Url = "https://" + Context.Request.Host + Context.Request.Path; //get current url path
+
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <!-- ADMIN Head -->
+    <partial name="~/Views/Shared/AccountLayout/_Head.cshtml" />
+</head>
+
+<body class="sb-nav-fixed">
+    <!-- ADMIN Navigation -->
+    <partial name="~/Views/Shared/AccountLayout/_Navigation.cshtml" />
+    <div id="layoutSidenav">
+        <!-- ADMIN Sidebar -->
+        <partial name="~/Views/Shared/AccountLayout/_LeftSideBar.cshtml" />
+        <div id="layoutSidenav_content">
+            <main>
+                <div class="container-fluid">
+                    <h1 class="mt-4">Manage Accounts</h1>
+                    <ol class="breadcrumb mb-4">
+                        <li class="breadcrumb-item"><a asp-controller="Admin" asp-action="Index">Dashboard</a></li>
+                        <li class="breadcrumb-item active">Manage Accounts</li>
+                    </ol>
+
+                    <!-- Content -->
+                    <!-- Action messages partial -->
+                    <partial name="~/Views/Shared/_ProcessMessage.cshtml" />
+                    @if (Model.Count() > 0)
+                    {
+                        int RowCount = 0;
+                        <div class="row">
+                            <div class="col-12 p-2">
+                                <div class="card mb-4">
+                                    <div class="card-header">
+                                        <i class="fas fa-table mr-1"></i>
+                                        All Accounts @TextHelper.FormatAlert(Model.Count())
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="table-responsive">
+                                            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                                <thead>
+                                                    <tr>
+                                                        <th>#</th>
+                                                        <th>Name</th>
+                                                        <th>Email</th>
+                                                        <th>Registration Date</th>
+                                                        <th>Status</th>
+                                                        <th>Action</th>
+                                                    </tr>
+                                                </thead>
+                                                <tfoot>
+                                                    <tr>
+                                                        <th>#</th>
+                                                        <th>Name</th>
+                                                        <th>Email</th>
+                                                        <th>Registration Date</th>
+                                                        <th>Status</th>
+                                                        <th>Action</th>
+                                                    </tr>
+                                                </tfoot>
+                                                <tbody>
+                                                    @foreach (var item in Model)
+                                                    {
+                                                    <tr>
+                                                        <td>
+                                                            @{
+                                                                RowCount += 1;
+                                                            }
+                                                            @RowCount
+                                                        </td>
+                                                        <td>
+                                                            <p class="font-weight-bold">
+                                                                @AccountHelper.GetAccountData(item.AccountID, "FullName")
+                                                            </p>
+                                                        </td>
+                                                        <td>
+                                                            @item.Email
+                                                        </td>
+                                                        <td>
+                                                            @Html.DisplayFor(modelItem => item.DateAdded)
+                                                        </td>
+                                                        <td>
+                                                            @AccountHelper.GetAccountApprovalState(item.Active)
+                                                        </td>
+                                                        <td>
+                                                            <div class="dropdown">
+                                                                @{
+                                                                    string disable_action = (HttpContextAccessor.HttpContext.Session.GetString("_AccountId") == item.AccountID) ? "disabled" : "";
+                                                                }
+                                                                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                                                                    Choose Action
+                                                                </button>
+                                                                <div class="dropdown-menu">
+                                                                    <a class="dropdown-item" target="_blank" asp-controller="Admin" asp-action="ViewAccountDetails" asp-route-id="@item.AccountID">
+                                                                        <i class="fas fa-info-circle text-primary mr-1"></i> Details
+                                                                    </a>
+                                                                    <a class="dropdown-item suspend-account @disable_action" href="#" id="@item.AccountID">
+                                                                        <i class="fas fa-user-times text-warning mr-1"></i> Suspend
+                                                                    </a>
+                                                                    <a class="dropdown-item activate-account @disable_action" href="#" id="@item.AccountID">
+                                                                        <i class="fas fa-check-circle text-success mr-1"></i> Activate
+                                                                    </a>
+                                                                    <a class="dropdown-item remove-account @disable_action" href="#" id="@item.AccountID" data-toggle="modal" data-target="#confirmAccountRemoveModal">
+                                                                        <i class="fas fa-times text-danger mr-1"></i> Remove
+                                                                    </a>
+                                                                    <a class="dropdown-item" asp-controller="Admin" asp-action="ViewAccountPermissions" asp-route-id="@item.AccountID">
+                                                                        <i class="fas fa-user-lock"></i> Access Control
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    }
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    }
+                    else
+                    {
+                        <div class="alert alert-warning col-12">
+                            <strong>No accounts available!</strong>
+                        </div>
+                    }
+
+                </div>
+            </main>
+            <!-- ADMIN Footer -->
+            <partial name="~/Views/Shared/AccountLayout/_AdminFooter.cshtml" />
+        </div>
+    </div>
+
+    <!-- Modals data -->
+    <partial name="~/Views/Shared/Modals/_ActionModals.cshtml" view-data="ViewData" />
+
+    <!-- ADMIN RESOURCES -->
+    <partial name="~/Views/Shared/AccountLayout/_AdminFooterScripts.cshtml" />
+</body>
+</html>

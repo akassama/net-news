@@ -1,0 +1,533 @@
+/* INPUT CUSTOMIZATION */
+ .cb-md {
+ 	width: 15px; height: 15px;
+ }
+ .cb-lg {
+ 	width: 20px; height: 20px;
+ }
+
+
+/* HOVER ZOOM EFFECTS */
+.zoom-xm, .zoom-sm, .zoom-md, .zoom, .zoom-lg {
+  transition: transform .2s; /* Animation */
+}
+
+.zoom-xm:hover {
+  transform: scale(1.01); /* (101% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.zoom-sm:hover {
+  transform: scale(1.1); /* (110% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  background-color: #cbc4c4;
+}
+
+.zoom:hover {
+  transform: scale(1.2); /* (120% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  background-color: #cbc4c4;
+}
+
+.zoom-md:hover {
+  transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  background-color: #cbc4c4;
+}
+
+.zoom-lg:hover {
+  transform: scale(1.8); /* (180% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  background-color: #cbc4c4;
+}
+
+
+
+
+/* RIPPLE EFFECTS */
+.ripple {
+  position: relative;
+  overflow: hidden;
+}
+
+.ripple:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1em;
+  height: 1em;
+  background: rgba(255, 255, 255, .5);
+  opacity: 0;
+  border-radius: 100%;
+  transform: scale(1, 1) translate(-50%);
+  transform-origin: 50% 50%;
+}
+
+@keyframes ripple {
+  0% {
+    transform: scale(0, 0);
+    opacity: 1;
+  }
+  20% {
+    transform: scale(25, 25);
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(40, 40);
+  }
+}
+
+.ripple::after {
+  animation: ripple 3s ease-out  infinite;
+}
+
+
+
+
+/* SIGN-IN FORM */
+.global-container{
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f5f5;
+}
+
+form.sign-in{
+    padding-top: 10px;
+    font-size: 14px;
+    margin-top: 30px;
+}
+
+.sign-in-title{ font-weight:300; }
+
+.sign-in-btn{
+    font-size: 14px;
+    margin-top:20px;
+}
+
+
+.sign-in-form{ 
+    width:330px;
+    margin:20px;
+}
+
+.sign-up{
+    text-align:center;
+    padding:20px 0 0;
+}
+
+.sign-in-alert{
+    margin-bottom:-30px;
+    font-size: 13px;
+    margin-top:20px;
+}
+
+.sign-in-forgot{
+    float:right;
+    font-size:12px !important;
+}
+
+
+
+
+/* DATATABLE BOOTSTRAP PAGINATION STYLING */
+
+.page-item.active .page-link {
+    z-index: 3 !important;
+    color: #fff !important;
+    background-color: #007bff !important;
+    border-color: #007bff !important;
+}
+
+.page-link {
+    position: relative !important;
+    display: block !important;
+    padding: .5rem .75rem !important;
+    margin-left: -1px !important;
+    line-height: 1.25 !important;
+    color: #007bff !important;
+    background-color: #fff !important;
+    border: 1px solid #dee2e6 !important;
+}
+.pagination a:link {
+    color: #007bff !important;
+    text-decoration: none !important;
+    background-color: transparent !important;
+}
+
+
+
+
+/* hr style for span*/
+.hr-span {
+    display: block !important;
+    margin: 0.5em !important;
+    overflow: hidden !important;
+    border-style: inset !important;
+    border-width: 1px !important;
+}
+
+
+/* Input Width */
+.min-width-5 {
+    min-width: 5em !important;
+}
+
+.min-width-10 {
+    min-width: 10em !important;
+}
+
+.min-width-15 {
+    min-width: 15em !important;
+}
+
+.min-width-20 {
+    min-width: 20em !important;
+}
+
+.min-width-25 {
+    min-width: 25em !important;
+}
+
+.min-width-30 {
+    min-width: 30em !important;
+}
+
+.min-width-35 {
+    min-width: 35em !important;
+}
+
+.min-width-40 {
+    min-width: 40em !important;
+}
+
+
+/* Visibility Class */
+.visible {
+    visibility: visible;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+
+/* jquery validate error style */
+.error {
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+    padding: 1px 20px 1px 20px;
+}
+
+
+/* style for profile image overlay icon */
+.image-wrapper {
+    position: relative;
+    width: 6.5em;
+    height: 6.5em;
+}
+.primary-pfofile-image {
+    position: absolute;
+    border: 1px solid #000000;
+    z-index: 1;
+    width: 6em;
+    height: 6em;
+}
+.secondary-pfofile-image {
+    position: absolute;
+    top: 1.6em;
+    left: 1.5em;
+    z-index: 2;
+    width: 3em;
+    height: 3em;
+}
+
+
+
+/* Video upload input size */
+.small-input {
+    height: 2.4rem !important;
+}
+
+
+/* Home headline text border */
+.text-bordered {
+    /* 1 pixel black shadow to left, top, right and bottom */
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+
+/* Float class*/
+.stay-right {
+   float: right !important;
+}
+.stay-left {
+    float: left !important;
+}
+
+
+/* button sizes */
+.btn-width-1 {
+    min-width: 2em !important;
+    text-align: center !important;
+}
+.btn-width-2 {
+    min-width: 3em !important;
+    text-align: center !important;
+}
+.btn-width-3 {
+    min-width: 4.5em !important;
+    text-align: center !important;
+}
+.btn-width-4 {
+    min-width: 6em !important;
+    text-align: center !important;
+}
+.btn-width-5 {
+    min-width: 8em !important;
+    text-align: center !important;
+}
+.btn-width-6 {
+    min-width: 10em !important;
+    text-align: center !important;
+}
+
+
+
+/* Large checkbox style */
+.checkbox-lg {
+    transform: scale(1.4);
+}
+
+
+
+/* Breaking News Text Anmation */
+.breaking-news-text {
+    -webkit-animation-name: blinker;
+    -webkit-animation-duration: 4s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-name: blinker;
+    -moz-animation-duration: 4s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+    animation-name: blinker;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@-moz-keyframes blinker {
+    0% {
+        opacity: 1.0;
+    }
+
+    50% {
+        opacity: 0.0;
+    }
+
+    100% {
+        opacity: 1.0;
+    }
+}
+
+@-webkit-keyframes blinker {
+    0% {
+        opacity: 1.0;
+    }
+
+    50% {
+        opacity: 0.0;
+    }
+
+    100% {
+        opacity: 1.0;
+    }
+}
+
+@keyframes blinker {
+    0% {
+        opacity: 1.0;
+    }
+
+    50% {
+        opacity: 0.0;
+    }
+
+    100% {
+        opacity: 1.0;
+    }
+}
+
+
+/* Image caption text */
+.caption-text {
+    margin-top: -1.7em;
+}
+
+
+
+/* Subscribe Modal */
+.subscriber-header .close {
+    margin-top: -1.5rem;
+}
+
+.form-title {
+    margin: -2rem 0rem 2rem;
+}
+
+.subscribe-form {
+    margin: 0rem 0rem 1rem;
+}
+
+.subscribe-row {
+    margin-top: -3.5em;
+}
+
+
+/* Hide or Show on Small Screens */
+.hide-small{
+    display: block !important;
+}
+.show-small {
+    display: none !important;
+}
+
+
+/*margin left form search input content small screens*/
+.search-form {
+    margin-right: 1em;
+}
+
+
+
+/* badge alert notification style */
+.badge-notification {
+    position: relative;
+    margin-left: 60%;
+    margin-top: -60%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* RESPONSIVE MEDIA QUERIES */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .latest-img {
+        width: 8em !important;
+        height: 3em !important;
+    }
+
+    .caption-text {
+        margin-top: -1.6em;
+    }
+    
+    /* set card to full width in small screens */
+    .card-fluid {
+        width: 115%; 
+        margin-left: -1.6em;
+    }
+
+    /* reduce subscribe input width */
+    .subscribe-button-div {
+        margin-bottom: 0.6em;
+    }
+
+    /* Hide or Show on Small Screens */
+    .hide-small {
+        display: none !important;
+    }
+
+    .show-small {
+        display: block !important;
+    }
+
+    /*margin left form search input content small screens*/
+    .search-form {
+        margin-left: 6rem;
+    }
+
+    /* Applying borders on elements depending on device size with bootstrap */
+    .border-sm-bottom {
+        border-bottom: 1px solid #dee2e6 !important;
+    }
+
+    .border-sm-bottom-0 {
+        border-bottom: 0 !important;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .latest-img {
+        width: 8em !important;
+        height: 3em !important;
+    }
+
+    /* Hide or Show on Small Screens */
+    .hide-small {
+        display: none !important;
+    }
+
+    .show-small {
+        display: block !important;
+    }
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .featured-img {
+        width: 100% !important;
+        height: 22rem !important;
+    }
+
+    .latest-img {
+        width: 8em !important;
+        height: 3em !important;
+    }
+
+    /* Hide or Show on Small Screens */
+    .hide-small {
+        display: block !important;
+    }
+
+    .show-small {
+        display: none !important;
+    }
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .featured-img {
+        width: 100% !important;
+        height: 26rem !important;
+    }
+
+    .latest-img {
+        width: 8em !important;
+        height: 3em !important;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .featured-img {
+        width: 100% !important;
+        height: 30rem !important;
+    }
+
+    .latest-img {
+        width: 8em !important;
+        height: 3em !important;
+    }
+}

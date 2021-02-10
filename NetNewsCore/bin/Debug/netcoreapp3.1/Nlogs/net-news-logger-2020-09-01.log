@@ -1,0 +1,807 @@
+2020-09-01 04:23:57.8258||DEBUG|NetNews.Program|init main function 
+2020-09-01 04:23:58.4723||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-01 04:42:19.9145||DEBUG|NetNews.Program|init main function 
+2020-09-01 04:42:20.3820||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-01 04:45:48.0388||DEBUG|NetNews.Program|init main function 
+2020-09-01 04:45:48.4119||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-01 04:46:43.6377||DEBUG|NetNews.Program|init main function 
+2020-09-01 04:46:44.0366||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-01 04:47:19.5088||DEBUG|NetNews.Program|init main function 
+2020-09-01 04:47:19.8715||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-01 04:48:49.9019||DEBUG|NetNews.Program|init main function 
+2020-09-01 04:48:50.3311||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-01 05:35:59.8686||DEBUG|NetNews.Program|init main function 
+2020-09-01 05:36:00.4723||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-01 05:38:30.6595||DEBUG|NetNews.Program|init main function 
+2020-09-01 05:38:31.2638||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-01 05:40:06.0585||DEBUG|NetNews.Program|init main function 
+2020-09-01 05:40:06.4684||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-01 05:53:49.6801||DEBUG|NetNews.Program|init main function 
+2020-09-01 05:53:50.0358||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-01 05:54:56.8667||DEBUG|NetNews.Program|init main function 
+2020-09-01 05:54:57.2754||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-01 05:56:38.3712||DEBUG|NetNews.Program|init main function 
+2020-09-01 05:56:38.6784||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-01 06:28:17.9669||DEBUG|NetNews.Program|init main function 
+2020-09-01 06:28:18.4624||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-01 06:31:48.1602||DEBUG|NetNews.Program|init main function 
+2020-09-01 06:31:48.4718||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-01 06:35:16.1893||DEBUG|NetNews.Program|init main function 
+2020-09-01 06:35:16.5632||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-01 06:36:33.4210|3|ERROR|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|The view 'ReviewHistory' was not found. Searched locations: /Views/Admin/ReviewHistory.desktop.cshtml, /Views/Admin/ReviewHistory.cshtml, /Views/Shared/ReviewHistory.desktop.cshtml, /Views/Shared/ReviewHistory.cshtml, /Pages/Shared/ReviewHistory.desktop.cshtml, /Pages/Shared/ReviewHistory.cshtml 
+2020-09-01 06:36:33.5287|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.InvalidOperationException: The view 'ReviewHistory' was not found. The following locations were searched:
+/Views/Admin/ReviewHistory.desktop.cshtml
+/Views/Admin/ReviewHistory.cshtml
+/Views/Shared/ReviewHistory.desktop.cshtml
+/Views/Shared/ReviewHistory.cshtml
+/Pages/Shared/ReviewHistory.desktop.cshtml
+/Pages/Shared/ReviewHistory.cshtml
+   at Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult.EnsureSuccessful(IEnumerable`1 originalLocations)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Wangkanai.Detection.Hosting.ResponsiveMiddleware.InvokeAsync(HttpContext context, IResponsiveService responsive)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-09-01 06:39:32.5347||DEBUG|NetNews.Program|init main function 
+2020-09-01 06:39:32.9131||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-01 06:41:53.6148||DEBUG|NetNews.Program|init main function 
+2020-09-01 06:41:54.0065||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-01 06:43:48.4766||DEBUG|NetNews.Program|init main function 
+2020-09-01 06:43:48.8308||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-01 06:44:20.5791||DEBUG|NetNews.Program|init main function 
+2020-09-01 06:44:21.1049||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-01 06:45:17.8067||DEBUG|NetNews.Program|init main function 
+2020-09-01 06:45:18.2654||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-01 06:47:13.3804||DEBUG|NetNews.Program|init main function 
+2020-09-01 06:47:13.8261||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-01 06:52:56.5876||DEBUG|NetNews.Program|init main function 
+2020-09-01 06:52:57.0979||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-01 07:08:14.3858||DEBUG|NetNews.Program|init main function 
+2020-09-01 07:08:14.8213||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-01 07:08:19.6526|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.InvalidOperationException: Property 'JsonResult.SerializerSettings' must be an instance of type 'System.Text.Json.JsonSerializerOptions'.
+   at Microsoft.AspNetCore.Mvc.Infrastructure.SystemTextJsonResultExecutor.GetSerializerOptions(JsonResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.SystemTextJsonResultExecutor.ExecuteAsync(ActionContext context, JsonResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Wangkanai.Detection.Hosting.ResponsiveMiddleware.InvokeAsync(HttpContext context, IResponsiveService responsive)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-09-01 07:08:19.6526|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.InvalidOperationException: Property 'JsonResult.SerializerSettings' must be an instance of type 'System.Text.Json.JsonSerializerOptions'.
+   at Microsoft.AspNetCore.Mvc.Infrastructure.SystemTextJsonResultExecutor.GetSerializerOptions(JsonResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.SystemTextJsonResultExecutor.ExecuteAsync(ActionContext context, JsonResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Wangkanai.Detection.Hosting.ResponsiveMiddleware.InvokeAsync(HttpContext context, IResponsiveService responsive)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-09-01 07:08:20.2615|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.InvalidOperationException: Property 'JsonResult.SerializerSettings' must be an instance of type 'System.Text.Json.JsonSerializerOptions'.
+   at Microsoft.AspNetCore.Mvc.Infrastructure.SystemTextJsonResultExecutor.GetSerializerOptions(JsonResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.SystemTextJsonResultExecutor.ExecuteAsync(ActionContext context, JsonResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Wangkanai.Detection.Hosting.ResponsiveMiddleware.InvokeAsync(HttpContext context, IResponsiveService responsive)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-09-01 07:08:23.6200|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.InvalidOperationException: Property 'JsonResult.SerializerSettings' must be an instance of type 'System.Text.Json.JsonSerializerOptions'.
+   at Microsoft.AspNetCore.Mvc.Infrastructure.SystemTextJsonResultExecutor.GetSerializerOptions(JsonResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.SystemTextJsonResultExecutor.ExecuteAsync(ActionContext context, JsonResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Wangkanai.Detection.Hosting.ResponsiveMiddleware.InvokeAsync(HttpContext context, IResponsiveService responsive)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-09-01 07:08:23.6366|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.InvalidOperationException: Property 'JsonResult.SerializerSettings' must be an instance of type 'System.Text.Json.JsonSerializerOptions'.
+   at Microsoft.AspNetCore.Mvc.Infrastructure.SystemTextJsonResultExecutor.GetSerializerOptions(JsonResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.SystemTextJsonResultExecutor.ExecuteAsync(ActionContext context, JsonResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Wangkanai.Detection.Hosting.ResponsiveMiddleware.InvokeAsync(HttpContext context, IResponsiveService responsive)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-09-01 07:08:25.2502|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.InvalidOperationException: Property 'JsonResult.SerializerSettings' must be an instance of type 'System.Text.Json.JsonSerializerOptions'.
+   at Microsoft.AspNetCore.Mvc.Infrastructure.SystemTextJsonResultExecutor.GetSerializerOptions(JsonResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.SystemTextJsonResultExecutor.ExecuteAsync(ActionContext context, JsonResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Wangkanai.Detection.Hosting.ResponsiveMiddleware.InvokeAsync(HttpContext context, IResponsiveService responsive)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-09-01 07:08:25.2689|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.InvalidOperationException: Property 'JsonResult.SerializerSettings' must be an instance of type 'System.Text.Json.JsonSerializerOptions'.
+   at Microsoft.AspNetCore.Mvc.Infrastructure.SystemTextJsonResultExecutor.GetSerializerOptions(JsonResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.SystemTextJsonResultExecutor.ExecuteAsync(ActionContext context, JsonResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Wangkanai.Detection.Hosting.ResponsiveMiddleware.InvokeAsync(HttpContext context, IResponsiveService responsive)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-09-01 07:09:17.8781||DEBUG|NetNews.Program|init main function 
+2020-09-01 07:09:22.3210||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-01 07:10:10.6208|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.InvalidOperationException: Property 'JsonResult.SerializerSettings' must be an instance of type 'System.Text.Json.JsonSerializerOptions'.
+   at Microsoft.AspNetCore.Mvc.Infrastructure.SystemTextJsonResultExecutor.GetSerializerOptions(JsonResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.SystemTextJsonResultExecutor.ExecuteAsync(ActionContext context, JsonResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Wangkanai.Detection.Hosting.ResponsiveMiddleware.InvokeAsync(HttpContext context, IResponsiveService responsive)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-09-01 07:10:40.0132|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.InvalidOperationException: Property 'JsonResult.SerializerSettings' must be an instance of type 'System.Text.Json.JsonSerializerOptions'.
+   at Microsoft.AspNetCore.Mvc.Infrastructure.SystemTextJsonResultExecutor.GetSerializerOptions(JsonResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.SystemTextJsonResultExecutor.ExecuteAsync(ActionContext context, JsonResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Wangkanai.Detection.Hosting.ResponsiveMiddleware.InvokeAsync(HttpContext context, IResponsiveService responsive)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-09-01 07:11:02.1759|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.InvalidOperationException: Property 'JsonResult.SerializerSettings' must be an instance of type 'System.Text.Json.JsonSerializerOptions'.
+   at Microsoft.AspNetCore.Mvc.Infrastructure.SystemTextJsonResultExecutor.GetSerializerOptions(JsonResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.SystemTextJsonResultExecutor.ExecuteAsync(ActionContext context, JsonResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Wangkanai.Detection.Hosting.ResponsiveMiddleware.InvokeAsync(HttpContext context, IResponsiveService responsive)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-09-01 07:11:04.8845|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.InvalidOperationException: Property 'JsonResult.SerializerSettings' must be an instance of type 'System.Text.Json.JsonSerializerOptions'.
+   at Microsoft.AspNetCore.Mvc.Infrastructure.SystemTextJsonResultExecutor.GetSerializerOptions(JsonResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.SystemTextJsonResultExecutor.ExecuteAsync(ActionContext context, JsonResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Wangkanai.Detection.Hosting.ResponsiveMiddleware.InvokeAsync(HttpContext context, IResponsiveService responsive)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-09-01 07:11:05.4185|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.InvalidOperationException: Property 'JsonResult.SerializerSettings' must be an instance of type 'System.Text.Json.JsonSerializerOptions'.
+   at Microsoft.AspNetCore.Mvc.Infrastructure.SystemTextJsonResultExecutor.GetSerializerOptions(JsonResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.SystemTextJsonResultExecutor.ExecuteAsync(ActionContext context, JsonResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Wangkanai.Detection.Hosting.ResponsiveMiddleware.InvokeAsync(HttpContext context, IResponsiveService responsive)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-09-01 07:12:05.9805||DEBUG|NetNews.Program|init main function 
+2020-09-01 07:12:07.2488||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-01 07:12:14.4835|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.InvalidOperationException: Property 'JsonResult.SerializerSettings' must be an instance of type 'System.Text.Json.JsonSerializerOptions'.
+   at Microsoft.AspNetCore.Mvc.Infrastructure.SystemTextJsonResultExecutor.GetSerializerOptions(JsonResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.SystemTextJsonResultExecutor.ExecuteAsync(ActionContext context, JsonResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Wangkanai.Detection.Hosting.ResponsiveMiddleware.InvokeAsync(HttpContext context, IResponsiveService responsive)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-09-01 07:12:14.9015|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.InvalidOperationException: Property 'JsonResult.SerializerSettings' must be an instance of type 'System.Text.Json.JsonSerializerOptions'.
+   at Microsoft.AspNetCore.Mvc.Infrastructure.SystemTextJsonResultExecutor.GetSerializerOptions(JsonResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.SystemTextJsonResultExecutor.ExecuteAsync(ActionContext context, JsonResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Wangkanai.Detection.Hosting.ResponsiveMiddleware.InvokeAsync(HttpContext context, IResponsiveService responsive)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-09-01 07:12:15.7930|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.InvalidOperationException: Property 'JsonResult.SerializerSettings' must be an instance of type 'System.Text.Json.JsonSerializerOptions'.
+   at Microsoft.AspNetCore.Mvc.Infrastructure.SystemTextJsonResultExecutor.GetSerializerOptions(JsonResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.SystemTextJsonResultExecutor.ExecuteAsync(ActionContext context, JsonResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Wangkanai.Detection.Hosting.ResponsiveMiddleware.InvokeAsync(HttpContext context, IResponsiveService responsive)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-09-01 07:15:50.5417||DEBUG|NetNews.Program|init main function 
+2020-09-01 07:15:52.0447||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-01 07:18:27.9520||DEBUG|NetNews.Program|init main function 
+2020-09-01 07:18:29.6403||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-01 07:19:38.3945||DEBUG|NetNews.Program|init main function 
+2020-09-01 07:19:38.7313||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-01 07:24:40.2748||DEBUG|NetNews.Program|init main function 
+2020-09-01 07:24:40.6958||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-01 07:25:42.4201||DEBUG|NetNews.Program|init main function 
+2020-09-01 07:25:42.8616||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-01 07:27:25.2389||DEBUG|NetNews.Program|init main function 
+2020-09-01 07:27:25.6331||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-01 07:29:58.5146||DEBUG|NetNews.Program|init main function 
+2020-09-01 07:29:58.8165||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-01 07:31:21.0350||DEBUG|NetNews.Program|init main function 
+2020-09-01 07:31:21.3336||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-01 07:41:07.3739||DEBUG|NetNews.Program|init main function 
+2020-09-01 07:41:07.7451||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-01 07:41:14.5947||DEBUG|NetNews.Program|init main function 
+2020-09-01 07:41:15.0135||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-01 08:16:59.0401||DEBUG|NetNews.Program|init main function 
+2020-09-01 08:17:00.1035||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-01 08:20:31.3374||DEBUG|NetNews.Program|init main function 
+2020-09-01 08:20:32.9785||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-01 08:25:14.7798||DEBUG|NetNews.Program|init main function 
+2020-09-01 08:25:16.0630||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-01 08:32:59.0054||DEBUG|NetNews.Program|init main function 
+2020-09-01 08:33:00.2842||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-01 08:37:50.9157||DEBUG|NetNews.Program|init main function 
+2020-09-01 08:37:53.2469||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-01 08:53:11.3698||DEBUG|NetNews.Program|init main function 
+2020-09-01 08:53:12.7208||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-01 08:57:08.9165||DEBUG|NetNews.Program|init main function 
+2020-09-01 08:57:09.8487||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-01 08:59:55.7751||DEBUG|NetNews.Program|init main function 
+2020-09-01 08:59:56.8139||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-01 09:01:42.8042||DEBUG|NetNews.Program|init main function 
+2020-09-01 09:01:44.2812||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-01 11:00:45.5366||DEBUG|NetNews.Program|init main function 
+2020-09-01 11:00:46.7344||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-01 11:03:01.4568||DEBUG|NetNews.Program|init main function 
+2020-09-01 11:03:02.5499||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-01 11:05:45.7339|10100|ERROR|Microsoft.EntityFrameworkCore.Query|An exception occurred while iterating over the results of a query for context type 'NetNews.Models.DBConnection'.
+System.ArgumentException: No mapping exists from object type Microsoft.Extensions.Primitives.StringValues to a known managed provider native type.
+   at Microsoft.Data.SqlClient.MetaType.GetMetaTypeFromValue(Type dataType, Object value, Boolean inferLen, Boolean streamAllowed)
+   at Microsoft.Data.SqlClient.SqlParameter.get_DbType()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.DbParameterCollectionExtensions.<>c__DisplayClass0_0.<FormatParameters>b__0(DbParameter p)
+   at System.Linq.Enumerable.SelectEnumerableIterator`2.MoveNext()
+   at System.String.JoinCore[T](Char* separator, Int32 separatorLength, IEnumerable`1 values)
+   at System.String.Join[T](String separator, IEnumerable`1 values)
+   at Microsoft.EntityFrameworkCore.Internal.EnumerableExtensions.Join(IEnumerable`1 source, String separator)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.DbParameterCollectionExtensions.FormatParameters(DbParameterCollection parameters, Boolean logParameterValues)
+   at Microsoft.EntityFrameworkCore.Diagnostics.RelationalLoggerExtensions.LogCommandError(IDiagnosticsLogger`1 diagnostics, DbCommand command, TimeSpan duration, EventDefinition`6 definition)
+   at Microsoft.EntityFrameworkCore.Diagnostics.RelationalLoggerExtensions.CommandError(IDiagnosticsLogger`1 diagnostics, IRelationalConnection connection, DbCommand command, DbContext context, DbCommandMethod executeMethod, Guid commandId, Guid connectionId, Exception exception, DateTimeOffset startTime, TimeSpan duration)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.InitializeReader(DbContext _, Boolean result)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext() System.ArgumentException: No mapping exists from object type Microsoft.Extensions.Primitives.StringValues to a known managed provider native type.
+   at Microsoft.Data.SqlClient.MetaType.GetMetaTypeFromValue(Type dataType, Object value, Boolean inferLen, Boolean streamAllowed)
+   at Microsoft.Data.SqlClient.SqlParameter.get_DbType()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.DbParameterCollectionExtensions.<>c__DisplayClass0_0.<FormatParameters>b__0(DbParameter p)
+   at System.Linq.Enumerable.SelectEnumerableIterator`2.MoveNext()
+   at System.String.JoinCore[T](Char* separator, Int32 separatorLength, IEnumerable`1 values)
+   at System.String.Join[T](String separator, IEnumerable`1 values)
+   at Microsoft.EntityFrameworkCore.Internal.EnumerableExtensions.Join(IEnumerable`1 source, String separator)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.DbParameterCollectionExtensions.FormatParameters(DbParameterCollection parameters, Boolean logParameterValues)
+   at Microsoft.EntityFrameworkCore.Diagnostics.RelationalLoggerExtensions.LogCommandError(IDiagnosticsLogger`1 diagnostics, DbCommand command, TimeSpan duration, EventDefinition`6 definition)
+   at Microsoft.EntityFrameworkCore.Diagnostics.RelationalLoggerExtensions.CommandError(IDiagnosticsLogger`1 diagnostics, IRelationalConnection connection, DbCommand command, DbContext context, DbCommandMethod executeMethod, Guid commandId, Guid connectionId, Exception exception, DateTimeOffset startTime, TimeSpan duration)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.InitializeReader(DbContext _, Boolean result)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+2020-09-01 11:06:02.0621||INFO|NetNews.Controllers.AdminController|Suspend Account Error: System.ArgumentException: No mapping exists from object type Microsoft.Extensions.Primitives.StringValues to a known managed provider native type.
+   at Microsoft.Data.SqlClient.MetaType.GetMetaTypeFromValue(Type dataType, Object value, Boolean inferLen, Boolean streamAllowed)
+   at Microsoft.Data.SqlClient.SqlParameter.get_DbType()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.DbParameterCollectionExtensions.<>c__DisplayClass0_0.<FormatParameters>b__0(DbParameter p)
+   at System.Linq.Enumerable.SelectEnumerableIterator`2.MoveNext()
+   at System.String.JoinCore[T](Char* separator, Int32 separatorLength, IEnumerable`1 values)
+   at System.String.Join[T](String separator, IEnumerable`1 values)
+   at Microsoft.EntityFrameworkCore.Internal.EnumerableExtensions.Join(IEnumerable`1 source, String separator)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.DbParameterCollectionExtensions.FormatParameters(DbParameterCollection parameters, Boolean logParameterValues)
+   at Microsoft.EntityFrameworkCore.Diagnostics.RelationalLoggerExtensions.LogCommandError(IDiagnosticsLogger`1 diagnostics, DbCommand command, TimeSpan duration, EventDefinition`6 definition)
+   at Microsoft.EntityFrameworkCore.Diagnostics.RelationalLoggerExtensions.CommandError(IDiagnosticsLogger`1 diagnostics, IRelationalConnection connection, DbCommand command, DbContext context, DbCommandMethod executeMethod, Guid commandId, Guid connectionId, Exception exception, DateTimeOffset startTime, TimeSpan duration)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.InitializeReader(DbContext _, Boolean result)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.SingleOrDefault[TSource](IEnumerable`1 source)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source)
+   at NetNews.Controllers.AdminController.SuspendAccount() in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNews\NetNews\Controllers\AdminController.cs:line 654 
+2020-09-01 11:06:36.9270|10100|ERROR|Microsoft.EntityFrameworkCore.Query|An exception occurred while iterating over the results of a query for context type 'NetNews.Models.DBConnection'.
+System.ArgumentException: No mapping exists from object type Microsoft.Extensions.Primitives.StringValues to a known managed provider native type.
+   at Microsoft.Data.SqlClient.MetaType.GetMetaTypeFromValue(Type dataType, Object value, Boolean inferLen, Boolean streamAllowed)
+   at Microsoft.Data.SqlClient.SqlParameter.get_DbType()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.DbParameterCollectionExtensions.<>c__DisplayClass0_0.<FormatParameters>b__0(DbParameter p)
+   at System.Linq.Enumerable.SelectEnumerableIterator`2.MoveNext()
+   at System.String.JoinCore[T](Char* separator, Int32 separatorLength, IEnumerable`1 values)
+   at System.String.Join[T](String separator, IEnumerable`1 values)
+   at Microsoft.EntityFrameworkCore.Internal.EnumerableExtensions.Join(IEnumerable`1 source, String separator)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.DbParameterCollectionExtensions.FormatParameters(DbParameterCollection parameters, Boolean logParameterValues)
+   at Microsoft.EntityFrameworkCore.Diagnostics.RelationalLoggerExtensions.LogCommandError(IDiagnosticsLogger`1 diagnostics, DbCommand command, TimeSpan duration, EventDefinition`6 definition)
+   at Microsoft.EntityFrameworkCore.Diagnostics.RelationalLoggerExtensions.CommandError(IDiagnosticsLogger`1 diagnostics, IRelationalConnection connection, DbCommand command, DbContext context, DbCommandMethod executeMethod, Guid commandId, Guid connectionId, Exception exception, DateTimeOffset startTime, TimeSpan duration)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.InitializeReader(DbContext _, Boolean result)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext() System.ArgumentException: No mapping exists from object type Microsoft.Extensions.Primitives.StringValues to a known managed provider native type.
+   at Microsoft.Data.SqlClient.MetaType.GetMetaTypeFromValue(Type dataType, Object value, Boolean inferLen, Boolean streamAllowed)
+   at Microsoft.Data.SqlClient.SqlParameter.get_DbType()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.DbParameterCollectionExtensions.<>c__DisplayClass0_0.<FormatParameters>b__0(DbParameter p)
+   at System.Linq.Enumerable.SelectEnumerableIterator`2.MoveNext()
+   at System.String.JoinCore[T](Char* separator, Int32 separatorLength, IEnumerable`1 values)
+   at System.String.Join[T](String separator, IEnumerable`1 values)
+   at Microsoft.EntityFrameworkCore.Internal.EnumerableExtensions.Join(IEnumerable`1 source, String separator)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.DbParameterCollectionExtensions.FormatParameters(DbParameterCollection parameters, Boolean logParameterValues)
+   at Microsoft.EntityFrameworkCore.Diagnostics.RelationalLoggerExtensions.LogCommandError(IDiagnosticsLogger`1 diagnostics, DbCommand command, TimeSpan duration, EventDefinition`6 definition)
+   at Microsoft.EntityFrameworkCore.Diagnostics.RelationalLoggerExtensions.CommandError(IDiagnosticsLogger`1 diagnostics, IRelationalConnection connection, DbCommand command, DbContext context, DbCommandMethod executeMethod, Guid commandId, Guid connectionId, Exception exception, DateTimeOffset startTime, TimeSpan duration)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.InitializeReader(DbContext _, Boolean result)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+2020-09-01 11:06:45.1775||INFO|NetNews.Controllers.AdminController|Suspend Account Error: System.ArgumentException: No mapping exists from object type Microsoft.Extensions.Primitives.StringValues to a known managed provider native type.
+   at Microsoft.Data.SqlClient.MetaType.GetMetaTypeFromValue(Type dataType, Object value, Boolean inferLen, Boolean streamAllowed)
+   at Microsoft.Data.SqlClient.SqlParameter.get_DbType()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.DbParameterCollectionExtensions.<>c__DisplayClass0_0.<FormatParameters>b__0(DbParameter p)
+   at System.Linq.Enumerable.SelectEnumerableIterator`2.MoveNext()
+   at System.String.JoinCore[T](Char* separator, Int32 separatorLength, IEnumerable`1 values)
+   at System.String.Join[T](String separator, IEnumerable`1 values)
+   at Microsoft.EntityFrameworkCore.Internal.EnumerableExtensions.Join(IEnumerable`1 source, String separator)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.DbParameterCollectionExtensions.FormatParameters(DbParameterCollection parameters, Boolean logParameterValues)
+   at Microsoft.EntityFrameworkCore.Diagnostics.RelationalLoggerExtensions.LogCommandError(IDiagnosticsLogger`1 diagnostics, DbCommand command, TimeSpan duration, EventDefinition`6 definition)
+   at Microsoft.EntityFrameworkCore.Diagnostics.RelationalLoggerExtensions.CommandError(IDiagnosticsLogger`1 diagnostics, IRelationalConnection connection, DbCommand command, DbContext context, DbCommandMethod executeMethod, Guid commandId, Guid connectionId, Exception exception, DateTimeOffset startTime, TimeSpan duration)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.InitializeReader(DbContext _, Boolean result)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.SingleOrDefault[TSource](IEnumerable`1 source)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source)
+   at NetNews.Controllers.AdminController.SuspendAccount() in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNews\NetNews\Controllers\AdminController.cs:line 654 
+2020-09-01 11:09:49.4506||DEBUG|NetNews.Program|init main function 
+2020-09-01 11:09:50.8844||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-01 11:11:01.3564||DEBUG|NetNews.Program|init main function 
+2020-09-01 11:11:02.7463||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-01 11:12:15.9232|10100|ERROR|Microsoft.EntityFrameworkCore.Query|An exception occurred while iterating over the results of a query for context type 'NetNews.Models.DBConnection'.
+System.ArgumentException: No mapping exists from object type Microsoft.Extensions.Primitives.StringValues to a known managed provider native type.
+   at Microsoft.Data.SqlClient.MetaType.GetMetaTypeFromValue(Type dataType, Object value, Boolean inferLen, Boolean streamAllowed)
+   at Microsoft.Data.SqlClient.MetaType.GetMetaTypeFromType(Type dataType)
+   at Microsoft.Data.SqlClient.SqlParameter.GetMetaTypeOnly()
+   at Microsoft.Data.SqlClient.SqlParameter.get_DbType()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.DbParameterCollectionExtensions.<>c__DisplayClass0_0.<FormatParameters>b__0(DbParameter p)
+   at System.Linq.Enumerable.SelectEnumerableIterator`2.MoveNext()
+   at System.String.JoinCore[T](Char* separator, Int32 separatorLength, IEnumerable`1 values)
+   at System.String.Join[T](String separator, IEnumerable`1 values)
+   at Microsoft.EntityFrameworkCore.Internal.EnumerableExtensions.Join(IEnumerable`1 source, String separator)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.DbParameterCollectionExtensions.FormatParameters(DbParameterCollection parameters, Boolean logParameterValues)
+   at Microsoft.EntityFrameworkCore.Diagnostics.RelationalLoggerExtensions.LogCommandError(IDiagnosticsLogger`1 diagnostics, DbCommand command, TimeSpan duration, EventDefinition`6 definition)
+   at Microsoft.EntityFrameworkCore.Diagnostics.RelationalLoggerExtensions.CommandError(IDiagnosticsLogger`1 diagnostics, IRelationalConnection connection, DbCommand command, DbContext context, DbCommandMethod executeMethod, Guid commandId, Guid connectionId, Exception exception, DateTimeOffset startTime, TimeSpan duration)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.InitializeReader(DbContext _, Boolean result)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext() System.ArgumentException: No mapping exists from object type Microsoft.Extensions.Primitives.StringValues to a known managed provider native type.
+   at Microsoft.Data.SqlClient.MetaType.GetMetaTypeFromValue(Type dataType, Object value, Boolean inferLen, Boolean streamAllowed)
+   at Microsoft.Data.SqlClient.MetaType.GetMetaTypeFromType(Type dataType)
+   at Microsoft.Data.SqlClient.SqlParameter.GetMetaTypeOnly()
+   at Microsoft.Data.SqlClient.SqlParameter.get_DbType()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.DbParameterCollectionExtensions.<>c__DisplayClass0_0.<FormatParameters>b__0(DbParameter p)
+   at System.Linq.Enumerable.SelectEnumerableIterator`2.MoveNext()
+   at System.String.JoinCore[T](Char* separator, Int32 separatorLength, IEnumerable`1 values)
+   at System.String.Join[T](String separator, IEnumerable`1 values)
+   at Microsoft.EntityFrameworkCore.Internal.EnumerableExtensions.Join(IEnumerable`1 source, String separator)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.DbParameterCollectionExtensions.FormatParameters(DbParameterCollection parameters, Boolean logParameterValues)
+   at Microsoft.EntityFrameworkCore.Diagnostics.RelationalLoggerExtensions.LogCommandError(IDiagnosticsLogger`1 diagnostics, DbCommand command, TimeSpan duration, EventDefinition`6 definition)
+   at Microsoft.EntityFrameworkCore.Diagnostics.RelationalLoggerExtensions.CommandError(IDiagnosticsLogger`1 diagnostics, IRelationalConnection connection, DbCommand command, DbContext context, DbCommandMethod executeMethod, Guid commandId, Guid connectionId, Exception exception, DateTimeOffset startTime, TimeSpan duration)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.InitializeReader(DbContext _, Boolean result)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+2020-09-01 11:13:08.1097||DEBUG|NetNews.Program|init main function 
+2020-09-01 11:13:09.3289||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-01 11:14:30.8314|10100|ERROR|Microsoft.EntityFrameworkCore.Query|An exception occurred while iterating over the results of a query for context type 'NetNews.Models.DBConnection'.
+System.ArgumentException: No mapping exists from object type Microsoft.Extensions.Primitives.StringValues to a known managed provider native type.
+   at Microsoft.Data.SqlClient.MetaType.GetMetaTypeFromValue(Type dataType, Object value, Boolean inferLen, Boolean streamAllowed)
+   at Microsoft.Data.SqlClient.MetaType.GetMetaTypeFromType(Type dataType)
+   at Microsoft.Data.SqlClient.SqlParameter.GetMetaTypeOnly()
+   at Microsoft.Data.SqlClient.SqlParameter.get_DbType()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.DbParameterCollectionExtensions.<>c__DisplayClass0_0.<FormatParameters>b__0(DbParameter p)
+   at System.Linq.Enumerable.SelectEnumerableIterator`2.MoveNext()
+   at System.String.JoinCore[T](Char* separator, Int32 separatorLength, IEnumerable`1 values)
+   at System.String.Join[T](String separator, IEnumerable`1 values)
+   at Microsoft.EntityFrameworkCore.Internal.EnumerableExtensions.Join(IEnumerable`1 source, String separator)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.DbParameterCollectionExtensions.FormatParameters(DbParameterCollection parameters, Boolean logParameterValues)
+   at Microsoft.EntityFrameworkCore.Diagnostics.RelationalLoggerExtensions.LogCommandError(IDiagnosticsLogger`1 diagnostics, DbCommand command, TimeSpan duration, EventDefinition`6 definition)
+   at Microsoft.EntityFrameworkCore.Diagnostics.RelationalLoggerExtensions.CommandError(IDiagnosticsLogger`1 diagnostics, IRelationalConnection connection, DbCommand command, DbContext context, DbCommandMethod executeMethod, Guid commandId, Guid connectionId, Exception exception, DateTimeOffset startTime, TimeSpan duration)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.InitializeReader(DbContext _, Boolean result)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext() System.ArgumentException: No mapping exists from object type Microsoft.Extensions.Primitives.StringValues to a known managed provider native type.
+   at Microsoft.Data.SqlClient.MetaType.GetMetaTypeFromValue(Type dataType, Object value, Boolean inferLen, Boolean streamAllowed)
+   at Microsoft.Data.SqlClient.MetaType.GetMetaTypeFromType(Type dataType)
+   at Microsoft.Data.SqlClient.SqlParameter.GetMetaTypeOnly()
+   at Microsoft.Data.SqlClient.SqlParameter.get_DbType()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.DbParameterCollectionExtensions.<>c__DisplayClass0_0.<FormatParameters>b__0(DbParameter p)
+   at System.Linq.Enumerable.SelectEnumerableIterator`2.MoveNext()
+   at System.String.JoinCore[T](Char* separator, Int32 separatorLength, IEnumerable`1 values)
+   at System.String.Join[T](String separator, IEnumerable`1 values)
+   at Microsoft.EntityFrameworkCore.Internal.EnumerableExtensions.Join(IEnumerable`1 source, String separator)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.DbParameterCollectionExtensions.FormatParameters(DbParameterCollection parameters, Boolean logParameterValues)
+   at Microsoft.EntityFrameworkCore.Diagnostics.RelationalLoggerExtensions.LogCommandError(IDiagnosticsLogger`1 diagnostics, DbCommand command, TimeSpan duration, EventDefinition`6 definition)
+   at Microsoft.EntityFrameworkCore.Diagnostics.RelationalLoggerExtensions.CommandError(IDiagnosticsLogger`1 diagnostics, IRelationalConnection connection, DbCommand command, DbContext context, DbCommandMethod executeMethod, Guid commandId, Guid connectionId, Exception exception, DateTimeOffset startTime, TimeSpan duration)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.InitializeReader(DbContext _, Boolean result)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+2020-09-01 11:16:32.7722||DEBUG|NetNews.Program|init main function 
+2020-09-01 11:16:33.8877||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-01 11:17:11.5477|10100|ERROR|Microsoft.EntityFrameworkCore.Query|An exception occurred while iterating over the results of a query for context type 'NetNews.Models.DBConnection'.
+System.ArgumentException: No mapping exists from object type Microsoft.Extensions.Primitives.StringValues to a known managed provider native type.
+   at Microsoft.Data.SqlClient.MetaType.GetMetaTypeFromValue(Type dataType, Object value, Boolean inferLen, Boolean streamAllowed)
+   at Microsoft.Data.SqlClient.MetaType.GetMetaTypeFromType(Type dataType)
+   at Microsoft.Data.SqlClient.SqlParameter.GetMetaTypeOnly()
+   at Microsoft.Data.SqlClient.SqlParameter.get_DbType()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.DbParameterCollectionExtensions.<>c__DisplayClass0_0.<FormatParameters>b__0(DbParameter p)
+   at System.Linq.Enumerable.SelectEnumerableIterator`2.MoveNext()
+   at System.String.JoinCore[T](Char* separator, Int32 separatorLength, IEnumerable`1 values)
+   at System.String.Join[T](String separator, IEnumerable`1 values)
+   at Microsoft.EntityFrameworkCore.Internal.EnumerableExtensions.Join(IEnumerable`1 source, String separator)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.DbParameterCollectionExtensions.FormatParameters(DbParameterCollection parameters, Boolean logParameterValues)
+   at Microsoft.EntityFrameworkCore.Diagnostics.RelationalLoggerExtensions.LogCommandError(IDiagnosticsLogger`1 diagnostics, DbCommand command, TimeSpan duration, EventDefinition`6 definition)
+   at Microsoft.EntityFrameworkCore.Diagnostics.RelationalLoggerExtensions.CommandError(IDiagnosticsLogger`1 diagnostics, IRelationalConnection connection, DbCommand command, DbContext context, DbCommandMethod executeMethod, Guid commandId, Guid connectionId, Exception exception, DateTimeOffset startTime, TimeSpan duration)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.InitializeReader(DbContext _, Boolean result)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext() System.ArgumentException: No mapping exists from object type Microsoft.Extensions.Primitives.StringValues to a known managed provider native type.
+   at Microsoft.Data.SqlClient.MetaType.GetMetaTypeFromValue(Type dataType, Object value, Boolean inferLen, Boolean streamAllowed)
+   at Microsoft.Data.SqlClient.MetaType.GetMetaTypeFromType(Type dataType)
+   at Microsoft.Data.SqlClient.SqlParameter.GetMetaTypeOnly()
+   at Microsoft.Data.SqlClient.SqlParameter.get_DbType()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.DbParameterCollectionExtensions.<>c__DisplayClass0_0.<FormatParameters>b__0(DbParameter p)
+   at System.Linq.Enumerable.SelectEnumerableIterator`2.MoveNext()
+   at System.String.JoinCore[T](Char* separator, Int32 separatorLength, IEnumerable`1 values)
+   at System.String.Join[T](String separator, IEnumerable`1 values)
+   at Microsoft.EntityFrameworkCore.Internal.EnumerableExtensions.Join(IEnumerable`1 source, String separator)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.DbParameterCollectionExtensions.FormatParameters(DbParameterCollection parameters, Boolean logParameterValues)
+   at Microsoft.EntityFrameworkCore.Diagnostics.RelationalLoggerExtensions.LogCommandError(IDiagnosticsLogger`1 diagnostics, DbCommand command, TimeSpan duration, EventDefinition`6 definition)
+   at Microsoft.EntityFrameworkCore.Diagnostics.RelationalLoggerExtensions.CommandError(IDiagnosticsLogger`1 diagnostics, IRelationalConnection connection, DbCommand command, DbContext context, DbCommandMethod executeMethod, Guid commandId, Guid connectionId, Exception exception, DateTimeOffset startTime, TimeSpan duration)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.InitializeReader(DbContext _, Boolean result)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+2020-09-01 11:20:18.7607||DEBUG|NetNews.Program|init main function 
+2020-09-01 11:20:20.0189||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-01 11:23:08.4233||DEBUG|NetNews.Program|init main function 
+2020-09-01 11:23:09.6316||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-01 11:24:14.9925||DEBUG|NetNews.Program|init main function 
+2020-09-01 11:24:16.4024||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-01 11:25:35.5377||DEBUG|NetNews.Program|init main function 
+2020-09-01 11:25:36.6136||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-01 11:29:32.5148||DEBUG|NetNews.Program|init main function 
+2020-09-01 11:29:33.7017||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-01 11:30:28.2139||DEBUG|NetNews.Program|init main function 
+2020-09-01 11:30:29.0966||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-01 11:36:48.3586||DEBUG|NetNews.Program|init main function 
+2020-09-01 11:36:49.6400||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-01 11:46:38.2917||DEBUG|NetNews.Program|init main function 
+2020-09-01 11:46:38.6940||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-01 11:48:40.0825|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.InvalidOperationException: The model item passed into the ViewDataDictionary is of type 'System.Collections.Generic.List`1[NetNews.Models.AccountsDataModel.AccountsModel]', but this ViewDataDictionary instance requires a model item of type 'NetNews.Models.AccountsDataModel.AccountsModel'.
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary.EnsureCompatible(Object value)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary..ctor(ViewDataDictionary source, Object model, Type declaredModelType)
+   at lambda_method(Closure , ViewDataDictionary )
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPagePropertyActivator.CreateViewDataDictionary(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPagePropertyActivator.Activate(Object page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPageActivator.Activate(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper.RenderPartialViewAsync(TextWriter writer, Object model, IView view)
+   at Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper.ProcessAsync(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner.<RunAsync>g__Awaited|0_0(Task task, TagHelperExecutionContext executionContext, Int32 i, Int32 count)
+   at AspNetCore.Views_Admin_Profile.ExecuteAsync() in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNews\NetNews\Views\Admin\Profile.cshtml:line 24
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Wangkanai.Detection.Hosting.ResponsiveMiddleware.InvokeAsync(HttpContext context, IResponsiveService responsive)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-09-01 11:51:38.1143||DEBUG|NetNews.Program|init main function 
+2020-09-01 11:51:38.4818||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-01 11:51:48.7469|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.InvalidOperationException: The model item passed into the ViewDataDictionary is of type 'System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[NetNews.Models.AccountsDataModel.AccountsModel,Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor+<SingleOrDefaultAsync>d__22`1[NetNews.Models.AccountsDataModel.AccountsModel]]', but this ViewDataDictionary instance requires a model item of type 'NetNews.Models.AccountsDataModel.AccountsModel'.
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary.EnsureCompatible(Object value)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary..ctor(ViewDataDictionary source, Object model, Type declaredModelType)
+   at lambda_method(Closure , ViewDataDictionary )
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPagePropertyActivator.CreateViewDataDictionary(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPagePropertyActivator.Activate(Object page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPageActivator.Activate(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper.RenderPartialViewAsync(TextWriter writer, Object model, IView view)
+   at Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper.ProcessAsync(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner.<RunAsync>g__Awaited|0_0(Task task, TagHelperExecutionContext executionContext, Int32 i, Int32 count)
+   at AspNetCore.Views_Admin_Profile.ExecuteAsync() in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNews\NetNews\Views\Admin\Profile.cshtml:line 24
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Wangkanai.Detection.Hosting.ResponsiveMiddleware.InvokeAsync(HttpContext context, IResponsiveService responsive)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-09-01 11:54:51.6179||DEBUG|NetNews.Program|init main function 
+2020-09-01 11:54:52.5079||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-01 11:55:23.9433|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.InvalidOperationException: The model item passed into the ViewDataDictionary is of type 'System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[NetNews.Models.AccountsDataModel.AccountsModel,Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor+<SingleOrDefaultAsync>d__22`1[NetNews.Models.AccountsDataModel.AccountsModel]]', but this ViewDataDictionary instance requires a model item of type 'NetNews.Models.AccountsDataModel.AccountsModel'.
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary.EnsureCompatible(Object value)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary..ctor(ViewDataDictionary source, Object model, Type declaredModelType)
+   at lambda_method(Closure , ViewDataDictionary )
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPagePropertyActivator.CreateViewDataDictionary(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPagePropertyActivator.Activate(Object page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPageActivator.Activate(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper.RenderPartialViewAsync(TextWriter writer, Object model, IView view)
+   at Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper.ProcessAsync(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner.<RunAsync>g__Awaited|0_0(Task task, TagHelperExecutionContext executionContext, Int32 i, Int32 count)
+   at AspNetCore.Views_Admin_Profile.ExecuteAsync() in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNews\NetNews\Views\Admin\Profile.cshtml:line 24
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Wangkanai.Detection.Hosting.ResponsiveMiddleware.InvokeAsync(HttpContext context, IResponsiveService responsive)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-09-01 11:57:07.8674||DEBUG|NetNews.Program|init main function 
+2020-09-01 11:57:08.9361||INFO|Detection.Startup|Starting Detection version 3.0.0.0 

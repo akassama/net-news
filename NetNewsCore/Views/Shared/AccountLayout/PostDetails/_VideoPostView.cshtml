@@ -1,0 +1,85 @@
+﻿@model NetNews.Models.PostsDataModel.vwPostsModel
+@using AppHelpers.App_Code
+
+    <div class="col-10 offset-1">
+
+        <!-- Title -->
+        <h1 class="mt-4">
+            @Html.DisplayFor(model => model.PostTitle)
+        </h1>
+
+        <!-- Author -->
+        <p class="lead">
+            by
+            <a target="_blank" asp-action="RedirectAuthor" asp-controller="Authors" asp-route-id="@Model.PostAuthor">
+                @AccountHelper.GetAccountData(Model.PostAuthor, "FullName")
+            </a>
+        </p>
+
+        <hr>
+
+        <!-- Preview Image -->
+        <div class="row">
+            @if (Model.PostVideoType.ToLower() == "youtube")
+            {
+                <div class="col-md-12 col-md-12">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/@PostHelper.GetYouTubeVideoID(Model.PostVideoLink)" allowfullscreen></iframe>
+                    </div>
+                </div>
+            }
+            else if (Model.PostVideoType.ToLower() == "vimeo")
+            {
+                <div class="col-md-12 col-md-12">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/@PostHelper.GetVimeoVideoID(Model.PostVideoLink)" allowfullscreen></iframe>
+                    </div>
+                </div>
+            }
+        </div>
+
+        <hr>
+        <!-- Date/Time -->
+        <p>
+            @PostHelper.FormatPostDate(Model.DateAdded.ToString())
+
+            <span class="float-right">
+                <small>Editor: @AccountHelper.GetAccountData(Model.PostEditor, "FullName")</small>
+            </span>
+        </p>
+
+        <hr>
+
+        @if (!string.IsNullOrEmpty(Model.PostContent))
+        {
+            <div>
+                @Html.Raw(Model.PostContent)
+            </div>
+            <hr>
+        }
+
+        <p class="font-weight-bold">
+            Tags
+        </p>
+        <p>
+            @Model.PostTags
+        </p>
+        <hr>
+
+        <!-- Author -->
+        <div class="media mb-4">
+            <img class="d-flex mr-3 rounded-circle" src="@AccountHelper.GetAccountProfilePicture(Model.PostAuthor)" width="50" height="50" alt="">
+            <div class="media-body">
+                <p>
+                    Author
+                </p>
+                <h5 class="mt-0">
+                    <a target="_blank" asp-action="RedirectAuthor" asp-controller="Authors" asp-route-id="@Model.PostAuthor" class="text-decoration-none text-dark">
+                        @AccountHelper.GetAccountData(Model.PostAuthor, "FullName")
+                    </a>
+                </h5>
+                @TextHelper.FormatLongText(TextHelper.StripHTML(AccountHelper.GetAccountData(Model.PostAuthor, "Biography")), 250)
+            </div>
+        </div>
+
+    </div>

@@ -1,0 +1,652 @@
+﻿@using AppHelpers.App_Code
+
+<style>
+    .error {
+        color: red;
+        background-color: #e8e1e1;
+    }
+</style>
+<!-- Subscribe Modal -->
+<div class="modal fade" id="subscribeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header subscriber-header border-bottom-0">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="form-title text-center">
+                    <h4>Subscribe to our newsletter to stay up to date!</h4>
+                    <p>Daily news delivered straight to your inbox</p>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <form class="form-inline subscribe-form" asp-controller="Home" asp-action="SubscribeUser" method="post" id="SubscribeForm">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                        <div class="form-group">
+                            <label class="sr-only" for="SubscriberEmail">Email</label>
+                            <input type="email" class="form-control" id="SubscriberEmail" name="SubscriberEmail" placeholder="hello@me.com" required>
+                        </div>
+                        <div class="ml-1 subscribe-button-div">
+                            <button id="SubscribeButton" type="submit" class="btn btn-danger pt-3 pb-3 disable-on-click">SUBSCRIBE</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        //$("#SubscribeForm").validate();
+    </script>
+</div>
+
+<!-- Cancel Create Post Modal -->
+<div class="modal fade" id="confirmCancelCreatePostModal" tabindex="-1" role="dialog" aria-labelledby="confirmCancelCreatePostModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="confirmCancelCreatePostModalLabel">Confirm action</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <h4 class="modal-title" id="myModalLabel">Are you sure you want to cancel?</h4>
+            </div>
+            <div class="modal-footer">
+                <a class="btn btn-danger" href="~/Admin/@ViewBag.CancelRoute" role="button" id="modal-btn-yes">Yes</a>
+                <button type="button" class="btn btn-primary" data-dismiss="modal" id="modal-btn-no">No</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Delete Author Post Modal -->
+<div class="modal fade" id="confirmDeletePostModal" tabindex="-1" role="dialog" aria-labelledby="confirmDeletePostModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <form asp-controller="Admin" asp-action="DeletePost" method="post" id="DeletePost">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="confirmDeletePostModalLabel">Confirm action</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h4 class="modal-title" id="myModalLabel">Are you sure you want to delete post?</h4>
+                </div>
+                <div class="form-group d-none">
+                    <input type="hidden" class="form-control" id="ModalDeletePostID" name="ModalDeletePostID" required="">
+                </div>
+                <div class="modal-footer">
+                    <input type="submit" class="btn btn-danger disable-on-click" id="modal-btn-yes" value="Yes">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" id="modal-btn-no">No</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<!-- Logout Modal -->
+<div class="modal fade" id="confirmLogoutModal" tabindex="-1" role="dialog" aria-labelledby="confirmLogoutModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="confirmLogoutModalLabel">Confirm action</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <h4 class="modal-title" id="myModalLabel">Are you sure you want to logout?</h4>
+            </div>
+            <div class="modal-footer">
+                <a asp-controller="Logout" asp-action="Index" class="btn btn-danger" role="button" id="modal-btn-yes">Yes</a>
+                <button type="button" class="btn btn-primary" data-dismiss="modal" id="modal-btn-no">No</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Approve Post Modal -->
+<div class="modal fade" id="confirmApprovePostModal" tabindex="-1" role="dialog" aria-labelledby="confirmApprovePostModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <form asp-controller="Admin" asp-action="ApprovePost" method="post" id="ApprovePostForm">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Confirm action</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h4 class="modal-title" id="myModalLabel">Are you sure you want to approve this post?</h4>
+                </div>
+                <div class="form-group d-none">
+                    <input type="hidden" class="form-control" id="ModalApprovePostID" name="ModalApprovePostID" required="">
+                </div>
+                <div class="modal-footer">
+                    <input type="submit" class="btn btn-danger disable-on-click" id="modal-btn-yes" value="Yes">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" id="modal-btn-no">No</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<!-- Comment on Post Modal -->
+<div class="modal fade" id="commentPostModal" tabindex="-1" role="dialog" aria-labelledby="commentPostModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <form asp-controller="Admin" asp-action="CommentOnPost" method="post" id="CommentPostForm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Commnet on Post</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 mb-1">
+                            <label for="ReviewComment">Comment:</label>
+                            <textarea class="form-control count-chars" data-chars-max="250" data-msg-color="danger" id="ReviewComment" name="ReviewComment" maxlength="250" spellcheck="true" required=""></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group d-none">
+                    <input type="hidden" class="form-control" id="ModalCommentPostID" name="ModalCommentPostID" required="">
+                </div>
+                <div class="modal-footer">
+                    <input type="submit" class="btn btn-danger disable-on-click" id="modal-btn-yes" value="Post Comment">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" id="modal-btn-no">Cancel</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- Approve Account Modal -->
+<div class="modal fade" id="confirmAccountApproveModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <form asp-controller="Admin" asp-action="ApproveAccount" method="post" id="ApproveAccountForm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Confirm action</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h4 class="modal-title" id="myModalLabel">Are you sure you want to approve this account registration?</h4>
+                </div>
+                <div class="form-group d-none">
+                    <input type="hidden" class="form-control" id="ModalApproveAccountID" name="ModalApproveAccountID" required="">
+                </div>
+                <div class="modal-footer">
+                    <input type="submit" class="btn btn-danger disable-on-click" id="modal-btn-yes" value="Yes">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" id="modal-btn-no">No</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+<!-- Reject Account Modal -->
+<div class="modal fade" id="confirmAccountRejectModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <form asp-controller="Admin" asp-action="RejectAccount" method="post" id="RejectAccountForm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Confirm action</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h4 class="modal-title" id="myModalLabel">Are you sure you want to reject this account registration?</h4>
+                </div>
+                <div class="form-group d-none">
+                    <input type="hidden" class="form-control" id="ModalRejectAccountID" name="ModalRejectAccountID" required="">
+                </div>
+                <div class="modal-footer">
+                    <input type="submit" class="btn btn-danger disable-on-click" id="modal-btn-yes" value="Yes">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" id="modal-btn-no">No</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+<!-- Suspend Account Modal -->
+<div class="modal fade" id="confirmAccountSuspendModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <form asp-controller="Admin" asp-action="SuspendAccount" method="post" id="SuspendAccountForm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Confirm action</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h4 class="modal-title" id="myModalLabel">Are you sure you want to suspend this account?</h4>
+                </div>
+                <div class="form-group d-none">
+                    <input type="hidden" class="form-control" id="ModalSuspendAccountID" name="ModalSuspendAccountID" required="">
+                </div>
+                <div class="modal-footer">
+                    <input type="submit" class="btn btn-danger disable-on-click" id="modal-btn-yes" value="Yes">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" id="modal-btn-no">No</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+<!-- Activate Account Modal -->
+<div class="modal fade" id="confirmAccountActivateModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <form asp-controller="Admin" asp-action="ActivateAccount" method="post" id="ActivateAccountForm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Confirm action</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h4 class="modal-title" id="myModalLabel">Are you sure you want to activate this account?</h4>
+                </div>
+                <div class="form-group d-none">
+                    <input type="hidden" class="form-control" id="ModalActivateAccountID" name="ModalActivateAccountID" required="">
+                </div>
+                <div class="modal-footer">
+                    <input type="submit" class="btn btn-danger disable-on-click" id="modal-btn-yes" value="Yes">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" id="modal-btn-no">No</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+<!-- Remove Account Modal -->
+<div class="modal fade" id="confirmAccountRemoveModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <form asp-controller="Admin" asp-action="RemoveAccount" method="post" id="RemoveAccountForm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Confirm action</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h4 class="modal-title" id="myModalLabel">Are you sure you want to remove this account?</h4>
+                </div>
+                <div class="form-group d-none">
+                    <input type="hidden" class="form-control" id="ModalRemoveAccountID" name="ModalRemoveAccountID" required="">
+                </div>
+                <div class="modal-footer">
+                    <input type="submit" class="btn btn-danger disable-on-click" id="modal-btn-yes" value="Yes">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" id="modal-btn-no">No</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+<!-- Verify Account Email Modal -->
+<div class="modal fade" id="verifyAccountEmailModal" tabindex="-1" role="dialog" aria-labelledby="verifyAccountEmailModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <form asp-controller="Admin" asp-action="VerifyAccountEmail" method="post" id="VerifyAccountEmailForm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Confirm action</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h4 class="modal-title" id="myModalLabel">Send verification link to your email?</h4>
+                </div>
+                <div class="modal-footer">
+                    <input type="submit" class="btn btn-danger disable-on-click" id="modal-btn-yes" value="Yes">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" id="modal-btn-no">No</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- Verify Account Phone Number Modal -->
+<div class="modal fade" id="verifyAccountPhoneNumberModal" tabindex="-1" role="dialog" aria-labelledby="verifyAccountPhoneNumberModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <form asp-controller="Admin" asp-action="VerifyAccountPhoneNumber" method="post" id="VerifyAccountPhoneForm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Confirm action</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h4 class="modal-title" id="myModalLabel">Send verification code to your phone number?</h4>
+                </div>
+                <div class="modal-footer">
+                    <input type="submit" class="btn btn-danger disable-on-click" id="modal-btn-yes" value="Yes">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" id="modal-btn-no">No</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+<!-- Forgot Password Modal -->
+<div class="modal fade" id="forgorPasswordModal" tabindex="-1" role="dialog" aria-labelledby="forgorPasswordModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <form asp-controller="SignIn" asp-action="ResetPossword" method="post" id="PasswordResetForm">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Confirm action</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h4 class="modal-title" id="myModalLabel">Enter your account email below.</h4>
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="ForgotPasswordEmail" name="ForgotPasswordEmail" placeholder="Email" required="" />
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <input type="submit" class="btn btn-danger disable-on-click" id="modal-btn-yes" value="Reset">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" id="modal-btn-no">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!--////-->
+    <script>
+        $("#PasswordResetForm").validate();
+    </script>
+</div>
+
+
+<!-- Cancel Create Category Modal -->
+<div class="modal fade" id="confirmCancelCreateCategoryModal" tabindex="-1" role="dialog" aria-labelledby="confirmCancelCreateCategoryModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="confirmCancelCreateCategoryModalLabel">Confirm action</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <h4 class="modal-title" id="myModalLabel">Are you sure you want to cancel?</h4>
+            </div>
+            <div class="modal-footer">
+                <a class="btn btn-danger" href="~/Admin/@ViewBag.CancelRoute" role="button" id="modal-btn-yes">Yes</a>
+                <button type="button" class="btn btn-primary" data-dismiss="modal" id="modal-btn-no">No</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Delete Category Modal -->
+<div class="modal fade" id="confirmCategoryDeleteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <form asp-controller="Admin" asp-action="DeleteCategory" method="post" id="DeleteCategoryForm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Confirm action</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h4 class="modal-title" id="myModalLabel">Are you sure you want to delete this category?</h4>
+                </div>
+                <div class="form-group d-none">
+                    <input type="hidden" class="form-control" id="ModalDeleteCategoryID" name="ModalDeleteCategoryID" required="">
+                </div>
+                <div class="modal-footer">
+                    <input type="submit" class="btn btn-danger disable-on-click" id="modal-btn-yes" value="Yes">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" id="modal-btn-no">No</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+<!-- Delete Tag Modal -->
+<div class="modal fade" id="confirmTagDeleteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <form asp-controller="Admin" asp-action="DeleteTag" method="post" id="DeleteTagForm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Confirm action</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h4 class="modal-title" id="myModalLabel">Are you sure you want to delete this tag?</h4>
+                </div>
+                <div class="form-group d-none">
+                    <input type="hidden" class="form-control" id="ModalDeleteTagID" name="ModalDeleteTagID" required="">
+                </div>
+                <div class="modal-footer">
+                    <input type="submit" class="btn btn-danger disable-on-click" id="modal-btn-yes" value="Yes">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" id="modal-btn-no">No</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+<!-- Cancel Create Tag Modal -->
+<div class="modal fade" id="confirmCancelCreateTagModal" tabindex="-1" role="dialog" aria-labelledby="confirmCancelCreateTagModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="confirmCancelCreateCategoryModalLabel">Confirm action</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <h4 class="modal-title" id="myModalLabel">Are you sure you want to cancel?</h4>
+            </div>
+            <div class="modal-footer">
+                <a class="btn btn-danger" href="~/Admin/@ViewBag.CancelRoute" role="button" id="modal-btn-yes">Yes</a>
+                <button type="button" class="btn btn-primary" data-dismiss="modal" id="modal-btn-no">No</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Edit Site Data Modal -->
+<div class="modal fade" id="editSiteDataModal" tabindex="-1" role="dialog" aria-labelledby="editSiteDataModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <form asp-controller="Admin" asp-action="UpdateSiteData" method="post" id="UpdateSiteDataForm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Edit Site Data</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 mb-1">
+                            <label for="Value">Site Data Value:</label>
+                            <input type="text" class="form-control" id="ModalSiteDataValue" name="ModalSiteDataValue" required="">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <input type="hidden" class="form-control" id="ModalSiteDataUinqueKey" name="ModalSiteDataUinqueKey" required="">
+                </div>
+                <div class="modal-footer">
+                    <input type="submit" class="btn btn-danger disable-on-click" id="modal-btn-yes" value="Update">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" id="modal-btn-no">Cancel</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- Edit Site About Data Modal -->
+<div class="modal fade" id="editSiteAboutDataModal" tabindex="-1" role="dialog" aria-labelledby="editSiteAboutDataModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+        <form asp-controller="Admin" asp-action="UpdateSiteData" method="post" id="UpdateSiteDataForm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Edit Site Data</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 mb-1">
+                            <label for="Value">About Data:</label>
+                            <textarea class="form-control" name="PostContent" id="PostContent" spellcheck="true" required="">@Html.Raw(ModelHelper.GetSiteLookupData("AboutUsPage"))</textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <input type="hidden" class="form-control" id="ModalSiteDataUinqueKey" name="ModalSiteDataUinqueKey" value="AboutUsPage" required="">
+                </div>
+                <div class="modal-footer">
+                    <input type="submit" class="btn btn-danger disable-on-click" id="modal-btn-yes" value="Update">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" id="modal-btn-no">Cancel</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- Delete Advert Modal -->
+<div class="modal fade" id="confirmAdvertDeleteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <form asp-controller="Admin" asp-action="DeleteAdvert" method="post" id="DeleteAdvertForm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Confirm action</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h4 class="modal-title" id="myModalLabel">Are you sure you want to delete this advert?</h4>
+                </div>
+                <div class="form-group d-none">
+                    <input type="hidden" class="form-control" id="ModalDeleteAdvertID" name="ModalDeleteAdvertID" required="">
+                </div>
+                <div class="modal-footer">
+                    <input type="submit" class="btn btn-danger disable-on-click" id="modal-btn-yes" value="Yes">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" id="modal-btn-no">No</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- Delete Job Modal -->
+<div class="modal fade" id="confirmJobDeleteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <form asp-controller="Admin" asp-action="DeleteJob" method="post" id="DeleteJobForm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Confirm action</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h4 class="modal-title" id="myModalLabel">Are you sure you want to delete this job?</h4>
+                </div>
+                <div class="form-group d-none">
+                    <input type="hidden" class="form-control" id="ModalDeleteJobID" name="ModalDeleteJobID" required="">
+                </div>
+                <div class="modal-footer">
+                    <input type="submit" class="btn btn-danger disable-on-click" id="modal-btn-yes" value="Yes">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" id="modal-btn-no">No</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+<!-- Delete Embedded Music Modal -->
+<div class="modal fade" id="confirmEmbeddedMusicDeleteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <form asp-controller="Admin" asp-action="DeleteEmbeddedMusic" method="post" id="DeleteEmbeddedMusicForm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Confirm action</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h4 class="modal-title" id="myModalLabel">Are you sure you want to delete this embed music code?</h4>
+                </div>
+                <div class="form-group d-none">
+                    <input type="hidden" class="form-control" id="ModalDeleteEmbeddedMusicID" name="ModalDeleteEmbeddedMusicID" required="">
+                </div>
+                <div class="modal-footer">
+                    <input type="submit" class="btn btn-danger disable-on-click" id="modal-btn-yes" value="Yes">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" id="modal-btn-no">No</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+<!-- Delete News Api Modal -->
+<div class="modal fade" id="confirmNewsApiDeleteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <form asp-controller="Admin" asp-action="DeleteNewsApi" method="post" id="DeleteNewsApiForm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Confirm action</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h4 class="modal-title" id="myModalLabel">Are you sure you want to delete this post?</h4>
+                </div>
+                <div class="form-group d-none">
+                    <input type="hidden" class="form-control" id="ModalDeleteNewsApiID" name="ModalDeleteNewsApiID" required="">
+                </div>
+                <div class="modal-footer">
+                    <input type="submit" class="btn btn-danger disable-on-click" id="modal-btn-yes" value="Yes">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" id="modal-btn-no">No</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

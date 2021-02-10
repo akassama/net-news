@@ -1,0 +1,130 @@
+﻿@model IEnumerable<NetNews.Models.PostsDataModel.vwPostsApprovedModel>
+
+@using Microsoft.AspNetCore.Http
+@using AppHelpers.App_Code
+@inject IHttpContextAccessor HttpContextAccessor
+@{
+    var Url = "https://" + Context.Request.Host + Context.Request.Path; //get current url path
+
+    Layout = null;
+
+    string AccountID = HttpContextAccessor.HttpContext.Session.GetString("_AccountId");
+    string ConnectionString = ViewBag.ConnectionString;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <!-- ADMIN Head -->
+    <partial name="~/Views/Shared/AccountLayout/_Head.cshtml" />
+</head>
+
+<body class="sb-nav-fixed">
+    <!-- ADMIN Navigation -->
+    <partial name="~/Views/Shared/AccountLayout/_Navigation.cshtml" />
+    <div id="layoutSidenav">
+        <!-- ADMIN Sidebar -->
+        <partial name="~/Views/Shared/AccountLayout/_LeftSideBar.cshtml" />
+        <div id="layoutSidenav_content">
+            <main>
+                <div class="container-fluid">
+                    <h1 class="mt-4">Dashboard</h1>
+                    <ol class="breadcrumb mb-4">
+                        <li class="breadcrumb-item"><a asp-controller="Admin" asp-action="Index">Dashboard</a></li>
+                        <li class="breadcrumb-item active">Post Views by Country</li>
+                    </ol>
+
+                    <!-- Content -->
+                    <!-- Action messages partial -->
+                    <partial name="~/Views/Shared/_ProcessMessage.cshtml" />
+                    @if (Model.Count() > 0)
+                    {
+                        int RowCount = 0;
+                        <div class="row">
+                            <div class="col-12 p-2">
+                                <div class="card mb-4">
+                                    <div class="card-header">
+                                        <i class="fas fa-table mr-1"></i>
+                                        @PostHelper.GetCountryFlagLinks(ViewBag.Country, 64) @ViewBag.Country Post Views
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="table-responsive">
+                                            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                                <thead>
+                                                    <tr>
+                                                        <th>#</th>
+                                                        <th>Category</th>
+                                                        <th>Post Title</th>
+                                                        <th>Headline Image</th>
+                                                        <th>Post Date</th>
+                                                        <th class="text-center">Total Views</th>
+                                                    </tr>
+                                                </thead>
+                                                <tfoot>
+                                                    <tr>
+                                                        <th>#</th>
+                                                        <th>Category</th>
+                                                        <th>Post Title</th>
+                                                        <th>Headline Image</th>
+                                                        <th>Post Date</th>
+                                                        <th class="text-center">Total Views</th>
+                                                    </tr>
+                                                </tfoot>
+                                                <tbody>
+                                                    @foreach (var item in Model)
+                                                    {
+                                                    <tr>
+                                                        <td>
+                                                            @{
+                                                                RowCount += 1;
+                                                            }
+                                                            @RowCount
+                                                        </td>
+                                                        <td>
+                                                            @PostHelper.GetCategoryName(item.PostCategory)
+                                                        </td>
+                                                        <td>
+                                                            @TextHelper.FormatLongText(item.PostTitle, 100)
+                                                        </td>
+                                                        <td>
+                                                            <!--Get Post Preview-->
+                                                            @DataHelper.GetPostPreview(item.PostID)
+                                                        </td>
+                                                        <td>
+                                                            @Html.DisplayFor(modelItem => item.DateAdded)
+                                                        </td>
+                                                        <td class="text-center">
+                                                            @PostHelper.GetPostCountryViews(item.PostID, ViewBag.Country)
+                                                        </td>
+                                                    </tr>
+                                                    }
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="alert alert-warning col-12">
+                            <strong>No posts views available!</strong>
+                        </div>
+                    }
+
+                </div>
+            </main>
+            <!-- ADMIN Footer -->
+            <partial name="~/Views/Shared/AccountLayout/_AdminFooter.cshtml" />
+        </div>
+    </div>
+
+    <!-- Modals data -->
+    <partial name="~/Views/Shared/Modals/_ActionModals.cshtml" view-data="ViewData" />
+
+    <!-- ADMIN RESOURCES -->
+    <partial name="~/Views/Shared/AccountLayout/_AdminFooterScripts.cshtml" />
+</body>
+</html>

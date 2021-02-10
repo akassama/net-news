@@ -1,0 +1,882 @@
+2020-11-15 01:54:19.3687||DEBUG|NetNews.Program|init main function 
+2020-11-15 01:54:22.0378||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-15 01:54:23.5252|7|WARN|Microsoft.AspNetCore.Session.SessionMiddleware|Error unprotecting the session cookie. System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2020-11-15 01:54:23.8512|7|WARN|Microsoft.AspNetCore.Session.SessionMiddleware|Error unprotecting the session cookie. System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2020-11-15 02:01:09.7839||DEBUG|NetNews.Program|init main function 
+2020-11-15 02:01:10.5288||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-15 02:25:56.7990||DEBUG|NetNews.Program|init main function 
+2020-11-15 02:25:57.7596||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-15 02:52:29.7580||DEBUG|NetNews.Program|init main function 
+2020-11-15 02:52:30.6174||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-15 02:55:08.6244||DEBUG|NetNews.Program|init main function 
+2020-11-15 02:55:09.6312||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-15 02:55:52.1397||DEBUG|NetNews.Program|init main function 
+2020-11-15 02:55:53.0540||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-15 06:06:51.9853||DEBUG|NetNews.Program|init main function 
+2020-11-15 06:06:52.7798||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-15 06:08:30.8769||DEBUG|NetNews.Program|init main function 
+2020-11-15 06:08:31.8253||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-15 06:09:49.1666||DEBUG|NetNews.Program|init main function 
+2020-11-15 06:09:49.9640||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-15 06:21:37.1217||DEBUG|NetNews.Program|init main function 
+2020-11-15 06:21:38.0450||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-15 06:27:27.4248||DEBUG|NetNews.Program|init main function 
+2020-11-15 06:27:28.2638||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-15 07:01:27.9360||DEBUG|NetNews.Program|init main function 
+2020-11-15 07:01:28.6695||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-15 07:03:22.0377||DEBUG|NetNews.Program|init main function 
+2020-11-15 07:03:22.7203||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-15 07:06:36.4489||DEBUG|NetNews.Program|init main function 
+2020-11-15 07:06:37.2504||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-15 08:12:47.0140||DEBUG|NetNews.Program|init main function 
+2020-11-15 08:12:47.6401||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-15 08:38:19.7018||DEBUG|NetNews.Program|init main function 
+2020-11-15 08:38:20.6200||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-15 08:41:09.8233||DEBUG|NetNews.Program|init main function 
+2020-11-15 08:41:10.5076||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-15 08:43:40.4003||DEBUG|NetNews.Program|init main function 
+2020-11-15 08:43:45.4050||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-15 08:46:18.8053||DEBUG|NetNews.Program|init main function 
+2020-11-15 08:46:19.5495||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-15 08:48:24.5179||DEBUG|NetNews.Program|init main function 
+2020-11-15 08:48:25.2231||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-15 08:48:46.6868||DEBUG|NetNews.Program|init main function 
+2020-11-15 08:48:47.4323||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-15 08:56:40.5668||DEBUG|NetNews.Program|init main function 
+2020-11-15 08:56:41.1741||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-15 08:59:08.1622||DEBUG|NetNews.Program|init main function 
+2020-11-15 08:59:09.0454||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-15 08:59:59.8570|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.InvalidOperationException: The model item passed into the ViewDataDictionary is of type 'System.Collections.Generic.List`1[NetNews.Models.PostsDataModel.vwPostsApprovedModel]', but this ViewDataDictionary instance requires a model item of type 'NetNews.Models.AppDataModels.LoginViewModel'.
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary.EnsureCompatible(Object value)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary..ctor(ViewDataDictionary source, Object model, Type declaredModelType)
+   at lambda_method(Closure , ViewDataDictionary )
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPagePropertyActivator.CreateViewDataDictionary(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPagePropertyActivator.Activate(Object page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPageActivator.Activate(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Wangkanai.Detection.Hosting.ResponsiveMiddleware.InvokeAsync(HttpContext context, IResponsiveService responsive)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at NetNews.Startup.<>c.<<Configure>b__5_0>d.MoveNext() in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Startup.cs:line 82
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-11-15 09:02:47.8850||DEBUG|NetNews.Program|init main function 
+2020-11-15 09:02:48.5207||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-15 09:02:52.5334||INFO|NetNews.Controllers.SearchController|Get Search Details Error: System.NullReferenceException: Object reference not set to an instance of an object.
+   at NetNews.Models.AppModels.AppFunctions.FormatCountryName(String country) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Models\AppModels\AppFunctions.cs:line 2533
+   at NetNews.Models.AppModels.AppFunctions.LogSiteStat(String stat_type, String action_value, String visitor_ip, String ipstack_key, String visitor_browser, String visitor_device, String other) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Models\AppModels\AppFunctions.cs:line 2284
+   at NetNews.Controllers.SearchController.Index(String p, String s, String q) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Controllers\SearchController.cs:line 83 
+2020-11-15 09:11:53.5076||DEBUG|NetNews.Program|init main function 
+2020-11-15 09:11:54.1681||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-15 09:11:58.1725||INFO|NetNews.Controllers.SearchController|Get Search Details Error: System.NullReferenceException: Object reference not set to an instance of an object.
+   at NetNews.Models.AppModels.AppFunctions.FormatCountryName(String country) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Models\AppModels\AppFunctions.cs:line 2533
+   at NetNews.Models.AppModels.AppFunctions.LogSiteStat(String stat_type, String action_value, String visitor_ip, String ipstack_key, String visitor_browser, String visitor_device, String other) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Models\AppModels\AppFunctions.cs:line 2284
+   at NetNews.Controllers.SearchController.Index(String p, String s, String q) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Controllers\SearchController.cs:line 83 
+2020-11-15 09:24:04.7240||DEBUG|NetNews.Program|init main function 
+2020-11-15 09:24:05.4928||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-15 09:24:09.7794||INFO|NetNews.Controllers.SearchController|Get Search Details Error: System.NullReferenceException: Object reference not set to an instance of an object.
+   at NetNews.Models.AppModels.AppFunctions.FormatCountryName(String country) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Models\AppModels\AppFunctions.cs:line 2533
+   at NetNews.Models.AppModels.AppFunctions.LogSiteStat(String stat_type, String action_value, String visitor_ip, String ipstack_key, String visitor_browser, String visitor_device, String other) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Models\AppModels\AppFunctions.cs:line 2284
+   at NetNews.Controllers.SearchController.Index(String p, String s, String q) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Controllers\SearchController.cs:line 83 
+2020-11-15 09:24:22.3976||DEBUG|NetNews.Program|init main function 
+2020-11-15 09:24:23.0416||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-15 09:24:27.3359||INFO|NetNews.Controllers.SearchController|Get Search Details Error: System.NullReferenceException: Object reference not set to an instance of an object.
+   at NetNews.Models.AppModels.AppFunctions.FormatCountryName(String country) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Models\AppModels\AppFunctions.cs:line 2533
+   at NetNews.Models.AppModels.AppFunctions.LogSiteStat(String stat_type, String action_value, String visitor_ip, String ipstack_key, String visitor_browser, String visitor_device, String other) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Models\AppModels\AppFunctions.cs:line 2284
+   at NetNews.Controllers.SearchController.Index(String p, String s, String q) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Controllers\SearchController.cs:line 83 
+2020-11-15 09:25:43.7843||DEBUG|NetNews.Program|init main function 
+2020-11-15 09:25:44.7209||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-15 09:25:48.7335||INFO|NetNews.Controllers.SearchController|Get Search Details Error: System.NullReferenceException: Object reference not set to an instance of an object.
+   at NetNews.Models.AppModels.AppFunctions.FormatCountryName(String country) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Models\AppModels\AppFunctions.cs:line 2533
+   at NetNews.Models.AppModels.AppFunctions.LogSiteStat(String stat_type, String action_value, String visitor_ip, String ipstack_key, String visitor_browser, String visitor_device, String other) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Models\AppModels\AppFunctions.cs:line 2284
+   at NetNews.Controllers.SearchController.Index(String p, String s, String q) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Controllers\SearchController.cs:line 83 
+2020-11-15 09:26:48.0250||DEBUG|NetNews.Program|init main function 
+2020-11-15 09:26:48.7204||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-15 09:27:16.6124||DEBUG|NetNews.Program|init main function 
+2020-11-15 09:27:17.5677||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-15 09:27:40.2569||DEBUG|NetNews.Program|init main function 
+2020-11-15 09:27:40.9965||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-15 09:27:52.0606|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.InvalidOperationException: The partial view '~/Views/Shared/Templates/24News/_SearchResults.cshtmls' was not found. The following locations were searched:
+~/Views/Shared/Templates/24News/_SearchResults.cshtmls
+   at Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper.ProcessAsync(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner.<RunAsync>g__Awaited|0_0(Task task, TagHelperExecutionContext executionContext, Int32 i, Int32 count)
+   at AspNetCore.Views_Search_Index.<ExecuteAsync>b__20_1()
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.SetOutputContentAsync()
+   at AspNetCore.Views_Search_Index.ExecuteAsync() in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Views\Search\Index.cshtml:line 9
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Wangkanai.Detection.Hosting.ResponsiveMiddleware.InvokeAsync(HttpContext context, IResponsiveService responsive)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at NetNews.Startup.<>c.<<Configure>b__5_0>d.MoveNext() in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Startup.cs:line 82
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-11-15 09:27:53.4968|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.InvalidOperationException: The partial view '~/Views/Shared/Templates/24News/_SearchResults.cshtmls' was not found. The following locations were searched:
+~/Views/Shared/Templates/24News/_SearchResults.cshtmls
+   at Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper.ProcessAsync(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner.<RunAsync>g__Awaited|0_0(Task task, TagHelperExecutionContext executionContext, Int32 i, Int32 count)
+   at AspNetCore.Views_Search_Index.<ExecuteAsync>b__20_1()
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.SetOutputContentAsync()
+   at AspNetCore.Views_Search_Index.ExecuteAsync() in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Views\Search\Index.cshtml:line 9
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Wangkanai.Detection.Hosting.ResponsiveMiddleware.InvokeAsync(HttpContext context, IResponsiveService responsive)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at NetNews.Startup.<>c.<<Configure>b__5_0>d.MoveNext() in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Startup.cs:line 82
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-11-15 09:28:32.9347||DEBUG|NetNews.Program|init main function 
+2020-11-15 09:28:33.7963||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-15 09:28:37.5372||INFO|NetNews.Controllers.SearchController|Get Search Details Error: System.NullReferenceException: Object reference not set to an instance of an object.
+   at NetNews.Models.AppModels.AppFunctions.FormatCountryName(String country) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Models\AppModels\AppFunctions.cs:line 2533
+   at NetNews.Models.AppModels.AppFunctions.LogSiteStat(String stat_type, String action_value, String visitor_ip, String ipstack_key, String visitor_browser, String visitor_device, String other) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Models\AppModels\AppFunctions.cs:line 2284
+   at NetNews.Controllers.SearchController.Index(String p, String s, String q) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Controllers\SearchController.cs:line 83 
+2020-11-15 09:39:43.7048||DEBUG|NetNews.Program|init main function 
+2020-11-15 09:39:44.5410||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-15 09:39:48.4369||INFO|NetNews.Controllers.SearchController|Get Search Details Error: System.NullReferenceException: Object reference not set to an instance of an object.
+   at NetNews.Models.AppModels.AppFunctions.FormatCountryName(String country) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Models\AppModels\AppFunctions.cs:line 2533
+   at NetNews.Models.AppModels.AppFunctions.LogSiteStat(String stat_type, String action_value, String visitor_ip, String ipstack_key, String visitor_browser, String visitor_device, String other) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Models\AppModels\AppFunctions.cs:line 2284
+   at NetNews.Controllers.SearchController.Index(String p, String s, String q) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Controllers\SearchController.cs:line 83 
+2020-11-15 09:41:07.5670||DEBUG|NetNews.Program|init main function 
+2020-11-15 09:41:08.2857||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-15 09:41:12.0600||INFO|NetNews.Controllers.SearchController|Get Search Details Error: System.NullReferenceException: Object reference not set to an instance of an object.
+   at NetNews.Models.AppModels.AppFunctions.FormatCountryName(String country) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Models\AppModels\AppFunctions.cs:line 2533
+   at NetNews.Models.AppModels.AppFunctions.LogSiteStat(String stat_type, String action_value, String visitor_ip, String ipstack_key, String visitor_browser, String visitor_device, String other) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Models\AppModels\AppFunctions.cs:line 2284
+   at NetNews.Controllers.SearchController.Index(String p, String s, String q) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Controllers\SearchController.cs:line 83 
+2020-11-15 09:42:58.5739||DEBUG|NetNews.Program|init main function 
+2020-11-15 09:42:59.3125||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-15 09:43:31.2293||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-11-15 09:43:31.2359||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 2, TotalPages: 1, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-11-15 09:43:49.8733||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-11-15 09:43:49.8752||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 5, TotalPages: 1, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-11-15 09:55:43.0615||DEBUG|NetNews.Program|init main function 
+2020-11-15 09:55:44.1565||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-15 09:55:47.8131||INFO|NetNews.Controllers.SearchController|Get Search Details Error: System.NullReferenceException: Object reference not set to an instance of an object.
+   at NetNews.Models.AppModels.AppFunctions.FormatCountryName(String country) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Models\AppModels\AppFunctions.cs:line 2533
+   at NetNews.Models.AppModels.AppFunctions.LogSiteStat(String stat_type, String action_value, String visitor_ip, String ipstack_key, String visitor_browser, String visitor_device, String other) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Models\AppModels\AppFunctions.cs:line 2284
+   at NetNews.Controllers.SearchController.Index(String p, String s, String q) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Controllers\SearchController.cs:line 83 
+2020-11-15 09:55:56.9998||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-11-15 09:55:57.0074||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 2, TotalPages: 1, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-11-15 09:56:07.6046||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-11-15 09:56:07.6046||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 5, TotalPages: 1, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-11-15 09:56:25.3931|3|ERROR|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|The view 'Index' was not found. Searched locations: /Views/Posts/Index.desktop.cshtml, /Views/Posts/Index.cshtml, /Views/Shared/Index.desktop.cshtml, /Views/Shared/Index.cshtml, /Pages/Shared/Index.desktop.cshtml, /Pages/Shared/Index.cshtml 
+2020-11-15 09:56:25.4108|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.InvalidOperationException: The view 'Index' was not found. The following locations were searched:
+/Views/Posts/Index.desktop.cshtml
+/Views/Posts/Index.cshtml
+/Views/Shared/Index.desktop.cshtml
+/Views/Shared/Index.cshtml
+/Pages/Shared/Index.desktop.cshtml
+/Pages/Shared/Index.cshtml
+   at Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult.EnsureSuccessful(IEnumerable`1 originalLocations)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Wangkanai.Detection.Hosting.ResponsiveMiddleware.InvokeAsync(HttpContext context, IResponsiveService responsive)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at NetNews.Startup.<>c.<<Configure>b__5_0>d.MoveNext() in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Startup.cs:line 82
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-11-15 09:56:29.9517|3|ERROR|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|The view 'Index' was not found. Searched locations: /Views/Posts/Index.desktop.cshtml, /Views/Posts/Index.cshtml, /Views/Shared/Index.desktop.cshtml, /Views/Shared/Index.cshtml, /Pages/Shared/Index.desktop.cshtml, /Pages/Shared/Index.cshtml 
+2020-11-15 09:56:29.9553|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.InvalidOperationException: The view 'Index' was not found. The following locations were searched:
+/Views/Posts/Index.desktop.cshtml
+/Views/Posts/Index.cshtml
+/Views/Shared/Index.desktop.cshtml
+/Views/Shared/Index.cshtml
+/Pages/Shared/Index.desktop.cshtml
+/Pages/Shared/Index.cshtml
+   at Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult.EnsureSuccessful(IEnumerable`1 originalLocations)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Wangkanai.Detection.Hosting.ResponsiveMiddleware.InvokeAsync(HttpContext context, IResponsiveService responsive)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at NetNews.Startup.<>c.<<Configure>b__5_0>d.MoveNext() in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Startup.cs:line 82
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-11-15 09:57:34.9414||DEBUG|NetNews.Program|init main function 
+2020-11-15 09:57:35.5326||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-15 09:57:39.2660||INFO|NetNews.Controllers.SearchController|Get Search Details Error: System.NullReferenceException: Object reference not set to an instance of an object.
+   at NetNews.Models.AppModels.AppFunctions.FormatCountryName(String country) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Models\AppModels\AppFunctions.cs:line 2533
+   at NetNews.Models.AppModels.AppFunctions.LogSiteStat(String stat_type, String action_value, String visitor_ip, String ipstack_key, String visitor_browser, String visitor_device, String other) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Models\AppModels\AppFunctions.cs:line 2284
+   at NetNews.Controllers.SearchController.Index(String p, String s, String q) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Controllers\SearchController.cs:line 83 
+2020-11-15 09:57:51.5585||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-11-15 09:57:51.5666||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 5, TotalPages: 1, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-11-15 10:00:20.9130|3|ERROR|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|The view 'Index' was not found. Searched locations: /Views/Posts/Index.desktop.cshtml, /Views/Posts/Index.cshtml, /Views/Shared/Index.desktop.cshtml, /Views/Shared/Index.cshtml, /Pages/Shared/Index.desktop.cshtml, /Pages/Shared/Index.cshtml 
+2020-11-15 10:00:20.9317|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.InvalidOperationException: The view 'Index' was not found. The following locations were searched:
+/Views/Posts/Index.desktop.cshtml
+/Views/Posts/Index.cshtml
+/Views/Shared/Index.desktop.cshtml
+/Views/Shared/Index.cshtml
+/Pages/Shared/Index.desktop.cshtml
+/Pages/Shared/Index.cshtml
+   at Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult.EnsureSuccessful(IEnumerable`1 originalLocations)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Wangkanai.Detection.Hosting.ResponsiveMiddleware.InvokeAsync(HttpContext context, IResponsiveService responsive)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at NetNews.Startup.<>c.<<Configure>b__5_0>d.MoveNext() in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Startup.cs:line 82
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-11-15 10:01:00.9403||DEBUG|NetNews.Program|init main function 
+2020-11-15 10:01:01.7318||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-15 10:01:05.2721||INFO|NetNews.Controllers.SearchController|Get Search Details Error: System.NullReferenceException: Object reference not set to an instance of an object.
+   at NetNews.Models.AppModels.AppFunctions.FormatCountryName(String country) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Models\AppModels\AppFunctions.cs:line 2533
+   at NetNews.Models.AppModels.AppFunctions.LogSiteStat(String stat_type, String action_value, String visitor_ip, String ipstack_key, String visitor_browser, String visitor_device, String other) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Models\AppModels\AppFunctions.cs:line 2284
+   at NetNews.Controllers.SearchController.Index(String p, String s, String q) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Controllers\SearchController.cs:line 83 
+2020-11-15 11:10:49.1109||DEBUG|NetNews.Program|init main function 
+2020-11-15 11:10:50.2808||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-15 11:17:08.8612||DEBUG|NetNews.Program|init main function 
+2020-11-15 11:17:09.4942||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-15 11:17:13.2283||INFO|NetNews.Controllers.SearchController|Get Search Details Error: System.NullReferenceException: Object reference not set to an instance of an object.
+   at NetNews.Models.AppModels.AppFunctions.FormatCountryName(String country) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Models\AppModels\AppFunctions.cs:line 2533
+   at NetNews.Models.AppModels.AppFunctions.LogSiteStat(String stat_type, String action_value, String visitor_ip, String ipstack_key, String visitor_browser, String visitor_device, String other) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Models\AppModels\AppFunctions.cs:line 2284
+   at NetNews.Controllers.SearchController.Index(String p, String s, String q) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Controllers\SearchController.cs:line 83 
+2020-11-15 11:17:41.3062||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-11-15 11:17:41.3126||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 5, TotalPages: 1, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-11-15 11:19:27.0247||DEBUG|NetNews.Program|init main function 
+2020-11-15 11:19:27.7787||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-15 11:19:32.2056||INFO|NetNews.Controllers.SearchController|Get Search Details Error: System.NullReferenceException: Object reference not set to an instance of an object.
+   at NetNews.Models.AppModels.AppFunctions.FormatCountryName(String country) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Models\AppModels\AppFunctions.cs:line 2533
+   at NetNews.Models.AppModels.AppFunctions.LogSiteStat(String stat_type, String action_value, String visitor_ip, String ipstack_key, String visitor_browser, String visitor_device, String other) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Models\AppModels\AppFunctions.cs:line 2284
+   at NetNews.Controllers.SearchController.Index(String p, String s, String q) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Controllers\SearchController.cs:line 83 
+2020-11-15 11:19:38.2698||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-11-15 11:19:38.2698||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 5, TotalPages: 1, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-11-15 11:20:54.8235||DEBUG|NetNews.Program|init main function 
+2020-11-15 11:20:55.4414||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-15 11:20:59.2012||INFO|NetNews.Controllers.SearchController|Get Search Details Error: System.NullReferenceException: Object reference not set to an instance of an object.
+   at NetNews.Models.AppModels.AppFunctions.FormatCountryName(String country) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Models\AppModels\AppFunctions.cs:line 2533
+   at NetNews.Models.AppModels.AppFunctions.LogSiteStat(String stat_type, String action_value, String visitor_ip, String ipstack_key, String visitor_browser, String visitor_device, String other) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Models\AppModels\AppFunctions.cs:line 2284
+   at NetNews.Controllers.SearchController.Index(String p, String s, String q) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Controllers\SearchController.cs:line 83 
+2020-11-15 11:21:05.8484||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-11-15 11:21:05.8484||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 5, TotalPages: 1, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-11-15 11:22:07.4609||DEBUG|NetNews.Program|init main function 
+2020-11-15 11:22:09.1029||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-15 11:24:02.7380||DEBUG|NetNews.Program|init main function 
+2020-11-15 11:24:03.5236||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-15 11:24:07.1738||INFO|NetNews.Controllers.PostsController|Get Post Details Error: System.NullReferenceException: Object reference not set to an instance of an object.
+   at NetNews.Models.AppModels.AppFunctions.FormatCountryName(String country) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Models\AppModels\AppFunctions.cs:line 2533
+   at NetNews.Models.AppModels.AppFunctions.LogPostView(String post_id, String post_author, String post_type, String visitor_ip, String ipstack_key, String visitor_browser, String visitor_device, String other) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Models\AppModels\AppFunctions.cs:line 212
+   at NetNews.Controllers.PostsController.Index(String id) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Controllers\PostsController.cs:line 83 
+2020-11-15 11:24:07.1738||INFO|NetNews.Controllers.PostsController|Get Post Details Error: System.NullReferenceException: Object reference not set to an instance of an object.
+   at NetNews.Models.AppModels.AppFunctions.FormatCountryName(String country) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Models\AppModels\AppFunctions.cs:line 2533
+   at NetNews.Models.AppModels.AppFunctions.LogPostView(String post_id, String post_author, String post_type, String visitor_ip, String ipstack_key, String visitor_browser, String visitor_device, String other) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Models\AppModels\AppFunctions.cs:line 212
+   at NetNews.Controllers.PostsController.Index(String id) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Controllers\PostsController.cs:line 83 
+2020-11-15 11:24:33.6763||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-11-15 11:24:33.6763||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 5, TotalPages: 1, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-11-15 11:25:40.5921|3|ERROR|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|The view 'Index' was not found. Searched locations: /Views/Posts/Index.desktop.cshtml, /Views/Posts/Index.cshtml, /Views/Shared/Index.desktop.cshtml, /Views/Shared/Index.cshtml, /Pages/Shared/Index.desktop.cshtml, /Pages/Shared/Index.cshtml 
+2020-11-15 11:25:40.6175|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.InvalidOperationException: The view 'Index' was not found. The following locations were searched:
+/Views/Posts/Index.desktop.cshtml
+/Views/Posts/Index.cshtml
+/Views/Shared/Index.desktop.cshtml
+/Views/Shared/Index.cshtml
+/Pages/Shared/Index.desktop.cshtml
+/Pages/Shared/Index.cshtml
+   at Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult.EnsureSuccessful(IEnumerable`1 originalLocations)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Wangkanai.Detection.Hosting.ResponsiveMiddleware.InvokeAsync(HttpContext context, IResponsiveService responsive)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at NetNews.Startup.<>c.<<Configure>b__5_0>d.MoveNext() in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Startup.cs:line 82
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-11-15 11:25:47.5656||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-11-15 11:25:47.5656||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 5, TotalPages: 1, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-11-15 11:26:09.9497|3|ERROR|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|The view 'Index' was not found. Searched locations: /Views/Posts/Index.desktop.cshtml, /Views/Posts/Index.cshtml, /Views/Shared/Index.desktop.cshtml, /Views/Shared/Index.cshtml, /Pages/Shared/Index.desktop.cshtml, /Pages/Shared/Index.cshtml 
+2020-11-15 11:26:09.9536|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.InvalidOperationException: The view 'Index' was not found. The following locations were searched:
+/Views/Posts/Index.desktop.cshtml
+/Views/Posts/Index.cshtml
+/Views/Shared/Index.desktop.cshtml
+/Views/Shared/Index.cshtml
+/Pages/Shared/Index.desktop.cshtml
+/Pages/Shared/Index.cshtml
+   at Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult.EnsureSuccessful(IEnumerable`1 originalLocations)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Wangkanai.Detection.Hosting.ResponsiveMiddleware.InvokeAsync(HttpContext context, IResponsiveService responsive)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at NetNews.Startup.<>c.<<Configure>b__5_0>d.MoveNext() in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Startup.cs:line 82
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-11-15 11:27:01.9431|3|ERROR|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|The view 'Index' was not found. Searched locations: /Views/Posts/Index.desktop.cshtml, /Views/Posts/Index.cshtml, /Views/Shared/Index.desktop.cshtml, /Views/Shared/Index.cshtml, /Pages/Shared/Index.desktop.cshtml, /Pages/Shared/Index.cshtml 
+2020-11-15 11:27:01.9431|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.InvalidOperationException: The view 'Index' was not found. The following locations were searched:
+/Views/Posts/Index.desktop.cshtml
+/Views/Posts/Index.cshtml
+/Views/Shared/Index.desktop.cshtml
+/Views/Shared/Index.cshtml
+/Pages/Shared/Index.desktop.cshtml
+/Pages/Shared/Index.cshtml
+   at Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult.EnsureSuccessful(IEnumerable`1 originalLocations)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Wangkanai.Detection.Hosting.ResponsiveMiddleware.InvokeAsync(HttpContext context, IResponsiveService responsive)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at NetNews.Startup.<>c.<<Configure>b__5_0>d.MoveNext() in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Startup.cs:line 82
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-11-15 11:39:10.8765||DEBUG|NetNews.Program|init main function 
+2020-11-15 11:39:12.0540||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-15 11:39:15.8371||INFO|NetNews.Controllers.SearchController|Get Search Details Error: System.NullReferenceException: Object reference not set to an instance of an object.
+   at NetNews.Models.AppModels.AppFunctions.FormatCountryName(String country) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Models\AppModels\AppFunctions.cs:line 2533
+   at NetNews.Models.AppModels.AppFunctions.LogSiteStat(String stat_type, String action_value, String visitor_ip, String ipstack_key, String visitor_browser, String visitor_device, String other) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Models\AppModels\AppFunctions.cs:line 2284
+   at NetNews.Controllers.SearchController.Index(String p, String s, String q) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Controllers\SearchController.cs:line 83 
+2020-11-15 11:39:30.3292||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-11-15 11:39:30.3292||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 5, TotalPages: 1, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-11-15 11:39:48.4888|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.InvalidOperationException: The model item passed into the ViewDataDictionary is of type 'NetNews.Models.PostsDataModel.vwPostsApprovedModel', but this ViewDataDictionary instance requires a model item of type 'NetNews.Models.AppDataModels.LoginViewModel'.
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary.EnsureCompatible(Object value)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary..ctor(ViewDataDictionary source, Object model, Type declaredModelType)
+   at lambda_method(Closure , ViewDataDictionary )
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPagePropertyActivator.CreateViewDataDictionary(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPagePropertyActivator.Activate(Object page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPageActivator.Activate(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Wangkanai.Detection.Hosting.ResponsiveMiddleware.InvokeAsync(HttpContext context, IResponsiveService responsive)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at NetNews.Startup.<>c.<<Configure>b__5_0>d.MoveNext() in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Startup.cs:line 82
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-11-15 11:49:05.0581||DEBUG|NetNews.Program|init main function 
+2020-11-15 11:49:06.2394||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-15 11:51:02.1379|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.InvalidOperationException: The model item passed into the ViewDataDictionary is of type 'NetNews.Models.PostsDataModel.vwPostsApprovedModel', but this ViewDataDictionary instance requires a model item of type 'NetNews.Models.PostsDataModel.vwPostsModel'.
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary.EnsureCompatible(Object value)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary..ctor(ViewDataDictionary source, Object model, Type declaredModelType)
+   at lambda_method(Closure , ViewDataDictionary )
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPagePropertyActivator.CreateViewDataDictionary(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPagePropertyActivator.Activate(Object page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPageActivator.Activate(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Wangkanai.Detection.Hosting.ResponsiveMiddleware.InvokeAsync(HttpContext context, IResponsiveService responsive)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at NetNews.Startup.<>c.<<Configure>b__5_0>d.MoveNext() in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Startup.cs:line 82
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-11-15 12:05:25.5017||DEBUG|NetNews.Program|init main function 
+2020-11-15 12:05:26.7388||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-15 12:05:30.2697||INFO|NetNews.Controllers.PostsController|Get Post Details Error: System.NullReferenceException: Object reference not set to an instance of an object.
+   at NetNews.Models.AppModels.AppFunctions.FormatCountryName(String country) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Models\AppModels\AppFunctions.cs:line 2533
+   at NetNews.Models.AppModels.AppFunctions.LogPostView(String post_id, String post_author, String post_type, String visitor_ip, String ipstack_key, String visitor_browser, String visitor_device, String other) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Models\AppModels\AppFunctions.cs:line 212
+   at NetNews.Controllers.PostsController.Index(String id) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Controllers\PostsController.cs:line 83 
+2020-11-15 12:05:41.1499|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.InvalidOperationException: The model item passed into the ViewDataDictionary is of type 'NetNews.Models.PostsDataModel.vwPostsApprovedModel', but this ViewDataDictionary instance requires a model item of type 'NetNews.Models.PostsDataModel.vwPostsModel'.
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary.EnsureCompatible(Object value)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary..ctor(ViewDataDictionary source, Object model, Type declaredModelType)
+   at lambda_method(Closure , ViewDataDictionary )
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPagePropertyActivator.CreateViewDataDictionary(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPagePropertyActivator.Activate(Object page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPageActivator.Activate(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper.RenderPartialViewAsync(TextWriter writer, Object model, IView view)
+   at Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper.ProcessAsync(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner.<RunAsync>g__Awaited|0_0(Task task, TagHelperExecutionContext executionContext, Int32 i, Int32 count)
+   at AspNetCore.Views_Posts_Index.<ExecuteAsync>b__23_1() in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Views\Posts\Index.cshtml:line 44
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.SetOutputContentAsync()
+   at AspNetCore.Views_Posts_Index.ExecuteAsync() in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Views\Posts\Index.cshtml:line 9
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Wangkanai.Detection.Hosting.ResponsiveMiddleware.InvokeAsync(HttpContext context, IResponsiveService responsive)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at NetNews.Startup.<>c.<<Configure>b__5_0>d.MoveNext() in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Startup.cs:line 82
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-11-15 12:07:24.9259||DEBUG|NetNews.Program|init main function 
+2020-11-15 12:07:25.7705||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-15 12:07:29.6333||INFO|NetNews.Controllers.PostsController|Get Post Details Error: System.NullReferenceException: Object reference not set to an instance of an object.
+   at NetNews.Models.AppModels.AppFunctions.FormatCountryName(String country) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Models\AppModels\AppFunctions.cs:line 2533
+   at NetNews.Models.AppModels.AppFunctions.LogPostView(String post_id, String post_author, String post_type, String visitor_ip, String ipstack_key, String visitor_browser, String visitor_device, String other) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Models\AppModels\AppFunctions.cs:line 212
+   at NetNews.Controllers.PostsController.Index(String id) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Controllers\PostsController.cs:line 83 
+2020-11-15 12:17:07.7998||DEBUG|NetNews.Program|init main function 
+2020-11-15 12:17:08.7483||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-15 12:17:12.8622||INFO|NetNews.Controllers.PostsController|Get Post Details Error: System.NullReferenceException: Object reference not set to an instance of an object.
+   at NetNews.Models.AppModels.AppFunctions.FormatCountryName(String country) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Models\AppModels\AppFunctions.cs:line 2533
+   at NetNews.Models.AppModels.AppFunctions.LogPostView(String post_id, String post_author, String post_type, String visitor_ip, String ipstack_key, String visitor_browser, String visitor_device, String other) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Models\AppModels\AppFunctions.cs:line 212
+   at NetNews.Controllers.PostsController.Index(String id) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Controllers\PostsController.cs:line 83 
+2020-11-15 12:19:56.4872||DEBUG|NetNews.Program|init main function 
+2020-11-15 12:19:57.3441||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-15 12:20:01.2005||INFO|NetNews.Controllers.PostsController|Get Post Details Error: System.NullReferenceException: Object reference not set to an instance of an object.
+   at NetNews.Models.AppModels.AppFunctions.FormatCountryName(String country) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Models\AppModels\AppFunctions.cs:line 2533
+   at NetNews.Models.AppModels.AppFunctions.LogPostView(String post_id, String post_author, String post_type, String visitor_ip, String ipstack_key, String visitor_browser, String visitor_device, String other) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Models\AppModels\AppFunctions.cs:line 212
+   at NetNews.Controllers.PostsController.Index(String id) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Controllers\PostsController.cs:line 83 
+2020-11-15 12:29:01.9564||DEBUG|NetNews.Program|init main function 
+2020-11-15 12:29:03.1576||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-15 12:29:08.1942||INFO|NetNews.Controllers.PostsController|Get Post Details Error: System.NullReferenceException: Object reference not set to an instance of an object.
+   at NetNews.Models.AppModels.AppFunctions.FormatCountryName(String country) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Models\AppModels\AppFunctions.cs:line 2533
+   at NetNews.Models.AppModels.AppFunctions.LogPostView(String post_id, String post_author, String post_type, String visitor_ip, String ipstack_key, String visitor_browser, String visitor_device, String other) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Models\AppModels\AppFunctions.cs:line 212
+   at NetNews.Controllers.PostsController.Index(String id) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Controllers\PostsController.cs:line 83 
+2020-11-15 12:30:41.0798||DEBUG|NetNews.Program|init main function 
+2020-11-15 12:30:42.1029||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-15 12:30:46.3400||INFO|NetNews.Controllers.SearchController|Get Search Details Error: System.NullReferenceException: Object reference not set to an instance of an object.
+   at NetNews.Models.AppModels.AppFunctions.FormatCountryName(String country) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Models\AppModels\AppFunctions.cs:line 2533
+   at NetNews.Models.AppModels.AppFunctions.LogSiteStat(String stat_type, String action_value, String visitor_ip, String ipstack_key, String visitor_browser, String visitor_device, String other) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Models\AppModels\AppFunctions.cs:line 2284
+   at NetNews.Controllers.SearchController.Index(String p, String s, String q) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Controllers\SearchController.cs:line 83 
+2020-11-15 12:30:58.7919||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-11-15 12:30:58.8028||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 5, TotalPages: 1, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-11-15 12:44:57.4009||DEBUG|NetNews.Program|init main function 
+2020-11-15 12:44:58.4972||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-15 12:45:02.2974||INFO|NetNews.Controllers.PostsController|Get Post Details Error: System.NullReferenceException: Object reference not set to an instance of an object.
+   at NetNews.Models.AppModels.AppFunctions.FormatCountryName(String country) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Models\AppModels\AppFunctions.cs:line 2533
+   at NetNews.Models.AppModels.AppFunctions.LogPostView(String post_id, String post_author, String post_type, String visitor_ip, String ipstack_key, String visitor_browser, String visitor_device, String other) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Models\AppModels\AppFunctions.cs:line 212
+   at NetNews.Controllers.PostsController.Index(String id) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Controllers\PostsController.cs:line 83 
+2020-11-15 12:50:21.1239||DEBUG|NetNews.Program|init main function 
+2020-11-15 12:50:22.1207||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-15 12:50:25.7144||INFO|NetNews.Controllers.PostsController|Get Post Details Error: System.NullReferenceException: Object reference not set to an instance of an object.
+   at NetNews.Models.AppModels.AppFunctions.FormatCountryName(String country) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Models\AppModels\AppFunctions.cs:line 2533
+   at NetNews.Models.AppModels.AppFunctions.LogPostView(String post_id, String post_author, String post_type, String visitor_ip, String ipstack_key, String visitor_browser, String visitor_device, String other) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Models\AppModels\AppFunctions.cs:line 212
+   at NetNews.Controllers.PostsController.Index(String id) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Controllers\PostsController.cs:line 83 
+2020-11-15 13:10:50.5864||DEBUG|NetNews.Program|init main function 
+2020-11-15 13:11:47.0522||DEBUG|NetNews.Program|init main function 
+2020-11-15 13:11:47.7482||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-15 13:11:51.4307||INFO|NetNews.Controllers.PostsController|Get Post Details Error: System.NullReferenceException: Object reference not set to an instance of an object.
+   at NetNews.Models.AppModels.AppFunctions.FormatCountryName(String country) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Models\AppModels\AppFunctions.cs:line 2533
+   at NetNews.Models.AppModels.AppFunctions.LogPostView(String post_id, String post_author, String post_type, String visitor_ip, String ipstack_key, String visitor_browser, String visitor_device, String other) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Models\AppModels\AppFunctions.cs:line 212
+   at NetNews.Controllers.PostsController.Index(String id) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Controllers\PostsController.cs:line 83 
+2020-11-15 13:14:04.5435||DEBUG|NetNews.Program|init main function 
+2020-11-15 13:14:05.1452||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-15 13:14:08.7544||INFO|NetNews.Controllers.PostsController|Get Post Details Error: System.NullReferenceException: Object reference not set to an instance of an object.
+   at NetNews.Models.AppModels.AppFunctions.FormatCountryName(String country) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Models\AppModels\AppFunctions.cs:line 2533
+   at NetNews.Models.AppModels.AppFunctions.LogPostView(String post_id, String post_author, String post_type, String visitor_ip, String ipstack_key, String visitor_browser, String visitor_device, String other) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Models\AppModels\AppFunctions.cs:line 212
+   at NetNews.Controllers.PostsController.Index(String id) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Controllers\PostsController.cs:line 83 
+2020-11-15 13:14:22.7477||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-11-15 13:14:22.7606||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 2, TotalPages: 1, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-11-15 13:17:42.4051||DEBUG|NetNews.Program|init main function 
+2020-11-15 13:17:43.0596||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-15 13:17:46.9295||INFO|NetNews.Controllers.PostsController|Get Post Details Error: System.NullReferenceException: Object reference not set to an instance of an object.
+   at NetNews.Models.AppModels.AppFunctions.FormatCountryName(String country) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Models\AppModels\AppFunctions.cs:line 2533
+   at NetNews.Models.AppModels.AppFunctions.LogPostView(String post_id, String post_author, String post_type, String visitor_ip, String ipstack_key, String visitor_browser, String visitor_device, String other) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Models\AppModels\AppFunctions.cs:line 212
+   at NetNews.Controllers.PostsController.Index(String id) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Controllers\PostsController.cs:line 83 
+2020-11-15 15:19:22.3166||DEBUG|NetNews.Program|init main function 
+2020-11-15 15:19:23.1458||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-15 15:56:44.4025||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-11-15 15:56:44.4025||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 1, TotalPages: 1, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-11-15 15:58:23.9092||DEBUG|NetNews.Program|init main function 
+2020-11-15 15:58:24.3874||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-15 15:58:27.4558||INFO|NetNews.Controllers.PostsController|Get Post Details Error: System.NullReferenceException: Object reference not set to an instance of an object.
+   at NetNews.Models.AppModels.AppFunctions.FormatCountryName(String country) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Models\AppModels\AppFunctions.cs:line 2533
+   at NetNews.Models.AppModels.AppFunctions.LogPostView(String post_id, String post_author, String post_type, String visitor_ip, String ipstack_key, String visitor_browser, String visitor_device, String other) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Models\AppModels\AppFunctions.cs:line 212
+   at NetNews.Controllers.PostsController.Index(String id) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Controllers\PostsController.cs:line 83 
+2020-11-15 16:00:02.2261||DEBUG|NetNews.Program|init main function 
+2020-11-15 16:00:02.9054||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-15 16:00:05.8248||INFO|NetNews.Controllers.PostsController|Get Post Details Error: System.NullReferenceException: Object reference not set to an instance of an object.
+   at NetNews.Models.AppModels.AppFunctions.FormatCountryName(String country) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Models\AppModels\AppFunctions.cs:line 2533
+   at NetNews.Models.AppModels.AppFunctions.LogPostView(String post_id, String post_author, String post_type, String visitor_ip, String ipstack_key, String visitor_browser, String visitor_device, String other) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Models\AppModels\AppFunctions.cs:line 212
+   at NetNews.Controllers.PostsController.Index(String id) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Controllers\PostsController.cs:line 83 
+2020-11-15 16:01:39.7570||DEBUG|NetNews.Program|init main function 
+2020-11-15 16:01:40.3399||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-15 16:01:43.2903||INFO|NetNews.Controllers.PostsController|Get Post Details Error: System.NullReferenceException: Object reference not set to an instance of an object.
+   at NetNews.Models.AppModels.AppFunctions.FormatCountryName(String country) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Models\AppModels\AppFunctions.cs:line 2533
+   at NetNews.Models.AppModels.AppFunctions.LogPostView(String post_id, String post_author, String post_type, String visitor_ip, String ipstack_key, String visitor_browser, String visitor_device, String other) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Models\AppModels\AppFunctions.cs:line 212
+   at NetNews.Controllers.PostsController.Index(String id) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Controllers\PostsController.cs:line 83 
+2020-11-15 16:12:54.6715||DEBUG|NetNews.Program|init main function 
+2020-11-15 16:12:55.1185||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-15 16:23:24.0461||DEBUG|NetNews.Program|init main function 
+2020-11-15 16:23:24.6375||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-15 16:24:23.4362||DEBUG|NetNews.Program|init main function 
+2020-11-15 16:24:23.8804||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-15 16:30:14.7036||INFO|NetNews.Controllers.CategoryController|Get Category Error: System.NullReferenceException: Object reference not set to an instance of an object.
+   at NetNews.Models.AppModels.AppFunctions.FormatCountryName(String country) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Models\AppModels\AppFunctions.cs:line 2533
+   at NetNews.Models.AppModels.AppFunctions.LogSiteStat(String stat_type, String action_value, String visitor_ip, String ipstack_key, String visitor_browser, String visitor_device, String other) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Models\AppModels\AppFunctions.cs:line 2284
+   at NetNews.Controllers.CategoryController.Index(String id, String p, String s) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Controllers\CategoryController.cs:line 91 
+2020-11-15 16:30:19.3653||INFO|NetNews.Controllers.CategoryController|Get Category Error: System.NullReferenceException: Object reference not set to an instance of an object.
+   at NetNews.Models.AppModels.AppFunctions.FormatCountryName(String country) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Models\AppModels\AppFunctions.cs:line 2533
+   at NetNews.Models.AppModels.AppFunctions.LogSiteStat(String stat_type, String action_value, String visitor_ip, String ipstack_key, String visitor_browser, String visitor_device, String other) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Models\AppModels\AppFunctions.cs:line 2284
+   at NetNews.Controllers.CategoryController.Index(String id, String p, String s) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Controllers\CategoryController.cs:line 91 
+2020-11-15 16:30:30.1020||INFO|NetNews.Controllers.CategoryController|Get Category Error: System.NullReferenceException: Object reference not set to an instance of an object.
+   at NetNews.Models.AppModels.AppFunctions.FormatCountryName(String country) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Models\AppModels\AppFunctions.cs:line 2533
+   at NetNews.Models.AppModels.AppFunctions.LogSiteStat(String stat_type, String action_value, String visitor_ip, String ipstack_key, String visitor_browser, String visitor_device, String other) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Models\AppModels\AppFunctions.cs:line 2284
+   at NetNews.Controllers.CategoryController.Index(String id, String p, String s) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Controllers\CategoryController.cs:line 91 
+2020-11-15 16:31:59.7170||DEBUG|NetNews.Program|init main function 
+2020-11-15 16:32:02.9372||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-15 16:33:20.8338||INFO|NetNews.Controllers.CategoryController|Get Category Error: System.NullReferenceException: Object reference not set to an instance of an object.
+   at NetNews.Models.AppModels.AppFunctions.FormatCountryName(String country) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Models\AppModels\AppFunctions.cs:line 2533
+   at NetNews.Models.AppModels.AppFunctions.LogSiteStat(String stat_type, String action_value, String visitor_ip, String ipstack_key, String visitor_browser, String visitor_device, String other) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Models\AppModels\AppFunctions.cs:line 2284
+   at NetNews.Controllers.CategoryController.Index(String id, String p, String s) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Controllers\CategoryController.cs:line 91 
+2020-11-15 16:35:24.0541||DEBUG|NetNews.Program|init main function 
+2020-11-15 16:35:25.2096||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-15 16:45:49.2642||DEBUG|NetNews.Program|init main function 
+2020-11-15 16:45:50.5168||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-15 16:48:57.5515||DEBUG|NetNews.Program|init main function 
+2020-11-15 16:48:58.2220||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-15 16:49:12.7184||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-11-15 16:49:12.7184||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 2, TotalPages: 1, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-11-15 16:49:39.8914||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-11-15 16:49:39.8914||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 2, TotalPages: 1, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-11-15 16:49:47.0390||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-11-15 16:49:47.0390||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 5, TotalPages: 1, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-11-15 16:50:00.4003||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-11-15 16:50:00.4021||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 1, TotalPages: 1, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-11-15 17:06:27.6969||DEBUG|NetNews.Program|init main function 
+2020-11-15 17:06:28.2500||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-15 17:20:52.8537||DEBUG|NetNews.Program|init main function 
+2020-11-15 17:20:53.2998||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-15 17:20:57.0345||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-11-15 17:20:57.0432||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 1, TotalPages: 1, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-11-15 17:43:24.4184||DEBUG|NetNews.Program|init main function 
+2020-11-15 17:43:24.8753||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-15 17:43:29.3080||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-11-15 17:43:29.3080||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 2, TotalPages: 1, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-11-15 17:44:05.3441||DEBUG|NetNews.Program|init main function 
+2020-11-15 17:44:05.8012||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-15 17:44:09.9181||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-11-15 17:44:09.9181||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 2, TotalPages: 1, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-11-15 17:46:45.9845||DEBUG|NetNews.Program|init main function 
+2020-11-15 17:46:46.5495||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-15 17:49:17.1332||DEBUG|NetNews.Program|init main function 
+2020-11-15 17:49:17.8259||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-15 17:53:41.3193||DEBUG|NetNews.Program|init main function 
+2020-11-15 17:53:41.9347||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-15 17:54:58.2597||DEBUG|NetNews.Program|init main function 
+2020-11-15 17:54:58.9447||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-15 17:55:47.3179||DEBUG|NetNews.Program|init main function 
+2020-11-15 17:55:48.1146||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-15 17:56:18.2152||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-11-15 17:56:18.2152||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 5, TotalPages: 1, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-11-15 17:59:48.1264||DEBUG|NetNews.Program|init main function 
+2020-11-15 17:59:48.8612||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-15 18:00:17.2455||DEBUG|NetNews.Program|init main function 
+2020-11-15 18:00:18.2175||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-15 18:01:02.4555||DEBUG|NetNews.Program|init main function 
+2020-11-15 18:01:03.0961||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-15 18:01:57.8910||DEBUG|NetNews.Program|init main function 
+2020-11-15 18:01:58.3207||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-15 18:02:11.3785||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-11-15 18:02:11.3785||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 1, TotalPages: 1, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-11-15 18:02:22.9550||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-11-15 18:02:22.9550||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 2, TotalPages: 1, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-11-15 18:14:42.9629||DEBUG|NetNews.Program|init main function 
+2020-11-15 18:14:43.5228||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-15 18:14:47.2002||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-11-15 18:14:47.2002||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 2, TotalPages: 1, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-11-15 18:21:23.8393||DEBUG|NetNews.Program|init main function 
+2020-11-15 18:21:24.4009||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-15 18:21:28.3040||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-11-15 18:21:28.3099||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 2, TotalPages: 1, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-11-15 18:22:34.2194||DEBUG|NetNews.Program|init main function 
+2020-11-15 18:22:34.6301||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-15 18:22:38.5050||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-11-15 18:22:38.5107||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 2, TotalPages: 1, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-11-15 18:22:45.2349|3|ERROR|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|The view 'Index' was not found. Searched locations: /Views/Tags/Index.desktop.cshtml, /Views/Tags/Index.cshtml, /Views/Shared/Index.desktop.cshtml, /Views/Shared/Index.cshtml, /Pages/Shared/Index.desktop.cshtml, /Pages/Shared/Index.cshtml 
+2020-11-15 18:22:45.2647|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.InvalidOperationException: The view 'Index' was not found. The following locations were searched:
+/Views/Tags/Index.desktop.cshtml
+/Views/Tags/Index.cshtml
+/Views/Shared/Index.desktop.cshtml
+/Views/Shared/Index.cshtml
+/Pages/Shared/Index.desktop.cshtml
+/Pages/Shared/Index.cshtml
+   at Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult.EnsureSuccessful(IEnumerable`1 originalLocations)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Wangkanai.Detection.Hosting.ResponsiveMiddleware.InvokeAsync(HttpContext context, IResponsiveService responsive)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at NetNews.Startup.<>c.<<Configure>b__5_0>d.MoveNext() in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Startup.cs:line 82
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-11-15 18:26:37.6932||DEBUG|NetNews.Program|init main function 
+2020-11-15 18:26:38.2454||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-15 18:26:41.7442||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-11-15 18:26:41.7442||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 2, TotalPages: 1, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-11-15 18:27:48.0604||DEBUG|NetNews.Program|init main function 
+2020-11-15 18:27:48.8924||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-15 18:27:51.9121||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-11-15 18:27:51.9176||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 2, TotalPages: 1, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-11-15 18:28:26.7227||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-11-15 18:28:26.7227||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 8, TotalPages: 1, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-11-15 19:11:21.3833||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-11-15 19:11:21.3857||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 2, TotalPages: 1, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-11-15 20:11:29.5595||DEBUG|NetNews.Program|init main function 
+2020-11-15 20:11:30.0037||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-15 20:15:53.7839||DEBUG|NetNews.Program|init main function 
+2020-11-15 20:15:54.4748||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-15 20:18:39.0465||DEBUG|NetNews.Program|init main function 
+2020-11-15 20:18:40.3231||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-15 20:21:54.0113||DEBUG|NetNews.Program|init main function 
+2020-11-15 20:21:55.3612||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-15 20:27:41.5071||DEBUG|NetNews.Program|init main function 
+2020-11-15 20:27:41.9958||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-15 20:29:24.1025||DEBUG|NetNews.Program|init main function 
+2020-11-15 20:29:25.5493||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-15 20:36:27.3002||DEBUG|NetNews.Program|init main function 
+2020-11-15 20:36:27.7424||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-15 20:38:02.8746||DEBUG|NetNews.Program|init main function 
+2020-11-15 20:38:03.3281||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-15 20:38:35.3725||DEBUG|NetNews.Program|init main function 
+2020-11-15 20:38:35.9165||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-15 20:39:50.3032||DEBUG|NetNews.Program|init main function 
+2020-11-15 20:39:51.1337||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-15 20:44:16.8118||DEBUG|NetNews.Program|init main function 
+2020-11-15 20:44:17.3439||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-15 20:47:14.6866||DEBUG|NetNews.Program|init main function 
+2020-11-15 20:47:15.2300||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-15 20:49:35.5493||DEBUG|NetNews.Program|init main function 
+2020-11-15 20:49:36.2233||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-15 20:50:55.2246||DEBUG|NetNews.Program|init main function 
+2020-11-15 20:50:55.6673||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-15 20:52:45.6377||DEBUG|NetNews.Program|init main function 
+2020-11-15 20:52:46.1346||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-15 20:53:46.7165||DEBUG|NetNews.Program|init main function 
+2020-11-15 20:53:47.1843||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-15 20:57:12.6672||DEBUG|NetNews.Program|init main function 
+2020-11-15 20:57:13.1226||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-15 20:58:42.9733||DEBUG|NetNews.Program|init main function 
+2020-11-15 20:58:43.4008||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-15 21:01:56.8474||DEBUG|NetNews.Program|init main function 
+2020-11-15 21:01:57.4480||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-15 21:03:32.8403||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-11-15 21:03:32.8403||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 2, TotalPages: 1, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-11-15 21:04:59.1000||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-11-15 21:04:59.1000||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 2, TotalPages: 1, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-11-15 21:05:16.0752||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-11-15 21:05:16.0752||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 5, TotalPages: 1, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  

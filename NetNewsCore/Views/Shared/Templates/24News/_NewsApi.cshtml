@@ -1,0 +1,56 @@
+﻿@using AppHelpers.App_Code
+
+<div class="w-100">
+    <div class="fh5co_heading fh5co_heading_border_bottom pt-5 pb-2 mb-4 ml-2 text-dark">More News Around the World</div>
+</div>
+<div class="col-12 text-center pb-4 pt-4">
+    <!-- Get More News from News Api-->
+    @if (LayoutHelper24News.HasApiNews("News", 1))
+    {
+        <div class="row">
+            @LayoutHelper24News.GetNewsApi("News", 3)
+        </div>
+    }
+
+    @if (LayoutHelper24News.HasApiNews("Politics", 1))
+    {
+        <div class="row">
+            @LayoutHelper24News.GetNewsApi("Politics", 3)
+        </div>
+    }
+
+    @if (LayoutHelper24News.HasApiNews("Health", 1))
+    {
+        <div class="row">
+            @LayoutHelper24News.GetNewsApi("Health", 3)
+        </div>
+    }
+
+    @if (LayoutHelper24News.HasApiNews("Business", 1))
+    {
+        <div class="row">
+            @LayoutHelper24News.GetNewsApi("Business", 3)
+        </div>
+    }
+
+    @if (LayoutHelper24News.HasApiNews("Sports", 1))
+    {
+        <div class="row">
+            @LayoutHelper24News.GetNewsApi("Sports", 3)
+        </div>
+    }
+
+    @if (LayoutHelper24News.HasApiNews("Entertainment", 1))
+    {
+        <div class="row">
+            @LayoutHelper24News.GetNewsApi("Entertainment", 3)
+        </div>
+    }
+
+    @if (LayoutHelper24News.HasApiNews("Tech", 1))
+    {
+        <div class="row">
+            @LayoutHelper24News.GetNewsApi("Tech", 3)
+        </div>
+    }
+</div>

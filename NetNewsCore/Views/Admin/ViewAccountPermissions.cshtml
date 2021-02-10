@@ -1,0 +1,163 @@
+﻿@model NetNews.Models.AccountsDataModel.AccountsModel
+
+@using Microsoft.AspNetCore.Http
+@using AppHelpers.App_Code
+@inject IHttpContextAccessor HttpContextAccessor
+@{
+    var Url = "https://" + Context.Request.Host + Context.Request.Path; //get current url path
+
+    Layout = null;
+
+    string ActionedAccountID = ViewBag.ActionedAccountID;
+    string ConnectionString = ViewBag.ConnectionString;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <!-- ADMIN Head -->
+    <partial name="~/Views/Shared/AccountLayout/_Head.cshtml" />
+</head>
+
+<body class="sb-nav-fixed">
+    <!-- ADMIN Navigation -->
+    <partial name="~/Views/Shared/AccountLayout/_Navigation.cshtml" />
+    <div id="layoutSidenav">
+        <!-- ADMIN Sidebar -->
+        <partial name="~/Views/Shared/AccountLayout/_LeftSideBar.cshtml" />
+        <div id="layoutSidenav_content">
+            <main>
+                <div class="container-fluid">
+                    <h1 class="mt-4">View Permissions</h1>
+                    <ol class="breadcrumb mb-4">
+                        <li class="breadcrumb-item"><a asp-controller="Admin" asp-action="Index">Dashboard</a></li>
+                        <li class="breadcrumb-item active">View Permissions</li>
+                    </ol>
+
+                    <!-- Content -->
+                    <!-- Action messages partial -->
+                    <partial name="~/Views/Shared/_ProcessMessage.cshtml" />
+
+                    <div class="row">
+                        <div class="col-lg-12 stretch-card grid-margin">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col main pt-0 mt-3">
+                                            <p class="lead">Account Permissions for @AccountHelper.GetAccountData(ActionedAccountID, "FullName")</p>
+                                            <div class="row">
+                                                <div class="col-12 mb-2">
+                                                    <span class="float-right">@AccountHelper.GetAccountApprovalState(Model.Active)</span>
+                                                </div>
+                                                <div class="col-12">
+                                                    @{
+                                                        if (ViewBag.EditPermissions == "true")
+                                                        {
+                                                            <a asp-controller="Admin" asp-action="ViewAccountPermissions" asp-route-id="@ActionedAccountID" class="btn btn-outline-danger float-right" role="button">
+                                                                <i class="fas fa-times"></i> Cancel
+                                                            </a>
+                                                        }
+                                                        else
+                                                        {
+                                                            <a asp-controller="Admin" asp-action="ViewAccountPermissions" asp-route-id="@ActionedAccountID" asp-route-edit="true" class="btn btn-outline-secondary float-right" role="button">
+                                                                <i class="fas fa-user-edit"></i> Edit
+                                                            </a>
+                                                        }
+                                                    }
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <form id="EditProfileForm" asp-controller="Admin" asp-action="UpdateAccountPermissions" method="post">
+                                                    <div class="container">
+                                                        <h3>Admin Roles</h3>
+                                                        <div class="row">
+                                                            <div class="col-sm-12">
+                                                                <a href="#AdminRoles" data-toggle="collapse">
+                                                                    <i class="fas fa-chevron-circle-down">
+                                                                        <span class="text-danger">Show/Hide</span>
+                                                                    </i>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div id="AdminRoles" class="collapse show mb-3">
+                                                            <div class="form-check m-2">
+                                                                <label class="form-check-label">
+                                                                    <input type="checkbox" class="form-check-input" name="AdminPermissions" id="AdminPermissions" value="1" @AccountHelper.CheckUserAccess(ActionedAccountID, "Admin Permissions", ViewBag.ConnectionString) @ViewBag.PermissionInputs> Admin Permissions
+                                                                </label>
+                                                            </div>
+                                                        </div>
+
+                                                        <hr />
+
+                                                        <h3>Editor Roles</h3>
+                                                        <div class="row">
+                                                            <div class="col-sm-12">
+                                                                <a href="#EditorRoles" data-toggle="collapse">
+                                                                    <i class="fas fa-chevron-circle-down">
+                                                                        <span class="text-danger">Show/Hide</span>
+                                                                    </i>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div id="EditorRoles" class="collapse show mb-3">
+                                                            <div class="form-check m-2">
+                                                                <label class="form-check-label">
+                                                                    <input type="checkbox" class="form-check-input" name="EditorPermissions" id="EditorPermissions" value="1" @AccountHelper.CheckUserAccess(ActionedAccountID, "Editor Permissions", ViewBag.ConnectionString) @ViewBag.PermissionInputs> Editor Permissions
+                                                                </label>
+                                                            </div>
+                                                        </div>
+
+
+                                                        <hr />
+
+                                                        <h3>Author Roles</h3>
+                                                        <div class="row">
+                                                            <div class="col-sm-12">
+                                                                <a href="#AuthorRoles" data-toggle="collapse">
+                                                                    <i class="fas fa-chevron-circle-down">
+                                                                        <span class="text-danger">Show/Hide</span>
+                                                                    </i>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div id="AuthorRoles" class="collapse show mb-3">
+                                                            <div class="form-check m-2">
+                                                                <label class="form-check-label">
+                                                                    <input type="checkbox" class="form-check-input" name="AuthorPermissions" id="AuthorPermissions" value="1" @AccountHelper.CheckUserAccess(ActionedAccountID, "Author Permissions", ViewBag.ConnectionString) @ViewBag.PermissionInputs> Author Permissions
+                                                                </label>
+                                                            </div>
+                                                            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 d-none mb-3">
+                                                                <input type="hidden" class="form-control" name="ActionedAccountID" id="ActionedAccountID" value="@ActionedAccountID" required>
+                                                            </div>
+                                                            @{
+                                                                if (ViewBag.PermissionInputs == "")
+                                                                {
+                                                                    <button type="submit" id="UpdatePermissionsButton" class="btn btn-primary mt-3 disable-on-click">Update</button>
+                                                                }
+                                                            }
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <!--/main col-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <!-- ADMIN Footer -->
+            <partial name="~/Views/Shared/AccountLayout/_AdminFooter.cshtml" />
+        </div>
+    </div>
+
+    <!-- Modals data -->
+    <partial name="~/Views/Shared/Modals/_ActionModals.cshtml" view-data="ViewData" />
+
+    <!-- ADMIN RESOURCES -->
+    <partial name="~/Views/Shared/AccountLayout/_AdminFooterScripts.cshtml" />
+</body>
+</html>

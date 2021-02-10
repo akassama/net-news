@@ -1,0 +1,128 @@
+﻿@using AppHelpers.App_Code
+@using Microsoft.AspNetCore.Http
+@inject IHttpContextAccessor HttpContextAccessor
+
+@{
+    string AccountID = HttpContextAccessor.HttpContext.Session.GetString("_AccountId");
+    string UserName = HttpContextAccessor.HttpContext.Session.GetString("_LoginUserName");
+}
+<div id="layoutSidenav_nav">
+    <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+        <div class="sb-sidenav-menu">
+            <div class="nav">
+                <div class="sb-sidenav-menu-heading">Core</div>
+                <a class="nav-link" asp-controller="Admin" asp-action="Index">
+                    <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                    Dashboard
+                </a>
+
+                @if (AccountHelper.CheckUserAccess(AccountID, "Author Permissions"))
+                {
+                    <div class="sb-sidenav-menu-heading">Author</div>
+                    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePosts" aria-expanded="false" aria-controls="collapsePosts">
+                        <div class="sb-nav-link-icon"><i class="fas fa-plus"></i></div>
+                        News Post
+                        <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                    </a>
+                    <div class="collapse" id="collapsePosts" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
+                        <nav class="sb-sidenav-menu-nested nav">
+                            <a class="nav-link" asp-controller="Admin" asp-action="StandardNewsPost">Standard</a>
+                            <a class="nav-link" asp-controller="Admin" asp-action="NewsVideoPost">Video</a>
+                            <a class="nav-link" asp-controller="Admin" asp-action="NewsGalleryPost">Gallery</a>
+                            <a class="nav-link" asp-controller="Admin" asp-action="NewsAudioPost">Audio</a>
+                        </nav>
+                    </div>
+
+                    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseEntertainment" aria-expanded="false" aria-controls="collapsePosts">
+                        <div class="sb-nav-link-icon"><i class="fas fa-stars"></i></div>
+                        Entertainment
+                        <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                    </a>
+                    <div class="collapse" id="collapseEntertainment" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
+                        <nav class="sb-sidenav-menu-nested nav">
+                            <a class="nav-link" asp-controller="Admin" asp-action="EntertainmentNewsPost">Celebrity News</a>
+                            <a class="nav-link" asp-controller="Admin" asp-action="EntertainmentVideoPost">Post Video</a>
+                            <a class="nav-link" asp-controller="Admin" asp-action="EntertainmentAudioPost">Post Music/Audio</a>
+                            <a class="nav-link" asp-controller="Admin" asp-action="ManageTopTenVideos">Top 10 Videos</a>
+                            <a class="nav-link d-none" asp-controller="Admin" asp-action="ManageTopTenMusic">Top 10 Music</a>
+                            <a class="nav-link" asp-controller="Admin" asp-action="ManageEmbeddedMusic">Embedded Music</a>
+                        </nav>
+                    </div>
+
+                    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseManagement" aria-expanded="false" aria-controls="collapseManagement">
+                        <div class="sb-nav-link-icon"><i class="fas fa-list"></i></div>
+                        Management
+                        <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                    </a>
+                    <div class="collapse" id="collapseManagement" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
+                        <nav class="sb-sidenav-menu-nested nav">
+                            <a class="nav-link" asp-controller="Admin" asp-action="ManagePosts">Posts</a>
+                            <a class="nav-link" asp-controller="Admin" asp-action="PostReviews">Post Reviews</a>
+                            <a class="nav-link" asp-controller="Admin" asp-action="PostStatistics">Statistics</a>
+                        </nav>
+                    </div>
+                }
+
+                @if (AccountHelper.CheckUserAccess(AccountID, "Editor Permissions"))
+                {
+                    <div class="sb-sidenav-menu-heading">Editor</div>
+                    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseEditorManagement" aria-expanded="false" aria-controls="collapseEditorManagement">
+                        <div class="sb-nav-link-icon"><i class="fas fa-search"></i></div>
+                        Reviews
+                        <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                    </a>
+                    <div class="collapse" id="collapseEditorManagement" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
+                        <nav class="sb-sidenav-menu-nested nav">
+                            <a class="nav-link" asp-controller="Admin" asp-action="PendingReviews">Pending Reviews</a>
+                            <a class="nav-link" asp-controller="Admin" asp-action="ReviewHistory">History</a>
+                        </nav>
+                    </div>
+                }
+
+                <div class="sb-sidenav-menu-heading">Account</div>
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseAccountManagement" aria-expanded="false" aria-controls="collapseAccountManagement">
+                    <div class="sb-nav-link-icon"><i class="fas fa-tasks"></i></div>
+                    Manage Account
+                    <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                </a>
+                <div class="collapse" id="collapseAccountManagement" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
+                    <nav class="sb-sidenav-menu-nested nav">
+                        <a class="nav-link" asp-controller="Admin" asp-action="AppUsers">Contact Users</a>
+                        <a class="nav-link" asp-controller="Admin" asp-action="Profile">Profile</a>
+                        <a class="nav-link" asp-controller="Admin" asp-action="Settings">Settings</a>
+                    </nav>
+                </div>
+
+
+                @if (AccountHelper.CheckUserAccess(AccountID, "Admin Permissions"))
+                {
+                    <div class="sb-sidenav-menu-heading">Admin</div>
+                    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseAdminManagement" aria-expanded="false" aria-controls="collapseAdminManagement">
+                        <div class="sb-nav-link-icon"><i class="fas fa-tasks"></i></div>
+                        Manage Admin
+                        <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                    </a>
+                    <div class="collapse" id="collapseAdminManagement" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
+                        <nav class="sb-sidenav-menu-nested nav">
+                            <a class="nav-link" asp-controller="Admin" asp-action="AccountRegistrations">Account Registrations</a>
+                            <a class="nav-link" asp-controller="Admin" asp-action="ManageAccounts">Manage Accounts</a>
+                            <a class="nav-link" asp-controller="Admin" asp-action="ManageCategories">Manage Categories</a>
+                            <a class="nav-link" asp-controller="Admin" asp-action="ManageTags">Manage Tags</a>
+                            <a class="nav-link" asp-controller="Admin" asp-action="ManageSiteData">Manage Site Data</a>
+                            <a class="nav-link" asp-controller="Admin" asp-action="PostStatistics">Site Analytics</a>
+                            <a class="nav-link" asp-controller="Admin" asp-action="ActivityLogs">Activity Logs</a>
+                            <a class="nav-link" asp-controller="Admin" asp-action="ManageSubscribers">Manage Subscribers</a>
+                            <a class="nav-link" asp-controller="Admin" asp-action="ManageNewsApi">Manage News Api</a>
+                            <a class="nav-link" target="_blank" href="@ModelHelper.GetSiteLookupData("GoogleAnalyticsLink")">Google Analytics</a>
+                        </nav>
+                    </div>
+                }
+
+            </div>
+        </div>
+        <div class="sb-sidenav-footer">
+            <div class="small">Logged in as:</div>
+            @UserName
+        </div>
+    </nav>
+</div>

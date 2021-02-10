@@ -1,0 +1,73 @@
+﻿@model IEnumerable<NetNews.Models.PostsDataModel.vwPostsApprovedModel>
+@using AppHelpers.App_Code
+
+@using Microsoft.AspNetCore.Http
+@inject IHttpContextAccessor HttpContextAccessor
+@{
+    var Url = "https://" + Context.Request.Host + Context.Request.Path; //get current url path
+
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <!-- 24 NEWS Head -->
+    <partial name="~/Views/Shared/Templates/24News/_Head.cshtml" />
+</head>
+<body>
+    <div class="container-fluid fh5co_header_bg">
+        <!-- Breaking News-->
+        <partial name="~/Views/Shared/Templates/24News/_BreakingNewsTop.cshtml" />
+    </div>
+    <div class="container-fluid">
+        <div class="container">
+            <!-- Logo Navigation -->
+            <partial name="~/Views/Shared/Templates/24News/_LogoNav.cshtml" />
+        </div>
+    </div>
+    <div class="container-fluid bg-faded fh5co_padd_mediya padding_786">
+        <div class="container padding_786">
+            <!-- Navigation -->
+            <partial name="~/Views/Shared/Templates/24News/_Navigation.cshtml" />
+        </div>
+    </div>
+
+    <div class="container-fluid pb-4 pt-4 paddding">
+        <div class="container paddding">
+            <div class="row mx-0">
+                <!-- Search Results -->
+                <partial name="~/Views/Shared/Templates/24News/_SearchResults.cshtml" />
+
+                <div class="col-md-3 animate-box" data-animate-effect="fadeInRight">
+                    <!-- Tags Div -->
+                    <partial name="~/Views/Shared/Templates/24News/_TagsDiv.cshtml" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid pb-4 pt-5">
+        <!-- Trending News Horizontal -->
+        <partial name="~/Views/Shared/Templates/24News/_TrendingNewsHorizontal.cshtml" />
+    </div>
+
+    <div class="container-fluid fh5co_footer_bg pb-3">
+        <div class="container animate-box">
+            <!-- Footer Top -->
+            <partial name="~/Views/Shared/Templates/24News/_FooterTop.cshtml" />
+        </div>
+    </div>
+    <div class="container-fluid fh5co_footer_right_reserved">
+        <!-- Footer Bottom -->
+        <partial name="~/Views/Shared/Templates/24News/_FooterBottom.cshtml" />
+    </div>
+
+    <div class="gototop js-top">
+        <a href="#" class="js-gotop"><i class="fa fa-arrow-up"></i></a>
+    </div>
+
+    <!-- 24 NEWS Footer Scripts -->
+    <partial name="~/Views/Shared/Templates/24News/_FooterScripts.cshtml" />
+
+</body>
+</html>

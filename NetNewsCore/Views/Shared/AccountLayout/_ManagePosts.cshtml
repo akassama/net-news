@@ -1,0 +1,101 @@
+﻿@using AppHelpers.App_Code
+@{
+    int RowCount = 0;
+}
+<div class="card mb-4">
+    <div class="card-header">
+        <i class="fas fa-table mr-1"></i>
+        Manage Posts @TextHelper.FormatAlert(ViewBag.TotalPosts)
+    </div>
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Category</th>
+                        <th>Post Title</th>
+                        <th>Headline Image</th>
+                        <th>Post Date</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <th>#</th>
+                        <th>Category</th>
+                        <th>Post Title</th>
+                        <th>Headline Image</th>
+                        <th>Post Date</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </tfoot>
+                <tbody>
+                    @foreach (var post in ViewBag.PostsData)
+                    {
+                        <tr>
+                            <td>
+                                @{
+                                    RowCount += 1;
+                                }
+                                @RowCount
+                            </td>
+                            <td>
+                                @PostHelper.GetCategoryName(post.PostCategory)
+                            </td>
+                            <td>
+                                @TextHelper.FormatLongText(post.PostTitle, 100)
+                            </td>
+                            <td>
+                                <!--Get Post Preview-->
+                                @DataHelper.GetPostPreview(post.PostID)
+                            </td>
+                            <td>
+                                @post.DateAdded
+                            </td>
+                            <td>
+                                @PostHelper.GetPostApprovalState(post.ApprovalState)
+                            </td>
+                            <td>
+                                <div class="dropdown">
+                                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                                        Choose Action
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" target="_blank" asp-controller="Admin" asp-action="PostDetails" asp-route-id="@post.PostID">
+                                            <i class="fas fa-info-circle text-success mr-1"></i> View
+                                        </a>
+                                        @{
+                                            string edit_enabled = "";
+                                            string show_edit = "";
+                                            string delete_enabled = "";
+                                            string show_delete = "";
+                                            if (post.ApprovalState == 1 && !ViewBag.EditApprovedPosts)
+                                            {
+                                                edit_enabled = "disabled";
+                                                show_edit = "d-none";
+                                            }
+                                            if (post.ApprovalState == 1 && !ViewBag.DeleteApprovedPosts)
+                                            {
+                                                delete_enabled = "disabled";
+                                                show_delete = "d-none";
+                                            }
+                                        }
+                                        <a class="dropdown-item @edit_enabled @show_edit" asp-controller="Admin" asp-action="@PostHelper.GetEditRoute(post.PostID)" asp-route-id="@post.PostID">
+                                            <i class="fas fa-edit text-warning mr-1"></i> Edit
+                                        </a>
+                                        <a class="dropdown-item delete-post @delete_enabled @show_delete" href="#" id="@post.PostID">
+                                            <i class="fas fa-trash-alt text-danger mr-1"></i> Delete
+                                        </a>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

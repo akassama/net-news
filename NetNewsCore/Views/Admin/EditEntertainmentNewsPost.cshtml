@@ -1,0 +1,226 @@
+﻿@model NetNews.Models.PostsDataModel.PostsModel
+@using Microsoft.AspNetCore.Http
+@using AppHelpers.App_Code
+@inject IHttpContextAccessor HttpContextAccessor
+@{
+    var Url = "https://" + Context.Request.Host + Context.Request.Path; //get current url path
+
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <!-- ADMIN Head -->
+    <partial name="~/Views/Shared/AccountLayout/_Head.cshtml" />
+</head>
+
+<body class="sb-nav-fixed">
+    <!-- ADMIN Navigation -->
+    <partial name="~/Views/Shared/AccountLayout/_Navigation.cshtml" />
+    <div id="layoutSidenav">
+        <!-- ADMIN Sidebar -->
+        <partial name="~/Views/Shared/AccountLayout/_LeftSideBar.cshtml" />
+        <div id="layoutSidenav_content">
+            <main>
+                <div class="container-fluid">
+                    <h1 class="mt-4">Edit Entertainment News Post</h1>
+                    <ol class="breadcrumb mb-4">
+                        <li class="breadcrumb-item"><a asp-controller="Admin" asp-action="Index">Dashboard</a></li>
+                        <li class="breadcrumb-item"><a asp-controller="Admin" asp-action="ManagePosts">Manage Posts</a></li>
+                        <li class="breadcrumb-item active">Edit Entertainment News Post</li>
+                    </ol>
+
+                    <div class="row">
+                        <div class="col-10 offset-1">
+                            <form id="NewPostForm" asp-controller="Admin" asp-action="EditStandardNewsPost" method="post" enctype="multipart/form-data">
+                                <div asp-validation-summary="All" class="text-danger"></div>
+                                <div class="row jumbotron">
+                                    <div class="col-sm-12 form-group">
+                                        <label asp-for="PostCategory" data-toggle="tooltip" title="Select the category for the post.">Post Category:</label>
+                                        <select asp-for="PostCategory" class="form-control" asp-items="@( new SelectList(@ViewBag.CategoryList,"CategoryID","CategoryName"))" required>
+                                            <option value="" class="text-white bg-dark">
+                                                Select post category
+                                            </option>
+                                        </select>
+                                        <span asp-validation-for="PostCategory" class="text-danger"></span>
+                                    </div>
+                                    <div class="col-sm-12 form-group">
+                                        <label asp-for="PostSubCategory" data-toggle="tooltip" title="Optional - Select the sub category for the post.">Sub Category (optional):</label>
+                                        <select asp-for="PostSubCategory" class="form-control" asp-items="@( new SelectList(@ViewBag.CategoryList,"CategoryID","CategoryName"))">
+                                            <option value="" class="text-white bg-dark">
+                                                Select sub category
+                                            </option>
+                                        </select>
+                                        <span asp-validation-for="PostSubCategory" class="text-danger"></span>
+                                    </div>
+                                    <div class="col-sm-12 form-group">
+                                        <label asp-for="PostTitle" data-toggle="tooltip" title="Write for the post."></label>
+                                        <input type="text" class="form-control count-chars" data-chars-max="250" data-msg-color="danger" maxlength="250" asp-for="PostTitle" spellcheck="true" placeholder="Title of the post" required="">
+                                        <span asp-validation-for="PostTitle" class="text-danger"></span>
+                                    </div>
+
+                                    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 mb-3">
+                                        <label asp-for="PostImage" data-toggle="tooltip" title="Select the headline image for the post."></label>
+                                        <input type="file" class="file image-preview-file" id="PostImageSelect" name="PostImageSelect" accept="image/jpg,image/jpeg">
+                                        <div class="input-group my-3">
+                                            <input type="text" class="form-control image-preview" disabled placeholder="Upload File" asp-for="PostImage" required="">
+                                            <div class="input-group-append">
+                                                <button type="button" class="browse btn btn-primary">Browse...</button>
+                                            </div>
+                                        </div>
+                                        <span asp-validation-for="PostImage" class="text-danger"></span>
+                                    </div>
+
+                                    <div class="col-sm-12 form-group">
+                                        <div class="p-2">
+                                            <img src="https://placehold.it/750x120?text=Image+Preview" id="PreviewImage" class="rounded w-100" alt="Cinque Terre" height="400">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-12 form-group">
+                                        <label asp-for="ImageCaption" data-toggle="tooltip" title="Optional - Write the image caption."></label> <small>(Optional)</small>
+                                        <input type="text" class="form-control count-chars" data-chars-max="200" data-msg-color="danger" maxlength="200" asp-for="ImageCaption" spellcheck="true" placeholder="Short description/caption about the image. Image credits or copyright.">
+                                        <span asp-validation-for="ImageCaption" class="text-danger"></span>
+                                    </div>
+
+                                    <div class="col-sm-12 form-group">
+                                        <label asp-for="PostContent" data-toggle="tooltip" title="Write the main body content for the post.">Post Content:</label>
+                                        <div class="bg-white">
+                                            <textarea class="form-control" asp-for="PostContent" spellcheck="true" required=""></textarea>
+                                        </div>
+                                        <span asp-validation-for="PostContent" class="text-danger"></span>
+                                    </div>
+
+                                    <div class="col-sm-12 form-group">
+                                        <div class="form-check-inline">
+                                            <label class="form-check-label" data-toggle="tooltip" title="Tick, if post is a breaking news.">
+                                                <input type="checkbox" name="IsBreakingNews" id="IsBreakingNews" class="form-check-input checkbox-lg mr-2" value="1" @ViewBag.IsBreakingNews>Is Breaking News?
+                                            </label>
+                                        </div>
+
+                                        <div class="form-check-inline">
+                                            <label class="form-check-label" data-toggle="tooltip" title="Tick, if post is a featured one.">
+                                                <input type="checkbox" name="FeaturedPost" id="FeaturedPost" class="form-check-input checkbox-lg mr-2" value="1" @ViewBag.FeaturedPost>Is Featured?
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-12 form-group">
+                                        <label asp-for="PostTags" data-toggle="tooltip" title="Tick the tags related to the post."></label>
+                                        <div class="row ml-1">
+                                            @foreach (var tags in ViewBag.TagsList)
+                                            {
+                                                if (Model.PostTags.Contains(tags.TagName))
+                                                {
+                                                    <div class="form-check-inline">
+                                                        <label class="form-check-label">
+                                                            <input type="checkbox" name="PostTags" class="form-check-input checkbox-lg cb-md m-2" value="@tags.ShortTagName" checked>@tags.TagName
+                                                        </label>
+                                                    </div>
+                                                }
+                                                else
+                                                {
+                                                    <div class="form-check-inline">
+                                                        <label class="form-check-label">
+                                                            <input type="checkbox" name="PostTags" class="form-check-input checkbox-lg cb-md m-2" value="@tags.ShortTagName">@tags.TagName
+                                                        </label>
+                                                    </div>
+                                                }
+                                            }
+                                        </div>
+                                        <span asp-validation-for="PostTags" class="text-danger"></span>
+                                    </div>
+
+                                    <div class="col-sm-12 form-group">
+                                        <label for="PostTags" data-toggle="tooltip" title="Add more tags separated by comma">More Tags</label> <small>Separate by comma</small>
+                                        <input type="text" class="form-control count-chars" data-chars-max="200" data-msg-color="danger" maxlength="200" name="MorePostTags" id="MorePostTags" spellcheck="true">
+                                    </div>
+
+                                    <div class="col-sm-12 form-group">
+                                        <label asp-for="PostEditor" data-toggle="tooltip" title="Editor of post"></label>
+                                        <input type="text" class="form-control count-chars" data-chars-max="250" data-msg-color="danger" maxlength="250" name="ShowPostEditor" value="@AccountHelper.GetAccountData(Model.PostEditor, "FullName")" readonly>
+                                    </div>
+
+
+                                    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 mb-3">
+                                        <label data-toggle="tooltip" title="Toggle, if you want to edit post SEO data.">
+                                            <a href="#EditSEOMeta" class="no-decoration" data-toggle="collapse">
+                                                <i class="fas fa-plus"></i> Edit SEO Meta
+                                            </a>
+                                        </label>
+                                    </div>
+
+                                    @{
+                                        //Show post comments and author comment section
+                                        if (ViewBag.Comment == "true")
+                                        {
+                                            if (!string.IsNullOrEmpty(PostHelper.GetPostComments(Model.PostID).ToString()))
+                                            {
+                                                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 mb-4">
+                                                    <a href="#ReviewComments" class="btn btn-primary" data-toggle="collapse">Show Comments</a>
+                                                    <div id="ReviewComments" class="collapse mt-2">
+                                                        @PostHelper.GetPostComments(Model.PostID)
+                                                    </div>
+                                                </div>
+                                            }
+                                            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 mb-4">
+                                                <label for="ReviewComment">Comment to Reviewer:</label>
+                                                <textarea class="form-control count-chars" data-chars-max="250" data-msg-color="danger" id="ReviewComment" name="ReviewComment" maxlength="250" rows="2" required=""></textarea>
+                                            </div>
+                                        }
+                                    }
+
+                                    <div class="collapse mb-3 ml-1 row w-100" id="EditSEOMeta">
+                                        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 mb-3">
+                                            <label for="MetaTitle">SEO Title</label>
+                                            <input type="text" class="form-control count-chars" data-chars-max="300" data-msg-color="danger" maxlength="300" name="MetaTitle" id="MetaTitle" spellcheck="true" value="@Model.MetaTitle">
+                                        </div>
+                                        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 mb-3">
+                                            <label for="MetaDescription">SEO Description</label>
+                                            <input type="text" class="form-control count-chars" data-chars-max="300" data-msg-color="danger" maxlength="300" name="MetaDescription" id="MetaDescription" spellcheck="true" value="@Model.MetaDescription">
+                                        </div>
+                                        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 mb-3">
+                                            <label for="MetaTitle">SEO Keywords</label>
+                                            <input type="text" class="form-control count-chars" data-chars-max="300" data-msg-color="danger" maxlength="300" name="MetaKeywords" id="MetaKeywords" spellcheck="true" value="@Model.MetaKeywords">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 d-none sr-only mb-3">
+                                        <input type="hidden" class="form-control" name="ImageDirectory" id="ImageDirectory" value="@PostHelper.GetPostImageDirectory(Model.PostID)">
+                                        <input type="hidden" class="form-control" asp-for="ID" value="0">
+                                        <input type="hidden" class="form-control" asp-for="PostID">
+                                        <input type="hidden" class="form-control" asp-for="PostEditor">
+                                        <input type="hidden" class="form-control" name="EntertainmentPost" id="EntertainmentPost" value="@ViewBag.EntertainmentPost">
+                                    </div>
+
+                                    <div class="col-lg-4 offset-lg-8 col-xl-4 offset-xl-8 mb-3">
+                                        <a class="btn btn-danger mr-2" href="#" data-toggle="modal" data-target="#confirmCancelCreatePostModal" role="button">
+                                            <i class="fas fa-times mr-1"></i> Cancel
+                                        </a>
+                                        <button id="EditPostButton" class="btn btn-success disable-on-click" type="submit">
+                                            <i class="fas fa-pencil-alt mr-1"></i> Update
+                                        </button>
+                                    </div>
+
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+
+                </div>
+            </main>
+            <!-- ADMIN Footer -->
+            <partial name="~/Views/Shared/AccountLayout/_AdminFooter.cshtml" />
+        </div>
+    </div>
+
+    <!-- Modals data -->
+    <partial name="~/Views/Shared/Modals/_ActionModals.cshtml" view-data="ViewData" />
+
+    <!-- ADMIN RESOURCES -->
+    <partial name="~/Views/Shared/AccountLayout/_AdminFooterScripts.cshtml" />
+</body>
+</html>

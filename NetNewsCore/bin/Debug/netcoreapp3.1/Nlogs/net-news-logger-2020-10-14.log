@@ -1,0 +1,126 @@
+2020-10-14 01:08:08.3742||DEBUG|NetNews.Program|init main function 
+2020-10-14 01:08:16.0326||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-14 01:21:21.2880||DEBUG|NetNews.Program|init main function 
+2020-10-14 01:21:23.1060||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-14 01:23:30.3189||DEBUG|NetNews.Program|init main function 
+2020-10-14 01:23:31.4461||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-14 01:25:18.5901||DEBUG|NetNews.Program|init main function 
+2020-10-14 01:25:19.0635||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-14 01:25:58.0629||DEBUG|NetNews.Program|init main function 
+2020-10-14 01:25:58.4707||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-14 01:26:27.7200||DEBUG|NetNews.Program|init main function 
+2020-10-14 01:26:28.0809||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-14 01:27:01.3082||DEBUG|NetNews.Program|init main function 
+2020-10-14 01:27:02.0269||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-14 01:27:40.8299||DEBUG|NetNews.Program|init main function 
+2020-10-14 01:27:41.4021||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-14 01:28:06.4264||DEBUG|NetNews.Program|init main function 
+2020-10-14 01:28:06.9844||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-14 01:28:29.2065||DEBUG|NetNews.Program|init main function 
+2020-10-14 01:28:29.6252||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-14 01:28:55.6167||DEBUG|NetNews.Program|init main function 
+2020-10-14 01:28:56.1789||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-14 01:29:27.4075||DEBUG|NetNews.Program|init main function 
+2020-10-14 01:29:27.8458||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-14 01:30:23.1168||DEBUG|NetNews.Program|init main function 
+2020-10-14 01:30:24.1865||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-14 01:31:09.2766||DEBUG|NetNews.Program|init main function 
+2020-10-14 01:31:09.7220||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-14 01:31:43.7225||DEBUG|NetNews.Program|init main function 
+2020-10-14 01:31:44.2164||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-14 01:32:29.6585||DEBUG|NetNews.Program|init main function 
+2020-10-14 01:32:30.1769||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-14 01:33:21.6742||DEBUG|NetNews.Program|init main function 
+2020-10-14 01:33:22.2112||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-14 01:34:03.1913||DEBUG|NetNews.Program|init main function 
+2020-10-14 01:34:03.5766||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-14 01:36:32.2316||DEBUG|NetNews.Program|init main function 
+2020-10-14 01:36:33.0387||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-14 01:37:47.0339||DEBUG|NetNews.Program|init main function 
+2020-10-14 01:37:47.4796||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-14 01:39:36.3306||DEBUG|NetNews.Program|init main function 
+2020-10-14 01:39:36.8097||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-14 01:47:06.8149||DEBUG|NetNews.Program|init main function 
+2020-10-14 01:47:07.3920||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-14 01:47:59.4854||DEBUG|NetNews.Program|init main function 
+2020-10-14 01:47:59.9068||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-14 01:50:04.0599||DEBUG|NetNews.Program|init main function 
+2020-10-14 01:50:04.8932||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-14 01:51:43.3219||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-10-14 01:51:43.3273||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 1, TotalPages: 1, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-10-14 01:52:26.4398||DEBUG|NetNews.Program|init main function 
+2020-10-14 01:52:26.9078||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-14 01:52:29.8736||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-10-14 01:52:29.8736||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 1, TotalPages: 1, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-10-14 01:52:36.4809||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-10-14 01:52:36.4809||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 1, TotalPages: 1, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-10-14 01:52:58.1185||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-10-14 01:52:58.1206||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 1, TotalPages: 1, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-10-14 01:54:02.7185||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-10-14 01:54:02.7185||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 1, TotalPages: 1, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-10-14 01:54:12.8076||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-10-14 01:54:12.8076||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 1, TotalPages: 1, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-10-14 01:54:40.1305||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-10-14 01:54:40.1305||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 1, TotalPages: 1, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-10-14 01:54:58.5654||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-10-14 01:54:58.5654||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 1, TotalPages: 1, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-10-14 01:55:10.1573||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-10-14 01:55:10.1573||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 1, TotalPages: 1, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-10-14 01:55:25.7892||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-10-14 01:55:25.7892||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 1, TotalPages: 1, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-10-14 01:55:35.3437||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-10-14 01:55:35.3437||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 1, TotalPages: 1, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-10-14 01:55:51.1582||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-10-14 01:55:51.1582||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 1, TotalPages: 1, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-10-14 01:56:00.1657||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-10-14 01:56:00.1672||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 1, TotalPages: 1, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-10-14 01:56:41.8285||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-10-14 01:56:41.8285||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 1, TotalPages: 1, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-10-14 01:56:49.8928||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-10-14 01:56:49.8928||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 1, TotalPages: 1, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-10-14 01:56:59.4232||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-10-14 01:56:59.4232||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 1, TotalPages: 1, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-10-14 01:57:23.7967||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-10-14 01:57:23.7967||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 1, TotalPages: 1, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-10-14 01:57:49.3613||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-10-14 01:57:49.3613||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 1, TotalPages: 1, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-10-14 01:57:58.9160||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-10-14 01:57:58.9175||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 1, TotalPages: 1, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-10-14 01:58:10.3972||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-10-14 01:58:10.3972||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 1, TotalPages: 1, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-10-14 01:58:33.3635||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-10-14 01:58:33.3635||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 1, TotalPages: 1, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-10-14 02:00:43.7297||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-10-14 02:00:43.7297||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 2, TotalPages: 1, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-10-14 02:01:20.4778||DEBUG|NetNews.Program|init main function 
+2020-10-14 02:01:21.2047||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-14 02:01:23.8859||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-10-14 02:01:23.8859||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 2, TotalPages: 1, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-10-14 02:02:59.7212||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-10-14 02:02:59.7212||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 2, TotalPages: 1, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-10-14 02:03:42.5596||DEBUG|NetNews.Program|init main function 
+2020-10-14 02:03:42.9967||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-14 02:03:46.1188||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-10-14 02:03:46.1241||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 2, TotalPages: 1, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-10-14 02:11:28.1943||DEBUG|NetNews.Program|init main function 
+2020-10-14 02:11:28.8547||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-14 10:12:07.9220||DEBUG|NetNews.Program|init main function 
+2020-10-14 10:12:10.7029||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-14 10:19:38.2509||DEBUG|NetNews.Program|init main function 
+2020-10-14 10:19:38.6500||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-14 10:53:51.5216||DEBUG|NetNews.Program|init main function 
+2020-10-14 10:53:51.8706||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-14 11:18:03.7728||DEBUG|NetNews.Program|init main function 
+2020-10-14 11:18:04.2591||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-14 11:53:23.1224||DEBUG|NetNews.Program|init main function 
+2020-10-14 11:53:24.8982||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-14 12:17:07.3912||DEBUG|NetNews.Program|init main function 
+2020-10-14 12:17:08.5440||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-14 12:22:46.2232||DEBUG|NetNews.Program|init main function 
+2020-10-14 12:22:47.4096||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-14 12:44:37.1382||DEBUG|NetNews.Program|init main function 
+2020-10-14 12:44:38.3085||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-14 12:46:53.2637||DEBUG|NetNews.Program|init main function 
+2020-10-14 12:46:54.2675||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-14 23:15:42.1976||DEBUG|NetNews.Program|init main function 
+2020-10-14 23:15:42.8370||INFO|Detection.Startup|Starting Detection version 3.0.0.0 

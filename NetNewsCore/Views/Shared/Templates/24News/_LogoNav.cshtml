@@ -1,0 +1,70 @@
+﻿@using AppHelpers.App_Code
+@using Microsoft.AspNetCore.Http
+@inject IHttpContextAccessor HttpContextAccessor
+
+@{
+    var sLogoPath = ModelHelper.GetSiteLookupData("SiteLogoPath");
+    string LogoPath = (!string.IsNullOrEmpty(sLogoPath)) ? sLogoPath : "https://placehold.it/240x120?text=Net-News";
+
+    var sHeight = ModelHelper.GetSiteLookupData("SiteLogoHeight");
+    string LogoHeight = (!string.IsNullOrEmpty(sHeight)) ? sHeight + "px" : "75px";
+
+    var sWidth = ModelHelper.GetSiteLookupData("SiteLogoWidth");
+    string LogoWidth = (!string.IsNullOrEmpty(sHeight)) ? sWidth + "px" : "125px";
+
+    string Dimension = $@"width='{LogoWidth}' height='{LogoHeight}'";
+    string AccountID = HttpContextAccessor.HttpContext.Session.GetString("_AccountId");
+}
+
+
+<div class="row">
+    <div class="col-12 col-md-3 fh5co_padding_menu">
+        <a asp-action="Index" asp-controller="Home">
+            <img src="@LogoPath" style="height:@LogoHeight; width:@LogoWidth" alt="img" class="fh5co_logo_width img-thumbnail" />
+        </a>
+    </div>
+    <div class="col-12 col-md-9 align-self-center fh5co_mediya_right">
+        <div class="text-center d-inline-block">
+            <a class="fh5co_display_table" data-toggle="collapse" data-target="#searchInput"><div class="fh5co_verticle_middle"><i class="fas fa-search"></i></div></a>
+        </div>
+
+        @if (!string.IsNullOrEmpty(ModelHelper.GetSiteLookupData("TwitterLink")))
+        {
+            <div class="text-center d-inline-block">
+                <a href="@ModelHelper.GetSiteLookupData("TwitterLink")" target="_blank" class="fh5co_display_table"><div class="fh5co_verticle_middle"><i class="fab fa-twitter"></i></div></a>
+            </div>
+        }
+
+        @if (!string.IsNullOrEmpty(ModelHelper.GetSiteLookupData("FacebookLink")))
+        {
+            <div class="text-center d-inline-block">
+                <a href="@ModelHelper.GetSiteLookupData("FacebookLink")" target="_blank" class="fh5co_display_table"><div class="fh5co_verticle_middle"><i class="fab fa-facebook-f"></i></div></a>
+            </div>
+        }
+        @if (!string.IsNullOrEmpty(ModelHelper.GetSiteLookupData("YoutubeLink")))
+        {
+            <div class="text-center d-inline-block">
+                <a href="@ModelHelper.GetSiteLookupData("YoutubeLink")" target="_blank" class="fh5co_display_table"><div class="fh5co_verticle_middle"><i class="fab fa-youtube"></i></div></a>
+            </div>
+        }
+        @if (!string.IsNullOrEmpty(ModelHelper.GetSiteLookupData("InstagramLink")))
+        {
+            <div class="text-center d-inline-block">
+                <a href="@ModelHelper.GetSiteLookupData("InstagramLink")" target="_blank" class="fh5co_display_table"><div class="fh5co_verticle_middle"><i class="fab fa-instagram"></i></div></a>
+            </div>
+        }
+
+        <div class="text-center d-inline-block">
+            <a asp-action="Index" asp-controller="SignIn" class="fh5co_display_table"><div class="fh5co_verticle_middle"><i class="fas fa-user"></i></div></a>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+
+    <div class="col-12">
+        <form asp-action="Index" asp-controller="Search" method="get" id="searchInput" class="collapse hide">
+            <div class="form-group">
+                <input type="text" class="form-control" id="q" name="q" placeholder="search here" pattern=".{2,}" title="please type 2 or more characters" required>
+            </div>
+        </form>
+    </div>
+</div>

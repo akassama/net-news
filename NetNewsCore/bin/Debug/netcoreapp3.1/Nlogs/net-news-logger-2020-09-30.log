@@ -1,0 +1,109 @@
+2020-09-30 00:24:24.7497||DEBUG|NetNews.Program|init main function 
+2020-09-30 00:24:25.3864||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-30 01:04:19.6182||DEBUG|NetNews.Program|init main function 
+2020-09-30 01:04:23.3631||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-30 01:08:25.6765||DEBUG|NetNews.Program|init main function 
+2020-09-30 01:08:27.2438||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-30 01:25:14.2025||DEBUG|NetNews.Program|init main function 
+2020-09-30 01:25:15.4979||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-30 01:47:59.4538||DEBUG|NetNews.Program|init main function 
+2020-09-30 01:47:59.9391||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-30 11:11:54.1843||DEBUG|NetNews.Program|init main function 
+2020-09-30 11:11:55.1972||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-30 11:26:25.3204||DEBUG|NetNews.Program|init main function 
+2020-09-30 11:26:25.7767||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-30 12:13:48.0981||DEBUG|NetNews.Program|init main function 
+2020-09-30 12:13:49.9049||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-30 12:55:00.6853||DEBUG|NetNews.Program|init main function 
+2020-09-30 12:55:01.0620||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-30 13:26:51.0136||DEBUG|NetNews.Program|init main function 
+2020-09-30 13:26:56.6428||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-30 13:27:32.8178||DEBUG|NetNews.Program|init main function 
+2020-09-30 13:27:35.1203||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-30 13:29:32.5281||DEBUG|NetNews.Program|init main function 
+2020-09-30 13:29:34.6617||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-30 13:31:21.4823||DEBUG|NetNews.Program|init main function 
+2020-09-30 13:31:24.1618||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-30 13:58:19.3315||DEBUG|NetNews.Program|init main function 
+2020-09-30 13:58:21.2801||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-30 14:00:37.2605||DEBUG|NetNews.Program|init main function 
+2020-09-30 14:00:39.3225||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-30 14:08:11.1394||DEBUG|NetNews.Program|init main function 
+2020-09-30 14:08:13.6745||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-30 14:09:23.1790|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. Microsoft.AspNetCore.Connections.ConnectionResetException: The client has disconnected
+ ---> System.Runtime.InteropServices.COMException (0x800704CD): An operation was attempted on a nonexistent network connection. (0x800704CD)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.IIS.Core.IO.AsyncIOOperation.GetResult(Int16 token)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContext.ReadBody()
+   at System.IO.Pipelines.PipeCompletion.ThrowLatchedException()
+   at System.IO.Pipelines.Pipe.GetReadResult(ReadResult& result)
+   at System.IO.Pipelines.Pipe.ReadAsync(CancellationToken token)
+   at System.IO.Pipelines.Pipe.DefaultPipeReader.ReadAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContext.ReadAsync(Memory`1 memory, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.IIS.Core.HttpRequestStream.ReadAsyncInternal(Memory`1 buffer, CancellationToken cancellationToken)
+   at System.IO.Pipelines.StreamPipeReader.ReadAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.WebUtilities.FormPipeReader.ReadFormAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.Features.FormFeature.InnerReadFormAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Antiforgery.DefaultAntiforgeryTokenStore.GetRequestTokensAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Antiforgery.DefaultAntiforgery.ValidateRequestAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.ValidateAntiforgeryTokenAuthorizationFilter.OnAuthorizationAsync(AuthorizationFilterContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Wangkanai.Detection.Hosting.ResponsiveMiddleware.InvokeAsync(HttpContext context, IResponsiveService responsive)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at NetNews.Startup.<>c.<<Configure>b__5_0>d.MoveNext() in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNews\NetNews\Startup.cs:line 76
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-09-30 14:22:48.0690||DEBUG|NetNews.Program|init main function 
+2020-09-30 14:22:49.3088||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-30 15:19:04.7740||DEBUG|NetNews.Program|init main function 
+2020-09-30 15:19:05.3978||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-30 15:34:22.2475||DEBUG|NetNews.Program|init main function 
+2020-09-30 15:34:22.7334||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-30 15:40:15.4744||DEBUG|NetNews.Program|init main function 
+2020-09-30 15:40:15.9139||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-30 16:09:13.8840||DEBUG|NetNews.Program|init main function 
+2020-09-30 16:09:14.6082||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-30 16:10:03.7084||DEBUG|NetNews.Program|init main function 
+2020-09-30 16:10:04.2843||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-30 16:11:01.4778||DEBUG|NetNews.Program|init main function 
+2020-09-30 16:11:01.9210||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-30 16:11:53.2401||DEBUG|NetNews.Program|init main function 
+2020-09-30 16:11:53.7300||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-30 16:12:19.8718||DEBUG|NetNews.Program|init main function 
+2020-09-30 16:12:20.5821||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-30 16:12:58.9369||DEBUG|NetNews.Program|init main function 
+2020-09-30 16:12:59.3018||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-30 16:13:44.1317||DEBUG|NetNews.Program|init main function 
+2020-09-30 16:13:44.7629||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-30 16:14:19.1579||DEBUG|NetNews.Program|init main function 
+2020-09-30 16:14:19.7371||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-30 16:25:19.4348||DEBUG|NetNews.Program|init main function 
+2020-09-30 16:25:19.9276||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-30 17:24:16.4349||DEBUG|NetNews.Program|init main function 
+2020-09-30 17:24:16.9695||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-30 17:25:54.0574||DEBUG|NetNews.Program|init main function 
+2020-09-30 17:25:54.5080||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-30 17:28:17.4702||DEBUG|NetNews.Program|init main function 
+2020-09-30 17:28:18.0155||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-30 18:13:55.3180||DEBUG|NetNews.Program|init main function 
+2020-09-30 18:13:55.8887||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-30 18:16:26.5185||DEBUG|NetNews.Program|init main function 
+2020-09-30 18:16:28.0428||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-30 18:18:47.2824||DEBUG|NetNews.Program|init main function 
+2020-09-30 18:18:48.8401||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-30 18:27:11.7054||DEBUG|NetNews.Program|init main function 
+2020-09-30 18:27:13.1540||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-30 18:31:24.8684||DEBUG|NetNews.Program|init main function 
+2020-09-30 18:31:26.8882||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-30 18:42:05.4534||DEBUG|NetNews.Program|init main function 
+2020-09-30 18:42:05.9731||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-30 18:56:55.1870||DEBUG|NetNews.Program|init main function 
+2020-09-30 18:56:55.6171||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-09-30 19:00:02.7382||DEBUG|NetNews.Program|init main function 
+2020-09-30 19:00:03.2312||INFO|Detection.Startup|Starting Detection version 3.0.0.0 

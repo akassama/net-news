@@ -1,0 +1,30 @@
+2020-10-31 00:08:19.4325||DEBUG|NetNews.Program|init main function 
+2020-10-31 00:08:23.6800||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-31 00:10:33.9014||DEBUG|NetNews.Program|init main function 
+2020-10-31 00:10:34.3952||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-31 00:12:14.0029||DEBUG|NetNews.Program|init main function 
+2020-10-31 00:12:14.6829||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-31 00:12:18.6747||INFO|NetNews.Controllers.PostsController|Get Post Details Error: System.NullReferenceException: Object reference not set to an instance of an object.
+   at NetNews.Models.AppModels.AppFunctions.FormatCountryName(String country) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNews\NetNews\Models\AppModels\AppFunctions.cs:line 2495
+   at NetNews.Models.AppModels.AppFunctions.LogPostView(String post_id, String post_author, String post_type, String visitor_ip, String ipstack_key, String visitor_browser, String visitor_device, String other) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNews\NetNews\Models\AppModels\AppFunctions.cs:line 211
+   at NetNews.Controllers.PostsController.Index(String id) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNews\NetNews\Controllers\PostsController.cs:line 83 
+2020-10-31 00:12:40.3995||DEBUG|NetNews.Program|init main function 
+2020-10-31 00:12:41.3174||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-31 00:12:44.2383||INFO|NetNews.Controllers.PostsController|Get Post Details Error: System.NullReferenceException: Object reference not set to an instance of an object.
+   at NetNews.Models.AppModels.AppFunctions.FormatCountryName(String country) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNews\NetNews\Models\AppModels\AppFunctions.cs:line 2495
+   at NetNews.Models.AppModels.AppFunctions.LogPostView(String post_id, String post_author, String post_type, String visitor_ip, String ipstack_key, String visitor_browser, String visitor_device, String other) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNews\NetNews\Models\AppModels\AppFunctions.cs:line 211
+   at NetNews.Controllers.PostsController.Index(String id) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNews\NetNews\Controllers\PostsController.cs:line 83 
+2020-10-31 00:14:50.9457||DEBUG|NetNews.Program|init main function 
+2020-10-31 00:14:58.5986||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-31 00:23:29.9935||DEBUG|NetNews.Program|init main function 
+2020-10-31 00:23:30.5173||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-31 00:34:10.7000||DEBUG|NetNews.Program|init main function 
+2020-10-31 00:34:11.4555||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-31 00:34:14.1865||INFO|NetNews.Controllers.PostsController|Get Post Details Error: System.NullReferenceException: Object reference not set to an instance of an object.
+   at NetNews.Models.AppModels.AppFunctions.FormatCountryName(String country) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNews\NetNews\Models\AppModels\AppFunctions.cs:line 2495
+   at NetNews.Models.AppModels.AppFunctions.LogPostView(String post_id, String post_author, String post_type, String visitor_ip, String ipstack_key, String visitor_browser, String visitor_device, String other) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNews\NetNews\Models\AppModels\AppFunctions.cs:line 211
+   at NetNews.Controllers.PostsController.Index(String id) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNews\NetNews\Controllers\PostsController.cs:line 83 
+2020-10-31 00:34:33.0529||INFO|NetNews.Controllers.PostsController|Get Post Details Error: System.NullReferenceException: Object reference not set to an instance of an object.
+   at NetNews.Models.AppModels.AppFunctions.FormatCountryName(String country) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNews\NetNews\Models\AppModels\AppFunctions.cs:line 2495
+   at NetNews.Models.AppModels.AppFunctions.LogPostView(String post_id, String post_author, String post_type, String visitor_ip, String ipstack_key, String visitor_browser, String visitor_device, String other) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNews\NetNews\Models\AppModels\AppFunctions.cs:line 211
+   at NetNews.Controllers.PostsController.Index(String id) in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNews\NetNews\Controllers\PostsController.cs:line 83 

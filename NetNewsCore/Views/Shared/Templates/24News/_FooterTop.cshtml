@@ -1,0 +1,102 @@
+﻿@using AppHelpers.App_Code
+@using Microsoft.AspNetCore.Http
+@inject IHttpContextAccessor HttpContextAccessor
+
+@{
+    var sLogoPath = ModelHelper.GetSiteLookupData("SiteLogoPath");
+    string LogoPath = (!string.IsNullOrEmpty(sLogoPath)) ? sLogoPath : "https://placehold.it/240x120?text=Net-News";
+
+    var sHeight = ModelHelper.GetSiteLookupData("SiteLogoHeight");
+    string LogoHeight = (!string.IsNullOrEmpty(sHeight)) ? sHeight + "px" : "75px";
+
+    var sWidth = ModelHelper.GetSiteLookupData("SiteLogoWidth");
+    string LogoWidth = (!string.IsNullOrEmpty(sHeight)) ? sWidth + "px" : "125px";
+
+    string Dimension = $@"width='{LogoWidth}' height='{LogoHeight}'";
+    string AccountID = HttpContextAccessor.HttpContext.Session.GetString("_AccountId");
+}
+
+<div class="row d-sm-block d-md-none d-lg-none">
+    <div class="mt-5 mb-5">
+    </div>
+</div>
+<div class="row">
+    <div class="col-12 spdp_right py-5">
+        <a asp-action="Index" asp-controller="Home">
+            <img src="@LogoPath" style="height:@LogoHeight; width:@LogoWidth" alt="img" class="footer_logo" />
+        </a>
+    </div>
+    <div class="clearfix"></div>
+    <div class="col-12 col-md-4 col-lg-3">
+        <div class="footer_main_title py-3"> About</div>
+        <div class="footer_sub_about pb-3">
+            @ModelHelper.GetSiteHtmlLookupData("AboutInfoFooter")
+        </div>
+        <div class="footer_mediya_icon">
+            @if (!string.IsNullOrEmpty(ModelHelper.GetSiteLookupData("FacebookLink")))
+            {
+                <div class="text-center d-inline-block">
+                    <a href="@ModelHelper.GetSiteLookupData("FacebookLink")" target="_blank" class="fh5co_display_table_footer">
+                        <div class="fh5co_verticle_middle"><i class="fab fa-facebook-f"></i></div>
+                    </a>
+                </div>
+            }
+            @if (!string.IsNullOrEmpty(ModelHelper.GetSiteLookupData("TwitterLink")))
+            {
+                <div class="text-center d-inline-block">
+                    <a href="@ModelHelper.GetSiteLookupData("TwitterLink")" target="_blank" class="fh5co_display_table_footer">
+                        <div class="fh5co_verticle_middle"><i class="fab fa-twitter"></i></div>
+                    </a>
+                </div>
+            }
+
+            @if (!string.IsNullOrEmpty(ModelHelper.GetSiteLookupData("YoutubeLink")))
+            {
+                <div class="text-center d-inline-block">
+                    <a href="@ModelHelper.GetSiteLookupData("YoutubeLink")" target="_blank" class="fh5co_display_table_footer">
+                        <div class="fh5co_verticle_middle"><i class="fab fa-youtube"></i></div>
+                    </a>
+                </div>
+            }
+            @if (!string.IsNullOrEmpty(ModelHelper.GetSiteLookupData("InstagramLink")))
+            {
+                <div class="text-center d-inline-block">
+                    <a href="@ModelHelper.GetSiteLookupData("InstagramLink")" target="_blank" class="fh5co_display_table_footer">
+                        <div class="fh5co_verticle_middle"><i class="fab fa-instagram"></i></div>
+                    </a>
+                </div>
+            }
+        </div>
+    </div>
+    <div class="col-12 col-md-3 col-lg-2">
+        <div class="footer_main_title py-3"> Category</div>
+        <ul class="footer_menu">
+            @LayoutHelper24News.GetFooterCategoryLinks(6)
+        </ul>
+    </div>
+    <div class="col-12 col-md-5 col-lg-3 position_footer_relative">
+        <div class="footer_main_title py-3"> Most Viewed This Week</div>
+
+        @LayoutHelper24News.GetTrendingNewsFooter(3)
+
+        <div class="footer_position_absolute"><img src="~/assets/24News/images/footer_sub_tipik.png" alt="img" class="width_footer_sub_img" /></div>
+    </div>
+    <div class="col-12 col-md-12 col-lg-4 ">
+        <div class="footer_main_title py-3"> Recent Posts</div>
+        @LayoutHelper24News.GetRecentNewsFooter(9)
+    </div>
+</div>
+<form class="" asp-controller="Home" asp-action="SubscribeUser" method="post" id="SubscribeForm">
+    <div class="row justify-content-center pt-2 pb-4">
+        <div class="col-12 col-md-8 col-lg-7 ">
+            <p>
+                Subscribe to our newsletter to stay up to date, delivered straight to your inbox.
+            </p>
+            <div class="input-group">
+                <span class="input-group-addon fh5co_footer_text_box" id="basic-addon1"><i class="fa fa-envelope"></i></span>
+                <input type="email" class="form-control fh5co_footer_text_box" id="SubscriberEmail" name="SubscriberEmail" placeholder="Enter your email..." aria-describedby="basic-addon1" required>
+                <button role="button" type="submit" class="input-group-addon fh5co_footer_subcribe" id="basic-addon12"><i class="fa fa-paper-plane-o"></i>&nbsp;&nbsp;Subscribe</button>
+            </div>
+        </div>
+    </div>
+</form>

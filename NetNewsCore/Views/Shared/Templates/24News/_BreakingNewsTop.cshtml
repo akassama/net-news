@@ -1,0 +1,14 @@
+﻿@using AppHelpers.App_Code
+
+<div class="container">
+    <div class="row">
+        @if (LayoutHelper24News.HasBreakingNews() || LayoutHelper24News.HasAnyNews())
+        {
+            <span>
+                @LayoutHelper24News.GetBreakingNews()
+            </span>
+        }
+    </div>
+</div>
+
+

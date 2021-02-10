@@ -1,0 +1,48 @@
+﻿@using AppHelpers.App_Code
+<div class="row">
+    <div class="col-sm-12 col-md-2 offset-md-10">
+        <span class="float-right">
+            <a role="button" class="btn btn-danger" data-toggle="modal" data-target="#liveNewsModal">
+                <i class="fab fa-youtube text-white"></i> <span class="text-white">Live News</span>
+            </a>
+        </span>
+    </div>
+</div>
+
+<script type="text/javascript">
+    //Stop YouTube Player
+    $(document).ready(function () {
+        $(".close-yt-player").on('click', function (event) {
+            var video = $("#live-yt-player").attr("src");
+            $("#live-yt-player").attr("src", "");
+            $("#live-yt-player").attr("src", video);
+        });
+    });
+</script>
+
+<!-- Live News Modal -->
+<div class="modal fade" id="liveNewsModal">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h4 class="modal-title"><i class="fab fa-youtube text-danger"></i> <span>Live News</span></h4>
+                <button type="button" class="close close-yt-player" data-dismiss="modal">&times;</button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" id="live-yt-player" src="https://www.youtube.com/embed/@ModelHelper.GetSiteLookupData("LiveNewsID")" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger close-yt-player" data-dismiss="modal">Close</button>
+            </div>
+
+        </div>
+    </div>
+</div>

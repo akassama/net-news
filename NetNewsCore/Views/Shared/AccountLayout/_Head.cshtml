@@ -1,0 +1,50 @@
+﻿@using AppHelpers.App_Code
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="@ModelHelper.GetSiteLookupData("GoogleAnalyticsKey")"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-180879812-1');
+</script>
+
+<!-- Google adsense -->
+<script data-ad-client="ca-pub-7959518454033786" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<!-- Required meta tags -->
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+<title>@ViewData["Title"] - Impact Gambia</title>
+<meta name="keywords" content="@ViewData["ContentKeywords"]" />
+<meta name="description" content="@ViewData["ContentDescription"]" />
+<meta name="author" content="@ViewData["PostAuthor"]">
+<meta property="og:title" content="@ViewData["Title"]">
+<meta property="og:type" content="article">
+<meta name="twitter:title" content="@ViewData["Title"]">
+<meta name="twitter:description" content="@ViewData["ContentDescription"]">
+<meta name="url" content="@Url">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ADMIN RESOURCES -->
+<partial name="~/Views/Shared/AccountLayout/_AdminStyle.cshtml" />
+
+
+<!-- share this src -->
+<script type='text/javascript' src='@ViewBag.ShareThisUrl' async='async'></script>
+
+<!-- endinject -->
+
+<script>
+    $.getJSON("https://api.ipify.org?format=json", function (data) {
+        //send visit log request
+        var ip_address = data.ip;
+        $.getJSON('/Home/SetSessionIP', { key: ip_address }, function (res) {
+
+        });
+    });
+</script>

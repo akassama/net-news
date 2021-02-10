@@ -1,0 +1,30 @@
+2020-10-10 00:12:19.7052||INFO|NetNews.Controllers.AdminController|Update Account Details Error: System.Runtime.InteropServices.ExternalException (0x80004005): A generic error occurred in GDI+.
+   at System.Drawing.Image.Save(String filename, ImageCodecInfo encoder, EncoderParameters encoderParams)
+   at LazZiya.ImageResize.SaveImage.SaveAs(Image img, String path, Int32 quality)
+   at NetNews.Controllers.AdminController.UpdateProfile() in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNews\NetNews\Controllers\AdminController.cs:line 1232 
+2020-10-10 00:15:39.3659||INFO|NetNews.Controllers.AdminController|Update Account Details Error: System.Runtime.InteropServices.ExternalException (0x80004005): A generic error occurred in GDI+.
+   at System.Drawing.Image.Save(String filename, ImageCodecInfo encoder, EncoderParameters encoderParams)
+   at LazZiya.ImageResize.SaveImage.SaveAs(Image img, String path, Int32 quality)
+   at NetNews.Controllers.AdminController.UpdateProfile() in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNews\NetNews\Controllers\AdminController.cs:line 1232 
+2020-10-10 00:23:45.1043||DEBUG|NetNews.Program|init main function 
+2020-10-10 00:23:50.5562||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-10 01:02:55.0168||DEBUG|NetNews.Program|init main function 
+2020-10-10 01:02:56.5313||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-10 02:38:26.8910||DEBUG|NetNews.Program|init main function 
+2020-10-10 02:38:30.9669||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-10 02:47:27.2797||DEBUG|NetNews.Program|init main function 
+2020-10-10 02:47:29.0001||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-10 02:57:47.6066||DEBUG|NetNews.Program|init main function 
+2020-10-10 02:57:49.1446||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-10 06:54:42.6572||DEBUG|NetNews.Program|init main function 
+2020-10-10 06:54:47.6072||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-10 06:59:07.2356||DEBUG|NetNews.Program|init main function 
+2020-10-10 06:59:09.1651||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-10 07:01:15.2275||DEBUG|NetNews.Program|init main function 
+2020-10-10 07:01:15.7850||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-10 07:02:50.7123||DEBUG|NetNews.Program|init main function 
+2020-10-10 07:02:51.2615||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-10 07:04:04.2116||DEBUG|NetNews.Program|init main function 
+2020-10-10 07:04:04.7047||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-10 07:14:42.7492||DEBUG|NetNews.Program|init main function 
+2020-10-10 07:14:50.2491||INFO|Detection.Startup|Starting Detection version 3.0.0.0 

@@ -1,0 +1,150 @@
+﻿@model NetNews.Models.AccountsDataModel.AccountsModel
+
+@using Microsoft.AspNetCore.Http
+@using AppHelpers.App_Code
+@inject IHttpContextAccessor HttpContextAccessor
+@{
+    var Url = "https://" + Context.Request.Host + Context.Request.Path; //get current url path
+
+    Layout = null;
+
+    string AccountID = ViewBag.AccountID;
+    string ConnectionString = ViewBag.ConnectionString;
+}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <!-- ADMIN Head -->
+    <partial name="~/Views/Shared/AccountLayout/_Head.cshtml" />
+</head>
+
+<body class="sb-nav-fixed">
+    <!-- ADMIN Navigation -->
+    <partial name="~/Views/Shared/AccountLayout/_Navigation.cshtml" />
+    <div id="layoutSidenav">
+        <!-- ADMIN Sidebar -->
+        <partial name="~/Views/Shared/AccountLayout/_LeftSideBar.cshtml" />
+        <div id="layoutSidenav_content">
+            <main>
+                <div class="container-fluid">
+                    <h1 class="mt-4">Dashboard</h1>
+                    <ol class="breadcrumb mb-4">
+                        <li class="breadcrumb-item"><a asp-controller="Admin" asp-action="Index">Dashboard</a></li>
+                        <li class="breadcrumb-item"><a asp-controller="Admin" asp-action="ManageAccounts">Manage Accounts</a></li>
+                        <li class="breadcrumb-item active">Account Details</li>
+                    </ol>
+
+                    <div class="row">
+                        <div class="col-lg-12 stretch-card grid-margin">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col main pt-0 mt-3">
+                                            <p class="lead">Account Details</p>
+                                            <span class="float-right">@AccountHelper.GetAccountApprovalState(Model.Active)</span>
+                                            <div class="row mb-3">
+                                                <p>
+                                                    <img src="@AccountHelper.GetAccountProfilePicture(Model.AccountID)" class="rounded" alt="account profile picture" width="120" height="120">
+                                                </p>
+                                                <div class="row">
+                                                    <div class="col-sm-12 col-md-6 col-lg-3 col-xl-6 mb-2">
+                                                        <label for="FirstName">First Name:</label>
+                                                        @{ var FirstName = ModelHelper.SetEditInput(TempData["FirstName"], AccountHelper.GetAccountData(AccountID, "FirstName")); }
+                                                        <input type="text" class="form-control" maxlength="100" value="@FirstName" @ViewBag.ProfileInputs disabled>
+                                                    </div>
+                                                    <div class="col-sm-12 col-md-6 col-lg-3 col-xl-6 mb-2">
+                                                        <label for="LastName">Last Name:</label>
+                                                        @{ var LastName = ModelHelper.SetEditInput(TempData["LastName"], AccountHelper.GetAccountData(AccountID, "LastName")); }
+                                                        <input type="text" class="form-control" maxlength="100" value="@LastName" @ViewBag.ProfileInputs disabled>
+                                                    </div>
+                                                    <div class="col-sm-12 col-md-6 col-lg-3 col-xl-6 mb-2">
+                                                        <label for="Email">Email:</label>
+                                                        @{ var Email = ModelHelper.SetEditInput(TempData["Email"], AccountHelper.GetAccountData(AccountID, "Email")); }
+                                                        <input type="email" class="form-control" maxlength="100" value="@Email" @ViewBag.ProfileInputs disabled>
+                                                    </div>
+                                                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-6 mb-2">
+                                                        <label for="Num">Mobile Number:</label>
+                                                        <div class="row">
+                                                            <div class="col-4">
+                                                                @{ var CountryCode = ModelHelper.SetEditInput(TempData["CountryCode"], AccountHelper.GetAccountData(AccountID, "CountryCode")); }
+                                                                <input type="text" class="form-control integer-only" maxlength="5" value="@CountryCode" @ViewBag.ProfileInputs disabled>
+                                                            </div>
+                                                            <div class="col-8">
+                                                                @{ var PhoneNumber = ModelHelper.SetEditInput(TempData["PhoneNumber"], AccountHelper.GetAccountData(AccountID, "PhoneNumber")); }
+                                                                <input type="text" class="form-control integer-only" maxlength="20" value="@PhoneNumber" @ViewBag.ProfileInputs disabled>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-12 col-md-6 col-lg-3 col-xl-6 mb-2">
+                                                        <label for="DateOfBirth">Date of Birth:</label>
+                                                        @{
+                                                            var DateOfBirth = ModelHelper.SetEditInput(TempData["DateOfBirth"], AccountHelper.GetAccountData(AccountID, "DateOfBirth"));
+                                                            if (!string.IsNullOrEmpty(DateOfBirth))
+                                                            {
+                                                                DateOfBirth = Convert.ToDateTime(DateOfBirth).ToString("dd/MM/yyyy");
+                                                            }
+                                                            <input type="text" class="form-control" value="@DateOfBirth" @ViewBag.ProfileInputs disabled>
+                                                        }
+                                                    </div>
+                                                    <div class="col-sm-12 col-md-6 col-lg-3 col-xl-6 mb-2">
+                                                        <label for="Gender">Gender:</label>
+                                                        @{
+                                                            var Gender = ModelHelper.GetTableData("AccountDetails", "AccountID", AccountID, "Gender", ConnectionString);
+                                                            string selected_value = "";
+                                                            if (Gender == "Male")
+                                                            {
+                                                                selected_value = "Male";
+                                                            }
+                                                            else if (Gender == "Female")
+                                                            {
+                                                                selected_value = "Female";
+                                                            }
+                                                            <input type="text" class="form-control" value="@selected_value" disabled>
+                                                        }
+                                                    </div>
+                                                    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 mb-2">
+                                                        <label for="Country">
+                                                            Nationality:
+                                                        </label>
+                                                        @{
+
+                                                            var Country = ModelHelper.SetEditInput(TempData["Country"], AccountHelper.GetAccountData(AccountID, "Country"));
+                                                            var CountryName = ModelHelper.GetTableData("Country", "ID", Country, "Name", ViewBag.ConnectionString);
+                                                            var CountryNameOption = (!string.IsNullOrEmpty(CountryName)) ? "<option value='" + Country + "' class='text-white bg-dark' selected>" + CountryName + "</option>" : "<option value='' class='text-white bg-dark'>Select country</option>";
+                                                            <input type="text" class="form-control" value="@CountryName" disabled>
+                                                        }
+                                                    </div>
+                                                    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 mb-2">
+                                                        <label for="DateOfBirth">Biography:</label>
+                                                        @{
+                                                            var Biography = ModelHelper.SetEditInput(TempData["Biography"], AccountHelper.GetAccountData(AccountID, "Biography"));
+                                                            <div class="bg-light text-dark rounded p-3">@Html.Raw(Biography)</div>
+                                                        }
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <!--/row-->
+                                        </div>
+                                        <!--/main col-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </main>
+            <!-- ADMIN Footer -->
+            <partial name="~/Views/Shared/AccountLayout/_AdminFooter.cshtml" />
+        </div>
+    </div>
+
+    <!-- Modals data -->
+    <partial name="~/Views/Shared/Modals/_ActionModals.cshtml" view-data="ViewData" />
+
+    <!-- ADMIN RESOURCES -->
+    <partial name="~/Views/Shared/AccountLayout/_AdminFooterScripts.cshtml" />
+</body>
+</html>

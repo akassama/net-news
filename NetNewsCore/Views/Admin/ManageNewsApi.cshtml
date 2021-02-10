@@ -1,0 +1,175 @@
+﻿@model IEnumerable<NetNews.Models.PostsDataModel.NewsApiModel>
+
+@using Microsoft.AspNetCore.Http
+@using AppHelpers.App_Code
+@inject IHttpContextAccessor HttpContextAccessor
+@{
+    var Url = "https://" + Context.Request.Host + Context.Request.Path; //get current url path
+
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <!-- ADMIN Head -->
+    <partial name="~/Views/Shared/AccountLayout/_Head.cshtml" />
+</head>
+
+<body class="sb-nav-fixed">
+    <!-- ADMIN Navigation -->
+    <partial name="~/Views/Shared/AccountLayout/_Navigation.cshtml" />
+    <div id="layoutSidenav">
+        <!-- ADMIN Sidebar -->
+        <partial name="~/Views/Shared/AccountLayout/_LeftSideBar.cshtml" />
+        <div id="layoutSidenav_content">
+            <main>
+                <div class="container-fluid">
+                    <h1 class="mt-4">Manage News Api</h1>
+                    <ol class="breadcrumb mb-4">
+                        <li class="breadcrumb-item"><a asp-controller="Admin" asp-action="Index">Dashboard</a></li>
+                        <li class="breadcrumb-item active">Manage News Api</li>
+                    </ol>
+
+                    <!-- Content -->
+                    <!-- Action messages partial -->
+                    <partial name="~/Views/Shared/_ProcessMessage.cshtml" />
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <span class="float-right">
+                                <a asp-controller="Admin" asp-action="CreateNewsApi" class="btn btn-outline-primary">
+                                    <i class="fas fa-plus"></i> Create News Api
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                    @if (Model.Count() > 0)
+                    {
+                        int RowCount = 0;
+                        <div class="row">
+                            <div class="col-12 p-2">
+                                <div class="card mb-4">
+                                    <div class="card-header">
+                                        <i class="fas fa-table mr-1"></i>
+                                        Manage News Api
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="table-responsive">
+                                            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                                <thead>
+                                                    <tr>
+                                                        <th>#</th>
+                                                        <th>Source</th>
+                                                        <th>Category</th>
+                                                        <th>Author</th>
+                                                        <th>Title</th>
+                                                        <th>Description</th>
+                                                        <th>Url</th>
+                                                        <th>UrlToImage</th>
+                                                        <th>PublishedAt</th>
+                                                        <th>Action</th>
+                                                    </tr>
+                                                </thead>
+                                                <tfoot>
+                                                    <tr>
+                                                        <th>#</th>
+                                                        <th>Source</th>
+                                                        <th>Category</th>
+                                                        <th>Author</th>
+                                                        <th>Title</th>
+                                                        <th>Description</th>
+                                                        <th>Url</th>
+                                                        <th>UrlToImage</th>
+                                                        <th>PublishedAt</th>
+                                                        <th>Action</th>
+                                                    </tr>
+                                                </tfoot>
+                                                <tbody>
+                                                    @foreach (var item in Model)
+                                                    {
+                                                        <tr>
+                                                            <td>
+                                                                @{
+                                                                    RowCount += 1;
+                                                                }
+                                                                @RowCount
+                                                            </td>
+                                                            <td>
+                                                                @Html.DisplayFor(modelItem => item.Source)
+                                                            </td>
+                                                            <td>
+                                                                @Html.DisplayFor(modelItem => item.Category)
+                                                            </td>
+                                                            <td>
+                                                                @Html.DisplayFor(modelItem => item.Author)
+                                                            </td>
+                                                            <td>
+                                                                @Html.DisplayFor(modelItem => item.Title)
+                                                            </td>
+                                                            <td>
+                                                                @TextHelper.FormatLongText(item.Description, 150)
+                                                            </td>
+                                                            <td>
+                                                                <a href="@item.Url" target="_blank">
+                                                                    @TextHelper.FormatLongText(item.Url, 20)
+                                                                </a>
+                                                            </td>
+                                                            <td>
+                                                                <img src="@item.UrlToImage" class="rounded" alt="@item.Title" width="175" height="110">
+                                                            </td>
+                                                            <td>
+                                                                @Html.DisplayFor(modelItem => item.PublishedAt)
+                                                            </td>
+                                                            <td>
+                                                                <div class="dropdown">
+                                                                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                                                                        Choose Action
+                                                                    </button>
+                                                                    <div class="dropdown-menu">
+                                                                        @*<a class="dropdown-item" target="_blank" asp-controller="Posts" asp-action="Global" asp-route-id="@item.Url">
+                                                                            <i class="fas fa-info-circle text-primary mr-1"></i> Details
+                                                                        </a>*@
+                                                                        <a class="dropdown-item" target="_blank" href="@item.Url">
+                                                                            <i class="fas fa-info-circle text-primary mr-1"></i> Details
+                                                                        </a>
+                                                                        <a class="dropdown-item" asp-controller="Admin" asp-action="EditNewsApi" asp-route-id="@item.ID">
+                                                                            <i class="fas fa-check text-success mr-1"></i> Edit
+                                                                        </a>
+                                                                        <a class="dropdown-item delete-news-api" href="#" id="@item.ID">
+                                                                            <i class="fas fa-times text-danger mr-1"></i> Dlete
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    }
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="alert alert-warning col-12">
+                            <strong>No news api available!</strong> <a asp-controller="Admin" asp-action="CreateNewsApi" class="alert-link">Create new news api</a>.
+                        </div>
+                    }
+
+                </div>
+            </main>
+            <!-- ADMIN Footer -->
+            <partial name="~/Views/Shared/AccountLayout/_AdminFooter.cshtml" />
+        </div>
+    </div>
+
+    <!-- Modals data -->
+    <partial name="~/Views/Shared/Modals/_ActionModals.cshtml" view-data="ViewData" />
+
+    <!-- ADMIN RESOURCES -->
+    <partial name="~/Views/Shared/AccountLayout/_AdminFooterScripts.cshtml" />
+</body>
+</html>

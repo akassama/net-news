@@ -1,0 +1,131 @@
+﻿@model NetNews.Models.PostsDataModel.TopTenListModel
+
+@using Microsoft.AspNetCore.Http
+@using AppHelpers.App_Code
+@inject IHttpContextAccessor HttpContextAccessor
+@{
+    var Url = "https://" + Context.Request.Host + Context.Request.Path; //get current url path
+
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <!-- ADMIN Head -->
+    <partial name="~/Views/Shared/AccountLayout/_Head.cshtml" />
+</head>
+
+<body class="sb-nav-fixed">
+    <!-- ADMIN Navigation -->
+    <partial name="~/Views/Shared/AccountLayout/_Navigation.cshtml" />
+    <div id="layoutSidenav">
+        <!-- ADMIN Sidebar -->
+        <partial name="~/Views/Shared/AccountLayout/_LeftSideBar.cshtml" />
+        <div id="layoutSidenav_content">
+            <main>
+                <div class="container-fluid">
+                    <h1 class="mt-4">Edit Video List</h1>
+                    <ol class="breadcrumb mb-4">
+                        <li class="breadcrumb-item"><a asp-controller="Admin" asp-action="Index">Dashboard</a></li>
+                        <li class="breadcrumb-item active">Edit Video List</li>
+                    </ol>
+                    <!-- Content -->
+                    <!-- Action messages partial -->
+                    <partial name="~/Views/Shared/_ProcessMessage.cshtml" />
+
+                    <div class="row">
+                        <div class="col-lg-12 stretch-card grid-margin">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-12 main pt-0 mt-3">
+                                            <p class="lead d-sm-block">Edit Video List</p>
+
+                                            <div class="row mb-3">
+                                                <form id="NewPostForm" asp-controller="Admin" asp-action="EditTopTenVideo" method="post" enctype="multipart/form-data">
+                                                    <div asp-validation-summary="All" class="text-danger"></div>
+                                                    <div class="row">
+
+                                                        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 mb-3">
+                                                            <label asp-for="ListLink"></label>
+                                                            <input type="text" class="form-control count-chars" data-chars-max="250" data-msg-color="danger" maxlength="250" asp-for="ListLink" spellcheck="true" placeholder="List Link" required>
+                                                            <span asp-validation-for="ListLink" class="text-danger"></span>
+                                                        </div>
+
+                                                        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 mb-3">
+                                                            <label asp-for="ListTitle"></label>
+                                                            <input type="text" class="form-control count-chars" data-chars-max="250" data-msg-color="danger" maxlength="250" asp-for="ListTitle" spellcheck="true" placeholder="List Title" required>
+                                                            <span asp-validation-for="ListTitle" class="text-danger"></span>
+                                                        </div>
+
+                                                        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 mb-3">
+                                                            <label asp-for="ListOrder" data-toggle="tooltip" title="Select the category for the post.">
+                                                            </label>
+                                                            <select asp-for="ListOrder" class="form-control" required>
+                                                                <option value="" class="text-white bg-dark">
+                                                                    Select order
+                                                                </option>
+                                                                @for (int i = 1; i <= 10; i++)
+                                                                {
+                                                                    if (Model.ListOrder == i)
+                                                                    {
+                                                                        <option value="@i" selected>
+                                                                            @i
+                                                                        </option>
+                                                                    }
+                                                                    else
+                                                                    {
+                                                                        <option value="@i">
+                                                                            @i
+                                                                        </option>
+                                                                    }
+                                                                }
+                                                            </select>
+                                                            <span asp-validation-for="ListOrder" class="text-danger"></span>
+                                                        </div>
+
+
+                                                        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 mb-3 d-none">
+                                                            <input type="hidden" class="form-control" asp-for="ID" value="0">
+                                                            <input type="hidden" class="form-control" asp-for="ListID">
+                                                            <input type="hidden" class="form-control" asp-for="ListType" value="MusicVideos">
+                                                        </div>
+
+                                                        <div class="col-lg-12 mb-3">
+                                                            <a class="btn btn-danger mr-2" asp-controller="Admin" asp-action="ManageTopTenVideos" role="button">
+                                                                <i class="fas fa-times mr-1"></i> Cancel
+                                                            </a>
+                                                            <button id="EditCategoryButton" class="btn btn-success disable-on-click" type="submit">
+                                                                <i class="fas fa-pencil-alt mr-1"></i> Update
+                                                            </button>
+                                                        </div>
+
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <!--/row-->
+                                        </div>
+
+                                        <!--/main col-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </main>
+            <!-- ADMIN Footer -->
+            <partial name="~/Views/Shared/AccountLayout/_AdminFooter.cshtml" />
+        </div>
+    </div>
+
+    <!-- Modals data -->
+    <partial name="~/Views/Shared/Modals/_ActionModals.cshtml" view-data="ViewData" />
+
+    <!-- ADMIN RESOURCES -->
+    <partial name="~/Views/Shared/AccountLayout/_AdminFooterScripts.cshtml" />
+</body>
+</html>

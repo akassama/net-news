@@ -1,0 +1,121 @@
+﻿@model IEnumerable<NetNews.Models.AccountsDataModel.AccountsModel>
+
+@using Microsoft.AspNetCore.Http
+@using AppHelpers.App_Code
+@inject IHttpContextAccessor HttpContextAccessor
+@{
+    var Url = "https://" + Context.Request.Host + Context.Request.Path; //get current url path
+
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <!-- ADMIN Head -->
+    <partial name="~/Views/Shared/AccountLayout/_Head.cshtml" />
+</head>
+
+<body class="sb-nav-fixed">
+    <!-- ADMIN Navigation -->
+    <partial name="~/Views/Shared/AccountLayout/_Navigation.cshtml" />
+    <div id="layoutSidenav">
+        <!-- ADMIN Sidebar -->
+        <partial name="~/Views/Shared/AccountLayout/_LeftSideBar.cshtml" />
+        <div id="layoutSidenav_content">
+            <main>
+                <div class="container-fluid">
+                    <h1 class="mt-4">App Users</h1>
+                    <ol class="breadcrumb mb-4">
+                        <li class="breadcrumb-item"><a asp-controller="Admin" asp-action="Index">Dashboard</a></li>
+                        <li class="breadcrumb-item active">App Users</li>
+                    </ol>
+
+                    <!-- Content -->
+                    <!-- Action messages partial -->
+                    <partial name="~/Views/Shared/_ProcessMessage.cshtml" />
+                    @if (Model.Count() > 0)
+                    {
+                        int RowCount = 0;
+                        <div class="row">
+                            <div class="col-12 p-2">
+                                <div class="card mb-4">
+                                    <div class="card-header">
+                                        <i class="fas fa-table mr-1"></i>
+                                        Total Users @TextHelper.FormatAlert(Model.Count())
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="table-responsive">
+                                            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                                <thead>
+                                                    <tr>
+                                                        <th>#</th>
+                                                        <th>Name</th>
+                                                        <th>Email</th>
+                                                        <th class="text-center">Action</th>
+                                                    </tr>
+                                                </thead>
+                                                <tfoot>
+                                                    <tr>
+                                                        <th>#</th>
+                                                        <th>Name</th>
+                                                        <th>Email</th>
+                                                        <th class="text-center">Action</th>
+                                                    </tr>
+                                                </tfoot>
+                                                <tbody>
+                                                    @foreach (var item in Model)
+                                                    {
+                                                        <tr>
+                                                            <td>
+                                                                @{
+                                                                    RowCount += 1;
+                                                                }
+                                                                @RowCount
+                                                            </td>
+                                                            <td>
+                                                                <p class="font-weight-bold">
+                                                                    <img src="@AccountHelper.GetAccountProfilePicture(item.AccountID)" class="rounded-circle m-1" alt="profile-pic" width="30" height="30">
+                                                                    @AccountHelper.GetAccountData(item.AccountID, "FullName")
+                                                                </p>
+                                                            </td>
+                                                            <td>
+                                                                @item.Email
+                                                            </td>
+                                                            <td class="text-center">
+                                                                <a href="mailto:@item.Email" class="btn btn-info" role="button">
+                                                                    <i class="fas fa-envelope"></i>  Send Email
+                                                                </a>
+                                                            </td>
+                                                        </tr>
+                                                    }
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="alert alert-warning col-12">
+                            <strong>No accounts available!</strong>
+                        </div>
+                    }
+
+                </div>
+            </main>
+            <!-- ADMIN Footer -->
+            <partial name="~/Views/Shared/AccountLayout/_AdminFooter.cshtml" />
+        </div>
+    </div>
+
+    <!-- Modals data -->
+    <partial name="~/Views/Shared/Modals/_ActionModals.cshtml" view-data="ViewData" />
+
+    <!-- ADMIN RESOURCES -->
+    <partial name="~/Views/Shared/AccountLayout/_AdminFooterScripts.cshtml" />
+</body>
+</html>

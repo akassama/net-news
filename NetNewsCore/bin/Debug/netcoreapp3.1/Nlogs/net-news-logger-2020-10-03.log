@@ -1,0 +1,72 @@
+2020-10-03 04:02:09.3872||DEBUG|NetNews.Program|init main function 
+2020-10-03 04:02:16.2828||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-03 04:04:34.7195||DEBUG|NetNews.Program|init main function 
+2020-10-03 04:04:36.0360||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-03 04:10:21.0335||DEBUG|NetNews.Program|init main function 
+2020-10-03 04:10:22.6133||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-03 04:12:36.1915||DEBUG|NetNews.Program|init main function 
+2020-10-03 04:12:37.4659||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-03 04:32:28.8757||DEBUG|NetNews.Program|init main function 
+2020-10-03 04:32:30.2741||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-03 04:36:09.9700||DEBUG|NetNews.Program|init main function 
+2020-10-03 04:36:11.7683||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-03 04:39:41.1094||DEBUG|NetNews.Program|init main function 
+2020-10-03 04:39:42.9030||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-03 04:41:50.7552||DEBUG|NetNews.Program|init main function 
+2020-10-03 04:41:52.4850||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-03 04:45:04.4399||DEBUG|NetNews.Program|init main function 
+2020-10-03 04:45:05.7926||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-03 04:46:47.6761||DEBUG|NetNews.Program|init main function 
+2020-10-03 04:46:49.7704||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-03 04:48:02.8856||DEBUG|NetNews.Program|init main function 
+2020-10-03 04:48:04.4825||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-03 04:49:20.9119||DEBUG|NetNews.Program|init main function 
+2020-10-03 04:49:26.7664||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-03 04:51:14.7178||DEBUG|NetNews.Program|init main function 
+2020-10-03 04:51:16.6190||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-03 05:52:14.7449||DEBUG|NetNews.Program|init main function 
+2020-10-03 05:52:15.3254||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-03 18:52:12.5574||DEBUG|NetNews.Program|init main function 
+2020-10-03 18:52:13.5664||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-03 18:53:21.5709||DEBUG|NetNews.Program|init main function 
+2020-10-03 18:53:22.4425||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-03 19:07:55.3904||DEBUG|NetNews.Program|init main function 
+2020-10-03 19:07:55.8729||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-03 19:10:33.1471||DEBUG|NetNews.Program|init main function 
+2020-10-03 19:10:33.5353||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-03 19:23:57.3198||DEBUG|NetNews.Program|init main function 
+2020-10-03 19:23:58.0407||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-03 19:33:19.2475||DEBUG|NetNews.Program|init main function 
+2020-10-03 19:33:19.6788||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-03 21:11:08.6499||DEBUG|NetNews.Program|init main function 
+2020-10-03 21:11:15.6446||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-03 21:12:35.3089||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-10-03 21:12:35.3089||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 3, TotalPages: 1, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-10-03 21:13:25.2214||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-10-03 21:13:25.2214||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 3, TotalPages: 1, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-10-03 21:13:58.5950||DEBUG|NetNews.Program|init main function 
+2020-10-03 21:14:00.0239||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-03 21:17:24.8706||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-10-03 21:17:24.8779||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 3, TotalPages: 1, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-10-03 21:35:35.2214||DEBUG|NetNews.Program|init main function 
+2020-10-03 21:35:36.3274||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-03 21:36:54.1300||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-10-03 21:36:54.1300||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 1, TotalPages: 1, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-10-03 21:37:45.8457||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-10-03 21:37:45.8457||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 1, TotalPages: 1, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-10-03 21:41:07.7303||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-10-03 21:41:07.7303||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 1, TotalPages: 1, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-10-03 21:42:23.1397||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper SettingsJson: default - default 
+2020-10-03 21:42:23.1397||INFO|LazZiya.TagHelpers.PagingTagHelper|----> PagingTagHelper - PageNo: 1, PageSize: 10, TotalRecords: 1, TotalPages: 1, QueryStringKeyPageNo: p, QueryStringKeyPageSize: s,  
+2020-10-03 22:21:59.8528||DEBUG|NetNews.Program|init main function 
+2020-10-03 22:22:00.5743||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-03 22:22:59.4947||DEBUG|NetNews.Program|init main function 
+2020-10-03 22:23:00.2983||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-03 22:45:19.0735||DEBUG|NetNews.Program|init main function 
+2020-10-03 22:45:19.6963||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-03 22:46:36.0240||DEBUG|NetNews.Program|init main function 
+2020-10-03 22:46:36.4996||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-03 22:48:04.9055||DEBUG|NetNews.Program|init main function 
+2020-10-03 22:48:05.6100||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-10-03 22:51:31.6509||DEBUG|NetNews.Program|init main function 
+2020-10-03 22:51:32.8523||INFO|Detection.Startup|Starting Detection version 3.0.0.0 

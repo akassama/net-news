@@ -1,0 +1,46 @@
+﻿@using AppHelpers.App_Code
+@using Microsoft.AspNetCore.Http
+@inject IHttpContextAccessor HttpContextAccessor
+@{
+    string AccountID = HttpContextAccessor.HttpContext.Session.GetString("_AccountId");
+    string ConnectionString = ViewBag.ConnectionString;
+}
+
+<div class="row">
+    <div class="col-xl-3 col-md-6">
+        <div class="card bg-primary text-white mb-4">
+            <div class="card-body">Total Posts <strong>@AccountHelper.GetTotalPostsCount(HttpContextAccessor.HttpContext.Session.GetString("_AccountId"))</strong></div>
+            <div class="card-footer d-flex align-items-center justify-content-between">
+                <a class="small text-white stretched-link" asp-controller="Admin" asp-action="ManagePosts">View Details</a>
+                <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-3 col-md-6">
+        <div class="card bg-success text-white mb-4">
+            <div class="card-body">Post Views <strong>@DataHelper.GetTotalAuthorViews(AccountID, ConnectionString)</strong></div>
+            <div class="card-footer d-flex align-items-center justify-content-between">
+                <a class="small text-white stretched-link" asp-controller="Admin" asp-action="PostViews">View Details</a>
+                <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-3 col-md-6">
+        <div class="card bg-warning text-white mb-4">
+            <div class="card-body">Post Revisions <strong>@AccountHelper.GetPostReviewsCount(HttpContextAccessor.HttpContext.Session.GetString("_AccountId"))</strong></div>
+            <div class="card-footer d-flex align-items-center justify-content-between">
+                <a class="small text-white stretched-link" asp-controller="Admin" asp-action="PostReviews">View Details</a>
+                <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-3 col-md-6">
+        <div class="card bg-danger text-white mb-4">
+            <div class="card-body">Settings</div>
+            <div class="card-footer d-flex align-items-center justify-content-between">
+                <a class="small text-white stretched-link" asp-controller="Admin" asp-action="Settings">View Details</a>
+                <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+            </div>
+        </div>
+    </div>
+</div>

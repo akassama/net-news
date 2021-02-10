@@ -1,0 +1,93 @@
+﻿@model NetNews.Models.AccountsDataModel.AccountDetailsModel
+
+@using Microsoft.AspNetCore.Http
+@using AppHelpers.App_Code
+@inject IHttpContextAccessor HttpContextAccessor
+@{
+    var Url = "https://" + Context.Request.Host + Context.Request.Path; //get current url path
+
+    Layout = null;
+
+    ViewBag.ActiveAuthors = "active"; //set active nav
+}
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <!-- 24 NEWS Head -->
+    <partial name="~/Views/Shared/Templates/24News/_Head.cshtml" />
+</head>
+<body>
+    <div class="container-fluid fh5co_header_bg">
+        <!-- Breaking News-->
+        <partial name="~/Views/Shared/Templates/24News/_BreakingNewsTop.cshtml" />
+    </div>
+    <div class="container-fluid">
+        <div class="container">
+            <!-- Logo Navigation -->
+            <partial name="~/Views/Shared/Templates/24News/_LogoNav.cshtml" />
+        </div>
+    </div>
+    <div class="container-fluid bg-faded fh5co_padd_mediya padding_786">
+        <div class="container padding_786">
+            <!-- Navigation -->
+            <partial name="~/Views/Shared/Templates/24News/_Navigation.cshtml" />
+        </div>
+        <!-- Action messages partial -->
+        <partial name="~/Views/Shared/_ProcessMessage.cshtml" />
+    </div>
+
+    <div class="container-fluid  fh5co_fh5co_bg_contcat">
+        <div class="container">
+            <div class="row py-4">
+                <div class="col-sm-12">
+                    <h3 class="text-dark text-left">
+                        Recent Author Posts for @ViewBag.FullName
+                    </h3>
+                    <div class="row">
+                        @foreach (var posts in ViewBag.AuthorPosts)
+                        {
+                            <div class="col-sm-4">
+                                <div class="border-bottom pb-3">
+                                    <div class="rotate-img">
+                                        @PostHelper.GetPostImagePreview(posts.PostID)
+                                    </div>
+                                    <p class="fs-16 font-weight-600 mb-0 mt-3">
+                                        <a href='~/Posts/@posts.PostPermalink' target="_blank" class='text-dark text-decoration-none'>
+                                            @TextHelper.FormatLongText(posts.PostTitle, 50)
+                                        </a>
+                                    </p>
+                                    <p class="fs-13 text-muted mb-0">
+                                        <span class='mr-2'>@PostHelper.FormatPostDate(posts.ApprovalsDateAdded)</span>
+                                    </p>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container-fluid fh5co_footer_bg pb-3">
+        <div class="container animate-box">
+            <!-- Footer Top -->
+            <partial name="~/Views/Shared/Templates/24News/_FooterTop.cshtml" />
+        </div>
+    </div>
+    <div class="container-fluid fh5co_footer_right_reserved">
+        <!-- Footer Bottom -->
+        <partial name="~/Views/Shared/Templates/24News/_FooterBottom.cshtml" />
+    </div>
+
+    <div class="gototop js-top">
+        <a href="#" class="js-gotop"><i class="fa fa-arrow-up"></i></a>
+    </div>
+
+    <!-- 24 NEWS Footer Scripts -->
+    <partial name="~/Views/Shared/Templates/24News/_FooterScripts.cshtml" />
+
+</body>
+</html>

@@ -1,0 +1,124 @@
+/* HOVER ZOOM EFFECTS */
+.zoom-xm, .zoom-sm, .zoom-md, .zoom, .zoom-lg {
+  transition: transform .2s; /* Animation */
+}
+
+.zoom-xm:hover {
+  transform: scale(1.01); /* (101% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.zoom-sm:hover {
+  transform: scale(1.1); /* (110% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  background-color: #cbc4c4;
+}
+
+.zoom:hover {
+  transform: scale(1.02); /* (120% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  background-color: #cbc4c4;
+}
+
+.zoom-md:hover {
+  transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  background-color: #cbc4c4;
+}
+
+.zoom-lg:hover {
+  transform: scale(1.8); /* (180% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  background-color: #cbc4c4;
+}
+
+
+
+
+/* RIPPLE EFFECTS */
+.ripple {
+  position: relative;
+  overflow: hidden;
+}
+
+.ripple:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1em;
+  height: 1em;
+  background: rgba(255, 255, 255, .5);
+  opacity: 0;
+  border-radius: 100%;
+  transform: scale(1, 1) translate(-50%);
+  transform-origin: 50% 50%;
+}
+
+
+audio:hover, audio:focus, audio:active
+{
+-webkit-box-shadow: 15px 15px 20px rgba(0,0, 0, 0.4);
+-moz-box-shadow: 15px 15px 20px rgba(0,0, 0, 0.4);
+box-shadow: 15px 15px 20px rgba(0,0, 0, 0.4);
+-webkit-transform: scale(1.02);
+-moz-transform: scale(1.02);
+transform: scale(1.02);
+}
+
+audio
+{
+-webkit-transition:all 0.5s linear;
+-moz-transition:all 0.5s linear;
+-o-transition:all 0.5s linear;
+transition:all 0.5s linear;
+-moz-box-shadow: 2px 2px 4px 0px #8c8f8f;
+-webkit-box-shadow:  2px 2px 4px 0px #8c8f8f;
+box-shadow: 2px 2px 4px 0px #8c8f8f;
+-moz-border-radius:7px 7px 7px 7px ;
+-webkit-border-radius:7px 7px 7px 7px ;
+border-radius:0px 0px 0px 0px ;
+}
+
+.mp3-img-card{
+	height: 24em;
+}
+
+.mp3-img-card-sm{
+	height: 15em;
+}
+
+.mp3-img-card-md{
+	height: 30em;
+}
+
+.mp3-img-card-lg{
+	height: 40em;
+}
+
+
+
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	.mp3-img-card-sm{
+		height: 15em;
+	}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}

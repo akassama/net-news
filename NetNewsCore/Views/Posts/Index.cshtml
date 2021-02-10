@@ -1,0 +1,146 @@
+﻿@model NetNews.Models.PostsDataModel.vwPostsApprovedModel
+@using AppHelpers.App_Code
+@using Microsoft.AspNetCore.Http
+@inject IHttpContextAccessor HttpContextAccessor
+
+@{
+    var Url = "https://" + Context.Request.Host + Context.Request.Path; //get current url path
+
+    Layout = null;
+
+    ViewBag.ActiveAllNews = "active";
+}
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <!-- 24 NEWS Head -->
+    <partial name="~/Views/Shared/Templates/24News/_Head.cshtml" />
+</head>
+<body>
+    <!-- Facebook Comment Pluging -->
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v8.0&appId=@ViewData["FacebookCommentId"]&autoLogAppEvents=1" nonce="Lu86cVkC"></script>
+
+    <div class="container-fluid fh5co_header_bg">
+        <!-- Breaking News-->
+        <partial name="~/Views/Shared/Templates/24News/_BreakingNewsTop.cshtml" />
+    </div>
+    <div class="container-fluid">
+        <div class="container">
+            <!-- Logo Navigation -->
+            <partial name="~/Views/Shared/Templates/24News/_LogoNav.cshtml" />
+        </div>
+    </div>
+    <div class="container-fluid bg-faded fh5co_padd_mediya padding_786">
+        <div class="container padding_786">
+            <!-- Navigation -->
+            <partial name="~/Views/Shared/Templates/24News/_Navigation.cshtml" />
+        </div>
+    </div>
+
+    <div id="fh5co-single-content" class="container-fluid pb-4 pt-4 paddding">
+        <div class="container paddding">
+            <div class="row mx-0">
+                <!-- Post Details -->
+                <div class="col-md-8 animate-box" data-animate-effect="fadeInLeft">
+                    <div class="row">
+                        <!-- Post Content Column -->
+                        @if (Model.PostType == "StandardNewsPost" || Model.PostType == "EntertainmentNewsPost")
+                        {
+                            <partial name="~/Views/Shared/Templates/24News/PostDetails/_StandardNewsPostView.cshtml" view-data="ViewData" />
+                        }
+                        else if (Model.PostType == "NewsVideoPost" || Model.PostType == "EntertainmentVideoPost")
+                        {
+                            <partial name="~/Views/Shared/Templates/24News/PostDetails/_VideoPostView.cshtml" view-data="ViewData" />
+                        }
+                        else if (Model.PostType == "NewsGalleryPost")
+                        {
+                            <partial name="~/Views/Shared/Templates/24News/PostDetails/_GalleryPostView.cshtml" view-data="ViewData" />
+                        }
+                        else if (Model.PostType == "NewsAudioPost")
+                        {
+                            <partial name="~/Views/Shared/Templates/24News/PostDetails/_NewsAudioPostView.cshtml" view-data="ViewData" />
+                        }
+                        else if (Model.PostType == "EntertainmentAudioPost")
+                        {
+                            <partial name="~/Views/Shared/Templates/24News/PostDetails/_AudioPostView.cshtml" view-data="ViewData" />
+                        }
+                        else
+                        {
+                            <partial name="~/Views/Shared/Templates/24News/PostDetails/_StandardNewsPostView.cshtml" view-data="ViewData" />
+                        }
+                    </div>
+                </div>
+
+
+                <div class="col-md-3 animate-box mt-4" data-animate-effect="fadeInRight">
+                    <!-- Tags Div -->
+                    <div>
+                        <div class="fh5co_heading fh5co_heading_border_bottom py-2 mb-4">Post Tags</div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="fh5co_tags_all">
+                        @LayoutHelper24News.FormatPostTags(Model.PostTags)
+                    </div>
+
+                    <!-- Most Popular News -->
+                    <partial name="~/Views/Shared/Templates/24News/_MostPopularNews.cshtml" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    @if (LayoutHelper24News.HasRelatedNews(Model.PostID))
+    {
+        <div class="container-fluid pb-4 pt-5">
+            <div class="container animate-box">
+                <div>
+                    <div class="fh5co_heading fh5co_heading_border_bottom py-2 mb-4">Related Posts</div>
+                </div>
+                <div class="owl-carousel owl-theme" id="slider2">
+                    @LayoutHelper24News.GetRelatedNews(Model.PostID, 6)
+                </div>
+            </div>
+        </div>
+    }
+
+
+
+    <div class="container-fluid fh5co_footer_bg pb-3">
+        <div class="container animate-box">
+            <!-- Footer Top -->
+            <partial name="~/Views/Shared/Templates/24News/_FooterTop.cshtml" />
+        </div>
+    </div>
+    <div class="container-fluid fh5co_footer_right_reserved">
+        <!-- Footer Bottom -->
+        <partial name="~/Views/Shared/Templates/24News/_FooterBottom.cshtml" />
+    </div>
+
+    <div class="gototop js-top">
+        <a href="#" class="js-gotop"><i class="fa fa-arrow-up"></i></a>
+    </div>
+
+    <!-- 24 NEWS Footer Scripts -->
+    <partial name="~/Views/Shared/Templates/24News/_FooterScripts.cshtml" />
+
+
+    <script>
+        $(document).ready(function () {
+            //set images width 100%
+            $('p, span').children('img').width('100%');
+            $('div').children('img').width('100%');
+
+            //adjust author profile image
+            $('.media').children('img').width('60px');
+
+            //set iframes width 100%
+            $('div').children('iframe').width('100%');
+            $('p').children('iframe').width('100%');
+            $('span').children('iframe').width('100%');
+        });
+    </script>
+
+</body>
+</html>

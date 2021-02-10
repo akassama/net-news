@@ -1,0 +1,39 @@
+﻿@using AppHelpers.App_Code
+
+<div class="w-100">
+    <div class="fh5co_heading fh5co_heading_border_bottom pt-5 pb-2 mb-4 ml-2 text-dark">Covid 19 Data</div>
+</div>
+<div class="col-12 text-center pb-4 pt-4">
+    <!-- Covid Data-->
+    <div class="row">
+        <div class="col-md-12">
+            @Html.Raw(ModelHelper.GetSiteLookupData("CovidWidget"))
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <h2 data-toggle="collapse" data-target="#more-news">
+                    <a href="#!" class="text-decoration-none">
+                        More Covid Data <i class="fas fa-sort-down"></i>
+                    </a>
+                </h2>
+                <div id="more-news" class="collapse">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <iframe src="https://ourworldindata.org/grapher/total-cases-covid-19?tab=map" class="w-100" style="height: 600px;"></iframe>
+                        </div>
+                        <div class="col-md-6">
+                            <iframe src="https://ourworldindata.org/grapher/covid-confirmed-cases-since-100th-case?country=GMB+SEN+GBR+NGA" style="width: 100%; height: 600px; border: 0px none;"></iframe>
+                        </div>
+                        <div class="col-md-6">
+                            <iframe src="https://ourworldindata.org/grapher/total-cases-covid-19?tab=map&region=Africa" class="w-100" style="height: 600px;"></iframe>
+                        </div>
+                        <div class="col-md-6">
+                            <iframe src="https://ourworldindata.org/grapher/full-list-cumulative-total-tests-per-thousand" style="width: 100%; height: 600px; border: 0px none;"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

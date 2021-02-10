@@ -1,0 +1,83 @@
+﻿@model NetNews.Models.AppDataModels.ChangePasswordModel
+
+@using Microsoft.AspNetCore.Http
+@using AppHelpers.App_Code
+@inject IHttpContextAccessor HttpContextAccessor
+@{
+    var Url = "https://" + Context.Request.Host + Context.Request.Path; //get current url path
+
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <!-- ADMIN Footer -->
+    <partial name="~/Views/Shared/AccountLayout/_Head.cshtml" />
+</head>
+
+<body class="bg-primary">
+    <div id="layoutAuthentication">
+        <div id="layoutAuthentication_content">
+            <main>
+                <div class="container">
+                    <div class="row justify-content-center">
+
+                        <div class="col-lg-5">
+                            <div class="row">
+                                <div class="col-12">
+                                    <!-- Action messages partial -->
+                                    <partial name="~/Views/Shared/_ProcessMessage.cshtml" />
+                                </div>
+                            </div>
+                            <div class="card shadow-lg border-0 rounded-lg mt-5">
+                                <div class="card-header"><h3 class="text-center font-weight-light my-4">Reset Password</h3></div>
+                                <div class="card-body">
+                                    @if (ViewBag.ShowForm == "true")
+                                    {
+                                        <form asp-controller="PasswordReset" asp-action="ResetPassword" method="post" id="ResetPasswordForm">
+                                            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                                            <div class="form-group">
+                                                <label class="small mb-1" asp-for="Password"></label>
+                                                <input class="form-control py-4" asp-for="Password" type="password" placeholder="Enter password" required />
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="password" class="form-control" asp-for="ConfirmPassword" maxlength="50" placeholder="Confirm Password" required>
+                                                <div id="PasswordInfo"></div>
+                                            </div>
+                                            <div class="row align-items-center d-none">
+                                                <div class="col mt-4">
+                                                    <input type="hidden" class="form-control" name="ResetID" id="ResetID" value="@ViewBag.ResetID" required>
+                                                </div>
+                                            </div>
+                                            <div class="form-group d-flex align-items-center justify-content-between mt-2 mb-0">
+                                                <button type="submit" id="LoginButton" class="btn btn-primary btn-block p-3 font-weight-bold mt-4 disable-on-click">
+                                                    Reset
+                                                </button>
+                                            </div>
+                                        </form>
+                                    }
+                                </div>
+                                <div class="card-footer text-center">
+                                    <div class="small"><a asp-controller="Home" asp-action="Index">Home</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+        <!-- ADMIN Footer -->
+        <partial name="~/Views/Shared/AccountLayout/_AdminFooter.cshtml" />
+    </div>
+
+
+    <!-- Modals data -->
+    <partial name="~/Views/Shared/Modals/_ActionModals.cshtml" view-data="ViewData" />
+
+    <!-- ADMIN RESOURCES -->
+    <partial name="~/Views/Shared/AccountLayout/_AdminFooterScripts.cshtml" />
+</body>
+</html>

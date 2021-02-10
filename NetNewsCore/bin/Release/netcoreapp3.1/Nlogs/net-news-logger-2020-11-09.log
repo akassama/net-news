@@ -1,0 +1,86 @@
+2020-11-09 00:51:21.6598||DEBUG|NetNews.Program|init main function 
+2020-11-09 00:51:22.7181||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-09 01:54:44.9079||DEBUG|NetNews.Program|init main function 
+2020-11-09 01:54:46.4951||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-09 02:09:12.3606||DEBUG|NetNews.Program|init main function 
+2020-11-09 02:09:13.8045||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-09 02:24:15.1691||DEBUG|NetNews.Program|init main function 
+2020-11-09 02:24:17.4090||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-09 02:30:36.6866||DEBUG|NetNews.Program|init main function 
+2020-11-09 02:30:38.3931||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-09 02:47:01.3119||DEBUG|NetNews.Program|init main function 
+2020-11-09 02:47:02.7419||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-09 02:57:08.3939||DEBUG|NetNews.Program|init main function 
+2020-11-09 02:57:09.1080||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-09 03:22:18.6065||DEBUG|NetNews.Program|init main function 
+2020-11-09 03:22:21.1937||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-09 03:31:07.4722|3|ERROR|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|The view 'Index' was not found. Searched locations: /Views/Authors/Index.desktop.cshtml, /Views/Authors/Index.cshtml, /Views/Shared/Index.desktop.cshtml, /Views/Shared/Index.cshtml, /Pages/Shared/Index.desktop.cshtml, /Pages/Shared/Index.cshtml 
+2020-11-09 03:31:08.1299|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.InvalidOperationException: The view 'Index' was not found. The following locations were searched:
+/Views/Authors/Index.desktop.cshtml
+/Views/Authors/Index.cshtml
+/Views/Shared/Index.desktop.cshtml
+/Views/Shared/Index.cshtml
+/Pages/Shared/Index.desktop.cshtml
+/Pages/Shared/Index.cshtml
+   at Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult.EnsureSuccessful(IEnumerable`1 originalLocations)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Wangkanai.Detection.Hosting.ResponsiveMiddleware.InvokeAsync(HttpContext context, IResponsiveService responsive)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at NetNews.Startup.<>c.<<Configure>b__5_0>d.MoveNext() in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Startup.cs:line 92
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-11-09 04:15:18.0232||DEBUG|NetNews.Program|init main function 
+2020-11-09 04:15:20.0248||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-09 04:23:17.1909||DEBUG|NetNews.Program|init main function 
+2020-11-09 04:23:19.3073||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-09 23:49:36.8797||DEBUG|NetNews.Program|init main function 
+2020-11-09 23:49:41.1552||INFO|Detection.Startup|Starting Detection version 3.0.0.0 
+2020-11-09 23:54:26.6371|3|ERROR|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|The view 'PostReviews' was not found. Searched locations: /Views/Admin/PostReviews.desktop.cshtml, /Views/Admin/PostReviews.cshtml, /Views/Shared/PostReviews.desktop.cshtml, /Views/Shared/PostReviews.cshtml, /Pages/Shared/PostReviews.desktop.cshtml, /Pages/Shared/PostReviews.cshtml 
+2020-11-09 23:54:26.6673|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.InvalidOperationException: The view 'PostReviews' was not found. The following locations were searched:
+/Views/Admin/PostReviews.desktop.cshtml
+/Views/Admin/PostReviews.cshtml
+/Views/Shared/PostReviews.desktop.cshtml
+/Views/Shared/PostReviews.cshtml
+/Pages/Shared/PostReviews.desktop.cshtml
+/Pages/Shared/PostReviews.cshtml
+   at Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult.EnsureSuccessful(IEnumerable`1 originalLocations)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Wangkanai.Detection.Hosting.ResponsiveMiddleware.InvokeAsync(HttpContext context, IResponsiveService responsive)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at NetNews.Startup.<>c.<<Configure>b__5_0>d.MoveNext() in C:\Users\Laiman\Documents\Visual Studio 2019\Projects\NetNewsCore\NetNewsCore\Startup.cs:line 82
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
